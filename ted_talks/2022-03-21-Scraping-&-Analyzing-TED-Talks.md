@@ -63,14 +63,14 @@ To follow along this project, I've made a copy of the source code in this [Githu
 </br>
 </br>
 
-### STEP 1 - OBTAINING A DATA SET
+# STEP 1 - OBTAINING A DATA SET
 ---
 ***
 </br>
 
-As stated above, Kaggle offers a dataset on [TED Talks](https://www.kaggle.com/datasets/ashishjangra27/ted-talks) posted on the website. Loading the provided file into a SQL Server w can examine the data. 
+ As stated above, Kaggle offers a dataset on [TED Talks](https://www.kaggle.com/datasets/ashishjangra27/ted-talks) posted on the website. The data has been uploaded to a dataframe. 
 
-Obtaining basic general information on the data set
+We can obtain a general information of it. 
 
 <span style="font-size:11px"> 
 
@@ -113,20 +113,28 @@ Obtaining basic general information on the data set
 </p>
 
 </br>
-From the data exploration we can see that more information on each video would be useful in order to answer the following questions: 
+From this general view, we can immidiately ask some general questions, like: 
+
+- Which are the most viewed videos?
+- Who are the most viewed authors?
+- Is there a sustancial difference between liked and viewed?. If so, which are the top videos on each?
+
+However, some other interesting questions can be: 
 
 - Which content categories are most viewed?
 - Which content categories are made available the most?
 - Could the duration of the video affect the likebility of the videos?
 - When was the video published? (Assuming that older videos can have more likes than newer)
-- What type of evnt was this part of? WAs it a Women, or a specific location?
+- What type of event was this part of? Was it a Women, or a specific location?
 
 </br>
+To answer some of these questions, the current data set is insufficient. However, this information may be available on each of the video's website. This poses the opportnity to extract the data using a targeted web scrapping techbique. 
+</br>
 </br>
 </br>
 </br>
 
-###  STEP 2 - SCRAPPING 
+#  STEP 2 - SCRAPPING 
 ---
 ***
 
@@ -206,7 +214,7 @@ The final joined data was stored in a file [here.]('https://github.com/aaas24/co
 </br>
 </br>
 
-###  STEP 3 - PREPROCESSING THE DATA
+#  STEP 3 - PREPROCESSING THE DATA
 ---
 ***
 
@@ -338,7 +346,7 @@ Utilized thus matrix, I transformed the  'keywords.csv' into a dataframe with th
 </br>
 </br>
 
-###  STEP 4 - DATA EXPLORATION
+#  STEP 4 - DATA EXPLORATION
 ---
 ***
 
@@ -373,7 +381,7 @@ Even through the dataset is intuitively simple to understand, I wanted to practi
 ```
 </span>
 
-- Visualizing the columns on these two principal components
+- Visualizing the columns in the first two principal components
 
 <span style="font-size:11px"> 
 
@@ -401,16 +409,13 @@ The second methos is the Silouhettes, where the shapes of the clusters do show a
 
 The third method using a dendrogram is even more clear: there is a significant increate in clusters after the 4 column. This perhaps is the clearest confirmation of our assumption 
 
-<div class="row">
-  <div class="column">
-    <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_clustering_1.png" alt="Elbow Method" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_clustering_2.png" alt="Silouettes Method" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_clustering_3.png" alt="Dendrogram Method" style="width:100%">
-  </div>
+
+<div align="center">
+
+|Elbow Method|Silouettes Method|Dendrogram Method|
+|---------|------|-----|
+|<img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_clustering_1.png" alt="PC1 & PC2" width="100%"> | <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_clustering_2.png" alt="PC1 & PC2" width="100%"> |<img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_clustering_3.png" alt="PC1 & PC2" width="100%">|
+|||
 </div>
 
 2) Assigning the clusters
@@ -440,19 +445,6 @@ The third method using a dendrogram is even more clear: there is a significant i
         2    1684
         3      65
         dtype: int64
-```
-</span>
-
-- Describe the columns for each label
-
-<span style="font-size:11px"> 
-
-``` python
-        (X.assign(label=labels)
-        .groupby('label')
-        .date_recorded_year
-        .describe()
-        )
 ```
 </span>
 
@@ -496,23 +488,91 @@ With the information provided above, we can describe the cluester as follows:
 2 - Older videos, longer duration in seg </br>
 3 - Highest views & likes
 
-
-### Interesting  Visualizations
-
-* Number of videos released per year
-
-* Outliers of Video date_recorded_year
-
-
-
-</br>
-</br>
 </br>
 </br>
 
-### STEP 5 - ANALYZING & VISUALIZING
+# STEP 5 - ANALYZING & VISUALIZING
 ---
 ***
+
+When we first obtained the data we posed some questions, now is time to find the answers to them and other new ones. It's important to remember that this analysis is based on the 5440 videos obtained and may not correspond to the complete offering in the Ted Talk website and that, as such, may also not aggregate the data from their other media channels like their podcasts & tv channels. 
+
+</br>
+</br>
+
+- Which are the most liked videos?
+
+<div align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_ted_talks_analysis_1.png" alt="Data Exploration" width="100%">
+</div>
+
+- Which are the most liked authors?
+
+<div align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_ted_talks_analysis_4.png" alt="Data Exploration" width="100%">
+</div>
+
+
+- Is there a sustancial difference between liked and viewed?. If so, which are the top videos on each? 
+
+There is a direct correlationship between the variables liked and views, as shown in the graph below: 
+<div align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_ted_talks_analysis_2.png" alt="Data Exploration" width="100%">
+</div>
+
+
+## What year were these talks recorded?
+
+
+* The majority of the videos were recorded the last 20 years
+
+ <p align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_exploration_recorded_year.png" alt="Data Exploration" width="70%">
+</p>
+
+* However, we see some outliers of video date_recorded_year variable from 1970-2000
+<div align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_exploration_outliers_date_recorded.png" alt="Data Exploration" width="50%">
+</div>
+
+</br>
+</br>
+
+## Which content categories are most viewed?
+
+</br>
+</br>
+
+* Main Content Categories
+
+<div align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_exploration_key_categories.png" alt="Data Exploration" width="80%">
+</div>
+
+* Main Content Sub-Categories
+
+<div align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_exploration_key_subcategories.png" alt="Data Exploration" width="80%">
+</div>
+
+</br>
+
+
+- Could the duration of the video affect the likebility of the videos?
+
+<div align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_ted_talks_analysis_3.png" alt="Data Exploration" width="100%">
+</div>
+
+Interestingly enough, in most years the majority of the videos liked stay below the first 1000sec (16min40sec). However, in 2020 one can see a lot more liked videos that are far longer, reaching ~4000sec (1hr 46min). This may be explained by the worldwide lockdowns during the COVID-19 pandemic, when people were stuck at home with few new streaming content options. In that context, it is likely people were more willing to spend more time on ted talks than the previous year.
+
+
+<div align="center">
+
+|Elbow Method|Silouettes Method|
+|---------|------|
+|<img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_analysis_6.png" alt="2019" width="100%"> | <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_analysis_7.png" alt="2020" width="100%"> |
+</div>
 
 </br>
 </br>
@@ -532,8 +592,15 @@ With the information provided above, we can describe the cluester as follows:
 ---
 ***
 
+Areas of improvements:
+1) More information on the authors. Understanding age, gender and nationality of authors, may answer questions related to diversity of the speakers. This data could be parcially scrapped from Wikipedia as there is a dedicated website that tracks this information. 
+https://en.wikipedia.org/wiki/List_of_TED_speakers
 
+Other questions we could answer: 
 
+- What type of event was this part of? Was it a Women, or a specific location?
+- Which content categories are made available the most?
+- When was the video published? (Assuming that older videos can have more likes than newer)
 
 
 <span style="font-size:11px"> 
