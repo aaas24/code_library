@@ -31,8 +31,7 @@ In order to make this project managable I have divided it into several steps:
  **STEP 3** - PREPROCESSING THE DATA</br>
 \--------------------------------------------
 
-* Transformed the dataset obtained into organized </br>
-* panda Dataframes using pandas library</br>
+* Transformed the dataset obtained into organized panda Dataframes using pandas library</br>
 
 **STEP 4** - DATA EXPLORATION</br>
 \--------------------------------------------
@@ -399,7 +398,7 @@ Even through the dataset is intuitively simple to understand, I wanted to practi
 
 <span h4 style="text-decoration: underline">Clustering</span>
 
-1) Determining the number of lusters to use
+1) Determining the number of clusters to use
 
 By utilizing three separate methods of visualization, we arived at the conclusion that 4 clusters would be the best solution for this data. 
 
@@ -546,13 +545,13 @@ There is a direct correlationship between the variables liked and views, as show
 * Main Content Categories
 
 <div align="center">
-  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_exploration_key_categories.png" alt="Data Exploration" width="80%">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_exploration_key_categories.png" alt="Data Exploration" width="70%">
 </div>
 
 * Main Content Sub-Categories
 
 <div align="center">
-  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_exploration_key_subcategories.png" alt="Data Exploration" width="80%">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_exploration_key_subcategories.png" alt="Data Exploration" width="70%">
 </div>
 
 </br>
@@ -596,12 +595,10 @@ Areas of improvements:
 1) More information on the authors. Understanding age, gender and nationality of authors, may answer questions related to diversity of the speakers. This data could be parcially scrapped from Wikipedia as there is a dedicated website that tracks this information. 
 https://en.wikipedia.org/wiki/List_of_TED_speakers
 
-Other questions we could answer: 
+Other questions we could not answer: 
 
 - What type of event was this part of? Was it a Women, or a specific location?
 - Which content categories are made available the most?
-- When was the video published? (Assuming that older videos can have more likes than newer)
-
 
 <span style="font-size:11px"> 
 
