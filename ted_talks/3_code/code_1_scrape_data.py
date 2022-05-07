@@ -20,7 +20,7 @@ from pandasql import sqldf
 pysqldf = lambda q: sqldf(q, globals())
 dic_scrape={}
 list_error=[]
-testing=FALSE #Turn to True if testing
+testing=TRUE #Turn to True if testing
 
 def print_var(list_lines):
     s = '''\
