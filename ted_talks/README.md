@@ -502,13 +502,13 @@ When we first obtained the data we posed some questions, now is time to find the
 - Which are the most liked videos?
 
 <div align="center">
-  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_ted_talks_analysis_1.png" alt="Data Exploration" width="100%">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_analysis_1.png" alt="Data Exploration" width="100%">
 </div>
 
 - Which are the most liked authors?
 
 <div align="center">
-  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_ted_talks_analysis_4.png" alt="Data Exploration" width="100%">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_analysis_4.png" alt="Data Exploration" width="50%">
 </div>
 
 
@@ -516,7 +516,7 @@ When we first obtained the data we posed some questions, now is time to find the
 
 There is a direct correlationship between the variables liked and views, as shown in the graph below: 
 <div align="center">
-  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_ted_talks_analysis_2.png" alt="Data Exploration" width="100%">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_analysis_2.png" alt="Data Exploration" width="100%">
 </div>
 
 
@@ -581,8 +581,110 @@ Interestingly enough, in most years the majority of the videos liked stay below 
 ###  STEP 6 - ML LEARNING
 ---
 ***
+#### *A) Predicting model for if a video will perform well:*
+<br>
+The goal is to predict a "good performance" for a given video, when we are defining 'good performance' as at least 75% percentile. 
 
+We run 4 different models: 
+
+|Model|Y_Prediction|
+|--|--|
+|Logistic Regression|0.56|
+|Simple Tree|0.59|
+|Random Forest|0.64|
+|X-Boost|0.68|
+
+Based on the Best Performing Models "XG-Boost", the key features are: 
+
+<br>
+- Date related variables, whre we can see that for well performing videos: 
+
+* there were more videos performing better with 5 min duration. Underperforming videos tended to last longer
+* Well performing videos tended to be released during spring
+
+<br>
+- Keywords related to: 
+
+* Personal Growth: personality, goals, motivation, collaboration, communication, humanity, self, performance, creativity
+* Work: business, work-life balance , productivity, 
+* Global issues: culture, politics, climate change, planets, gender, virus
+* Other topics: music, sports, philosophy, art, health
 </br>
+#### Models
+To be able to utilize the models below, the data must be clean of NaNs, numerical, balanced, standarized and split into training, test and validation. In this section we show the steps in code we utilized to achiev the state used for the models. 
+
+Note: For readibility purposes we show the output of Jupyter notebook staring with ">"
+
+<span style="font-size:11px"> 
+
+``` python
+#verifying no NAN in data feeding model
+df[df.likes.isnull()==True]
+
+>  0 rows × 363 columns 
+
+#define target
+
+#we define TARGET a well performing video if it is above 75% percentile. So the model should predict if a video will#perform above 75% percentile
+threshold= np.percentile(df.likes, 75)
+
+#create target column
+df['target']=[1 if x>threshold else 0 for x in df.likes]
+
+#drop multicolinearity columns
+data=df.drop(['likes', 'views'], axis=1)
+
+#drop text columns
+data=data.drop(['author', 'title', 'description_1', 'description_2', 'keywords2'], axis=1)
+
+#Balance data
+data.target.value_counts()
+> 0    4098
+1    1342
+Name: target, dtype: int64
+
+positive_labels = data[data.target==1]
+num_positive_labels = positive_labels.shape[0]
+num_positive_labels
+>1342
+
+negative_labels = data[data.target==0].sample(num_positive_labels)
+negative_labels.shape
+>(1342, 357)
+
+balanced_data =  positive_labels.append(negative_labels)
+balanced_data.target.value_counts()
+>1    1342
+0    1342
+Name: target, dtype: int64
+
+## Splitting data into test splits
+y = balanced_data.pop('target')
+X = balanced_data
+
+X_train, X_valid, y_train, y_valid = train_test_split(X, y, test_size = 0.3)
+X_valid, X_test, y_valid, y_test = train_test_split(X_valid, y_valid, test_size = 0.33)
+```
+</span>
+
+
+##### Logistic Regression
+<span style="font-size:11px"> 
+
+``` python
+# fit a model
+clf = LogisticRegression(penalty='l2').fit(X_train, y_train)
+# predict probabilities
+pred_reg = clf.predict_proba(X_test)[:, 1]
+        
+```
+</span>
+
+##### Decision Tree
+##### Random Forest
+##### XGBoost
+
+##### Comparing Models
 </br>
 </br>
 </br>
