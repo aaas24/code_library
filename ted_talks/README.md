@@ -49,7 +49,10 @@ In order to make this project managable I have divided it into several steps:
 \--------------------------------------------
 
 * Applied Regression Model to predict video with good performance and identified key features</br>
-* Applied Natural Language Understanding techniques on descriptions to compare selection of keywords/tags used on web content</br>
+* Applied reccomendation model based to obtain 10 talks based on a provided title name</br>
+
+**CONCLUSIONS** </br>
+\--------------------------------------------
 </br>
 
 
@@ -502,13 +505,13 @@ When we first obtained the data we posed some questions, now is time to find the
 - Which are the most liked videos?
 
 <div align="center">
-  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_analysis_1.png" alt="Data Exploration" width="100%">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_analysis_1.png" alt="Data Exploration" width="70%">
 </div>
 
 - Which are the most liked authors?
 
 <div align="center">
-  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_analysis_4.png" alt="Data Exploration" width="50%">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_analysis_4.png" alt="Data Exploration" width="30%">
 </div>
 
 
@@ -516,7 +519,7 @@ When we first obtained the data we posed some questions, now is time to find the
 
 There is a direct correlationship between the variables liked and views, as shown in the graph below: 
 <div align="center">
-  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_analysis_2.png" alt="Data Exploration" width="100%">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_analysis_2.png" alt="Data Exploration" width="50%">
 </div>
 
 
@@ -531,7 +534,7 @@ There is a direct correlationship between the variables liked and views, as show
 
 * However, we see some outliers of video date_recorded_year variable from 1970-2000
 <div align="center">
-  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_exploration_outliers_date_recorded.png" alt="Data Exploration" width="50%">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_exploration_outliers_date_recorded.png" alt="Data Exploration" width="40%">
 </div>
 
 </br>
@@ -560,7 +563,7 @@ There is a direct correlationship between the variables liked and views, as show
 - Could the duration of the video affect the likebility of the videos?
 
 <div align="center">
-  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_ted_talks_analysis_3.png" alt="Data Exploration" width="100%">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_analysis_3.png" alt="Data Exploration" width="40%">
 </div>
 
 Interestingly enough, in most years the majority of the videos liked stay below the first 1000sec (16min40sec). However, in 2020 one can see a lot more liked videos that are far longer, reaching ~4000sec (1hr 46min). This may be explained by the worldwide lockdowns during the COVID-19 pandemic, when people were stuck at home with few new streaming content options. In that context, it is likely people were more willing to spend more time on ted talks than the previous year.
@@ -585,7 +588,9 @@ Interestingly enough, in most years the majority of the videos liked stay below 
 <br>
 The goal is to predict a "good performance" for a given video, when we are defining 'good performance' as at least 75% percentile. 
 
-We run 4 different models: 
+We run 4 different models:
+
+<div align="center">
 
 |Model|Y_Prediction|
 |--|--|
@@ -593,6 +598,8 @@ We run 4 different models:
 |Simple Tree|0.61|
 |Random Forest|0.67|
 |X-Boost|0.67|
+
+</div>
 
 Based on the Best Performing Models "XG-Boost", the key features are: 
 
@@ -912,7 +919,7 @@ Based on these features, we can identify some keywords and variables.
 ```
 </span>
 <p align="center">
-  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_models_fc6.png" alt="Data Exploration" width="600">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_models_fc6.png" alt="Data Exploration" width="70%">
 </p>
 
 #### *B) Rcommendation Model*
@@ -994,7 +1001,7 @@ Based on these features, we can identify some keywords and variables.
 </span>
 
 <p align="center">
-  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_models_rc1.png" alt="" width="600">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_models_rc1.png" alt="" width="40%">
 </p>
 
 <span style="font-size:11px"> 
@@ -1008,7 +1015,7 @@ Based on these features, we can identify some keywords and variables.
 </span>
 
 <p align="center">
-  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_models_rc2.png" alt="" width="600">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_models_rc2.png" alt="" width="40%">
 </p>
 
 <br>
