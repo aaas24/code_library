@@ -589,10 +589,10 @@ We run 4 different models:
 
 |Model|Y_Prediction|
 |--|--|
-|Logistic Regression|0.56|
-|Simple Tree|0.59|
-|Random Forest|0.64|
-|X-Boost|0.68|
+|Logistic Regression|0.61|
+|Simple Tree|0.61|
+|Random Forest|0.67|
+|X-Boost|0.67|
 
 Based on the Best Performing Models "XG-Boost", the key features are: 
 
@@ -611,6 +611,8 @@ Based on the Best Performing Models "XG-Boost", the key features are:
 * Other topics: music, sports, philosophy, art, health
 </br>
 #### Models
+
+##### Preparing the data
 To be able to utilize the models below, the data must be clean of NaNs, numerical, balanced, standarized and split into training, test and validation. In this section we show the steps in code we utilized to achiev the state used for the models. 
 
 Note: For readibility purposes we show the output of Jupyter notebook staring with ">"
@@ -618,52 +620,51 @@ Note: For readibility purposes we show the output of Jupyter notebook staring wi
 <span style="font-size:11px"> 
 
 ``` python
-#verifying no NAN in data feeding model
-df[df.likes.isnull()==True]
+        #verifying no NAN in data feeding model
+        df[df.likes.isnull()==True]
+        >  0 rows × 363 columns 
 
->  0 rows × 363 columns 
+        #define target
 
-#define target
+        #we define TARGET a well performing video if it is above 75% percentile. So the model should predict if a video will#perform above 75% percentile
+        threshold= np.percentile(df.likes, 75)
 
-#we define TARGET a well performing video if it is above 75% percentile. So the model should predict if a video will#perform above 75% percentile
-threshold= np.percentile(df.likes, 75)
+        #create target column
+        df['target']=[1 if x>threshold else 0 for x in df.likes]
 
-#create target column
-df['target']=[1 if x>threshold else 0 for x in df.likes]
+        #drop multicolinearity columns
+        data=df.drop(['likes', 'views'], axis=1)
 
-#drop multicolinearity columns
-data=df.drop(['likes', 'views'], axis=1)
+        #drop text columns
+        data=data.drop(['author', 'title', 'description_1', 'description_2', 'keywords2'], axis=1)
 
-#drop text columns
-data=data.drop(['author', 'title', 'description_1', 'description_2', 'keywords2'], axis=1)
+        #Balance data
+        data.target.value_counts()
+        > 0    4098
+        1    1342
+        Name: target, dtype: int64
 
-#Balance data
-data.target.value_counts()
-> 0    4098
-1    1342
-Name: target, dtype: int64
+        positive_labels = data[data.target==1]
+        num_positive_labels = positive_labels.shape[0]
+        num_positive_labels
+        >1342
 
-positive_labels = data[data.target==1]
-num_positive_labels = positive_labels.shape[0]
-num_positive_labels
->1342
+        negative_labels = data[data.target==0].sample(num_positive_labels)
+        negative_labels.shape
+        >(1342, 357)
 
-negative_labels = data[data.target==0].sample(num_positive_labels)
-negative_labels.shape
->(1342, 357)
+        balanced_data =  positive_labels.append(negative_labels)
+        balanced_data.target.value_counts()
+        >1    1342
+        0    1342
+        Name: target, dtype: int64
 
-balanced_data =  positive_labels.append(negative_labels)
-balanced_data.target.value_counts()
->1    1342
-0    1342
-Name: target, dtype: int64
+        ## Splitting data into test splits
+        y = balanced_data.pop('target')
+        X = balanced_data
 
-## Splitting data into test splits
-y = balanced_data.pop('target')
-X = balanced_data
-
-X_train, X_valid, y_train, y_valid = train_test_split(X, y, test_size = 0.3)
-X_valid, X_test, y_valid, y_test = train_test_split(X_valid, y_valid, test_size = 0.33)
+        X_train, X_valid, y_train, y_valid = train_test_split(X, y, test_size = 0.3)
+        X_valid, X_test, y_valid, y_test = train_test_split(X_valid, y_valid, test_size = 0.33)
 ```
 </span>
 
@@ -672,46 +673,421 @@ X_valid, X_test, y_valid, y_test = train_test_split(X_valid, y_valid, test_size 
 <span style="font-size:11px"> 
 
 ``` python
-# fit a model
-clf = LogisticRegression(penalty='l2').fit(X_train, y_train)
-# predict probabilities
-pred_reg = clf.predict_proba(X_test)[:, 1]
+        # fit a model
+        clf = LogisticRegression(penalty='l2').fit(X_train, y_train)
+        # predict probabilities
+        pred_reg = clf.predict_proba(X_test)[:, 1]
         
 ```
 </span>
 
 ##### Decision Tree
-##### Random Forest
-##### XGBoost
-
-##### Comparing Models
-</br>
-</br>
-</br>
-
-### CONCLUSIONS
----
-***
-
-Areas of improvements:
-1) More information on the authors. Understanding age, gender and nationality of authors, may answer questions related to diversity of the speakers. This data could be parcially scrapped from Wikipedia as there is a dedicated website that tracks this information. 
-https://en.wikipedia.org/wiki/List_of_TED_speakers
-
-Other questions we could not answer: 
-
-- What type of event was this part of? Was it a Women, or a specific location?
-- Which content categories are made available the most?
-
 <span style="font-size:11px"> 
 
 ``` python
+        from sklearn.tree import DecisionTreeClassifier
+        dt_model = DecisionTreeClassifier(max_depth=10)
+        dt_model = dt_model.fit(X_train,y_train)
+        pred_dt = dt_model.predict_proba(X_valid)[:, 1]
+```
+</span>
 
+##### Random Forest
+<span style="font-size:11px"> 
+
+``` python
+        from sklearn.ensemble import RandomForestClassifier
+        rf_model = RandomForestClassifier()
+        rf_model = rf_model.fit(X_train, y_train)
+        pred_rf = rf_model.predict_proba(X_valid)[:, 1]
         
 ```
 </span>
 
+##### XGBoost
+<span style="font-size:11px"> 
 
- <p align="center">
-  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted-talk-1.png" alt="Data Exploration" width="600">
+``` python
+        #code to fix error taken from: https://stackoverflow.com/questions/43579180/feature-names-must-be-unique-xgboost
+        X_train = X_train.loc[:,~X_train.columns.duplicated()]
+        X_valid = X_valid.loc[:,~X_valid.columns.duplicated()]
+
+        from xgboost import XGBClassifier
+        xgb_model = XGBClassifier()
+        xgb_model = xgb_model.fit(X_train, y_train)
+        pred_xgb = xgb_model.predict_proba(X_valid)[:, 1]
+        
+```
+</span>
+
+##### Comparing Models
+
+<span style="font-size:11px"> 
+
+``` python
+        def create_roc_plot(name, predictions):
+        if name == 'Logistic':
+                auc = roc_auc_score(y_test, predictions).round(2)
+                fpr, tpr, _ = roc_curve(y_test, predictions)
+        else: 
+                auc = roc_auc_score(y_valid, predictions).round(2)
+                fpr, tpr, _ = roc_curve(y_valid, predictions)
+
+        plt.figure(figsize=(5, 4))
+        plt.plot([0, 1], [0, 1], linestyle='--')  # plot horizontal line 
+        plt.plot(fpr, tpr, label='{} AUC = {}'.format(name, auc)) # plot the roc curve for the model
+        plt.xlabel('FPR')
+        plt.ylabel('TPR')
+        plt.legend(loc='lower right')  # show the legend
+        plt.show() # show the plot
+        
+        return None
+        create_roc_plot('Logistic', pred_reg)
+        create_roc_plot('Simple Decision Tree', pred_dt)
+        create_roc_plot('Random Forest', pred_rf)
+        create_roc_plot('XGBoost', pred_xgb)
+```
+</span>
+<div align="center">
+
+|Logistic Regression|Simple Decision Tree|
+|---------|------|
+|<img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_model_1.png" alt="Linear Regression" width="100%"> | <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_model_2.png" alt="Simple Tree" width="100%"> |
+
+|Random Forest|XGBoost|
+|---------|------|
+|<img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_model_3.png" alt="Random Forest" width="100%"> | <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_model_4.png" alt="XGBoost" width="100%"> |
+</div>
+</br>
+Given that Random Forest & XGBoost tends to outperform the other models, let's see the Feature importance on these two models: 
+
+<span style="font-size:11px"> 
+
+``` python
+        #XGBoost - All Features to observe the curve
+        from xgboost import plot_importance
+        plot_importance(xgb_model)
+        plt.show()   
+```
+</span>
+
+<span style="font-size:11px"> 
+
+``` python
+        #XGBoost - Top Features
+        df_graph=(pd.Series(xgb_model.feature_importances_, index=X.columns.values)
+        .sort_values(ascending=False)
+        .iloc[:40]
+        .sort_values(ascending=True)
+        .plot.barh()
+        )
+
+        #improving labels
+        ax.set_xlabel('Importance')
+        ax.set_ylabel('Features ')
+
+
+        #styling grid, leyend and title
+        plt.title('Feature Importance', ha='center', fontsize='x-large')
+        ax.set_facecolor("white")
+        plt.grid(axis='y', color='black', alpha=.2)
+```
+</span>
+
+|Total Features|Top Features|
+|---------|------|
+|<img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_models_fc1.png" alt="" width="100%"> | <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_models_fc2.png" alt="" width="100%"> |
+
+<span style="font-size:11px"> 
+
+``` python
+        #Random Forest  - All Features to observe the curve
+        from sklearn.inspection import permutation_importance
+        rf_model.feature_importances_
+        plt.barh(X.columns.values, rf_model.feature_importances_)     
+```
+</span>
+
+``` python
+        #Random Forest  - Top Features
+        (pd.Series(rf_model.feature_importances_, index=X.columns.values)
+        .sort_values(ascending=False)
+        .iloc[:10]
+        .plot.barh()
+        )
+        
+```
+</span>
+
+|Total Features|Top Features|
+|---------|------|
+|<img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_models_fc3.png" alt="" width="100%"> | <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_models_fc4.png" alt="" width="100%"> |
+</br>
+</br>
+
+Based on these features, we can identify some keywords and variables. 
+
+1- Regarding Variables:
+<br>
+        Understanding date_recorded_year &  date_released_year
+
+<span style="font-size:11px"> 
+
+``` python
+        df2=pd.concat([X,y], axis=1)
+        df_graph=df2.loc[:,['date_released_year', 'target']]
+        dfgraph_y=df_graph[df_graph.target==1]
+        dfgraph_n=df_graph[df_graph.target==0]
+
+
+
+        #improving graph
+        fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(13,5), sharex=True)
+
+        # #plotting first histogram
+        ax=(dfgraph_y.groupby(['date_released_year'])
+        .agg({'target':['sum']})
+        .plot( kind = 'bar',alpha=0.6, ax=ax,) 
+        )
+        # #plotting second histogram
+        ax=(dfgraph_n.groupby(['date_released_year'])
+        .agg({'target':['count']})
+        .plot( kind = 'bar',alpha=0.5, ax=ax, color='#76725e') 
+        )
+
+        # # #improving labels
+        ax.set_xlabel('')
+        ax.set_ylabel('Count Videos ')
+
+        #styling grid, leyend and title
+        plt.title('Released Year by Performing and Not Performing Videos', ha='center', fontsize='xx-large')
+        plt.legend(["Performing", "Not Performing"], loc='upper center',ncol=2, bbox_to_anchor=(0.5, 1.1), borderaxespad=2.6, facecolor="white")
+        ax.set_facecolor("white")
+        plt.grid(axis='y', color='black', alpha=.2)
+        
+```
+</span>
+<p align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_models_fc5.png" alt="Data Exploration" width="600">
+</p>
+<br>
+        Understanding date_relased_month
+
+<span style="font-size:11px"> 
+
+``` python
+        df2=pd.concat([X,y], axis=1)
+        df_graph=df2.loc[:,['date_released_month', 'target']]
+        dfgraph_y=df_graph[df_graph.target==1]
+        dfgraph_n=df_graph[df_graph.target==0]
+
+
+
+        #improving graph
+        fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(13,5), sharex=True)
+
+        # #plotting first histogram
+        ax=(dfgraph_y.groupby(['date_released_month'])
+        .agg({'target':['sum']})
+        .plot( kind = 'bar',alpha=0.6, ax=ax,) 
+        )
+        # #plotting second histogram
+        ax=(dfgraph_n.groupby(['date_released_month'])
+        .agg({'target':['count']})
+        .plot( kind = 'bar',alpha=0.5, ax=ax, color='#76725e') 
+        )
+
+        # # #improving labels
+
+        ax.set_xticks(ticks=range(0,12,1))  
+        ax.set_xticklabels(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dec'])
+        ax.set_xlabel('')
+        ax.set_ylabel('Count Videos ')
+
+        #styling grid, leyend and title
+        plt.title('Released Month by Performing and Not Performing Videos', ha='center', fontsize='xx-large')
+        plt.legend(["Performing", "Not Performing"], loc='upper center',ncol=2, bbox_to_anchor=(0.5, 1.1), borderaxespad=2.6, facecolor="white")
+        ax.set_facecolor("white")
+        plt.grid(axis='y', color='black', alpha=.2)
+```
+</span>
+<p align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_models_fc6.png" alt="Data Exploration" width="600">
 </p>
 
+#### *B) Rcommendation Model*
+<br>
+
+##### Build Model
+<br>
+<span style="font-size:11px"> 
+
+``` python
+        #define variables to use in model
+        review=df.description_1
+        title=df.title
+
+        #Define a TF-IDF Vectorizer Object. Remove all english stop words such as 'the', 'a'
+        tfidf = TfidfVectorizer(stop_words='english')#max_features=5000
+
+        #Construct the required TF-IDF matrix by fitting and transforming the data
+        tfidf_matrix = tfidf.fit_transform(review)
+
+        #Output the shape of tfidf_matrix
+        tfidf_matrix.shape
+
+        #create matrix
+        cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)
+
+        #extract indices
+        indices = (pd.Series(df.index, index=title)
+        .reset_index()
+        .drop_duplicates(subset=['title'], keep='first')
+        ).set_index('title')
+                
+        indices.columns=['index']
+        indices=indices.squeeze()
+
+
+        def get_recommendations(title, cosine_sim=cosine_sim):
+                '''
+                Function that returns ten indices of top talks based on model created above and a talk title passed
+                '''
+                # Get the index of the talk that matches the title
+                idx = indices[title]
+
+                #     Get the pairwsie similarity scores of all talks with that movie
+                sim_scores = list(enumerate(cosine_sim[idx]))
+                
+                #     Sort the talk based on the similarity scores
+                sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
+
+                #     Remove duplicates scores 
+                sim_scores=pd.Series(v[0] for v in sim_scores).drop_duplicates()
+
+                # Get the talk indices
+                recommendations=(
+                        df.title.iloc[sim_scores]
+                        .drop_duplicates()
+                        [1:11]
+                        .reset_index()
+                ).drop('index', axis=1)
+                
+                # Return the top 10 most similar values
+                return recommendations
+```
+</span>
+
+##### Test Models
+<br>
+<span style="font-size:11px"> 
+
+``` python
+        #selet talk
+        talk_liked='Can machines read your emotions?'
+
+
+        # change display option to be able to see ful title name
+        pd.set_option('display.max_colwidth', None)
+        get_recommendations(talk_liked)        
+```
+</span>
+
+<p align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_models_rc1.png" alt="" width="600">
+</p>
+
+<span style="font-size:11px"> 
+
+``` python
+        #compare results of recommendation engine
+        df_graph=df.query('title.str.contains("machines", "emotions")', engine='python')
+        df_graph[['author', 'title', 'likes']].drop_duplicates(subset='title').sort_values(by=['likes'], ascending=False)
+        
+```
+</span>
+
+<p align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_models_rc2.png" alt="" width="600">
+</p>
+
+<br>
+<br>
+
+#  CONCLUSIONS
+---
+***
+
+## General Findings
+
+#### * Which are the most viewed videos?
+Do schools kill creativity? from Sir Ken Robinson, 'The self-organizing computer course' from Shimon Schocken and 'Inside the mind of a master procrastinator' from Tim Urban are the top three videos in our dataset. 
+<br>
+#### * Is there a sustancial difference between liked and viewed?
+Views and likes are directly correlated, so there is very little difference in the classification videos have based on either of them. 
+<br>
+#### * Are there any authors that have presented more than once?
+Yes!, in fact many. And even though the majority only had up to 2 talks, there are some interetsing outliers like Alex Genndler who has 45 talks so far. 
+<br>
+#### * Which content categories are most viewed?
+Health, Society and Technology and general subjects. 
+<br>
+#### * Could the duration of the video affect the likebility of the videos?
+In most years, the distribution stays around the first 1000sec (16min40sec). However, in 2020 you can see a lot more liked videos that are far longer, reaching ~4000sec (1hr 46min). I like to think that this can be explained by the worldwide lockdowns during the pandemic, when people were stuck at home with few content options. In that context, it is likely people were more willing to spend more time on ted talks.
+<br>
+#### * When was the video published?
+The dataset contained mostly videos published after 2000. However, 8 outliers are present dating back to 1970.
+<br>
+<br>
+
+## Other techniques we can apply
+1) In order to answer properly the question 'Which content categories are made available the most?', we should compare the keywords used in the website with labels we can identify from the talks descriptions. For this we coul use a Name Entity Classifier (NEC) Model, such as this: 
+<br>
+
+<span style="font-size:11px"> 
+
+``` python
+        import spacy
+        from spacy import displacy
+
+        nlp = spacy.load("en_core_web_sm")
+
+
+        list_text = []
+        list_ent = []
+        count_row=0
+
+
+        for row in df.description_2:
+        count_row=count_row+1
+        text=row
+        doc = nlp(text)
+        #   displacy.render(doc, style='ent', jupyter=True)
+        for ent in doc.ents:
+        # print(ent.text, ent.label_)
+        list_text.append(ent.text)
+        list_ent.append(ent.label_)
+        
+
+        text_df = pd.DataFrame(list_text, columns=['text'])
+        text_df['ent'] = list_ent
+
+        print(text_df)
+```
+</span>
+<br>
+2) The question about "* What type of event was this part of? Was it a Women, or a specific location?" was not answered as the scrapping data did not contained this information. We would need to modify the scapping code in order to find those fields. 
+<br>
+<br>
+
+## Areas of improvements:
+1) We uncovered that when the data scrapped was joined with the kaggle data some values were dropped. Further investigation should go into why those talks were not succesfully scrapped in order to have more values in the data set
+<br>
+2) Another area of improvement is how we evaluate well performing videos in this analysis as we described a perforing video as one that had reached the 75% percentile. This of course would be an unfair measurement for the recently released videos. Given that we do not have different timestamps on the likes or views for each video, is we should evaluate a better way to estimate or compare recently released content so we can detect earlier when a new video might be performing well. 
+<br>
+
+3) More information on the authors. Understanding age, gender and nationality of authors, may answer questions related to diversity of the speakers. This data could be parcially scrapped from Wikipedia as there is a dedicated website that tracks this information. 
+https://en.wikipedia.org/wiki/List_of_TED_speakers
+
+<br>
+4) Improvements on recommendation engine. The current model's outputs does not perform well against a simple df.query using keywords from the title. The model currently used is based on TF-IDF (term frequency and Inverse Document frequency) applied to the talk description. The model could be improved by adding other variables available like: keywords, likes & author. 
