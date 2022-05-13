@@ -17,7 +17,7 @@ This project is a pretext to practice several data science techniques, including
 
 In order to make this project manageable I have divided it into several steps: 
 
-**STEP 1** - [OBTAINING DATA SET](#obtaining)</br>
+**STEP 1** - [OBTAINING DATA SET](#obtaining) </br>
 \--------------------------------------------
 
 * Identified potential questions</br>
@@ -28,24 +28,24 @@ In order to make this project manageable I have divided it into several steps:
 
 * Scrapped website for more information to further analyze</br>
 
- **STEP 3** - [PREPROCESSING THE DATA](#preprocessing)</br>
+ **STEP 3** - [PREPROCESSING THE DATA](#preprocessing) </br>
 \--------------------------------------------
 
 * Transformed the dataset obtained into organized panda Dataframes using pandas library</br>
 
-**STEP 4** - [DATA EXPLORATION](#exploration)</br>
+**STEP 4** - [DATA EXPLORATION](#exploration) </br>
 \--------------------------------------------
 
 * Applied Principal Component Analysis (PCA) to understand key columns of main dataset</br>
 * Applied Clustering based on identified most important PCA's</br>
 * Explored key variables: dates, duration, keywords</br>
 
-**STEP 5** - [ANALYSIS](#analysis)</br>
+**STEP 5** - [ANALYSIS](#analysis) </br>
 \--------------------------------------------
 
-* Answered main posed questions</br>
+* Answered main posed questions </br>
 
-**STEP 6** - [ML LEARNING](#ml)</br>
+**STEP 6** - [ML LEARNING](#ml) </br>
 \--------------------------------------------
 
 * Applied Regression Model to predict video with good performance and identified key features</br>
@@ -305,7 +305,8 @@ The result of this function is:
 ||author|	views|	likes|	title|	description_1|	duration_seg|	description_2|	date_recorded_year|	date_recorded_month|	date_released_year|	...	|'water'|	'weather'|	'windenergy'|	'women'|	'womeninbusiness'|	'work'|	'work-lifebalance'|	'writing'|	'youth'|	'ted'|
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 0|	Ozawa Bineshi Albert|	404000|	12000|	Climate action needs new frontline leadership|	"We can't rely on those who created climate ch...|	834|	"We can't rely on those who created climate ch...|	2021|	12|	2022|	...|	0|	0|	0|	0|	0|	0|	0|	0|	0|	1|
-Dataframe named: df     
+Dataframe named: df 
+
 </span >
 
 2)  A 'keywords.csv' file containing a list of keywords and number of times it appears in the data, example: 
@@ -340,6 +341,7 @@ Utilized thus matrix, I transformed the  'keywords.csv' into a dataframe with th
  |       4|	'aging'	 |       93|	        society	  |              8152092|	269034199|
  Dataframe named: df_dummies
 </div>
+
 </span>
 
 
@@ -354,7 +356,7 @@ Utilized thus matrix, I transformed the  'keywords.csv' into a dataframe with th
 
 With the two dataframes created on previous step, we proceed to apply data science techniques to understand the dataset and explore key variables.
 
-<span h4 style="text-decoration: underline">Principal Component Analysis (PCA)</span>
+## <span h4 style="text-decoration: underline">Principal Component Analysis (PCA)</span>
 
 
 Even through the dataset is intuitively simple to understand, I wanted to practice doing a PCA analysis, which is normally reserved for models with many variables. To do this I followed these steps: 
@@ -399,9 +401,9 @@ Even through the dataset is intuitively simple to understand, I wanted to practi
   <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_pca_1.png" alt="PC1 & PC2" width="600">
 </p>
 
-<span h4 style="text-decoration: underline">Clustering</span>
+## <span h4 style="text-decoration: underline">Clustering</span>
 
-1) Determining the number of clusters to use
+### 1) Determining the number of clusters to use
 
 By utilizing three separate methods of visualization, we arrived at the conclusion that 4 clusters would be the best solution for this data. 
 
@@ -420,7 +422,7 @@ The third method using a dendrogram is even more clear: there is a significant i
 |||
 </div>
 
-2) Assigning the clusters
+### 2) Assigning the clusters
 
 <span style="font-size:11px"> 
 
@@ -433,7 +435,7 @@ The third method using a dendrogram is even more clear: there is a significant i
 </span>
 
 
-3) Exploring clusters
+### 3) Exploring clusters
 
 - Determine how many values are on each cluster
 
@@ -481,7 +483,7 @@ The third method using a dendrogram is even more clear: there is a significant i
 </p>
 
 
-4) Describing the clusters
+### 4) Describing the clusters
 
 With the information provided above, we can describe the cluester as follows: 
 
@@ -922,7 +924,7 @@ Based on these features, we can identify some keywords and variables.
   <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_models_fc6.png" alt="Data Exploration" width="70%">
 </p>
 
-## <a name="recommend"> *B) Rcommendation Model*</a>
+## <a name="recommend"> *B) Recommendation Model*</a>
 <br>
 
 ##### Build Model
