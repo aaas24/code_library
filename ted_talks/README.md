@@ -573,7 +573,7 @@ Interestingly enough, in most years the majority of the videos liked stay below 
 
 <div align="center">
 
-|Elbow Method|Silouettes Method|
+|2019|2020|
 |---------|------|
 |<img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_analysis_6.png" alt="2019" width="100%"> | <img src="https://github.com/aaas24/code_library/raw/main/ted_talks/images/ted_talks_analysis_7.png" alt="2020" width="100%"> |
 </div>
