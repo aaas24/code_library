@@ -14,15 +14,13 @@ Wikipedia is one of the most solid references for data nowadays. It is persisten
 
 
 # Methodology: 
-
-
 Wikipedia does not allow web crawlers for downloading large number of articles. as stated in there [how-to download guide](https://en.wikipedia.org/wiki/Wikipedia:Database_download) as Wikipedia servers would not be able to cope with the constant pressure of scrapping the entire site. However, they have made available copies of the site that you can download in different formats, the easiest would be the latest copy of the state of all the pages. This will be the second method explored. 
 
 In the case that we do hold one specific url, there are different libraries that can be explored to assist in ths job, like pandas, beautifulsoup, scrapy and more. I will focus on exploring each of these libraries as the second method explored to understand what each library has to offer. 
 
 To get a full code view on this project, please see this [Jupyter Notebook](https://github.com/aaas24/code_library/tree/main/wikipedia/wikipedia.ipynb). 
 
-**Disclaimer**: I tried running all commands from the Jupyter notebook in an effort to test its capabilities, expand my knowledge on libraries, increase paper trail of chages and commands and reduce moving around different tools. This may have resulted in other inefficiencies that can be solved by directly running bash scripts. In order to run shell commands I utilized this function: 
+**Disclaimer**: I tried running all commands from the Jupyter notebook in an effort to test its capabilities, expand my knowledge on libraries, increase traces of code changes and reduce switching between tools. This may have resulted in other inefficiencies that can be solved by directly running scripts. In order to run shell commands I utilized this function: 
 
 ```python
     import subprocess
@@ -134,7 +132,13 @@ The resulting file shown below has several failed parsed rows while processing t
 ```
 </span> 
 
-The code above results in a clean file with many redirects rows. One potential improvement is to delete this REDIRECTS and, when failing to find a term, utilize the "enwiki-****-redirects.gz" file provided as part of the dumps
+The code above results in a clean file with many redirects rows, like this:  
+
+ <p align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/wikipedia/images/wiki_2.png" alt="Metadata Example" width="600">
+</p>
+
+One potential improvement is to delete this REDIRECTS and, when failing to find a term, utilize the "enwiki-****-redirects.gz" file provided as part of the dumps to find a different title page
 
 
 ## Method 2: Downloading a Wikipedia Article
