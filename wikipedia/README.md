@@ -6,17 +6,25 @@ date:   2022-05-15
 banner_preview: blog-350-250-python-b&w-2021-04-05.jpg
 banner_image: blog-1200-400-python-2021-04-05.jpg
 category: Coding
-tags: [python, analytics , dataengineering]
+tags: [python, dataengineering, re]
 ---
 
 Wikipedia is one of the most solid references for data nowadays. It is persistently updated and has become a reference in many books. I find myself constantly learning and searching it's data, so I thought it would be interesting to learn and document different methods to obtain information from it. 
+</br>
+</br>
 
+CONTENT
 
-
+[METHOD 1: DOWNLOADING ALL WIKIPEDIA](#method1) </br>
+[METHOD 2: DOWNLOADING SINGLE WIKIPEDIA ARTICLE](#method2) </br>
+[WIKIPEDIA LIBRARY](#wiki) </br>
+[BEAUTIFULSOUP](#bs) </br>
+[PANDAS](#pd) </br>
+</br>
 # Methodology: 
 Wikipedia does not allow web crawlers for downloading large number of articles. as stated in there [how-to download guide](https://en.wikipedia.org/wiki/Wikipedia:Database_download) as Wikipedia servers would not be able to cope with the constant pressure of scrapping the entire site. However, they have made available copies of the site that you can download in different formats, the easiest would be the latest copy of the state of all the pages. This will be the second method explored. 
 
-In the case that we do hold one specific url, there are different libraries that can be explored to assist in ths job, like pandas, beautifulsoup, scrapy and more. I will focus on exploring each of these libraries as the second method explored to understand what each library has to offer. 
+In the case that we do hold one specific url, there are different libraries that can be explored to assist in ths job, like pandas, beautifulsoup and more. I will focus on exploring each of these libraries as the second method explored to understand what each library has to offer. 
 
 To get a full code view on this project, please see this [Jupyter Notebook](https://github.com/aaas24/code_library/tree/main/wikipedia/wikipedia.ipynb). 
 
@@ -46,7 +54,8 @@ To get a full code view on this project, please see this [Jupyter Notebook](http
     runcmd("echo 'Hello World'", verbose = True)
 ```
 
-## Method 1: Downloading the entire Wikipedia Repository 
+## <a name="method1"> Method 1: Downloading the entire Wikipedia Repository  </a> 
+---
 
 ### Core libraries used: 
 
@@ -59,7 +68,7 @@ To get a full code view on this project, please see this [Jupyter Notebook](http
 ```
 </span>
 
-### Downloading Dump
+### Downloading & Decompressing Dump
 
 <span style="font-size:11px"> 
 
@@ -72,14 +81,7 @@ To get a full code view on this project, please see this [Jupyter Notebook](http
 
     # download latest wiki dump 
     runcmd("wget https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2", verbose = True)
-```
-</span> 
 
-### Decompressing Dump
-
-<span style="font-size:11px"> 
-
-```python
     # decompress file using #wikiextractor library
     runcmd("bzip2 -d /Users/alialvarez/Desktop/STUDIES/github/code_library/wikipedia/enwiki-latest-pages-articles.xml.bz2", verbose = True) 
 ```
@@ -140,32 +142,26 @@ The code above results in a clean file with many redirects rows, like this:
 
 One potential improvement is to delete this REDIRECTS and, when failing to find a term, utilize the "enwiki-****-redirects.gz" file provided as part of the dumps to find a different title page
 
+</br>
+</br>
 
-## Method 2: Downloading a Wikipedia Article
+## <a name="method2"> Method 2: Downloading a Wikipedia Article </a>
+---
 
 The article targeted is: 
 article=''
 
-### pandas library
+### <a name="wiki"> A) wikipedia library </a>
+This section follows the example laid by [ThePythonCode](https://www.thepythoncode.com/article/access-wikipedia-python), which uses the [wikipedia library](https://pypi.org/project/wikipedia/). As an example of how this works, we will be searching for pages/content related to "ted talk speakers", related yo our [ted talk project](https://github.com/aaas24/code_library/raw/main/ted_talks), hence: 
 
 <span style="font-size:11px"> 
 
-```python
-result=pd.read_html(article)
-print(result)
+```python  
+    subject='ted talk speakers' 
 ```
 </span> 
 
-### wikipedia library
-This section follows the example laid by [ThePythonCode](https://www.thepythoncode.com/article/access-wikipedia-python), which uses the [wikipedia library](https://pypi.org/project/wikipedia/)
-
-As an example of how this works, we will be searching for pages/content related to "ted talk speakers", related yo our [ted talk project](https://github.com/aaas24/code_library/raw/main/ted_talks), hence: 
-
-``` 
-subject='ted talk speakers' 
-```
-
-#### Search
+#### **Search**
 
 <span style="font-size:11px"> 
 
@@ -177,44 +173,165 @@ subject='ted talk speakers'
     search_result = wikipedia.search(subject)
     print('the search result is:')
     print(search_result)
-    result=search_result[1]
+    result=search_result[1] # this selects the first option of the tuple, which is the desired outcome in our case. You need to adapt this to your use case 
     print('')
     print('the selected page is:', result)
 ```
 </span> 
 
+ <p align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/wikipedia/images/wiki_3.png" alt="Search" width="600">
+</p>
+
+To obtain a URL base on the search result
+
 <span style="font-size:11px"> 
 
 ```python
-    # to obtain a URL base on the search result
     url=(result).replace(" ", "_")
     url= 'https://en.wikipedia.org/wiki/'+ url
-
     print(url)
+```
 </span> 
 
-#### Obtain Article Information
+#### **Article Information**
+
+Once you obtain the targeted URL, you can call the attributes title, summary, categories, etc.
+
+<span style="font-size:11px"> 
+
+```python
+    result=wikipedia.page(result)
+
+    #parse attributes library provides
+    title=result.title
+    summary = result.summary
+    categories=result.categories
+    content = result.content
+    links = result.links
+    references = result.references
+    html=result.html()
+
+    # print info
+    print("Page content:\n", content, "\n")
+    print("Page title:", title, "\n")
+    print("Categories:", categories, "\n")
+    print("Links:", links, "\n")
+    print("References:", references, "\n")
+    print("Summary:", summary, "\n")
+```
+</span> 
+
+For an example of the outputs, this [notebook](https://github.com/aaas24/code_library/blob/main/ted_talks/4_enhance_authors/Authors.ipynb)
 
 
+### <a name="bs"> B) beautifulSoup library</a>
 
-from here you can call the attributes title, summary, categories, etc, just like we did above
+The first step is obtaining the html: 
+
+<span style="font-size:11px"> 
+
+```python
+    from bs4 import BeautifulSoup
+    from urllib.request import urlopen
 
 
-### BeautifulSoup library
+    html = urlopen (url)
+    bsObj = BeautifulSoup(html.read (), 'html.parser')
+    print(bsObj)
+```
+</span> 
 
-### scrapy library
+Once we obtain the html code of the target website, we can use different methods to extract the parts of the text we wish to obtain.
+
+**B.1) The first method is using the findAll function in BeautifulSoup Library:**
+
+<span style="font-size:11px"> 
+
+```python
+    def tag_list(tag):
+        """
+        This function extracts the list of tags and returns the list. It uses the findAll function of BeautifulSoup
+        """
+        soup=bsObj
+        a=[]
+        content=soup.findAll(tag)
+        for item in content:
+            a.append(item.get_text())
+        return a
+```
+</span> 
+
+For example, if we wanted to extract a list of authors from this html: 
+
+<span style="font-size:11px"> 
+
+
+```python
+    authors= (tag_list("td")
+            [6:] #remove first 6 values that do not correspond to authors or talks
+            )
+```
+</span> 
+
+ <p align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/wikipedia/images/wiki_4.png" alt="Authors Example" width="600">
+</p>
+
+
+**B.2) The second method is using Regular Expressions**
+
+<span style="font-size:11px"> 
+
+```python
+    import re
+        
+    #Parse HTML to find urls of speakers 
+    txt = str(bsObj)
+    result=[]
+    reg='(?<=td>)(.*)(?=</td>)'
+
+    reobj = re.compile(reg)
+    for matchobj in reobj.finditer(txt):
+        result.append(matchobj[1 ])
+
+    for line in result:
+        print (line) 
+```
+</span> 
+
+
+For a more detailed example on regex use, please see this [notebook](https://github.com/aaas24/code_library/blob/main/ted_talks/4_enhance_authors/Authors.ipynb)
+
+### <a name="pd">  C) pandas library</a>
+
+It's almost obvious but still important to call out how easy panda makes this: 
+
+<span style="font-size:11px"> 
+
+```python
+    html=pd.read_html(url)
+
+    print(type(html))
+    print(html)
+```
+</span> 
+
 
 # Conclusions
 
-## Comparing libraries to download a wikipedia page
+## On downloading entire wikipedia
 
-|Library|Code||
-|--|--|--|
-|wikipedia||
-|panda||
-|beautiful soup||
-|||
 
+## On downloading an article
+
+### Comparing libraries to download a wikipedia article
+
+
+
+# Improvements
+
+- Include scrapy in comparison. This would be used in the case you would be targeting several website within wikipedia without exceeding a large number of articles that can risk infringing their policies. 
 
 
 <span style="font-size:11px"> 
@@ -223,3 +340,7 @@ from here you can call the attributes title, summary, categories, etc, just like
 
 ```
 </span> 
+
+ <p align="center">
+  <img src="https://github.com/aaas24/code_library/raw/main/wikipedia/images/wiki_1.png" alt="Metadata Example" width="600">
+</p>
