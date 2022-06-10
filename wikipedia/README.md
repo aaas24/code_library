@@ -10,6 +10,31 @@ tags: [python, dataengineering, re]
 ---
 
 Wikipedia is one of the most solid references for data nowadays. It is persistently updated and has become a reference in many books. I find myself constantly learning and searching it's data, so I thought it would be interesting to learn and document different methods to obtain information from it. 
+
+This project studies downloading the entire wikipedia data and how to quickly obtain a single article information. 
+
+As a summary, here is my assessment of the libraries used: 
+
+1=Least -> 5= Most
+
+**For all data dump:**
+|Concept|Wiki Dump Parser|Wiki Dump Reader
+|---------|------|------|
+|Ease to install|4|4|
+|Ease to use|4|4|
+|Output Value|3|5|
+|||
+
+</br>
+
+**For a Single article:**
+|Concept|Wikipedia|BeautifulSoup|Pandas|
+|---------|------|------|------|
+|Ease to install|4|3|5|
+|Ease to use|5|3|5|
+|Flexibility|4|5|3|
+|||
+
 </br>
 </br>
 
@@ -69,6 +94,11 @@ To get a full code view on this project, please see this [Jupyter Notebook](http
 </span>
 
 ### Downloading & Decompressing Dump
+
+This section requires having the following dependencies in your shell: 
+- wget
+- bzip2
+
 
 <span style="font-size:11px"> 
 
@@ -322,25 +352,34 @@ It's almost obvious but still important to call out how easy panda makes this:
 
 ## On downloading entire wikipedia
 
+The Wiki Dump Parser Library is very easy to utilize but the output requires further transformations as it does not correctly parses the text fields. If you require the ID or titles alone, it might be available on one of the file dumps released by wikipedia. However, for basic stats like bits or contributor name, it seems like a good start. 
+
+The Wiki Dump Reader provides a great markup result for a fast understanding of each article and could be fed into a ML model with ease. 
 
 ## On downloading an article
 
+The Wikipedia library is by far the most easy and robust to use to connect to the wikipedia API. However, since it pre-processes the output, BeautifulSoup offers more flexibility when targeting specific sections (such as tables). 
+
+BeautifuSoup is very powerful as it allows to target tags along all the html. However, it is not as easy to use because it is not a stand-alone package but rather requires the use 'requests' and some understanding of html & CSS. 
+
+Pandas out of the box read_html is convenient and easy to use. It provides a list of elements that can be cycled through quickly making it both simple and fast. 
+
 ### Comparing libraries to download a wikipedia article
 
+
+1=Least -> 5= Most
+
+|Concept|Wikipedia|BeautifulSoup|Pandas|
+|---------|------|------|------|
+|Ease to install|4|3|5|
+|Ease to use|5|3|5|
+|Flexibility|4|5|3|
 
 
 # Improvements
 
 - Include scrapy in comparison. This would be used in the case you would be targeting several website within wikipedia without exceeding a large number of articles that can risk infringing their policies. 
 
+- Compare output "enwiki-****-all-titles.gz" with Wiki Dump Parser Library
 
-<span style="font-size:11px"> 
-
-```python
-
-```
-</span> 
-
- <p align="center">
-  <img src="https://github.com/aaas24/code_library/raw/main/wikipedia/images/wiki_1.png" alt="Metadata Example" width="600">
-</p>
+- Delete this REDIRECTS and, when failing to find a term, utilize the "enwiki-****-redirects.gz" file provided as part of the dumps to find a different title page
