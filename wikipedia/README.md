@@ -15,7 +15,7 @@ This project studies downloading the entire wikipedia data and how to quickly ob
 
 As a summary, here is my assessment of the libraries used: 
 
-1=Least -> 5= Most
+Scale: 1=Least -> 5= Most
 
 **For all data dump:**
 |Concept|Wiki Dump Parser|Wiki Dump Reader
@@ -47,7 +47,7 @@ CONTENT
 [PANDAS](#pd) </br>
 </br>
 # Methodology: 
-Wikipedia does not allow web crawlers for downloading large number of articles. as stated in there [how-to download guide](https://en.wikipedia.org/wiki/Wikipedia:Database_download) as Wikipedia servers would not be able to cope with the constant pressure of scrapping the entire site. However, they have made available copies of the site that you can download in different formats, the easiest would be the latest copy of the state of all the pages. This will be the second method explored. 
+Wikipedia does not allow web crawlers for downloading large number of articles. As stated in there [how-to download guide](https://en.wikipedia.org/wiki/Wikipedia:Database_download), Wikipedia servers would not be able to cope with the constant pressure of scrapping the entire site. However, they have made available copies of the site that you can download in different formats, the easiest would be the latest copy of the state of all the pages. This will be the second method explored. 
 
 In the case that we do hold one specific url, there are different libraries that can be explored to assist in ths job, like pandas, beautifulsoup and more. I will focus on exploring each of these libraries as the second method explored to understand what each library has to offer. 
 
