@@ -619,6 +619,7 @@ Based on the Best Performing Models "XG-Boost", the key features are:
 * Global issues: culture, politics, climate change, planets, gender, virus
 * Other topics: music, sports, philosophy, art, health
 </br>
+
 #### Models
 
 ##### Preparing the data
@@ -1092,11 +1093,12 @@ The dataset contained mostly videos published after 2000. However, 8 outliers ar
 ## Areas of improvements:
 1) We uncovered that when the data scrapped was joined with the kaggle data some values were dropped. Further investigation should go into why those talks were not succesfully scrapped in order to have more values in the data set
 <br>
+
 2) Another area of improvement is how we evaluate well performing videos in this analysis as we described a perforing video as one that had reached the 75% percentile. This of course would be an unfair measurement for the recently released videos. Given that we do not have different timestamps on the likes or views for each video, is we should evaluate a better way to estimate or compare recently released content so we can detect earlier when a new video might be performing well. 
 <br>
 
 3) More information on the authors. Understanding age, gender and nationality of authors, may answer questions related to diversity of the speakers. This data could be parcially scrapped from Wikipedia as there is a dedicated website that tracks this information. 
 https://en.wikipedia.org/wiki/List_of_TED_speakers
-
 <br>
+
 4) Improvements on recommendation engine. The current model's outputs does not perform well against a simple df.query using keywords from the title. The model currently used is based on TF-IDF (term frequency and Inverse Document frequency) applied to the talk description. The model could be improved by adding other variables available like: keywords, likes & author. 
