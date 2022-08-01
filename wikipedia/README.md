@@ -1,13 +1,3 @@
----
-layout: post
-title:  "Wikipedia"
-description:  "Study ways to obtain data from Wikipedia"
-date:   2022-05-15
-banner_preview: blog-350-250-python-b&w-2021-04-05.jpg
-banner_image: blog-1200-400-python-2021-04-05.jpg
-category: Coding
-tags: [python, dataengineering, re]
----
 
 Wikipedia is one of the most solid references for data nowadays. It is persistently updated and has become a reference in many books. I find myself constantly learning and searching it's data, so I thought it would be interesting to learn and document different methods to obtain information from it. 
 
