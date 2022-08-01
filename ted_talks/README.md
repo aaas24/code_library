@@ -1,15 +1,3 @@
----
-layout: post
-title:  "Scraping, Analyzing & ML on TED Talks"
-description:  "Small project to analyze TED TALK data, predict well performing talks and recommend based on previous one liked"
-date:   2022-04-05
-banner_preview: blog-350-250-python-b&w-2021-04-05.jpg
-banner_image: blog-1200-400-python-2021-04-05.jpg
-category: Coding
-tags: [python, analytics , dataengineering, machinelearning]
----
-
-
 TED Talks is a fascinating source of content. Kaggle offers a dataset on [TED Talks](https://www.kaggle.com/datasets/ashishjangra27/ted-talks) posted on the website. As a TED Talk fan, I wanted to understand the type of resources available. 
 
 <!--more-->
