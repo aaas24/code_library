@@ -44,7 +44,7 @@ In order to make this project manageable I have divided it into several steps:
 </br>
 
 
-To follow along this project, I've made a copy of the source code in this [Github repository.](https://github.com/aaas24/code_library/tree/main/ted_talks)
+To follow along this project, I've made a copy of the source code in this [Colab](https://colab.research.google.com/drive/1hUwgmZU4HxKneeYMSu3fqX_Qs7ppFBUU?usp=sharing)
 </br>
 </br>
 </br>
