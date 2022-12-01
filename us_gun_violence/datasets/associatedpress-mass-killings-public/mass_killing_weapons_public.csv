@@ -1,0 +1,825 @@
+﻿incident_id,weapon_id,weapon_type,gun_class,gun_type
+2,2,gun,LG,shotgun
+3,3,gun,HG,pistol
+3,4,blunt object,NG,
+3,5,knife,NG,
+4,6,gun,HG,handgun
+4,7,gun,HG,handgun
+5,8,gun,HG,semiautomatic handgun
+6,9,gun,HG,semiautomatic handgun
+6,10,gun,HG,semiautomatic handgun
+7,11,gun,HG,handgun
+7,12,gun,HG,handgun
+8,13,gun,HG,handgun
+9,14,sharp object,NG,
+9,15,fire,NG,
+10,16,knife,NG,
+11,17,knife,NG,
+12,18,gun,HG,semiautomatic handgun
+13,19,gun,HG,semiautomatic handgun
+14,20,gun,LG,rifle
+14,21,gun,HG,semiautomatic handgun
+14,22,gun,HG,semiautomatic handgun
+15,23,gun,HG,semiautomatic handgun
+16,24,fire,NG,
+17,25,gun,LG,shotgun
+17,26,gun,HG,handgun
+17,27,sharp object,NG,
+18,28,gun,LG,rifle
+18,29,explosive,NG,
+19,30,gun,HG,handgun
+19,31,gun,HG,handgun
+19,32,gun,HG,handgun
+19,33,gun,HG,handgun
+20,34,gun,LG,rifle
+21,35,gun,LG,semiautomatic rifle
+22,36,gun,HG,handgun
+22,37,gun,HG,handgun
+22,38,knife,NG,
+23,39,gun,HG,handgun
+23,40,gun,HG,revolver
+24,41,gun,HG,handgun
+24,42,gun,HG,handgun
+24,43,gun,LG,shotgun
+25,44,gun,HG,semiautomatic handgun
+25,45,gun,HG,semiautomatic handgun
+26,46,strangulation ,NG,
+26,47,other,NG,
+27,48,gun,LG,shotgun
+27,49,gun,HG,revolver
+28,50,gun,LG,rifle
+28,51,knife,NG,
+28,52,blunt object,NG,
+29,53,gun,UG,
+30,54,blunt object,NG,
+31,55,gun,HG,revolver
+32,56,blunt object,NG,
+33,57,gun,HG,handgun
+34,58,fire,NG,
+35,59,knife,NG,
+36,60,gun,UG,
+37,61,gun,HG,semiautomatic handgun
+37,62,gun,LG,shotgun
+38,63,gun,HG,handgun
+38,64,gun,HG,handgun
+38,65,gun,HG,handgun
+38,66,knife,NG,
+39,67,gun,LG,rifle
+39,68,gun,LG,rifle
+40,69,gun,HG,handgun
+40,70,gun,HG,handgun
+41,71,gun,HG,semiautomatic handgun
+42,72,gun,HG,semiautomatic handgun
+42,73,knife,NG,
+43,74,gun,LG,shotgun
+43,75,gun,LG,rifle
+43,76,gun,HG,revolver
+44,77,knife,NG,
+44,78,gun,HG,semiautomatic handgun
+44,79,gun,HG,semiautomatic handgun
+45,80,gun,HG,semiautomatic handgun
+46,81,fire,NG,
+47,82,gun,HG,revolver
+48,83,strangulation ,NG,
+48,84,other,NG,
+49,88,gun,HG,semiautomatic handgun
+49,89,fire,NG,""
+50,90,gun,HG,semiautomatic handgun
+50,91,gun,LG,rifle
+51,92,gun,HG,handgun
+52,93,gun,HG,revolver
+52,94,gun,HG,semiautomatic handgun
+52,95,gun,HG,semiautomatic handgun
+53,96,sharp object,NG,
+54,97,gun,HG,handgun
+55,98,gun,HG,semiautomatic handgun
+56,99,gun,LG,rifle
+56,100,gun,HG,handgun
+56,101,knife,NG,
+57,102,gun,HG,handgun
+57,103,gun,LG,rifle
+57,104,gun,LG,rifle
+58,105,blunt object,NG,
+58,106,sharp object,NG,
+59,107,gun,HG,pistol
+60,108,gun,HG,semiautomatic handgun
+61,109,gun,LG,rifle
+62,110,gun,UG,
+63,111,gun,LG,shotgun
+64,112,gun,HG,semiautomatic handgun
+65,113,blunt object,NG,
+65,114,blunt object,NG,
+66,115,gun,UG,
+67,116,gun,HG,semiautomatic handgun
+67,117,knife,NG,
+67,118,blunt object,NG,
+68,119,gun,LG,shotgun
+69,120,gun,HG,semiautomatic handgun
+70,121,gun,HG,revolver
+70,122,gun,HG,handgun
+71,123,gun,HG,handgun
+72,124,gun,HG,handgun
+72,125,gun,HG,handgun
+73,126,fire,NG,
+74,127,sharp object,NG,
+74,128,fire,NG,
+75,129,gun,HG,handgun
+75,130,gun,HG,revolver
+76,131,gun,HG,semiautomatic handgun
+77,132,gun,LG,rifle
+78,133,gun,LG,rifle
+79,134,gun,LG,rifle
+79,135,gun,HG,semiautomatic handgun
+80,136,gun,LG,rifle
+80,137,gun,HG,handgun
+81,138,gun,HG,semiautomatic handgun
+82,139,fire,NG,
+83,140,gun,HG,semiautomatic handgun
+84,141,gun,HG,handgun
+85,142,fire,NG,
+86,143,gun,LG,rifle
+87,144,sharp object,NG,
+88,145,fire,NG,
+89,146,gun,HG,handgun
+90,147,gun,UG,
+91,148,gun,HG,handgun
+92,149,gun,HG,semiautomatic handgun
+93,150,gun,HG,revolver
+94,151,fire,NG,
+95,152,gun,UG,
+96,153,gun,LG,shotgun
+96,154,gun,HG,semiautomatic handgun
+96,155,gun,LG,rifle
+97,156,gun,HG,revolver
+97,157,gun,HG,semiautomatic handgun
+98,158,knife,NG,
+98,159,blunt object,NG,
+99,160,gun,LG,semiautomatic rifle
+100,161,gun,HG,handgun
+100,162,gun,HG,handgun
+100,163,gun,HG,handgun
+100,164,gun,LG,shotgun
+100,165,gun,UG,
+100,166,gun,UG,
+100,167,gun,UG,
+100,168,gun,LG,shotgun
+100,169,knife,NG,
+101,170,gun,HG,semiautomatic handgun
+101,171,gun,HG,revolver
+102,172,sharp object,NG,
+103,173,gun,HG,revolver
+104,174,vehicle,NG,
+105,175,gun,UG,
+105,176,strangulation ,NG,
+106,177,blunt object,NG,
+106,178,strangulation ,NG,
+107,179,strangulation ,NG,
+108,180,gun,HG,semiautomatic handgun
+109,181,gun,HG,handgun
+110,182,gun,LG,rifle
+111,183,gun,LG,rifle
+112,184,sharp object,NG,
+112,185,fire,NG,
+113,186,gun,HG,semiautomatic handgun
+113,187,gun,LG,shotgun
+113,188,gun,LG,rifle
+113,189,other,NG,
+113,190,knife,NG,
+113,191,knife,NG,
+113,192,blunt object,NG,
+114,193,gun,HG,handgun
+114,194,gun,HG,handgun
+115,195,sharp object,NG,
+116,196,gun,HG,revolver
+117,197,gun,HG,handgun
+117,198,gun,HG,handgun
+118,199,gun,HG,handgun
+119,200,gun,UG,
+120,201,gun,HG,handgun
+121,202,sharp object,NG,""
+121,203,fire,NG,
+122,204,gun,LG,rifle
+122,205,gun,LG,shotgun
+122,206,gun,HG,handgun
+122,207,gun,HG,handgun
+123,208,sharp object,NG,
+124,209,gun,UG,
+125,210,gun,HG,semiautomatic handgun
+125,211,gun,HG,revolver
+125,212,gun,HG,handgun
+126,213,gun,HG,semiautomatic handgun
+127,214,gun,HG,handgun
+127,215,gun,HG,handgun
+128,216,fire,NG,
+129,217,gun,HG,semiautomatic handgun
+130,218,gun,HG,semiautomatic handgun
+130,219,gun,LG,rifle
+131,220,gun,LG,rifle
+131,221,gun,LG,rifle
+131,222,gun,HG,handgun
+132,223,knife,NG,
+133,224,gun,LG,rifle
+133,225,gun,HG,revolver
+133,226,gun,LG,rifle
+133,227,gun,HG,semiautomatic handgun
+134,228,gun,HG,handgun
+134,229,gun,HG,handgun
+134,230,gun,LG,shotgun
+134,231,gun,LG,semiautomatic rifle
+135,232,gun,HG,handgun
+136,233,gun,LG,shotgun
+137,234,gun,LG,semiautomatic rifle
+138,235,gun,LG,rifle
+139,236,gun,HG,handgun
+140,237,gun,HG,revolver
+141,238,gun,HG,semiautomatic handgun
+142,239,gun,HG,semiautomatic handgun
+143,240,gun,LG,rifle
+143,241,gun,LG,rifle
+143,242,gun,HG,handgun
+143,243,gun,LG,shotgun
+143,244,gun,HG,handgun
+144,245,gun,HG,semiautomatic handgun
+145,246,gun,HG,handgun
+146,247,gun,HG,semiautomatic handgun
+147,248,gun,HG,semiautomatic handgun
+148,249,gun,HG,semiautomatic handgun
+148,250,blunt object,NG,
+148,251,strangulation ,NG,
+148,252,fire,NG,
+149,253,blunt object,NG,
+150,254,gun,HG,semiautomatic handgun
+150,255,gun,HG,semiautomatic handgun
+151,256,gun,HG,semiautomatic handgun
+151,257,gun,HG,semiautomatic handgun
+151,258,gun,HG,revolver
+151,259,gun,HG,semiautomatic handgun
+152,260,gun,UG,
+152,261,strangulation ,NG,
+152,262,strangulation ,NG,
+152,263,other,NG,
+153,264,gun,HG,pistol
+154,265,gun,HG,revolver
+155,266,gun,LG,rifle
+155,267,gun,LG,rifle
+155,268,gun,LG,shotgun
+155,269,gun,HG,handgun
+156,270,gun,HG,revolver
+157,271,gun,LG,rifle
+158,272,gun,UG,
+159,273,gun,HG,handgun
+160,274,gun,HG,semiautomatic handgun
+161,275,gun,HG,semiautomatic handgun
+162,276,gun,HG,handgun
+162,277,knife,NG,
+163,278,gun,UG,
+164,279,fire,NG,
+165,280,gun,HG,revolver
+165,281,gun,HG,semiautomatic handgun
+165,282,gun,LG,shotgun
+166,283,sharp object,NG,
+166,284,strangulation ,NG,
+166,285,fire,NG,
+167,286,gun,HG,revolver
+168,287,gun,HG,handgun
+169,288,gun,HG,handgun
+170,289,gun,HG,handgun
+170,290,gun,HG,revolver
+171,291,sharp object,NG,
+172,292,knife,NG,
+173,293,gun,LG,rifle
+173,294,gun,HG,handgun
+173,295,gun,HG,handgun
+173,296,gun,LG,rifle
+174,297,gun,HG,semiautomatic handgun
+175,298,gun,HG,semiautomatic handgun
+176,299,gun,HG,semiautomatic handgun
+176,300,gun,HG,semiautomatic handgun
+177,301,gun,HG,pistol
+177,302,gun,HG,revolver
+177,303,gun,LG,shotgun
+178,304,gun,HG,handgun
+178,305,blunt object,NG,
+179,306,gun,HG,revolver
+180,307,gun,UG,
+181,308,gun,LG,rifle
+181,309,gun,LG,rifle
+182,310,gun,HG,handgun
+183,311,other,NG,""
+184,312,sharp object,NG,
+184,313,blunt object,NG,
+184,314,strangulation ,NG,
+185,315,gun,HG,handgun
+185,316,gun,HG,handgun
+186,317,fire,NG,
+187,318,gun,LG,shotgun
+188,319,fire,NG,
+189,320,fire,NG,
+190,321,vehicle,NG,
+191,322,gun,UG,
+191,323,gun,UG,
+192,324,gun,LG,shotgun
+192,325,gun,HG,semiautomatic handgun
+193,326,gun,HG,semiautomatic handgun
+194,327,gun,LG,shotgun
+194,328,gun,LG,rifle
+194,329,gun,LG,rifle
+194,330,sharp object,NG,
+195,331,knife,NG,
+195,332,gun,LG,rifle
+195,333,gun,LG,rifle
+196,334,fire,NG,
+197,335,blunt object,NG,
+198,336,gun,HG,semiautomatic handgun
+199,337,gun,HG,semiautomatic handgun
+200,338,gun,UG,
+201,339,fire,NG,
+202,340,gun,UG,
+203,341,blunt object,NG,
+204,342,gun,LG,rifle
+204,343,gun,HG,revolver
+205,344,gun,HG,revolver
+206,345,gun,LG,shotgun
+207,346,gun,HG,semiautomatic handgun
+208,347,gun,HG,semiautomatic handgun
+209,348,gun,UG,
+209,349,explosive,NG,
+210,350,gun,HG,semiautomatic handgun
+211,351,gun,HG,semiautomatic handgun
+212,352,gun,LG,shotgun
+212,353,gun,HG,semiautomatic handgun
+213,354,gun,LG,semiautomatic rifle
+214,355,gun,UG,
+215,356,blunt object,NG,
+216,357,gun,LG,shotgun
+217,358,gun,UG,
+218,359,gun,HG,handgun
+219,360,gun,UG,
+220,361,blunt object,NG,
+221,362,gun,UG,
+222,363,strangulation ,NG,
+223,364,gun,UG,
+224,365,gun,HG,semiautomatic handgun
+225,366,gun,UG,
+226,367,gun,HG,semiautomatic handgun
+226,368,gun,HG,semiautomatic handgun
+226,369,knife,NG,
+227,370,gun,HG,revolver
+227,371,gun,HG,semiautomatic handgun
+228,372,knife,NG,
+228,373,fire,NG,
+229,374,gun,HG,handgun
+230,375,gun,UG,
+230,376,fire,NG,
+231,377,blunt object,NG,
+232,378,fire,NG,
+233,379,gun,UG,
+234,380,gun,HG,semiautomatic handgun
+235,381,gun,HG,handgun
+235,382,gun,HG,handgun
+236,383,knife,NG,
+237,384,gun,LG,semiautomatic rifle
+237,385,gun,HG,handgun
+238,386,sharp object,NG,
+238,387,vehicle,NG,
+239,388,gun,HG,pistol
+239,389,gun,HG,pistol
+239,390,gun,HG,pistol
+239,391,knife,NG,
+239,392,knife,NG,
+239,393,vehicle,NG,
+240,394,gun,UG,
+241,395,gun,HG,semiautomatic handgun
+242,396,gun,LG,shotgun
+243,397,gun,HG,semiautomatic handgun
+244,398,knife,NG,
+244,399,knife,NG,
+245,400,gun,HG,semiautomatic handgun
+245,401,blunt object,NG,
+246,402,blunt object,NG,
+246,403,strangulation ,NG,
+247,404,gun,LG,shotgun
+248,405,gun,HG,handgun
+249,406,knife,NG,
+249,407,blunt object,NG,
+250,408,gun,HG,semiautomatic handgun
+251,409,gun,HG,semiautomatic handgun
+252,410,gun,HG,semiautomatic handgun
+253,411,gun,HG,semiautomatic handgun
+254,412,gun,HG,semiautomatic handgun
+255,413,gun,HG,handgun
+255,414,knife,NG,
+255,415,knife,NG,
+255,416,sharp object,NG,
+255,417,sharp object,NG,
+256,418,gun,HG,semiautomatic handgun
+257,419,gun,UG,
+258,420,sharp object,NG,
+259,421,fire,NG,
+260,422,gun,HG,handgun
+261,423,gun,HG,handgun
+262,424,gun,HG,semiautomatic handgun
+263,425,gun,UG,
+264,426,gun,HG,semiautomatic handgun
+265,427,gun,HG,handgun
+266,428,gun,UG,
+267,429,blunt object,NG,
+268,430,gun,HG,semiautomatic handgun
+269,431,gun,UG,
+270,432,gun,HG,semiautomatic handgun
+271,433,gun,UG,
+272,434,gun,LG,rifle
+272,435,gun,LG,rifle
+272,436,gun,HG,handgun
+273,437,knife,NG,
+274,438,fire,NG,
+274,439,strangulation ,NG,
+275,440,sharp object,NG,
+276,441,gun,LG,rifle
+276,442,sharp object,NG,
+276,443,fire,NG,
+277,444,gun,UG,
+278,445,gun,LG,rifle
+279,446,gun,LG,shotgun
+280,447,gun,LG,shotgun
+281,448,gun,HG,pistol
+281,449,gun,HG,pistol
+281,450,gun,LG,semiautomatic rifle
+281,451,gun,HG,pistol
+281,452,gun,HG,revolver
+281,453,gun,HG,pistol
+282,454,vehicle,NG,
+283,455,gun,UG,
+284,456,gun,LG,shotgun
+284,457,blunt object,NG,
+285,458,gun,UG,
+285,459,fire,NG,
+286,460,gun,LG,rifle
+286,461,gun,LG,rifle
+286,462,gun,HG,semiautomatic handgun
+286,463,gun,HG,semiautomatic handgun
+286,464,gun,HG,handgun
+286,465,explosive,NG,
+286,466,explosive,NG,
+286,467,explosive,NG,
+286,468,explosive,NG,
+286,469,explosive,NG,
+286,470,explosive,NG,
+286,471,explosive,NG,
+286,472,explosive,NG,
+286,473,explosive,NG,
+286,474,explosive,NG,
+286,475,explosive,NG,
+287,476,gun,UG,
+288,477,gun,UG,
+289,478,gun,HG,handgun
+290,479,gun,UG,
+290,480,blunt object,NG,
+290,481,sharp object,NG,
+290,482,sharp object,NG,
+290,483,sharp object,NG,
+291,484,gun,HG,semiautomatic handgun
+292,485,gun,LG,shotgun
+292,486,gun,UG,
+293,487,gun,UG,
+294,488,gun,UG,
+295,489,gun,LG,semiautomatic rifle
+296,490,gun,LG,rifle
+296,491,gun,HG,semiautomatic handgun
+297,492,gun,HG,handgun
+298,493,gun,UG,
+299,494,gun,UG,
+300,495,gun,LG,semiautomatic rifle
+300,496,gun,HG,semiautomatic handgun
+301,497,gun,UG,""
+302,498,fire,NG,
+303,499,gun,LG,semiautomatic rifle
+303,500,gun,HG,semiautomatic handgun
+303,501,gun,HG,semiautomatic handgun
+304,502,gun,UG,
+305,503,gun,UG,
+306,504,sharp object,NG,
+307,505,blunt object,NG,
+308,506,gun,UG,
+308,507,blunt object,NG,
+309,508,gun,LG,rifle
+310,509,fire,NG,
+311,510,gun,UG,
+311,511,fire,NG,
+312,512,gun,UG,
+312,513,gun,UG,
+313,514,gun,UG,
+314,515,gun,UG,
+315,516,gun,UG,
+316,517,gun,UG,
+317,518,gun,HG,revolver
+318,519,gun,LG,shotgun
+318,520,blunt object,NG,
+318,521,strangulation ,NG,
+319,522,gun,UG,
+320,523,gun,UG,
+321,524,gun,UG,
+321,525,sharp object,NG,
+322,526,fire,NG,
+323,527,gun,HG,pistol
+323,528,sharp object,NG,
+324,529,gun,LG,rifle
+324,530,gun,HG,handgun
+325,531,blunt object,NG,
+326,532,gun,UG,
+327,533,blunt object,NG,
+328,534,gun,HG,semiautomatic handgun
+329,535,gun,UG,
+330,536,blunt object,NG,
+330,537,knife,NG,
+330,538,sharp object,NG,
+331,539,unknown,"",""
+332,540,fire,NG,
+333,541,gun,HG,handgun
+334,542,gun,HG,
+335,543,gun,HG,handgun
+336,544,sharp object,NG,
+337,545,gun,UG,
+338,546,gun,UG,
+339,547,blunt object,NG,
+340,548,gun,LG,semiautomatic rifle
+340,549,gun,LG,shotgun
+340,550,gun,HG,pistol
+341,551,gun,UG,
+342,552,gun,LG,semiautomatic rifle
+342,553,gun,LG,semiautomatic rifle
+342,554,gun,LG,semiautomatic rifle
+342,555,gun,LG,semiautomatic rifle
+342,556,gun,LG,semiautomatic rifle
+342,557,gun,LG,semiautomatic rifle
+342,558,gun,LG,semiautomatic rifle
+342,559,gun,LG,semiautomatic rifle
+342,560,gun,LG,semiautomatic rifle
+342,561,gun,LG,semiautomatic rifle
+342,562,gun,LG,semiautomatic rifle
+342,563,gun,LG,semiautomatic rifle
+342,564,gun,LG,semiautomatic rifle
+342,565,gun,LG,semiautomatic rifle
+342,566,gun,LG,semiautomatic rifle
+342,567,gun,LG,semiautomatic rifle
+342,568,gun,LG,semiautomatic rifle
+342,569,gun,LG,semiautomatic rifle
+342,570,gun,LG,semiautomatic rifle
+342,571,gun,LG,semiautomatic rifle
+342,572,gun,LG,semiautomatic rifle
+342,573,gun,LG,semiautomatic rifle
+342,574,gun,LG,rifle
+342,575,gun,HG,revolver
+343,576,sharp object,NG,
+344,577,gun,UG,
+345,578,gun,UG,
+345,579,sharp object,NG,
+346,580,gun,UG,
+346,581,sharp object,NG,
+347,582,gun,LG,rifle
+348,583,vehicle,NG,
+349,584,gun,LG,semiautomatic rifle
+349,585,gun,LG,semiautomatic rifle
+349,586,gun,HG,pistol
+349,587,gun,HG,pistol
+350,588,gun,UG,
+351,589,gun,HG,handgun
+351,590,gun,LG,rifle
+351,591,gun,LG,rifle
+352,592,gun,HG,handgun
+353,593,gun,LG,semiautomatic rifle
+354,594,gun,HG,handgun
+355,595,gun,LG,semiautomatic rifle
+356,596,gun,UG,
+357,597,gun,LG,shotgun
+357,598,gun,HG,revolver
+358,599,gun,HG,handgun
+359,600,gun,LG,rifle
+359,601,gun,LG,rifle
+359,602,gun,LG,shotgun
+359,603,gun,LG,shotgun
+359,604,gun,HG,handgun
+360,605,gun,LG,shotgun
+361,606,gun,UG,
+362,607,gun,HG,handgun
+363,608,gun,HG,revolver
+364,609,gun,HG,handgun
+365,610,gun,LG,shotgun
+365,611,gun,UG,
+366,612,gun,HG,handgun
+366,613,gun,HG,handgun
+366,614,gun,HG,handgun
+366,615,gun,LG,rifle
+367,616,gun,HG,semiautomatic handgun
+368,617,gun,UG,
+369,618,gun,HG,handgun
+369,619,knife,NG,
+370,620,gun,HG,handgun
+370,621,sharp object,NG,
+371,622,sharp object,NG,
+372,623,blunt object,NG,
+373,624,vehicle,NG,
+374,625,fire,NG,
+375,626,gun,UG,
+376,627,gun,HG,semiautomatic handgun
+377,628,gun,UG,
+378,629,gun,HG,handgun
+379,630,gun,HG,handgun
+380,631,gun,HG,semiautomatic handgun
+381,632,gun,UG,
+382,633,sharp object,NG,
+382,634,fire,NG,
+383,635,gun,UG,
+384,636,blunt object,NG,
+384,637,sharp object,NG,
+385,638,gun,UG,
+386,639,gun,HG,pistol
+386,640,gun,HG,pistol
+388,641,gun,UG,
+389,642,gun,HG,semiautomatic handgun
+390,643,gun,UG,
+391,644,gun,UG,
+392,645,fire,NG,
+393,646,gun,UG,
+394,647,gun,LG,shotgun
+395,648,sharp object,NG,
+396,649,gun,LG,rifle
+397,650,gun,HG,pistol
+399,652,gun,UG,
+399,653,knife,NG,
+400,654,sharp object,NG,
+402,656,gun,HG,handgun
+403,657,unknown,,
+404,658,gun,UG,
+405,659,gun,UG,
+406,660,gun,UG,
+407,661,blunt object,NG,
+408,662,gun,UG,
+408,663,gun,UG,
+409,664,gun,UG,
+411,665,gun,HG,handgun
+413,666,fire,NG,
+415,667,gun,HG,handgun
+418,668,gun,UG,
+419,669,gun,HG,revolver
+419,670,fire,NG,
+420,671,gun,UG,
+420,672,fire,NG,
+421,673,gun,HG,semiautomatic handgun
+421,674,gun,HG,semiautomatic handgun
+422,675,gun,HG,handgun
+423,676,gun,LG,shotgun
+424,677,gun,LG,semiautomatic rifle
+424,678,gun,LG,shotgun
+424,679,gun,HG,handgun
+424,680,gun,HG,handgun
+424,681,gun,HG,handgun
+424,682,explosive,NG,
+425,683,strangulation ,NG,
+426,684,sharp object,NG,
+427,685,sharp object,NG,
+428,686,gun,HG,handgun
+429,687,gun,HG,revolver
+430,688,gun,UG,
+433,691,gun,UG,""
+434,692,gun,LG,shotgun
+438,695,gun,HG,handgun
+439,696,gun,HG,handgun
+440,697,gun,UG,""
+441,698,gun,HG,handgun
+442,699,gun,UG,""
+444,701,gun,HG,handgun
+445,702,gun,UG,""
+446,703,gun,UG,""
+447,704,gun,UG,""
+448,705,gun,UG,""
+449,706,gun,UG,""
+451,708,gun,HG,pistol
+453,709,gun,HG,handgun
+457,712,gun,UG,""
+1,714,gun,HG,semiautomatic handgun
+436,715,gun,HG,handgun
+460,717,gun,HG,pistol
+462,718,gun,LG,semiautomatic rifle
+464,719,gun,HG,semiautomatic handgun
+436,720,gun,UG,""
+432,721,gun,HG,semiautomatic handgun
+432,722,gun,LG,semiautomatic rifle
+431,723,gun,HG,handgun
+424,725,gun,LG,semiautomatic rifle
+424,726,gun,HG,semiautomatic handgun
+424,727,gun,HG,pistol
+424,728,gun,HG,pistol
+401,729,gun,LG,semiautomatic rifle
+347,730,gun,HG,pistol
+347,731,gun,HG,pistol
+460,732,gun,HG,semiautomatic handgun
+465,733,gun,UG,""
+466,734,gun,HG,pistol
+466,735,gun,HG,pistol
+467,736,gun,LG,semiautomatic rifle
+467,737,gun,LG,semiautomatic rifle
+292,739,fire,NG,""
+299,740,fire,NG,""
+463,741,gun,UG,""
+437,742,other,NG,""
+438,743,gun,LG,semiautomatic rifle
+450,744,gun,LG,semiautomatic rifle
+450,745,blunt object,NG,""
+455,746,gun,HG,handgun
+455,747,gun,HG,semiautomatic handgun
+436,748,fire,NG,""
+469,749,gun,HG,semiautomatic handgun
+470,750,sharp object,NG,""
+470,751,other,NG,""
+471,752,gun,UG,""
+472,753,gun,HG,semiautomatic handgun
+472,754,gun,HG,semiautomatic handgun
+472,755,gun,HG,semiautomatic handgun
+473,756,fire,NG,""
+474,757,knife,NG,""
+476,758,gun,UG,""
+476,759,gun,UG,""
+477,760,gun,UG,""
+477,761,vehicle,NG,""
+478,762,gun,HG,handgun
+478,763,gun,LG,shotgun
+478,764,gun,LG,shotgun
+479,765,gun,LG,semiautomatic rifle
+479,766,gun,HG,handgun
+481,767,fire,NG,""
+480,768,vehicle,NG,""
+482,769,gun,LG,semiautomatic rifle
+483,770,gun,UG,""
+484,771,gun,UG,""
+485,772,gun,UG,""
+486,773,fire,NG,""
+488,774,gun,HG,handgun
+487,775,gun,LG,rifle
+491,777,gun,UG,""
+492,778,other,NG,""
+493,779,gun,HG,handgun
+493,780,gun,LG,shotgun
+494,781,gun,HG,semiautomatic handgun
+495,782,knife,NG,""
+468,783,gun,UG,""
+496,785,gun,UG,""
+497,786,gun,UG,""
+498,787,gun,LG,rifle
+498,788,gun,HG,handgun
+498,789,gun,LG,rifle
+499,790,gun,HG,semiautomatic handgun
+500,791,gun,UG,""
+501,792,gun,LG,semiautomatic rifle
+502,793,gun,UG,""
+503,794,gun,HG,semiautomatic handgun
+504,795,gun,UG,""
+506,796,gun,UG,""
+507,797,gun,LG,""
+505,798,blunt object,NG,""
+508,799,gun,LG,semiautomatic rifle
+510,800,gun,LG,semiautomatic rifle
+510,801,gun,HG,pistol
+499,802,gun,HG,semiautomatic handgun
+511,803,sharp object,NG,""
+511,804,gun,HG,handgun
+511,805,gun,LG,semiautomatic rifle
+513,806,gun,UG,""
+514,807,gun,LG,semiautomatic rifle
+515,808,gun,UG,""
+516,809,gun,UG,""
+516,810,strangulation ,NG,""
+517,811,gun,UG,""
+518,812,fire,NG,""
+518,813,gun,UG,""
+519,814,gun,UG,""
+431,815,gun,HG,pistol
+520,816,knife,NG,""
+522,818,gun,HG,semiautomatic handgun
+512,819,knife,NG,""
+512,820,fire,NG,""
+525,821,gun,UG,""
+524,822,fire,NG,""
+526,823,gun,UG,""
+297,824,gun,HG,pistol
+297,825,gun,LG,semiautomatic rifle
+527,826,gun,UG,""
+528,827,gun,UG,""
+529,828,gun,UG,""
+530,829,knife,NG,""
+532,830,gun,UG,""
+531,831,gun,UG,""
+533,832,gun,UG,""
+533,833,fire,NG,""
+534,834,gun,UG,""
+534,835,fire,NG,""
+535,836,gun,UG,""
+536,837,gun,UG,""
+537,838,gun,UG,""
+538,839,knife,NG,""
+539,840,other,NG,""
+540,841,gun,UG,""
+541,842,gun,LG,semiautomatic rifle
+541,843,gun,HG,handgun
+542,844,gun,UG,""
+543,845,gun,HG,handgun
