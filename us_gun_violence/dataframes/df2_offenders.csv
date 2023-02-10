@@ -1,0 +1,670 @@
+,incident_id,offender_id,firstname,middlename,lastname,suffix,age,race,sex,suicide,deathcause,outcome,criminal_justice_process,sentence_type,sentence_details
+0,1,1,Raul,,Segura-Rodriguez,,36.0,Hispanic/Latino,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+1,1,2,Arturo,,Ibarra,,37.0,Hispanic/Latino,Male,False,Shooting,Killed,Not applicable,,
+2,2,3,Stanley,,Neace,,47.0,White,Male,True,Shooting,Suicide,Not applicable,,
+3,3,4,Lee,Roy,Williams,Jr. ,51.0,Black,Male,False,,Life sentence,Plea,Life sentence,Four consecutive life sentences
+4,4,5,Dwayne,,Moore,,33.0,Black,Male,False,,Life without parole,Trial,Life sentence without parole,
+5,4,6,Edward,,Washington,,31.0,Black,Male,False,,Acquitted,Trial,Acquitted,
+6,4,7,Kimani,,Washington,,35.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,16-18 years
+7,5,8,Brian,,Diez,,26.0,White,Male,True,Shooting,Suicide,Not applicable,,
+8,6,9,Omar,S.,Thornton,,34.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+9,7,10,Darrell,Lynn,Bellard,,43.0,Black,Male,False,,Life sentence,Trial,Life sentence without parole,"Four consecutive life sentences without the possibility of parole, three more life sentences, and an additional 80 years in prison"
+10,7,11,Tkeisha,Nicole,Gilmer,,18.0,Black,Female,False,,Life sentence,Plea,Life sentence without parole,
+11,8,12,Riccardo,,McCray,,23.0,Black,Male,False,,Life without parole,Trial,Life sentence without parole,
+12,9,13,Leisa,,Jones,,30.0,Black,Female,True,Smoke inhalation and burns,Suicide,Not applicable,,
+13,10,14,Thomas,,Mortimer,IV,43.0,White,Male,False,,Life without parole,Plea,Life sentence without parole,Life sentence without the possibility of parole
+14,11,15,Michael,Eric,Ballard,,36.0,White,Male,False,,Death sentence,Plea,Death sentence,Death Sentence - execution date of 10/19/2015 but reprieve issued by Governor Tom Wolf 10/9/2015. Still on death row as of 3/9/2019
+15,12,16,Nerses,Arthur,Galstyan,,28.0,White,Male,False,,Life without parole,Trial,Life sentence without parole,Multiple life sentences
+16,13,17,James,A.,Larry,,33.0,Black,Male,False,,Life sentence,Plea,Life sentence,"Five natural life sentences, two 30-year prison sentences, and two 45-year prison sentences"
+17,14,18,Jeffrey,,Best,,21.0,Black,Male,False,,Life without parole,Trial,Life sentence without parole,Life sentence without the possibility of parole
+18,14,19,Orlando,,Carter,,20.0,Black,Male,False,,Life without parole,Trial,Life sentence without parole,Life sentence without the possibility of parole
+19,14,20,Nathaniel,D.,Simms,,26.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,25 years
+20,14,21,Robert,Leonard,Bost,,22.0,Black,Male,False,,Life without parole,Trial,Life sentence without parole,Life sentence without the possibility of parole
+21,14,22,Lamar,,Williams,,22.0,Black,Male,False,,Prison sentence,Trial,Prison sentence,30 years
+22,15,23,Damian,,Jordan,,22.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,80 years
+23,16,24,Daniel,,Ignacio,,27.0,Hispanic/Latino,Male,False,,Life with parole,Trial,Life sentence with parole,25 to Life sentence
+24,17,25,Maron,,Thomas,,20.0,Black,Male,False,,Life sentence,Trial,Life sentence without parole,
+25,18,26,Christopher,Brian,Speight,,39.0,White,Male,False,,Life sentence,Plea,Life sentence,Five life sentences and 18 years
+26,19,27,Marvin,,Stringer,,22.0,Black,Male,False,Shooting,Killed,Not applicable,,
+27,19,28,Samuel,Lee,Conway,,23.0,Black,Male,False,,Prison sentence,Trial,Prison sentence,"Trial, found guilty in 2011 but was given a new trial for reason of insanity set for 2014. In 2016 he pleaded guilty to lesser charges and admitted his involvement. Five counts of first degree murder, 40 years for each count, to run concurrently. Additional charges, including two counts of aggravated residential burglary and four counts of theft of property, were withdrawn."
+28,19,29,Jeremy,,Pickney,,23.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,"Consecutive prison terms of 30 and 20 years for aggravated residential burglary and theft by recieving over $2,500"
+29,20,30,James,Kraig,Kahler,,46.0,White,Male,False,,Death sentence,Trial,Death sentence,Death Sentence
+30,21,31,Marcos,Chavez,Gonzalez,,26.0,Hispanic/Latino,Male,False,,Life sentence,Plea,Life sentence without parole,Three life sentences without the possibility of parole
+31,22,32,Russell,,Hogshooter,,37.0,American Indian,Male,False,,Life without parole,Trial,Life sentence without parole,Life sentence without the possibility of parole
+32,22,33,David,Allen,Tyner,,28.0,American Indian,Male,False,,Life sentence,Plea,Life sentence,Six life sentences
+33,22,34,Denny,Edward,Phillips,,32.0,American Indian,Male,False,,Life sentence,Trial,Life sentence,0
+34,22,35,Johnathan,,Cochran,,38.0,American Indian,Male,False,,Prison sentence,Plea,Prison sentence,25 years
+35,23,36,Maurice,,Clemmons,,37.0,Black,Male,False,Shooting,Killed,Not applicable,,
+36,24,37,Russell,,Wilcox,,34.0,White,Male,True,Smoke inhalation and burns,Suicide,Not applicable,,
+37,25,38,Seung-Hui,,Cho,,23.0,Asian/Pacific Islander,Male,True,Shooting,Suicide,Not applicable,,
+38,26,39,Pedro,,Rodriguez,,28.0,Hispanic/Latino,Male,True,Strangulation,Suicide,Not applicable,,
+39,27,40,Sulejman,,Talovic,,18.0,White,Male,False,Shooting,Killed,Not applicable,,
+40,28,41,Mark,Secondino,Serrano,,29.0,Hispanic/Latino,Male,False,,Life with parole,Trial,Life sentence with parole,50 years to life
+41,28,42,Charles,W.,Gilleo,Jr.,31.0,White,Male,False,,Life sentence,Trial,Life sentence,Five consecutive life sentences
+42,29,43,,,,,,,,False,,Unsolved,Not applicable,,
+43,30,44,Daniel,J.,Sharp,,56.0,White,Male,False,,Prison sentence,Plea,Prison sentence,65 years
+44,30,45,Randy,Lee,Reeder,,50.0,White,Male,False,,Prison sentence,Trial,Prison sentence,260 years
+45,31,46,Hersel,Michael,Isadore,Jr.,35.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+46,32,47,Guy,William,Heinze,Jr.,22.0,White,Male,False,,Life without parole,Trial,Life sentence without parole,Life sentence without the possibility of parole
+47,33,48,Richard,,Ringold,,44.0,Black,Male,False,,Life sentence,Plea,Life sentence without parole,Life sentence without the possibility of parole plus 5 years
+48,34,49,Ronald,,Kemppainen,,47.0,White,Male,False,,Charges dropped,Trial,,Charges dropped following two mistrials
+49,35,50,Jacob,Levi,Shaffer,,30.0,White,Male,False,,Life sentence,Plea,Life sentence without parole,Life sentence without the possibility of parole; pleaded guilty to the murder of five people in Tennessee in July 2011 and was given a life sentence without the possibility of parole. In 2013 he pleaded guilty to a separate charge of murder for another individual as part of the same 2009 incident but having occurred earlier on the same day in Alabama.
+50,36,51,Adrian,Wayne,Burks,,37.0,Black,Male,False,,Life with parole,Plea,Life sentence with parole,200 years to life
+51,37,52,Christopher,Alan,Wood,,34.0,White,Male,True,Shooting,Suicide,Not applicable,,
+52,38,53,Jiverly,Antares,Wong,,41.0,Asian/Pacific Islander,Male,True,Shooting,Suicide,Not applicable,,
+53,39,54,James,,Harrison,,34.0,White,Male,True,Shooting,Suicide,Not applicable,,
+54,40,55,Devan,,Kalathat,,42.0,Asian/Pacific Islander,Male,True,Shooting,Suicide,Not applicable,,
+55,41,56,Lovelle,,Mixon,,26.0,Black,Male,False,Shooting,Killed,Not applicable,,
+56,42,57,Gevante,E.,Anderson,,24.0,Black,Male,False,,Life without parole,Trial,Life sentence without parole,Four life sentences without the possibility of parole
+57,43,58,Robert,Kenneth,Stewart,,45.0,White,Male,False,,Life sentence,Plea,Life sentence without parole,Life sentence without the possibility of parole
+58,44,59,Chiew,Chan,Saevang,,38.0,Asian/Pacific Islander,Male,True,Shooting,Suicide,Not applicable,,
+59,44,60,Yer,,Yang,,40.0,Asian/Pacific Islander,Female,False,Shooting,Killed,Not applicable,,
+60,45,61,Davon,,Crawford,,33.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+61,46,62,Caleb,,Lacey,,19.0,Black,Male,False,,Prison sentence,Trial,Prison sentence,25 years to life 
+62,47,63,Ervin,Antonio,Lupoe,,40.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+63,48,64,Joshua,Steven,Durcho,,25.0,White,Male,False,,Life without parole,Plea,Life sentence without parole,Life sentence without the possibility of parole
+64,49,65,Bruce,Jeffrey,Pardo,,45.0,White,Male,True,Shooting,Suicide,Not applicable,,
+65,50,66,Roberto,Aguirre,Rojas,,42.0,Hispanic/Latino,Male,False,,Life without parole,Plea,Life sentence without parole,"Life sentence without the possibility of parole plus $10,000 fine"
+66,51,67,Karthik,,Rajaram,,45.0,Asian/Pacific Islander,Male,True,Shooting,Suicide,Not applicable,,
+67,52,68,Jose,A.,Cornejo-Garcia,,22.0,Hispanic/Latino,Male,False,,Life without parole,Trial,Life sentence without parole,Three consecutive life sentences
+68,52,69,Mario,A.,Funes,,26.0,Hispanic/Latino,Male,False,,Life without parole,Trial,Life sentence without parole,Three consecutive life sentences
+69,52,70,Rigoberto,,Funes,,20.0,Hispanic/Latino,Male,False,,Life without parole,Trial,Life sentence without parole,Three consecutive life sentences
+70,52,71,Renil,,Escobar-Rivera,,29.0,Hispanic/Latino,Male,False,,Life without parole,Trial,Life sentence without parole,
+71,52,72,Pedro,,Navarrete-Duran,,32.0,Hispanic/Latino,Male,False,,Life without parole,Trial,Life sentence without parole,Three consecutive life sentence without the possibility of parole
+72,53,73,Corey,Lynn,King,,18.0,Black,Male,False,,Death sentence,Trial,Death sentence,Execution not yet scheduled
+73,54,74,Luis,,Cruz,,54.0,Hispanic/Latino,Male,True,Shooting,Suicide,Not applicable,,
+74,55,75,Rolando,,Terrell,,36.0,Black,Male,False,,Life sentence,Trial,Life sentence without parole,"Life sentence; first trial in 2011, jury found him guilty on robbery and conspiracy to commit arson charges but could not reach a verdict on any of the murder counts, for which a judge gave him a life sentence due to his extensive criminal history. Appealed this decision and at a second trial in 2012 was found guilty on four charges of murder and four counts of felony murder and was sentenced to 300 years in prison (75 years/count). This conviction was appealed and held up by a three judge appellate, with one judge dissenting that Terrell's charges should be overturned because he was not given a fair trial due to testimonial admissions and failure to dismiss biased jurors."
+75,55,76,Lester,,Hayes,,47.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,Initially charged with murder but changed to a guilty plea to a lesser charge of conspiracy to commit robbery in exchange for testimony against co-offender Rolando Terrell. Expected to recieve 20 years.
+76,56,77,Isaac,L.,Zamora,,28.0,White,Male,False,,Life sentence,Plea,Life sentence,
+77,57,78,Antonio,D.,Williams,,26.0,Black,Male,False,,Life sentence,Trial,Life sentence without parole,Life sentence without the possibility of parole
+78,57,79,James,R.,Washington,,29.0,Black,Male,False,,Life sentence,Trial,Life sentence without parole,"Life sentence; four consecutive life sentences without the possibility of release and ordered to pay approximately $22,000 in restituiton"
+79,57,80,Rosario,C.,Fuentez,,25.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,"20 years; Confessed and testified against two co-offenders, pleaded guilty to four counts of reckless homicide, party to a crime, in exchange for the Assistant District Attorney's recommendation of a 20 year sentence."
+80,58,81,"Tae ""Steve""",Won,Kwon,,27.0,Asian/Pacific Islander,Male,False,,Life with parole,Plea,Life sentence with parole,125 years to life
+81,58,82,Jae,Hwan,Shim,,39.0,Asian/Pacific Islander,Male,False,,Life without parole,Plea,Life sentence without parole,Life sentence without the possibility of parole
+82,59,83,Wesley,Neal,Higdon,,25.0,White,Male,True,Shooting,Suicide,Not applicable,,
+83,60,84,John,David,Young,,38.0,White,Male,True,Shooting,Suicide,Not applicable,,
+84,61,85,Salvador,Perez,Alfaro,,42.0,Hispanic/Latino,Male,True,Shooting,Suicide,Not applicable,,
+85,62,86,Arthur,,Brown,,24.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,24 years
+86,62,87,Michael,,King,,27.0,Black,Male,False,,Life sentence,Trial,Life sentence,Five consecutive life sentences plus 15 years
+87,62,88,Torolan,,Williams,,22.0,Black,Male,False,,Life sentence,Trial,Life sentence,Five consecutive life sentences plus 20 years
+88,63,89,Nathaniel,Casey,Dickson,,18.0,White,Male,False,,Life sentence,Plea,Life sentence without parole,Life sentence without the possibility of parole
+89,64,90,Lee,Isaac,Bedwell Leeds,,32.0,White,Male,False,,Prison sentence,Trial,Prison sentence,100 years
+90,65,91,Steven,,Sueppel,,42.0,White,Male,True,Vehicle crash,Suicide,Not applicable,,
+91,67,93,Jessie,,Dotson,,33.0,Black,Male,False,,Death sentence,Trial,Death sentence,"Death sentence; six counts of first degree murder and an imposed death sentence for each of the six convictions, as well as three counts of attempted first degree murder carrying three consecutive 40-year prison sentences. Dotson was previously found guilty of second degree murder and served 14 years in prison for that conviction, having been released shortly before this incident. Dotson is awaiting execution as of 3/3/2018."
+92,68,94,Orland,,Cho,,41.0,Asian/Pacific Islander,Male,True,Shooting,Suicide,Not applicable,,
+93,69,95,Nicholas,W.,Browning,,15.0,White,Male,False,,Sentenced as juvenile,Plea,Life sentence with parole,"Four consecutive life sentences, two served consecutively; elgible for parole in 23 years with good behavior. Denied appeal in 2014 to reduce the four life sentences."
+94,70,96,Charles,Lee,Thornton,,52.0,Black,Male,False,Shooting,Killed,Not applicable,,
+95,71,97,Rusty,L.,Rumley,Jr.,26.0,White,Male,True,Shooting,Suicide,Not applicable,,
+96,72,98,Ronald,,Davis,,30.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,245 years
+97,72,99,Jasper,,Frazier,,36.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,70 years
+98,72,100,Dante,,Hobson,,30.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,35 years
+99,72,101,Zarumin,,Coleman,,21.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,60 years
+100,72,102,Tommy,,Warren,,24.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,10 years
+101,73,103,Michael,,Davis,,18.0,White,Male,False,,Life sentence,Trial,Life sentence with parole,Life sentence with elgibility for parole after 30 years
+102,74,104,Michel,,Veillette,,34.0,White,Male,True,Asphyxiation,Suicide,Not applicable,,
+103,75,105,Michele,Kristen,Anderson,,29.0,White,Female,False,,Life sentence,Trial,Life sentence without parole,Life sentence without the possibility of parole
+104,75,106,Joseph,Thomas,McEnroe,,29.0,White,Male,False,,Life sentence,Trial,Life sentence without parole,Life sentence without the possibility of parole
+105,76,107,Matthew,,Blixt,,17.0,White,Male,True,Shooting,Suicide,Not applicable,,
+106,77,108,David,Peter,Brockdorff,,40.0,White,Male,True,Shooting,Suicide,Not applicable,,
+107,78,109,Patrick Albert,Young,Smith,,31.0,Black,Male,False,,Life without parole,Trial,Life sentence without parole,
+108,79,110,Tyler,,Peterson,,20.0,White,Male,True,Shooting,Suicide,Not applicable,,
+109,80,111,Vincent,,Smothers,,26.0,White,Male,False,,Prison sentence,Plea,Prison sentence,52 years
+110,81,112,Paul,Gilbert,Devoe,III,43.0,White,Male,False,,Death sentence,Trial,Death sentence,Execution not yet scheduled
+111,82,113,Sheree,Dionne,Murphy,,45.0,Black,Female,False,,Life sentence,Trial,Life sentence,Five consecutive life terms plus 20 years
+112,83,114,Ambrosio,Analco,Ramirez,,23.0,Hispanic/Latino,Male,True,Shooting,Suicide,Not applicable,,
+113,84,115,Terrance,,Robinson,,22.0,Black,Male,False,,Life sentence,Trial,Life sentence,Life sentence
+114,85,116,Wayne,Stanton,Powell,,41.0,Black,Male,False,,Death sentence,Trial,Death sentence,Death sentence ; scheduled for 5/7/2014 but a stay of execution was granted on 1/17/2013 until all appeals are exhausted
+115,86,117,Shawn,Michael,Bentler,,22.0,White,Male,False,,Life sentence,Trial,Life sentence,Four life sentences consecutively and one concurrently
+116,87,118,Said,Ali,Biyad,,42.0,Black,Male,False,,Life sentence,Trial,Life sentence without parole,Life sentence without the possibility of parole
+117,88,119,Valerie,,Moore,,47.0,Black,Female,False,,Life without parole,Plea,Life sentence without parole,12 consecutive life sentences
+118,89,120,Michael,,Simmons,,41.0,Black,Male,False,,Incompetent,Incompetent,Committed,Incompetent to stand trial/held at mental health facility indefinitely 
+119,90,121,,,,,,,,False,,Unsolved,Not applicable,,
+120,91,122,Kevin,,Amison,,21.0,Black,Male,False,,Charges dropped,Trial,,2008 trial ended in a mistrial and first-degree murder charges against Kevin Amison were dropped
+121,91,123,Raymond,,Amison,,18.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,10 years
+122,92,124,Telly,,Hankton,,30.0,Black,Male,False,,Life sentence,Trial,Life sentence,already serving life sentence
+123,93,125,Kelvin,W.,Kaigler,,28.0,Black,Male,False,,Life sentence,Trial,Life sentence without parole,"Four consecutive life sentences on their four convictions of first degree murder, to be served concurrently, without the possibility of parole."
+124,93,126,James,A.,Bishop,,42.0,Black,Male,False,,Life sentence,Trial,Life sentence without parole,"Four consecutive life sentences on their four convictions of first degree murder, to be served concurrently, without the possibility of parole."
+125,93,127,Frank,,Knight,,33.0,,Male,False,,Prison sentence,Plea,Prison sentence,"20 years; Pled guitly to accessory after the after for first degree murder and distribution of cocaine, with the agreement he would get a minimum of 15 years and a maximum of 35 years in exchange for testimony against his co-defendents. Sentenced to 5 years for the accessory charge and 20 years for the cocaine charge, with the two sentences to run together."
+126,94,128,Lorenzo,,Collins,,42.0,Black,Male,False,,Prison sentence,Trial,Prison sentence,111 years to life
+127,94,129,Collins,,Bennett,,39.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,16 years
+128,95,130,,,,,,,,False,,Unsolved,Not applicable,,
+129,96,131,Kyle,Aaron,Huff,,28.0,White,Male,True,Shooting,Suicide,Not applicable,,
+130,97,132,William,Craig,Miller,,28.0,White,Male,False,,Death sentence,Trial,Death sentence,Sentenced to death on five counts of first degree murder.  
+131,98,133,Ricky,Jovan,Gray,,28.0,Black,Male,False,,Death sentence,Trial,Death sentence,
+132,98,134,Ray,Joseph,Dandridge,,28.0,Black,Male,False,,Life without parole,Plea,Life sentence without parole,
+133,99,135,Robert,A.,Hawkins,,19.0,White,Male,True,Shooting,Suicide,Not applicable,,
+134,100,136,Steven,Phillip,Kazmierczak,,27.0,White,Male,True,Shooting,Suicide,Not applicable,,
+135,101,137,Nidal,Malik,Hasan,,39.0,White,Male,False,,Death sentence,Trial,Death sentence,Execution not yet scheduled
+136,102,138,Ronald,Lee,Shrieves,,32.0,Black,Male,False,,Life without parole,Plea,Life sentence without parole,Four consecutive life sentences without the possibility of parole
+137,103,139,Anthony,,Bell,,25.0,Black,Male,False,,Death sentence,Trial,Death sentence,"Conviction appealed multiple times but upheld by the Louisiana Supreme Court in 2010, the U.S. Supreme Court in 2011, and the Louisiana Supreme Court again in 2017. Bell has exhausted his state post-conviction appeals. "
+138,104,140,Kevin,,Cales,,32.0,White,Male,False,Blunt force,Prison sentence,Trial,Prison sentence,79 Years
+139,105,141,Jason,,Howard,,24.0,Black,Male,False,,Charges dropped,Charges dropped,,
+140,106,142,Jesse,Dee,Wise,Jr.,21.0,Black,Male,False,,Life without parole,Plea,Life sentence without parole,Life sentence without the possibility of parole
+141,107,143,Angelica,Salazar,Alvarez,,27.0,Hispanic/Latino,Female,False,,Life sentence,Plea,Life sentence without parole,Life sentence without the possibility of parole
+142,108,144,Jessi,Ashton,Jephson,,20.0,White,Male,False,,Life without parole,Plea,Life sentence without parole,Three consecutive life sentences plus 58 years
+143,109,145,Jennifer,,Sanmarco,,44.0,White,Female,True,Shooting,Suicide,Not applicable,,
+144,110,146,Trevor,,Branscum,,38.0,White,Male,True,Shooting,Suicide,Not applicable,,
+145,111,147,James,,Stewart,,30.0,Black,Male,False,,Life sentence,Trial,Prison sentence,425 years
+146,111,148,Desmond,,Turner,,28.0,Black,Male,False,,Life sentence,Trial,Life sentence without parole,Life sentence without the possibility of parole
+147,112,149,Conner,Michael,Schierman,,24.0,White,Male,False,,Death sentence,Trial,Death sentence,
+148,113,150,Charles,Carl,Roberts,IV,32.0,White,Male,True,Shooting,Suicide,Not applicable,,
+149,114,151,Daniel,,Troya,,25.0,Hispanic/Latino,Male,False,,Death sentence,Trial,Death sentence,Two death sentences and four life sentences
+150,114,152,Daniel,,Varela,,28.0,Hispanic/Latino,Male,False,,Life sentence,Trial,Life sentence,Two life sentences plus 60 years
+151,114,153,Liana,Lee,Lopez,,20.0,Hispanic/Latino,Female,False,,Prison sentence,Trial,Prison sentence,15 years
+152,114,154,Ricardo,,Sanchez,,25.0,Hispanic/Latino,Male,False,,Death sentence,Trial,Death sentence,Two death sentences and four life sentences
+153,115,155,Mesac,,Damas,,33.0,Black,Male,False,,Death sentence,Plea,Death sentence,
+154,116,156,Patrick,Alexander,Dell,,41.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+155,117,157,Paul,Michael,Merhige,,35.0,White,Male,False,,Life sentence,Plea,Life sentence without parole,Seven life sentences
+156,118,158,Gerardo,,Regalado,,38.0,Hispanic/Latino,Male,True,Shooting,Suicide,Not applicable,,
+157,119,159,Henry,J.,Segura,,32.0,Black,Male,False,,Life without parole,Trial,Life sentence without parole,Life sentence without the possibility of parole
+158,120,160,James,Edward,Bannister,Sr.,31.0,Black,Male,False,,Life without parole,Trial,Life sentence without parole,Four consecutive life sentences
+159,121,161,Henry,Lee,Stringer,,34.0,Black,Male,False,,Life sentence,Plea,Life sentence without parole,Life sentence without the possibility of parole
+160,122,162,James,Eagan,Holmes,,24.0,White,Male,False,,Life without parole,Trial,Life sentence without parole,"12 life sentences plus 3,318 years"
+161,123,163,Joseph,,Hill,,27.0,Black,Male,False,,Life sentence,Plea,Life sentence without parole,5 life sentences without the possibility of parole
+162,123,164,Dexter,Bernard,Lewis,,22.0,Black,Male,False,,Life sentence,Trial,Life sentence without parole,5 life sentences without the possibility of parole
+163,123,165,Lynell,Jonathan,Hill,,24.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,70 years
+164,124,166,,,,,,,,False,,Unsolved,Not applicable,,
+165,125,167,Scott,Evans,Dekraai,,43.0,White,Male,False,,Life sentence,Plea,Life sentence without parole,8 terms of life in prison without the possibility of parole
+166,126,168,Jared,Lee,Loughner,,22.0,White,Male,False,,Life without parole,Plea,Life sentence without parole,
+167,127,169,Azizolah,,Yazdanpanah,,56.0,White,Male,True,Shooting,Suicide,Not applicable,,
+168,128,170,Tuan,,Dao,,37.0,Asian/Pacific Islander,Male,True,Smoke inhalation and burns,Suicide,Not applicable,,
+169,129,171,Tan,Quoc,Do,,35.0,Asian/Pacific Islander,Male,True,Shooting,Suicide,Not applicable,,
+170,130,172,David,E.,Ison,,46.0,White,Male,False,,Life without parole,Plea,Life sentence without parole,Life sentence without the possibility of parole
+171,131,173,Shayne,Franklin Samuel,Riggleman,,22.0,White,Male,True,Shooting,Suicide,Not applicable,,0
+172,132,174,John,Moses,Ragin,,36.0,Black,Male,False,,Life without parole,Trial,Life sentence without parole,Three life sentences plus 40 years
+173,133,175,Eduardo,,Sencion,,32.0,Hispanic/Latino,Male,True,Shooting,Suicide,Not applicable,,
+174,134,176,Everett,,Conant,III,35.0,White,Male,False,,Life with parole,Plea,Life sentence with parole,"Five life sentences, possibility of parole after four life sentences "
+175,135,177,David,,Laffer,,33.0,White,Male,False,,Life sentence,Plea,Life sentence without parole,5 consecutive life terms without the possibility of parole
+176,136,178,Esteban,Quintero,Gonzales,,37.0,Hispanic/Latino,Male,True,Shooting,Suicide,Not applicable,,
+177,137,179,,,,,,,,False,,Unsolved,Not applicable,,
+178,138,180,Alan,M.,Atwater,,31.0,White,Male,True,Shooting,Suicide,Not applicable,,
+179,139,181,Susan,Diane,Hendricks,,48.0,White,Female,False,,Life sentence,Plea,Life sentence without parole,Life sentence without the possibility of parole
+180,140,182,Jose,,Avila-Alva,,27.0,Hispanic/Latino,Male,True,Shooting,Suicide,Not applicable,,
+181,141,183,Ka,,Pasasouk,,31.0,Asian/Pacific Islander,Male,False,,Death sentence,Trial,Death sentence,
+182,142,184,Andrew,J.,Engeldinger,,36.0,White,Male,True,Shooting,Suicide,Not applicable,,
+183,143,185,Adam,Peter,Lanza,,20.0,White,Male,True,Shooting,Suicide,Not applicable,,
+184,144,186,Jeong,Soo,Paek,,59.0,Asian/Pacific Islander,Male,True,Shooting,Suicide,Not applicable,,
+185,145,187,Wade,Michael,Page,,40.0,White,Male,True,Shooting,Suicide,Not applicable,,
+186,146,188,One,L.,Goh,,43.0,Asian/Pacific Islander,Male,False,,Life without parole,Plea,Life sentence without parole,Seven life sentences
+187,147,189,Jason,Todd,Ready,,39.0,White,Male,True,Shooting,Suicide,Not applicable,,
+188,148,190,Nikolay,,Lazukin,,27.0,White,Male,True,Shooting,Suicide,Not applicable,,
+189,149,191,Binh,Thai,Luc,,35.0,Asian/Pacific Islander,Male,False,,Life sentence,Trial,Life sentence without parole,Five consecutive life terms without the possibility of parole
+190,150,192,Ian,Lee,Stawicki,,40.0,White,Male,True,Shooting,Suicide,Not applicable,,
+191,151,193,Rashad,,Stoves,,17.0,Black,Male,False,,Life sentence,Trial,Life sentence with parole,"Six life sentences to run concurrently, could eventually be eligible for parole. Jury found him guilty of five counts of felony murder and one count of reckless manslaughter (lesser sentence than six counts of capital murder which he was originally charged with)"
+192,151,194,Reginald,,Mims,,16.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,"25 years; Pled guilty to six charges of felony murder and sentenced to 25 years for each charge, to run concurrently"
+193,151,195,Artavius,,Underwood,,16.0,Black,Male,False,,Life sentence,Plea,Life sentence with parole,Life sentence with the possibility of parole. Will be eligible for parole in less than 15 years from January 2019 sentencing.
+194,152,196,Zakkawanda,,Moss,,35.0,Black,Male,False,,Life sentence,Trial,Life sentence,Six consecutive life sentences
+195,152,197,Henry,Lee,Burrell,,36.0,Black,Male,False,,Life sentence,Plea,Life sentence,Two consecutive life sentence
+196,153,198,Frank,,Garcia,,35.0,Hispanic/Latino,Male,False,,Life sentence,Trial,Life sentence without parole,"Four life sentences. A fifth life term, connected to an attempted first degree murder charge, was later reduced to 25 years to life. "
+197,154,199,Tonya,Shantez,Thomas,,33.0,Black,Female,True,Shooting,Suicide,Not applicable,,
+198,155,200,Michael,Kenneth,McLendon,,28.0,White,Male,True,Shooting,Suicide,Not applicable,,
+199,156,201,Hector,,Celaya,,31.0,American Indian,Male,False,Shooting,Killed,Not applicable,,
+200,157,202,Kalcie,,Eagle,,21.0,American Indian,Male,True,Shooting,Suicide,Not applicable,,
+201,158,203,David,Cruz,Ponce,,28.0,,Male,False,,Death sentence,Trial,Death sentence,
+202,158,204,Max,Eliseo,Rafael,,22.0,,Male,False,,Life without parole,Trial,Life sentence without parole,
+203,159,205,Cedric,,Anderson,,42.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+204,160,206,,,,,,Black,Male,False,,Unsolved,Not applicable,,
+205,161,207,James,,Butwin,,47.0,White,Male,True,Shooting,Suicide,Not applicable,,
+206,162,208,Marcin,Waldemar,Sosniak,,21.0,White,Male,False,,Life without parole,Plea,Life sentence without parole,Four consecutive life sentences plus 100 years without the possibility of parole
+207,162,209,Jason,Samuel,McGhee,,26.0,White,Male,False,,Life without parole,Plea,Life sentence without parole,Life sentence plus 100 years without the possibility of parole
+208,162,210,Frank,A.,Ortegon,Jr.,23.0,Hispanic/Latino,Male,False,,Prison sentence,Plea,Prison sentence,20 years
+209,163,211,Corey,,Berniard,,40.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,30 years
+210,163,212,Felton,,Bernard,,34.0,Black,Male,False,,Life sentence,Trial,Life sentence,
+211,164,213,Raymond,Lee,Oyler,,37.0,White,Male,False,,Death sentence,Trial,Death sentence,
+212,165,214,Carey,Hal,Dyess,,73.0,White,Male,True,Shooting,Suicide,Not applicable,,
+213,166,215,Jordan,Adam,Criado,,51.0,Asian/Pacific Islander,Male,False,,Life without parole,Plea,Life sentence without parole,Life sentence without the possibility of parole
+214,167,216,Mary,Ann,Holder,,36.0,White,Female,True,Shooting,Suicide,Not applicable,,
+215,168,217,Christopher,,Vaughn,,32.0,White,Male,False,,Life without parole,Trial,Life sentence without parole,Four life sentences
+216,169,218,Rodrick,Shonte,Dantzler,,34.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+217,170,219,Michael,E.,Hance,,51.0,White,Male,False,Shooting,Killed,Not applicable,,
+218,171,220,Scott,Lamar,Abbott,,24.0,White,Male,False,,Life sentence,Trial,Life sentence without parole,
+219,172,221,Santiago,,Moreno,,31.0,Hispanic/Latino,Male,False,,Prison sentence,Trial,Prison sentence,120 years
+220,173,222,Matthew,John,Murray,,24.0,White,Male,True,Shooting,Suicide,Not applicable,,
+221,174,223,Sara,,McMeen,,30.0,White,Female,True,Shooting,Suicide,Not applicable,,
+222,175,224,Guillermo,,Lopez,,48.0,Hispanic/Latino,Male,True,Shooting,Suicide,Not applicable,,
+223,176,225,Randle,Lee,Robert,II,27.0,White,Male,False,Shooting,Killed,Not applicable,,
+224,177,226,Edwin,,Rivera,,20.0,Hispanic/Latino,Male,False,Shooting,Killed,Not applicable,,
+225,178,227,Troy,Robert,Brake,,31.0,White,Male,False,,Life without parole,Trial,Life sentence without parole,
+226,179,228,Robert,,Brazzon,Sr.,55.0,White,Male,True,Shooting,Suicide,Not applicable,,
+227,180,229,Cedric,Dwayne,Poore,,39.0,Black,Male,False,,Life without parole,Trial,Life sentence without parole,Four consecutive life sentences without the possibility of parole
+228,180,230,James,Stanford,Poore,,32.0,Black,Male,False,,Life without parole,Trial,Life sentence without parole,
+229,181,231,Nehemiah,,Griego,,15.0,Hispanic/Latino,Male,False,,Convicted,Trial,Life sentence without parole,"In 2016, Griego was sentenced to the custody of New Mexico Children, Youth, and Families Department until his 21st birthday. 11 days before he was supposed to be released, the District Attorney's Office's filed an appeal for him to go back to a judge for another amenability hearing. Judge found the 22 year old is not amenable to treatment and should be tried as an adult. He now faces up to 120 years in prison but his district attorney says he may get probation and timed served as prison would reverse the effects of the treatment he's received over the past six years in custody. "
+230,182,232,Kevin,,Garner,,45.0,White,Male,True,Shooting,Suicide,Not applicable,,
+231,183,233,Lam,,Luong,,37.0,Hispanic/Latino,Male,False,,Life sentence,Trial,Life sentence without parole,Originally sentenced to death but Luong was deemed intellectually disabled and was sentenced to life in prison.
+232,184,234,Banita,,Jacks,,34.0,Black,Female,False,,Life sentence,Trial,Life sentence,
+233,185,235,Kirby,Logan,Archer,,35.0,White,Male,False,,Life sentence,Plea,Life sentence,"5 consecutive life terms, one for each first degree murder charge and one for a conspiracy charge."
+234,185,236,Guillermo,Alfonso,Zarabozo,,19.0,Hispanic/Latino,Male,False,,Life sentence,Trial,Life sentence,"5 consecutive life terms, plus 85 years"
+235,186,237,,,,,,,,False,,Unsolved,Not applicable,,
+236,187,238,Kurt,,Myers,,64.0,White,Male,False,Shooting,Killed,Not applicable,,
+237,188,239,Lawrence,,Myers,,60.0,White,Male,False,,Life without parole,Trial,Life sentence without parole,Life sentence without the possibility of parole
+238,188,240,Marion,A.,Comier,,47.0,Black,Male,False,,Life sentence,Trial,Life sentence,
+239,189,241,Aunterrio,,Barney,,35.0,Black,Male,False,,Life sentence,Trial,Life sentence,2 life terms plus 30 years
+240,190,242,Matthew,,Denton,,17.0,,Male,True,Blunt force,Suicide,Not applicable,,
+241,191,243,Derrick,A.,Brantley,,21.0,Black,Male,False,,Life sentence,Trial,Life sentence without parole,Life sentence without the possibility of parole
+242,191,244,Deshanon,,Haywood,,21.0,Black,Male,False,,Life sentence,Trial,Life sentence with parole,35 years to life
+243,192,245,Dennis,,Clark,III,27.0,Black,Male,False,Shooting,Killed,Not applicable,,
+244,193,246,Omar,Mohamed,Kalmio,,27.0,Black,Male,False,,Life sentence,Trial,Life sentence without parole,4 consecutive life terms without the possibility of parole
+245,194,247,Rick,Odell,Smith,,43.0,White,Male,False,Shooting,Killed,Not applicable,,
+246,195,248,Samuel,Earl,Sallee,,55.0,White,Male,False,,Life sentence,Trial,Life sentence without parole,4 consecutive life terms without the possibility of parole
+247,196,249,Derrick,,Twardoski,,33.0,White,Male,False,,Prison sentence,Plea,Prison sentence,53 years
+248,197,250,Jason,,Harris,,23.0,White,Male,False,,Prison sentence,Plea,Prison sentence,"20 years; 10 years for concealment of a homicide, 7 years for delivery of a controlled substance, and 3 years for obstruction of justice, to be served consecutively."
+249,197,251,Christopher,,Harris,,30.0,White,Male,False,,Life sentence,Trial,Life sentence without parole,
+250,198,252,Tyrone,M.,Adair,,38.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+251,199,253,Herbert,,Chalmers,Jr,54.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+252,200,254,Ernest,Lesley,King,,33.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+253,200,255,Kenton,Marcus,Williams,,28.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+254,201,256,Zachary,Q.,Meeks,,27.0,Black,Male,False,,Life sentence,Plea,Life sentence without parole,5 life terms in prison without the possibility of parole
+255,202,257,James,Roy,Belknap,Sr.,26.0,White,Male,False,,Life without parole,Plea,Life sentence without parole,0
+256,203,258,Nicholas,T.,Sheley,,28.0,White,Male,False,,Life sentence,Plea,Life sentence without parole,2 life sentences without parole for first degree murder charges and 2 75-year sentences for criminal intent charges from Missouri conviction to run consecutively and concurrent with 6 life sentences for the 6 Illinois murders 
+257,204,259,John,,Zawahri,,23.0,White,Male,False,Shooting,Killed,Not applicable,,
+258,205,260,Nathan,,Fortner,,25.0,White,Male,True,Shooting,Suicide,Not applicable,,
+259,206,261,Kenneth,Lee,Myers,,47.0,White,Male,True,Shooting,Suicide,Not applicable,,
+260,207,262,Sidney,Arthur,Muller,,27.0,White,Male,False,,Life sentence,Plea,Life sentence with parole,Life sentence with parole eligbility; will be seen by a parole board in 25 years.
+261,208,263,Pedro,Alberto,Vargas,,42.0,Hispanic/Latino,Male,False,Shooting,Killed,Not applicable,,
+262,209,264,Erbie,Lee,Bowser,,44.0,Black,Male,False,,Life sentence,Trial,Life sentence without parole,Life sentence without the possibility for parole after the jury deadlocked on death penalty decision
+263,210,265,Daniel,,Green,,40.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+264,211,266,Jacob,Allen,Bennett,,26.0,White,Male,False,,Life sentence,Plea,Life sentence without parole,"4 consecutive life sentences for 4 charges of felony first-degree murder, without the possibility of parole"
+265,211,267,Brittany,Lina Yvonn,Moser,,25.0,Black,Female,False,,Prison sentence,Plea,Prison sentence,Pleaded guilty to one count of facilitation of second degree murder and received a ten-year prison sentence to be served at 30 percent. She has been in custody since her arrest in September 2013.
+266,212,268,Aaron,,Alexis,,34.0,Black,Male,False,Shooting,Killed,Not applicable,,
+267,213,269,Guadalupe,,Ronquillo-Ovalle,,33.0,Hispanic/Latino,Female,True,Shooting,Suicide,Not applicable,,
+268,214,270,,,,,,,,False,,Unsolved,Not applicable,,
+269,215,271,Mingdong,,Chen,,25.0,Asian/Pacific Islander,Male,False,,Prison sentence,Plea,Prison sentence,125 years
+270,216,272,Michael,Dante,Guzzo,,56.0,White,Male,True,Shooting,Suicide,Not applicable,,
+271,217,273,Charles,E.,Brownlow,Jr. ,36.0,Black,Male,False,,Death sentence,Trial,Death sentence,
+272,218,274,Bryan,Eugene,Sweatt,,27.0,White,Male,True,Shooting,Suicide,Not applicable,,
+273,219,275,,,,,,,,False,,Unsolved,Not applicable,,
+274,220,276,Charles,Chase,Merritt,,53.0,White,Male,False,,Death sentence,Trial,Death sentence,"Jury returned verdict for a death sentence on January 21, 2020. "
+275,221,277,,,,,,White,Male,False,,Unsolved,Not applicable,,
+276,222,278,David,Cornell,Bennett,Jr.,22.0,Black,Male,False,,Life without parole,Plea,Life sentence without parole,Three consecutive life sentences without the possibility of parole
+277,223,279,,,,,,,,False,,Unsolved,Not applicable,,
+278,224,280,Joshua,Kenneth,Boren,,34.0,White,Male,True,Shooting,Suicide,Not applicable,,
+279,225,281,Feng,,Lu,,50.0,Asian/Pacific Islander,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+280,226,282,Cherie,Louise,Rhoades,,44.0,American Indian,Female,False,,Death sentence,Trial,Death sentence,
+281,227,283,Kenneth,,Rackemann,,24.0,White,Male,False,,Life sentence,Plea,Life sentence without parole,"4 consecutive terms of life without parole, plus another 20 years for robbery"
+282,227,284,Samantha,,Bradley,,20.0,White,Female,False,,Prison sentence,Plea,Prison sentence,"30 years; 6 years to be executed, 24 years suspended. Based on 3 years served prior to sentencing, she was expected to be released and placed on 4 years probation"
+283,227,285,Valencia,,Williams,,21.0,Black,Female,False,,Prison sentence,Plea,Prison sentence,55 years
+284,227,286,Anthony,,Larussa,,26.0,White,Male,False,,Prison sentence,Plea,Prison sentence,44 years
+285,228,287,Alexander,Roosevelt,Hill,Jr,47.0,Black,Male,False,,Life sentence,Trial,Life sentence,
+286,229,288,Oliver,Thomas,Bernsdorff,,36.0,White,Male,True,Shooting,Suicide,Not applicable,,
+287,230,289,Shaunasty,,Lowe,,19.0,,Male,False,,Acquitted,Trial,Acquitted,
+288,230,290,Steven,Jamal,Williams,,18.0,Black,Male,False,,Acquitted,Trial,Acquitted,
+289,231,291,Jaime,,Duenas-Rodriguez,,22.0,Hispanic/Latino,Male,False,,Prison sentence,Plea,Prison sentence,"20 year split sentence; Given 1,481 days to serve but since he had already served that, he was released on 5 years probation"
+290,231,292,Christopher,Scott,Jones,,40.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,25 years
+291,231,293,Alejandros,,Castaneda,,31.0,Hispanic/Latino,Male,False,,Life sentence,Plea,Life sentence with parole,"Plead guilty to intentional murder, two life sentences, will be elgible for parole - 25 years expected. trying to remove his plea"
+292,231,294,Torre,Jovan,Gholston,,28.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,15 years
+293,231,295,Derrick,Renone,Green,,33.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,20 years
+294,231,296,Juan,Francisco,Castaneda,,26.0,Hispanic/Latino,Male,False,,Life sentence,Plea,Life sentence with parole,"Plead guilty to intentional murder, two life sentences, will be elgible for parole - 25 years expected"
+295,232,297,Samuel,,Martinez,,32.0,Hispanic/Latino,Male,False,,Charges dropped,Charges dropped,,
+296,233,298,,,,,,,,False,,Unsolved,Not applicable,,
+297,234,299,Vonzell,Allen,Roundtree,,27.0,Black,Male,False,,Life sentence,Trial,Life sentence,
+298,235,300,Richard,,Wilkinson,,62.0,,Male,True,Shooting,Suicide,Not applicable,,
+299,236,301,Jason,Alex,Abbott,,18.0,White,Male,False,,Prison sentence,Plea,Prison sentence,140 years
+300,237,302,Leonard,John,Egland,,37.0,White,Male,True,Shooting,Suicide,Not applicable,,
+301,238,303,Maksim,,Gelman,,23.0,White ,Male,False,,Prison sentence,Plea,Prison sentence,200 years to life 
+302,239,304,Elliot,Oliver Robertson,Rodger,,22.0,Other,Male,True,Shooting,Suicide,Not applicable,,
+303,240,305,Sonny,Enrique,Medina,,36.0,Hispanic/Latino,Male,True,Shooting,Suicide,Not applicable,,
+304,241,306,Ronald,Lee,Haskell,,33.0,White,Male,False,,Death sentence,Trial,Death sentence,Convicted 9/26/19 - sentencing to come
+305,242,307,Joel,,Smith,,33.0,White,Male,True,Shooting,Suicide,Not applicable,,
+306,243,308,Clarence,,Washington,,35.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+307,244,309,Nicolas,Ettinne,Holzer,,45.0,White,Male,False,,Life without parole,Trial,Life sentence without parole,Four life sentences plus 8 years
+308,245,310,Adam,,Matos,,28.0,White,Male,False,,Life sentence,Trial,Life sentence without parole,Life in prison without the possibility of parole
+309,246,311,Timothy,Ray,Jones,Jr.,32.0,White,Male,False,,Death sentence,Trial,Death sentence,
+310,247,312,Brandon,,Howell,,34.0,Black,Male,False,,Life sentence,Trial,Life sentence without parole,5 life sentences without the possibility of parole
+311,248,313,Donald,Charles,Spirit,,51.0,White,Male,True,Shooting,Suicide,Not applicable,,
+312,249,314,,,,,,,,False,,Unsolved,Not applicable,,0
+313,250,315,Ryan,,Champion,,36.0,White,Male,False,,Life without parole,Plea,Life sentence without parole,0
+314,251,316,Jaylen,Ray,Fryberg,,15.0,American Indian,Male,True,Shooting,Suicide,Not applicable,,0
+315,252,317,Scott,A.,Goodwin-Bey,,47.0,Black,Male,False,,Charges dropped,Charges dropped,Prison sentence,10 years on gun charges
+316,253,318,James,,Sparks-Henderson,III,19.0,Black,Male,False,,Life sentence,Plea,Life sentence without parole,5 consecutive life sentences without the possibility of parole
+317,254,319,Jody,Lee,Hunt,,39.0,White,Male,True,Shooting,Suicide,Not applicable,,
+318,255,320,Bradley,William,Stone,,35.0,White,Male,True,Poison,Suicide,Not applicable,,
+319,256,321,Calvin,Lewis,Carter,III,22.0,Black,Male,False,,Life sentence,Trial,Life sentence,Four life sentences plus 280 years
+320,257,322,Lee,,Farley,Jr.,26.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+321,258,323,Jonathan,,Camacho,,23.0,Hispanic/Latino,Male,False,,Life without parole,Trial,Life sentence without parole,Life sentence without the possibility of parole
+322,259,324,Ryan,Jacob,Williams,,24.0,White,Male,False,,Life sentence,Plea,Life sentence without parole,"Two consecutive life terms without the possibility parole, plus an additional 13.5 to 27 years"
+323,260,325,Thomas,Jesse,Lee,,26.0,White,Male,False,,Life without parole,Plea,Life sentence without parole,Life sentence without the possibility of parole
+324,261,326,Cedric,G.,Prather,,33.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+325,262,327,Joseph,Jesse,Aldridge,,36.0,White,Male,True,Shooting,Suicide,Not applicable,,
+326,263,328,Nicholas,,Dunn ,,32.0,Black,Male,False,,Charges dropped,Not applicable,,
+327,264,329,Driss,,Diaeddinn,,50.0,,Male,True,Shooting,Suicide,Not applicable,,
+328,265,330,Christopher,Adam,Carrillo,,25.0,Hispanic/Latino,Male,True,Shooting,Suicide,Not applicable,,
+329,267,332,Daron,Dylan,Wint,,34.0,Black,Male,False,,Life sentence,Trial,Life sentence without parole,4 consecutive life sentences without the possibility of parole
+330,268,333,Michael,Augustine,Bournes,,59.0,White,Male,True,Shooting,Suicide,Not applicable,,
+331,269,334,Jordyn,D.,Wade,,16.0,Black,Male,False,,Prison sentence,Trial,Prison sentence,172.5 years without the possibility of parole
+332,269,335,Robert,Lee,Adams,Jr.,27.0,Black,Male,False,,Life sentence,Plea,Life sentence without parole,Life without the possibility of parole
+333,270,336,Dylann,Storm,Roof,,21.0,White,Male,False,,Death sentence,Trial,Death sentence,
+334,271,337,Luther,Joseph,Smith,,35.0,White,Male,False,,Life sentence,Trial,Life sentence,Life sentence
+335,272,338,Mohammod,Youssuf,Abdulazeez,,24.0,White,Male,False,Shooting,Killed,Not applicable,,
+336,273,339,Martin,,Martinez,,30.0,Hispanic/Latino,Male,False,,Convicted,Plea,Life sentence without parole,Five life sentences without parole eligibility
+337,274,340,,,,,,,,False,,Unsolved,Not applicable,,
+338,275,341,Robert,Davis,Bever,,18.0,White,Male,False,,Life sentence,Plea,Life sentence without parole,5 consecutive life sentences without the possibility of parole
+339,275,342,Michael,John,Bever,,16.0,White,Male,False,,Life sentence,Trial,Life sentence without parole,5 consecutive life sentences with the possibility of parole plus 28 years - only a successful appeal will allow him to go free
+340,276,343,Christopher,Matthew,Henderson,,40.0,White,Male,False,,Convicted,Trial,Death sentence,Death penalty
+341,276,344,Rhonda,Jean,Carlson,,42.0,White,Female,False,,Convicted,Plea,Life sentence without parole,
+342,277,345,David,Ray,Conley,III,48.0,Black,Male,False,,Life without parole,Trial,Life sentence without parole,
+343,278,346,Jody,,Herring,,40.0,White,Female,False,,Life without parole,Plea,Life sentence without parole,Life sentence plus 80 years without the possibility of parole
+344,279,347,Brian,Scott,Short,,45.0,White,Male,True,Shooting,Suicide,Not applicable,,
+345,280,348,Scott,,Westerhuis,,41.0,White,Male,True,Shooting,Suicide,Not applicable,,
+346,281,349,Christopher,Sean,Harper-Mercer,,26.0,Other,Male,True,Shooting,Suicide,Not applicable,,
+347,282,350,Glenn,Edward,Baxter,,27.0,Black,Male,True,Drowning,Suicide,Not applicable,,
+348,283,351,,,,,,,,False,,Unsolved,Not applicable,,
+349,284,352,William,Mitchell,Hudson,,33.0,White,Male,False,,Death sentence,Trial,Death sentence,
+350,285,353,Pascasio,Y.,Pacheco-Arellano,,21.0,Hispanic/Latino,Male,False,,Life sentence,Plea,Life sentence without parole,
+351,286,354,Syed,Rizwan,Farook,,28.0,Asian/Pacific Islander,Male,False,Shooting,Killed,Not applicable,,
+352,286,355,Tashfeen,,Malik,,29.0,Asian/Pacific Islander,Female,False,Shooting,Killed,Not applicable,,
+353,287,356,Matthew,Kyle,Fields,,32.0,White,Male,True,Shooting,Suicide,Not applicable,,
+354,288,357,,,,,,,,False,,Unsolved,Not applicable,,
+355,289,358,Cameron,,Dooley,,26.0,White,Male,True,Shooting,Suicide,Not applicable,,
+356,290,359,Jafeth,,Ramos,,19.0,Hispanic/Latino,Female,False,,Convicted,Plea,,
+357,290,360,Diego,,Uribe Cruz,,22.0,Hispanic/Latino,Male,False,,Convicted,Plea,,
+358,291,361,Jason,Brian,Dalton,,45.0,White,Male,False,,Life sentence,Plea,Life sentence without parole,Life sentence without the possibility of parole
+359,292,362,Grayden,Lane,Denham,,24.0,White,Male,False,,Convicted,Trial,Life sentence without parole,Four life sentences without parole plus 115 years. 
+360,293,363,Alex,Arthur,Buckner,,26.0,White,Male,False,Shooting,Killed,Not applicable,,
+361,294,364,David,Wayne,Campbell,,51.0,White,Male,True,Shooting,Suicide,Not applicable,,
+362,295,365,Pablo,Antonio,Serrano-Vitorino,,40.0,Hispanic/Latino,Male,True,Other,Suicide awaiting trial,Not applicable,,
+363,296,366,Robert,,Thomas,,27.0,,Male,False,,Charges dropped,Charges dropped,,
+364,296,367,Cheron,,Shelton,,29.0,,Male,False,,Acquitted,Trial,,
+365,297,368,George,,Wagner,III,45.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+366,298,369,Wayne,Anthony,Hawes,,50.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+367,299,370,Jeffrey,Alan,Peacock,,24.0,White,Male,False,,Life sentence,Trial,Life sentence without parole,5 consecutive life sentences without the possibility of parole
+368,300,371,Omar,Mir Seddiqu,Mateen,,29.0,Asian/Pacific Islander,Male,False,Shooting,Killed,Not applicable,,
+369,301,372,Juan,David,Villegas-Hernandez,,34.0,Hispanic/Latino,Male,False,,Convicted,Plea,Life sentence,5 life sentences
+370,302,373,Johnny,Josue,Sanchez,,21.0,White ,Male,False,,Life without parole,Trial,Life sentence without parole,
+371,303,374,Micah,Xavier,Johnson,,25.0,Black,Male,False,Bombing,Killed,Not applicable,,
+372,304,375,Jason,Hagan,Dej-Oudom,,34.0,Asian/Pacific Islander,Male,True,Shooting,Suicide,Not applicable,,
+373,305,376,Gaylin,,Leirmoe,,26.0,White,Male,True,Shooting,Suicide,Not applicable,,
+374,306,377,Shanynthia,,Gardner,,29.0,Black,Female,False,,Convicted,Trial,Life sentence with parole,Life with parole eligibility after 51 years. 
+375,307,378,Dibon,Jab,Toone,,39.0,Black,Male,False,,Convicted,Plea,Life sentence,Four consecutive life sentences
+376,308,379,Derrick,Ryan,Dearman,,27.0,White,Male,False,,Death sentence,Trial,Death sentence,Trial conducted per Alabama law and found guilty
+377,309,380,Arcan,,Cetin,,20.0,Asian/Pacific Islander,Male,True,Other,Suicide awaiting trial,Not applicable,,0
+378,310,381,Reginald,,Hester,,51.0,Black,Male,False,Other,Died awaiting trial,Not applicable,,0
+379,311,382,Gregory,Vicente,Green,,49.0,Black,Male,False,,Prison sentence,Plea,Prison sentence,45-100 years - first chance for parole will be when he is 97
+380,312,383,Matthew,,Baker,Jr,19.0,Black,Male,False,,Convicted,Plea,Life sentence with parole,"Pleaded guilty but mentally ill to avoid death sentence. Sentenced to four consecutive life sentences without the possibility of parole, plus five years.
+"
+381,312,384,Jacob,Cole,Kosky,,22.0,White,Male,False,,Life without parole,Plea,Life sentence without parole,Life in prison without the possibility of parole
+382,313,385,,,,,,,,False,,Unsolved,Not applicable,,
+383,315,387,Dereck,Eugene,Harris,,28.0,Black,Male,False,,Charges dropped,Charges dropped,,
+384,316,388,Marlon,,Jones,,41.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+385,317,389,Mark,J.,Short,Sr,40.0,White,Male,True,Shooting,Suicide,Not applicable,,
+386,318,390,Keith,,Kroeker,,42.0,White,Male,True,Shooting,Suicide,Not applicable,,
+387,319,391,,,,,,,,False,,Unsolved,Not applicable,,
+388,320,392,Briddell ,,Barber,,27.0,Black,Male,False,,Life without parole,Plea,Life sentence without parole,
+389,321,393,Karon,Deshawn,McVay,,44.0,Black,Male,False,,Life without parole,Trial,Life sentence without parole,
+390,322,394,Henry,K.,Johnson,,55.0,Black,Male,False,,Incompetent,Incompetent,Incompetent,
+391,323,395,Armande,Stephen,Tart,,20.0,Black,Male,False,,Life sentence,Trial,Life sentence,4 consecutive life sentences
+392,324,396,Nengmy,,Vang,,45.0,Asian/Pacific Islander,Male,True,Shooting,Killed,Not applicable,,
+393,325,397,Salvador,,Vasquez-Oliva,,56.0,,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+394,326,398,Maurice,,Harris,,19.0,Black,Male,False,,Charges dropped,Charges dropped,,
+395,327,399,Denver,,Simmons,,35.0,White,Male,False,,Life without parole,Plea,Life sentence without parole,
+396,327,400,Jacob,,Philip,,25.0,Black,Male,False,,Life without parole,Plea,Life sentence without parole,
+397,328,401,Esteban,,Santiago-Ruiz,,26.0,Hispanic/Latino,Male,False,,Life sentence,Plea,Life sentence,
+398,329,402,Dekitta,,Holmes,,29.0,Black,Female,True,Shooting,Suicide,Not applicable,,
+399,330,403,Omar,Antonio,Villalta,,22.0,Hispanic/Latino,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+400,330,404,Josue,,Portillo,,15.0,Hispanic/Latino,Male,False,,Prison sentence,Plea,Prison sentence,55 years
+401,330,405,Alexis,,Hernandez,,20.0,Hispanic/Latino,Male,False,,Convicted,Plea,,
+402,330,406,Santos,Leonel,Ortiz-Flores,,19.0,Hispanic/Latino,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+403,331,407,Brian,Bliss,Travis,,37.0,White,Male,False,,Life sentence,Plea,Life sentence without parole,Life in prison without the possibility of parole
+404,332,408,Stanley,O.,Ford,,58.0,Black,Male,False,,Convicted,Trial,Life sentence without parole,
+405,333,409,Willie,Corey,Godbolt,,35.0,Black,Male,False,,Convicted,Trial,Death sentence,
+406,334,410,John,Robert,Neumann,Jr,45.0,White,Male,True,Shooting,Suicide,Not applicable,,
+407,335,411,Damian,,Herrera,,21.0,White,Male,False,,Convicted,Trial,Life sentence,Four life sentences
+408,336,412,Isabel,Garduno,Martinez,,33.0,Hispanic/Latino,Female,False,,Life without parole,Trial,Life sentence without parole,Life without the possibility of parole plus 20 years and one month
+409,337,413,Matthew,Lewis,Simms,,25.0,Black,Male,False,,Charges dropped,Charges dropped,,
+410,337,414,James,Edward,Powell,,25.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+411,337,415,Keyon,Quarice,West,,23.0,Black,Male,False,,Charges dropped,Charges dropped,,
+412,338,416,Ja'Vonne,,DuPree,,20.0,Black,Male,False,,Convicted,Trial,Life sentence with parole,
+413,339,417,Orion,,Krause,,22.0,White,Male,False,,Convicted,Plea,Life sentence with parole,Life with parole eligibility in 25 years
+414,340,418,Spencer,,Hight,,32.0,White ,Male,False,Shooting,Killed,Not applicable,,
+415,341,419,,,,,,,,False,,Unsolved,Not applicable,,
+416,342,420,Stephen,,Paddock,,64.0,White,Male,True,Shooting,Suicide,Not applicable,,
+417,343,421,James,,White,,38.0,Black,Male,False,,Convicted,Trial,Life sentence,Life sentence
+418,343,422,Justin,,Mann,,24.0,Black,Male,False,,Convicted,Plea,Prison sentence,Four concurrent prison terms of 25 years to life.
+419,344,423,Scott,,Kologi,,16.0,White,Male,False,,Convicted,Trial,Life sentence,Four life sentences
+420,345,424,Alec,Xavier,Perez,,32.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+421,345,425,Rodney,,Ortiz,,22.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+422,346,426,Arron,,Lawson ,,23.0,White,Male,False,,Death sentence,Plea,Death sentence,
+423,347,427,Devin,Patrick,Kelley,,26.0,White,Male,True,Shooting,Suicide,Not applicable,,
+424,348,428,Sayfullo,Habibullaevich,Saipov,,29.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+425,349,429,Kevin,Janson,Neal,,44.0,White,Male,True,Shooting,Suicide,Not applicable,,
+426,350,430,Pedro,,Sanchez-Laporte,,28.0,Hispanic/Latino,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+427,351,431,Timothy,O'Brien,Smith,,28.0,White,Male,True,Shooting,Suicide,Not applicable,,
+428,352,432,Joseph,W.,Nickell,,45.0,White,Male,True,Shooting,Suicide,Not applicable,,
+429,353,433,Nikolas,Jacob,Cruz,,19.0,White,Male,False,,Life without parole,Plea,Life sentence with parole,
+430,354,434,George,Anthony,Davis,Jr,27.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+431,355,435,Travis,,Reinking,,29.0,White,Male,False,,Convicted,Trial,Life sentence without parole,Life without parole
+432,356,436,Justin,,Painter,,39.0,White,Male,True,Shooting,Suicide,Not applicable,,
+433,357,437,Dimitrios,,Pagourtzis,,17.0,White,Male,False,,Arrested/Pending trial,Incompetent,,
+434,358,438,Dwight,Lamon,Jones,,56.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+435,359,439,Gary,Wayne,Lindsey,Jr,35.0,White,Male,True,Shooting,Suicide,Not applicable,,
+436,360,440,Jarrod,Warren,Ramos,,38.0,White,Male,False,,Life without parole,Plea,Life sentence,5 life sentences without parole
+437,361,441,Matthew,Ralph,Edwards,,42.0,White,Male,True,Shooting,Suicide,Not applicable,,
+438,362,442,Richard,,Starry,,60.0,White,Male,True,Shooting,Suicide,Not applicable,,
+439,363,443,Javier,,Casarez,,54.0,White,Male,True,Shooting,Suicide,Not applicable,,
+440,364,444,Ronnie,,Rodriguez,Sr,37.0,Hispanic/Latino,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+441,364,445,Ronnie,,Rodriguez,Jr,20.0,Hispanic/Latino,Male,False,,Convicted,Trial,Life sentence without parole,Life without parole
+442,365,446,Cynthia,,Collier,,55.0,White,Female,True,Shooting,Suicide,Not applicable,,
+443,366,447,Robert,Gregory,Bowers,,46.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+444,367,448,Ian,David,Long,,28.0,White,Male,True,Shooting,Suicide,Not applicable,,
+445,368,449,Nasir,,Moss-Robertson,,36.0,Black,Male,False,,Charges dropped,Charges dropped,,
+446,368,450,Jahlil,,Porter,,32.0,Black,Male,False,,Convicted,Plea,Prison sentence,"Prison sentence of 50 years
+"
+447,368,451,Keith,,Garner,,34.0,Black,Male,False,,Convicted,Plea,Prison sentence,Prison sentence of 40 years
+448,368,452,Robert,,Long,,30.0,Black,Male,False,,Convicted,Plea,Prison sentence,"Prison sentence of  25-50 years
+"
+449,369,453,Richard,Darren,Emery,,46.0,White,Male,False,,Death sentence,Trial,Death sentence,
+450,370,454,Paul,J. ,Caneiro,,51.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+451,371,455,Mathew,P.,Locke,,32.0,,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+452,372,456,Lovequawn,Matthew Shaire,Scott,,22.0,Black,Male,False,,Legally insane,Trial,Committed,Not guilty by reason of insanity
+453,373,457,Jennifer,,Hart,,38.0,White,Female,True,Vehicle crash,Suicide,Not applicable,,
+454,373,458,Sarah,,Hart,,38.0,White,Female,True,Vehicle crash,Suicide,Not applicable,,
+455,374,459,Charles,,DuBois,,20.0,White,Male,False,,Life without parole,Trial,Life sentence without parole,life sentence without the possibility of parole
+456,375,460,Nam,,Le,,34.0,Asian/Pacific Islander,Male,False,Shooting,Killed,Not applicable,,
+457,376,461,Gary,Montez,Martin,,45.0,Black,Male,False,Shooting,Killed,Not applicable,,
+458,377,462,Randy,,Horn,,54.0,White,Male,True,Shooting,Suicide,Not applicable,,
+459,378,463,Dakota,,Theriot,,21.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+460,379,464,Zephen,Allen,Xaver,,21.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+461,380,465,Jose,,Larin-Garcia,,19.0,Hispanic/Latino,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+462,381,466,Daylon,Delon,Gamble,,27.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+463,382,467,Luke,,Karpinski,,41.0,White,Male,True,,Suicide,Not applicable,,
+464,384,468,Michael,Lee,Cummins,,25.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+465,386,469,DeWayne,Antonio,Craddock,,40.0,Black,Male,False,Shooting,Killed,Not applicable,,
+466,388,470,Claude,,Adams,,64.0,White,Male,True,Shooting,Suicide,Not applicable,,
+467,389,472,Chi,Dinh,Ta,,66.0,Asian/Pacific Islander,Male,True,Shooting,Suicide,Not applicable,,
+468,390,473,James,Dean,Cloud,,35.0,American Indian,Male,False,,Convicted,Trial,Life sentence,"Four consecutive life sentences and a fine of $25,000."
+469,390,474,Donovan,Quinn Carter,Cloud,,32.0,American Indian,Male,False,,Convicted,Plea,Prison sentence,327-month sentence
+470,383,475,Gurpreet,,Singh,,37.0,Asian/Pacific Islander,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+471,392,477,Matthew,Timothy,Wetherington,,34.0,White,Male,False,,Convicted,Plea,Life sentence without parole,Life sentence without parole eligibility
+472,391,478,Anthony,,Watkins,Jr.,30.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+473,391,479,Terrance,,Wesley,,29.0,Black,Male,False,,Convicted,Plea,,
+474,393,480,Gerry,Dean,Zaragoza,,26.0,Hispanic/Latino,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+475,297,481,Angela,,Wagner,,46.0,White,Female,False,,Prison sentence,Plea,Prison sentence,30 years
+476,297,482,George,,Wagner,IV,25.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+477,297,483,Edward,,Wagner,,24.0,White,Male,False,,Life without parole,Plea,Life sentence with parole,Eight life sentences
+478,394,484,Ritchie,,German,Jr.,34.0,White,Male,True,Shooting,Suicide,Not applicable,,
+479,395,485,Mark,Leo Gregory,Gago,,42.0,White,Male,False,Shooting,Killed,Not applicable,,
+480,396,486,Patrick,,Crusius,,21.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+481,397,488,Connor,,Betts,,24.0,White,Male,False,Shooting,Killed,Not applicable,,
+482,399,490,Chad,,Isaak,,44.0,White,Male,False,,Life sentence,Trial,Life sentence with parole,
+483,400,491,Zachary,,Castaneda,,33.0,Hispanic/Latino,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+484,401,492,Seth,Aaron,Ator,,36.0,White,Male,False,Shooting,Killed,Not applicable,,
+485,402,493,Mason,,Sisk,,14.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+486,403,494,Michael,Wayne,Jones,Jr.,38.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+487,14,495,Sanquan,,Carter,,21.0,Black,Male,False,,Prison sentence,Trial,Prison sentence,54 years
+488,404,496,Lively,James, Stratton,,22.0,Black,Male,False,,Life without parole,Trial,Life sentence without parole,Life without parole
+489,405,497,,,,,,,,False,,Unsolved,Not applicable,,
+490,406,498,,,,,,,,False,,Unsolved,Not applicable,,
+491,407,499,Randy,Rodriguez,Santos,,24.0,Hispanic/Latino,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+492,408,500,Javier,A.,Alatorre,,23.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+493,408,501,Hugo,,Villanueva-Morales,,29.0,Hispanic/Latino,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+494,409,502,Joseph,,Zaccardi,,43.0,White,Male,True,Shooting,Suicide,Not applicable,,
+495,411,504,Jesse,James,Warren,,60.0,,Male,False,,Incompetent,Incompetent,,
+496,413,506,Kyle,,Alwood,,9.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+497,337,507,Dontayvious,Devonte,Cotton,,23.0,Black,Male,False,,Charges dropped,Charges dropped,,
+498,314,509,Lionel,,Parks,,29.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+499,415,510,Krysztof ,,Marek,,66.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+500,271,513,Antly,Jermaine ,Scott,,35.0,Black,Male,False,,Life sentence,Trial,Life sentence,Life sentence
+501,271,514,Derrick,Warren,Coleman,,27.0,White,Male,False,,Prison sentence,Trial,Prison sentence,Ten year prison sentence
+502,271,515,Robert,Lee,Bailey,,30.0,Black,Male,False,,Life sentence,Trial,Life sentence,Life sentence
+503,418,516,,,,,,,,False,,Unsolved,Not applicable,,
+504,419,517,James,,Jennex,,50.0,White,Male,True,Shooting,Suicide,Not applicable,,
+505,420,518,,,,,,,,False,,Unsolved,Not applicable,,
+506,421,519,Pao,,Vang,,30.0,Asian/Pacific Islander,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+507,422,520,Jose,,Valdivia,,31.0,Hispanic/Latino,Male,True,Shooting,Suicide,Not applicable,,
+508,135,521,Melinda,,Brady,,29.0,White,Female,False,,Prison sentence,Plea,Prison sentence,25 years
+509,423,522,Maurice,,Louis,,29.0,Black,Male,False,,Incompetent,Incompetent,,
+510,424,523,Francine,,Graham,,50.0,Black,Female,False,Shooting,Killed,,,
+511,424,524,David,N.,Anderson,,47.0,Black,Male,False,Shooting,Killed,,,
+512,421,525,Ger,,Lee,,27.0,Asian/Pacific Islander,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+513,385,526,,,,,,,,False,,Unsolved,,,
+514,421,527,Jhovanny,,Delgado,,19.0,,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+515,421,528,Porge,,Kue,,26.0,Asian/Pacific Islander,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+516,421,529,Anthony,,Montes,,27.0,Hispanic/Latino,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+517,421,530,Billy,,Xiong,,25.0,Asian/Pacific Islander,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+518,425,531,Shana,Selena,Decree,,45.0,Black,Female,False,,Life without parole,Plea,Life sentence without parole,"Shana and Dominique Decree pleaded guilty but mentally ill to first degree murder in a deal that will imprison them for life but spare them the possibility of the death penalty.
+"
+519,425,532,Dominique,Klaran ,Decree,,19.0,Black,Female,False,,Life without parole,Plea,Life sentence without parole,"Shana and Dominique Decree pleaded guilty but mentally ill to first degree murder in a deal that will imprison them for life but spare them the possibility of the death penalty.
+"
+520,426,533,Travane,Brandon,Jackson,,27.0,Black,Male,True,Asphyxiation,Suicide awaiting trial,,,
+521,421,534,Johnny,,Xiong,,25.0,Asian/Pacific Islander,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+522,427,535,Anthony,John,Todt,,44.0,White,Male,False,,Life without parole,Trial,Life sentence without parole,Four consecutive life sentences
+523,428,536,Colin,Jeffrey ,Haynie,,16.0,White,Male,False,,Convicted,Plea,,
+524,429,537,Michael,Ray,Ireland,,39.0,,Male,True,Shooting,Suicide,,,
+525,431,539,Anthony,N.,Ferrill,,51.0,Black,Male,True,Shooting,Suicide,,,
+526,430,540,Cameron,,Banks,,19.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+527,430,541,Lesean,,Watkins,,19.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+528,430,542,Rodreice,,Anderson,,19.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+529,430,543,Desmond,,Banks,,17.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+530,432,544,Joaquin,,Roman,,31.0,Hispanic/Latino,Male,True,Shooting,Suicide,,,
+531,433,545,Larry,Don,Ray,,66.0,White,Male,True,Shooting,Suicide,,,
+532,434,546,Christopher,P.,Stokes,,43.0,Black,Male,False,,Convicted,Plea,Prison sentence,205-year sentence
+533,66,547,Dominick,O'Neill,Daise,,21.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+534,330,548,Freiry,,Martinez,,15.0,Hispanic/Latino,Male,False,,Prison sentence,Plea,Prison sentence,Convicted of racketeering and sentenced to 50 years imprisonment. Will be deported back to El Salvadore upon release.
+535,436,549,John,Michael,Legg,,19.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+536,437,550,Jared,Esquibel ,Harless,,38.0,Hispanic/Latino,Male,True,Asphyxiation,Suicide,,,
+537,436,551,Frederic,Allen,Rogers,,22.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+538,438,552,,,,,,,,False,,Unsolved,,,
+539,439,553,,,,,,,,False,,Unsolved,,,
+540,440,554,,,,,,,,False,,Unsolved,,,
+541,441,555,Mickey,Dane ,Douglas,,25.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+542,442,556,John,R.,Nelson,,44.0,White,Male,True,Shooting,Suicide,Not applicable,,
+543,444,557,Raymond,Lee,Bailey,,37.0,White,Male,False,,Died awaiting trial,Arrested/Pending trial,,
+544,445,558,Armond,,Johnson,,25.0,Black,Male,False,,Convicted,Trial,Life sentence,Four consecutive life sentences
+545,446,559,,,,,,,,False,,Unsolved,,,
+546,447,560,Malachi,,Maxon,,18.0,American Indian,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+547,448,561,Gavin,,Smith,,16.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+548,448,562,Rebecca,,Walker,,17.0,White,Female,False,,Convicted,Plea,Prison sentence,10 years
+549,449,563,Matthew,Jay,Tucker,,40.0,,Male,False,Shooting,Suicide,,,
+550,450,564,Jaquita,,Chase,,31.0,White,Female,True,Shooting,Suicide,,,
+551,453,565,Jason,,Nightengale,,32.0,Black,Male,False,Shooting,Killed,,,
+552,455,566,Raymond,Ronald Lee,Childs,III,17.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+553,457,568,Jarron,Deajon,Pridgeon,,25.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+554,451,572,Brittany,Francis ,Tucker,,30.0,Black,Female,True,Shooting,Suicide,,,
+555,459,574,Malik,,Halfacre,,25.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+556,460,575,Robert,Aaron,Long,,21.0,White,Male,False,,Convicted,Plea,Life sentence without parole,
+557,461,576,Oreanna,Antoinette,Myers,,25.0,White,Female,True,Shooting,Suicide,,,
+558,462,577,Ahmad ,Al Aliwi ,Alissa,,21.0,White,Male,False,,Incompetent,Incompetent,,
+559,463,578,Joshua,,Green,,27.0,,Male,True,Shooting,Suicide,Not applicable,,
+560,464,579,Aminadab,, Gaxiola-Gonzalez,,44.0,,Male,False,,Incompetent,Incompetent,,
+561,465,580,Tanvir,,Towhid,,21.0,Asian/Pacific Islander,Male,True,Shooting,Suicide,,,
+562,465,581,Farhan,,Towhid,,19.0,Asian/Pacific Islander,Male,True,Shooting,Suicide,,,
+563,466,582,Phillip,,Adams,,32.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+564,467,583,Brandon,Scott,Hole,,19.0,White,Male,True,Shooting,Suicide,,,
+565,468,584,Isaac,Alton,Barnes,,32.0,White,Male,True,Shooting,Suicide,,,
+566,469,585,Teodoro,,Macias,,28.0,Hispanic/Latino,Male,True,Shooting,Suicide,,,
+567,470,586,Samuel,Enrique,Lopez,,20.0,Hispanic/Latino,Male,False,,Life without parole,Plea,Life sentence without parole,
+568,471,587,John ,Paul,Steckel,,35.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+569,472,588,Samuel,J.,Cassidy,,57.0,,Male,True,Shooting,Suicide,,,
+570,473,589,Tamielya,,Brevelle,,30.0,Black,Female,False,,Convicted,Plea,Prison sentence,Sentenced to 40 years in prison
+571,473,590,Dorothy,Denee,Bosby,,27.0,Black,Female,False,,Arrested/Pending trial,Arrested/Pending trial,,
+572,474,591,Cohen,Bennett ,Hancz-Barron,,21.0,White,Male,False,,Convicted,Trial,Life sentence without parole,Life without parole
+573,475,592,Jeremy,Michael,Lenoire,,27.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+574,475,593,,,,,,,,False,,Unsolved,,,
+575,475,594,,,,,,,,False,,Unsolved,,,
+576,438,595,,,,,,,,False,,Unsolved,,,
+577,477,596,Oen,Evan,Nicholson,,30.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+578,478,597,Dylan,Gage,Welch,,21.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+579,478,598,Billy,Dean,Phillips,,37.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+580,478,599,Jesse,James John,Pawlowski,,20.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+581,479,600,Jose,Manuel,Ramirez,Jr.,41.0,Hispanic/Latino,Male,False,Shooting,Killed,Not applicable,,
+582,480,601,Jonathan,Jose,Rosa,,19.0,Hispanic/Latino,Male,False,,Convicted,Plea,Prison sentence,45 to 90 years
+583,480,602,Cornelius,,Crawford ,,24.0,Black,Male,False,,Convicted,Plea,Prison sentence,50 to 100 years in prison
+584,481,603,Kevin,,Bui,,16.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+585,481,604,Gavin,,Seymour,,16.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+586,481,605,,,,,15.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+587,482,606,Bryan,,Riley,,33.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+588,483,607,William,Yah,Escaño,,23.0,Hispanic/Latino,Male,True,Shooting,Suicide,Not applicable,,
+589,484,608,Darren,Lee,Osborne,,56.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+590,484,609,Antoine,Darnique,Suggs,,38.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+591,485,610,Curtis,Donnell,Smith,,38.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+592,485,611,Jazzmine,Jacole,Hall,,26.0,White,Female,False,,Arrested/Pending trial,Arrested/Pending trial,,
+593,486,612,Michael,,Sanders,,23.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+594,487,613,Judy,,Boyer,,54.0,White,Female,False,,Convicted,Plea,Life sentence without parole,Life without parole
+595,488,614,Maleke,Dominque,Pate,,22.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+596,492,619,Darrell ,,Brooks,Jr.,39.0,Black,Male,False,,Convicted,Trial,Life sentence without parole,Life without parole
+597,493,620,Germarcus,,David,,29.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+598,494,621,Ethan,,Crumbley,,15.0,White,Male,False,,Convicted,Plea,,
+599,476,622,,,,,,,,False,,Unsolved,,,
+600,495,623,Donald,,Grier,Jr.,40.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+601,496,624,Lyndon,James,McLeod,,47.0,,Male,False,Shooting,Killed,,,
+602,497,625,Isavian,,Preston,,23.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+603,497,626,Mario,,Clark,,23.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+604,497,627,Vincent,,Armstrong,,18.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+605,497,628,Khalid,,Williams,,26.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+606,498,629,,,,,,,,False,,Unsolved,,,
+607,499,631,Travis,Lamar,Birkley,,34.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+608,500,632,Kevin,,Milazzo,,41.0,,Male,True,Shooting,Suicide,,,
+609,501,633,David,,Mora-Rojas,,39.0,Hispanic/Latino,Male,True,Shooting,Suicide,Not applicable,,
+610,502,634,Smiley,,Martin,,27.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+611,502,635,Dandrae,,Martin,,26.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+612,330,636,Leniz,,Escobar,,17.0,Hispanic/Latino,Female,False,,Convicted,Trial,,
+613,502,637,Mtula,,Payton,,27.0,,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+614,503,640,Brandon,Taylor,Cole-Skogstad,,29.0,,Male,True,Shooting,Suicide,Not applicable,,
+615,504,641,Donnie,Lee,Trammell,,54.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+616,505,642,Terrance,L.,Leonard,,33.0,Black,Male,False,,Life sentence,Plea,Life sentence,Four consecutive life sentences
+617,506,643,Jeremy,Alesunder,Reynolds,,32.0,Black,Male,True,Smoke inhalation and burns,Suicide,,,
+618,507,644,Payton,S.,Gendron,,18.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+619,508,645,Salvador,,Ramos,,18.0,Hispanic/Latino,Male,False,Shooting,Killed,Not applicable,,
+620,509,646,Charles,Robert,Gillard,,51.0,White,Male,False,,Arrested/Pending trial,,,
+621,510,647,Michael,,Louis,,45.0,Black,Male,True,Shooting,Suicide,Not applicable,,
+622,511,648,Gonzalo,Artemio,Lopez,,46.0,Hispanic/Latino,Male,False,Shooting,Killed,,,
+623,512,649,Eric,,Jackson,,33.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+624,319,650,Danie ,J.,Kelly,Jr.,38.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+625,319,651,Johnny,James,Watson,,44.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+626,319,652,Robert,James,Watson,III,45.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+627,514,654,Robert,E.,Crimo,III,21.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+628,515,655,Eric,Damian,Reyes,,18.0,Hispanic/Latino,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+629,516,656,Nicholas,,Tartaglione,,49.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+630,516,657,Joseph,,Biggs,,55.0,Black,Male,False,,Convicted,Plea,,
+631,516,658,Gerard,,Benderoth,,47.0,White,Male,True,Shooting,Suicide,Not applicable,,
+632,517,659,Donovan,Michael,Rameriz,,45.0,,Male,True,Shooting,Suicide,,,
+633,518,660,Jason,,Jones,,42.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+634,519,661,Stephen,Alexander,Marlow,,39.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+635,513,662,Raymond,Lee,Gore,,57.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+636,513,663,Antwann,Jacque ,Gore,,40.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+637,520,664,Richard,,Wilson,IV,21.0,American Indian,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+638,522,666,Marcus,Edward,Milligan,,39.0,White,Male,True,Shooting,Suicide,Not applicable,,
+639,524,668,Yvonne,,Ngoiri ,,36.0,,Female,False,,Arrested/Pending trial,Arrested/Pending trial,,
+640,525,669,Nicolas,,Jaimes-Hernandez,,35.0,Hispanic/Latino,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+641,526,670,Jesus ,Manuel ,Salgado,,48.0,Hispanic/Latino,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+642,527,671,,,,,,,,False,,,,,
+643,528,672,James,Douglas,Drayton,,,,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+644,529,673,Austin,,Thompson,,15.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+645,530,674,Mikel ,E.,Brady,,28.0,White,Male,False,,Death sentence,Trial,Death sentence,
+646,530,675,Seth ,J.,Frazier ,,33.0,American Indian,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+647,530,676,Wisezah ,D.,Buckman,,29.0,Black,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+648,530,677,Jonathan,M.,Monk,,30.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+649,531,678,David,Nethaniel,Maine,,24.0,White,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+650,532,679,,,,,,,,False,,,,,
+651,350,680,Jesus,,Feliciano-Trinidad,,28.0,Hispanic/Latino,Male,False,,Convicted,Trial,,
+652,350,681,Dewayne,,Quinones,,24.0,Hispanic/Latino,Male,False,,Convicted,Trial,,
+653,350,682,Mayco,,Alvarez-Jackson,,20.0,Hispanic/Latino,Male,False,,Convicted,Trial,,
+654,533,683,Connor,Connor,McKisick,,34.0,,Male,True,Shooting,Suicide,Not applicable,,
+655,534,684,Brian,,Nelson,,34.0,,Male,True,Shooting,,,,
+656,535,686,Joseph,Mario,Castorena,,21.0,Hispanic/Latino,Male,False,,,,,
+657,537,689,Shavelle,Jordan,Jones,,23.0,,Male,False,,,Arrested/Pending trial,,
+658,536,690,Andre,,Sales,,28.0,,Male,True,Stabbing,Suicide,Not applicable,,
+659,539,691,Jasen,Michael,Hudgens,,44.0,,Male,True,Shooting,Suicide,Not applicable,,
+660,540,692,Jonah,,Adams,,35.0,,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+661,541,693,Anderson,Lee,Aldrich,,22.0,,Male,False,,Arrested/Pending trial,Arrested/Pending trial,,
+662,542,694,Wu,,Chen,,45.0,Asian/Pacific Islander,Male,False,,,Arrested/Pending trial,,
+663,543,695,Andre,,Bing,,31.0,,Male,True,Shooting,Suicide,Not applicable,,

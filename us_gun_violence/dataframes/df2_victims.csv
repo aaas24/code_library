@@ -1,0 +1,2743 @@
+,incident_id,victim_id,age,race,sex,vorelationship
+0,1,1,25.0,Hispanic/Latino,Male,Undetermined
+1,1,2,30.0,Hispanic/Latino,Male,Undetermined
+2,1,3,30.0,Hispanic/Latino,Male,Undetermined
+3,1,4,32.0,Hispanic/Latino,Male,Undetermined
+4,2,5,30.0,White,Female,Neighbor
+5,2,6,28.0,White,Female,Child or stepchild
+6,2,7,54.0,White,Female,Spouse
+7,2,8,31.0,White,Male,Neighbor
+8,2,9,40.0,White,Female,Neighbor
+9,3,10,28.0,White,Female,Roommate
+10,3,11,29.0,Black,Male,Roommate
+11,3,12,19.0,Black,Female,Roommate
+12,3,13,26.0,Black,Female,Roommate
+13,4,14,2.0,Black,Male,Relative of a known person
+14,4,15,21.0,Black,Male,Criminal associate
+15,4,16,21.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+16,4,17,22.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+17,5,18,42.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+18,5,19,24.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+19,5,20,23.0,White,Female,Ex-dating relationship
+20,5,21,20.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+21,5,22,20.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+22,6,23,49.0,White,Male,Co-worker or employer
+23,6,24,50.0,White,Male,Co-worker or employer
+24,6,25,51.0,White,Male,Co-worker or employer
+25,6,26,51.0,White,Male,Co-worker or employer
+26,6,27,56.0,White,Male,Co-worker or employer
+27,6,28,57.0,White,Male,Co-worker or employer
+28,6,29,50.0,White,Male,Co-worker or employer
+29,6,30,59.0,White,Male,Co-worker or employer
+30,7,31,3.0,Black,Female,Other familial relationship
+31,7,32,4.0,Black,Male,Other familial relationship
+32,7,33,38.0,Black,Female,Other familial relationship
+33,7,34,41.0,Black,Female,Other familial relationship
+34,8,35,26.0,Black,Male,Random bystander/stranger
+35,8,36,32.0,Black,Female,Random bystander/stranger
+36,8,37,27.0,Black,Female,Random bystander/stranger
+37,8,38,30.0,Black,Male,Random bystander/stranger
+38,9,39,2.0,Black,Male,Child or stepchild
+39,9,40,7.0,Black,Female,Child or stepchild
+40,9,41,10.0,Black,Female,Child or stepchild
+41,9,42,14.0,Black,Male,Child or stepchild
+42,10,43,41.0,White,Female,Spouse
+43,10,44,64.0,White,Female,In-law
+44,10,45,4.0,White,Male,Child or stepchild
+45,10,46,2.0,White,Female,Child or stepchild
+46,11,47,53.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+47,11,48,62.0,White,Male,Relative of a known person
+48,11,49,87.0,White,Male,Relative of a known person
+49,11,50,39.0,White,Female,Ex-dating relationship
+50,12,51,25.0,White,Male,Criminal associate
+51,12,52,31.0,White,Male,Friend
+52,12,53,26.0,White,Male,Criminal associate
+53,12,54,28.0,White,Male,Criminal associate
+54,13,55,1.0,Black,Male,Child or stepchild
+55,13,56,3.0,Black,Female,Niece/Nephew
+56,13,57,16.0,Black,Female,Niece/Nephew
+57,13,58,19.0,Black,Female,Spouse
+58,13,59,57.0,Black,Female,Parent or stepparent
+59,14,60,16.0,Black,Female,Criminal associate
+60,14,61,17.0,Black,Male,Criminal associate
+61,14,62,18.0,Black,Male,Criminal associate
+62,14,63,19.0,Black,Male,Criminal associate
+63,15,64,4.0,Black,Male,Cousin
+64,15,65,7.0,Black,Male,Cousin
+65,15,66,17.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+66,15,67,25.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+67,16,68,27.0,Hispanic/Latino,Male,Roommate
+68,16,69,28.0,Hispanic/Latino,Female,Neighbor
+69,16,70,37.0,Hispanic/Latino,Male,Neighbor
+70,16,71,28.0,Hispanic/Latino,Male,Neighbor
+71,16,72,40.0,Hispanic/Latino,Male,Neighbor
+72,17,73,54.0,Black,Female,Parent or stepparent
+73,17,74,69.0,Black,Male,Parent or stepparent
+74,17,75,25.0,Black,Female,Sibling
+75,17,76,19.0,Black,Male,Sibling
+76,17,77,2.0,Black,Female,Niece/Nephew
+77,18,78,37.0,White,Female,Sibling
+78,18,79,38.0,White,Male,In-law
+79,18,80,4.0,White,Male,Niece/Nephew
+80,18,81,15.0,White,Female,Neighbor
+81,18,82,43.0,White,Male,Neighbor
+82,18,83,43.0,White,Female,Neighbor
+83,18,84,15.0,White,Male,Niece/Nephew
+84,18,85,16.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+85,19,86,55.0,White,Male,Random bystander/stranger
+86,19,87,52.0,White,Female,Random bystander/stranger
+87,19,88,24.0,White,Male,Random bystander/stranger
+88,19,89,19.0,White,Female,Random bystander/stranger
+89,19,90,80.0,White,Male,Random bystander/stranger
+90,20,91,44.0,White,Female,Spouse
+91,20,92,18.0,White,Female,Child or stepchild
+92,20,93,16.0,White,Female,Child or stepchild
+93,20,94,89.0,White,Female,Other familial relationship
+94,21,95,22.0,Hispanic/Latino,Male,Undetermined
+95,21,96,26.0,Hispanic/Latino,Male,Undetermined
+96,21,97,21.0,Hispanic/Latino,Male,Undetermined
+97,21,98,21.0,Hispanic/Latino,Male,Undetermined
+98,22,99,22.0,Hispanic/Latino,Female,Individual with some non-blood/marriage relationship to a known person
+99,22,100,32.0,Hispanic/Latino,Male,Criminal associate
+100,22,101,22.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+101,22,102,25.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+102,23,103,39.0,White,Male,First responder
+103,23,104,37.0,White,Male,First responder
+104,23,105,40.0,White,Female,First responder
+105,23,106,42.0,White,Male,First responder
+106,24,107,66.0,White,Male,Parent or stepparent
+107,24,108,38.0,White,Male,Sibling
+108,24,109,35.0,White,Female,Sibling
+109,24,110,13.0,White,Female,Niece/Nephew
+110,24,111,31.0,White,Female,Sibling
+111,25,112,20.0,White,Male,Random bystander/stranger
+112,25,113,35.0,White,Male,Random bystander/stranger
+113,25,114,25.0,White,Male,Random bystander/stranger
+114,25,115,22.0,Black,Male,Random bystander/stranger
+115,25,116,18.0,White,Female,Random bystander/stranger
+116,25,117,49.0,White,Female,Random bystander/stranger
+117,25,118,45.0,White,Male,Random bystander/stranger
+118,25,119,24.0,White,Male,Random bystander/stranger
+119,25,120,19.0,White,Female,Random bystander/stranger
+120,25,121,27.0,White,Male,Random bystander/stranger
+121,25,122,18.0,White,Female,Random bystander/stranger
+122,25,123,19.0,White,Female,Random bystander/stranger
+123,25,124,22.0,White,Male,Random bystander/stranger
+124,25,125,20.0,Hispanic/Latino,Male,Random bystander/stranger
+125,25,126,20.0,Asian/Pacific Islander,Male,Random bystander/stranger
+126,25,127,76.0,White,Male,Random bystander/stranger
+127,25,128,53.0,Asian/Pacific Islander,Male,Random bystander/stranger
+128,25,129,34.0,Asian/Pacific Islander,Male,Random bystander/stranger
+129,25,130,20.0,White,Female,Random bystander/stranger
+130,25,131,22.0,White,Male,Random bystander/stranger
+131,25,132,26.0,Hispanic/Latino,Male,Random bystander/stranger
+132,25,133,26.0,Asian/Pacific Islander,Female,Random bystander/stranger
+133,25,134,21.0,Hispanic/Latino,Male,Random bystander/stranger
+134,25,135,18.0,Black,Female,Random bystander/stranger
+135,25,136,23.0,White,Male,Random bystander/stranger
+136,25,137,23.0,White,Female,Random bystander/stranger
+137,25,138,19.0,White,Female,Random bystander/stranger
+138,25,139,18.0,White,Female,Random bystander/stranger
+139,25,140,20.0,White,Female,Random bystander/stranger
+140,25,141,22.0,White,Female,Random bystander/stranger
+141,25,142,20.0,White,Female,Random bystander/stranger
+142,25,143,32.0,Asian/Pacific Islander,Male,Random bystander/stranger
+143,26,144,1.0,Hispanic/Latino,Female,Child or stepchild
+144,26,145,2.0,Hispanic/Latino,Female,Child or stepchild
+145,26,146,4.0,Hispanic/Latino,Female,Child or stepchild
+146,26,147,9.0,Hispanic/Latino,Female,Child or stepchild
+147,26,148,25.0,Hispanic/Latino,Female,Spouse
+148,27,149,24.0,White,Male,Random bystander/stranger
+149,27,150,15.0,White,Female,Random bystander/stranger
+150,27,151,29.0,White,Female,Random bystander/stranger
+151,27,152,52.0,White,Male,Random bystander/stranger
+152,27,153,29.0,White,Female,Random bystander/stranger
+153,28,154,10.0,White,Male,Relative of a known person
+154,28,155,13.0,White,Male,Relative of a known person
+155,28,156,30.0,White,Female,Relative of a known person
+156,28,157,33.0,White,Male,Neighbor
+157,28,158,6.0,White,Male,Relative of a known person
+158,29,159,23.0,Black,Male,Undetermined
+159,29,160,24.0,Black,Male,Undetermined
+160,29,161,19.0,Black,Male,Undetermined
+161,29,162,22.0,Black,Female,Undetermined
+162,30,163,29.0,White,Male,Roommate
+163,30,164,40.0,White,Male,Roommate
+164,30,165,51.0,White,Male,Roommate
+165,30,166,53.0,White,Male,Roommate
+166,31,167,35.0,Black,Female,Cousin
+167,31,168,32.0,Black,Female,Dating relationship
+168,31,169,14.0,Black,Female,Child or stepchild
+169,31,170,11.0,Black,Male,Child or stepchild
+170,31,171,8.0,Black,Male,Child or stepchild
+171,31,172,1.0,Black,Male,Child or stepchild
+172,32,173,15.0,White,Female,Cousin
+173,32,174,19.0,White,Male,Cousin
+174,32,175,20.0,White,Male,Aunt/Uncle
+175,32,176,22.0,White,Female,Cousin
+176,32,177,30.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+177,32,178,44.0,White,Male,Cousin
+178,32,179,45.0,White,Male,Parent or stepparent
+179,32,180,49.0,White,Female,Other familial relationship
+180,33,181,19.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+181,33,182,30.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+182,33,183,28.0,Black,Female,Dating relationship
+183,33,184,11.0,Black,Female,Relative of a known person
+184,34,185,54.0,White,Male,Neighbor
+185,34,186,61.0,White,Male,Neighbor
+186,34,187,38.0,,Female,Neighbor
+187,34,188,43.0,White,Male,Neighbor
+188,35,189,38.0,White,Female,Ex-spouse
+189,35,190,16.0,White,Male,Former relative/in-law
+190,35,191,16.0,White,Male,Neighbor
+191,35,192,56.0,White,Male,Former relative/in-law
+192,35,193,34.0,White,Male,Former relative/in-law
+193,35,194,50.0,White,Male,Co-worker or employer
+194,36,195,3.0,Black,Female,Relative of a known person
+195,36,196,21.0,White,Female,Ex-dating relationship
+196,36,197,41.0,White,Female,Relative of a known person
+197,36,198,66.0,Black,Male,Random bystander/stranger
+198,37,199,2.0,White,Female,Child or stepchild
+199,37,200,4.0,White,Male,Child or stepchild
+200,37,201,5.0,White,Male,Child or stepchild
+201,37,202,33.0,White,Female,Spouse
+202,38,203,22.0,Asian/Pacific Islander,Female,Random bystander/stranger
+203,38,204,26.0,Asian/Pacific Islander,Female,Random bystander/stranger
+204,38,205,35.0,Asian/Pacific Islander,Female,Random bystander/stranger
+205,38,206,39.0,Asian/Pacific Islander,Female,Random bystander/stranger
+206,38,207,43.0,Hispanic/Latino,Male,Random bystander/stranger
+207,38,208,44.0,Black,Male,Random bystander/stranger
+208,38,209,46.0,Black,Female,Random bystander/stranger
+209,38,210,47.0,Asian/Pacific Islander,Female,Random bystander/stranger
+210,38,211,53.0,Asian/Pacific Islander,Female,Random bystander/stranger
+211,38,212,54.0,Asian/Pacific Islander,Female,Random bystander/stranger
+212,38,213,57.0,White,Female,Random bystander/stranger
+213,38,214,60.0,White,Female,Random bystander/stranger
+214,38,215,72.0,White,Female,Random bystander/stranger
+215,39,216,16.0,White,Female,Child or stepchild
+216,39,217,14.0,White,Male,Child or stepchild
+217,39,218,12.0,White,Female,Child or stepchild
+218,39,219,9.0,White,Female,Child or stepchild
+219,39,220,7.0,White,Male,Child or stepchild
+220,40,221,11.0,Asian/Pacific Islander,Male,Child or stepchild
+221,40,222,4.0,Asian/Pacific Islander,Female,Child or stepchild
+222,40,223,35.0,Asian/Pacific Islander,Male,In-law
+223,40,224,25.0,Asian/Pacific Islander,Female,Other familial relationship
+224,40,225,1.0,Asian/Pacific Islander,Female,Other familial relationship
+225,41,226,40.0,White,Male,First responder
+226,41,227,35.0,Asian/Pacific Islander,Male,First responder
+227,41,228,43.0,White,Male,First responder
+228,41,229,41.0,White,Male,First responder
+229,42,230,7.0,Black,Male,Relative of a known person
+230,42,231,10.0,Black,Male,Relative of a known person
+231,42,232,21.0,Black,Female,Ex-dating relationship
+232,42,233,33.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+233,43,234,98.0,White,Female,Random bystander/stranger
+234,43,235,89.0,White,Female,Random bystander/stranger
+235,43,236,88.0,White,Female,Random bystander/stranger
+236,43,237,78.0,White,Male,Random bystander/stranger
+237,43,238,89.0,White,Female,Random bystander/stranger
+238,43,239,88.0,White,Male,Random bystander/stranger
+239,43,240,39.0,White,Male,Random bystander/stranger
+240,43,241,78.0,White,Female,Random bystander/stranger
+241,44,242,4.0,Asian/Pacific Islander,Male,Individual with some non-blood/marriage relationship to a known person
+242,44,243,18.0,Asian/Pacific Islander,Female,Individual with some non-blood/marriage relationship to a known person
+243,44,244,20.0,Asian/Pacific Islander,Female,Individual with some non-blood/marriage relationship to a known person
+244,44,245,40.0,Asian/Pacific Islander,Female,Individual with some non-blood/marriage relationship to a known person
+245,45,246,30.0,Black,Female,Spouse
+246,45,247,4.0,Black,Female,Niece/Nephew
+247,45,248,2.0,Black,Male,Niece/Nephew
+248,45,249,2.0,Black,Male,Niece/Nephew
+249,45,250,25.0,Black,Female,In-law
+250,46,251,13.0,Hispanic/Latino,Female,Neighbor
+251,46,252,46.0,Hispanic/Latino,Female,Neighbor
+252,46,253,20.0,Hispanic/Latino,Male,Neighbor
+253,46,254,9.0,Hispanic/Latino,Female,Neighbor
+254,47,255,38.0,Hispanic/Latino,Female,Spouse
+255,47,256,5.0,Hispanic/Latino,Female,Child or stepchild
+256,47,257,5.0,Hispanic/Latino,Female,Child or stepchild
+257,47,258,2.0,Hispanic/Latino,Male,Child or stepchild
+258,47,259,2.0,Hispanic/Latino,Male,Child or stepchild
+259,47,260,8.0,Hispanic/Latino,Female,Child or stepchild
+260,48,261,3.0,White,Female,Relative of a known person
+261,48,262,4.0,White,Male,Relative of a known person
+262,48,263,7.0,White,Female,Relative of a known person
+263,48,264,7.0,White,Female,Relative of a known person
+264,48,265,25.0,White,Female,Dating relationship
+265,49,266,70.0,Hispanic/Latino,Female,Former relative/in-law
+266,49,267,80.0,Hispanic/Latino,Male,Former relative/in-law
+267,49,268,46.0,Hispanic/Latino,Female,Former relative/in-law
+268,49,269,43.0,Hispanic/Latino,Female,Ex-spouse
+269,49,270,45.0,Hispanic/Latino,Female,Former relative/in-law
+270,49,271,50.0,Hispanic/Latino,Male,Former relative/in-law
+271,49,272,52.0,Hispanic/Latino,Male,Former relative/in-law
+272,49,273,51.0,Hispanic/Latino,Female,Former relative/in-law
+273,49,274,17.0,Hispanic/Latino,Male,Former relative/in-law
+274,50,275,45.0,Hispanic/Latino,Female,In-law
+275,50,276,8.0,Hispanic/Latino,Male,Child or stepchild
+276,50,277,3.0,Hispanic/Latino,Male,Child or stepchild
+277,50,278,6.0,Hispanic/Latino,Male,Child or stepchild
+278,51,279,39.0,Asian/Pacific Islander,Female,Spouse
+279,51,280,69.0,Asian/Pacific Islander,Female,In-law
+280,51,281,19.0,Asian/Pacific Islander,Male,Child or stepchild
+281,51,282,7.0,Asian/Pacific Islander,Male,Child or stepchild
+282,51,283,12.0,Asian/Pacific Islander,Male,Child or stepchild
+283,52,284,64.0,White,Male,Random bystander/stranger
+284,52,285,71.0,White,Male,Random bystander/stranger
+285,52,286,75.0,Hispanic/Latino,Male,Random bystander/stranger
+286,52,287,78.0,Hispanic/Latino,Male,Random bystander/stranger
+287,53,288,43.0,Black,Female,Relative of a known person
+288,53,289,12.0,Black,Female,Relative of a known person
+289,53,290,14.0,Black,Female,Relative of a known person
+290,53,291,9.0,Black,Female,Relative of a known person
+291,54,292,30.0,Hispanic/Latino,Male,Child or stepchild
+292,54,293,33.0,Hispanic/Latino,Female,Child or stepchild
+293,54,294,57.0,Hispanic/Latino,Female,Spouse
+294,54,295,81.0,Hispanic/Latino,Female,In-law
+295,55,296,13.0,Black,Female,Acquaintence
+296,55,297,18.0,Black,Female,Acquaintence
+297,55,298,18.0,Black,Female,Acquaintence
+298,55,299,40.0,Black,Female,Acquaintence
+299,56,300,48.0,White,Female,Neighbor
+300,56,301,40.0,White,Female,First responder
+301,56,302,64.0,White,Male,Random bystander/stranger
+302,56,303,58.0,White,Male,Random bystander/stranger
+303,56,304,57.0,White,Male,Neighbor
+304,56,305,38.0,White,Male,Random bystander/stranger
+305,57,306,34.0,Black,Male,Criminal associate
+306,57,307,28.0,Black,Male,Criminal associate
+307,57,308,23.0,Black,Female,Random bystander/stranger
+308,57,309,27.0,Black,Female,Random bystander/stranger
+309,58,310,60.0,White,Male,Former relative/in-law
+310,58,311,34.0,Asian/Pacific Islander,Female,Ex-spouse
+311,58,312,34.0,Asian/Pacific Islander,Male,Individual with some non-blood/marriage relationship to a known person
+312,58,313,9.0,Asian/Pacific Islander,Male,Former relative/in-law
+313,58,314,13.0,Asian/Pacific Islander,Female,Former relative/in-law
+314,59,315,40.0,White,Male,Co-worker or employer
+315,59,316,29.0,Hispanic/Latino,Male,Co-worker or employer
+316,59,317,26.0,Hispanic/Latino,Female,Co-worker or employer
+317,59,318,25.0,Hispanic/Latino,Female,Co-worker or employer
+318,59,319,28.0,Hispanic/Latino,Male,Co-worker or employer
+319,60,320,42.0,White,Female,Spouse
+320,60,321,64.0,White,Female,In-law
+321,60,322,6.0,White,Male,Child or stepchild
+322,60,323,9.0,White,Male,Child or stepchild
+323,61,324,4.0,Hispanic/Latino,Female,Child or stepchild
+324,61,325,34.0,Hispanic/Latino,Female,Spouse
+325,61,326,6.0,Hispanic/Latino,Male,Child or stepchild
+326,61,327,3.0,Hispanic/Latino,Female,Child or stepchild
+327,62,328,22.0,Black,Female,Random bystander/stranger
+328,62,329,23.0,Black,Male,Random bystander/stranger
+329,62,330,17.0,Black,Female,Random bystander/stranger
+330,62,331,25.0,Black,Male,Acquaintence
+331,62,332,26.0,Black,Male,Random bystander/stranger
+332,63,333,46.0,White,Male,Parent or stepparent
+333,63,334,46.0,Hispanic/Latino,Female,Parent or stepparent
+334,63,335,19.0,Hispanic/Latino,Female,Sibling
+335,63,336,14.0,White,Male,Sibling
+336,64,337,33.0,White,Male,Random bystander/stranger
+337,64,338,66.0,White,Male,Parent or stepparent
+338,64,339,45.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+339,64,340,37.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+340,65,341,42.0,White,Female,Spouse
+341,65,342,10.0,Asian/Pacific Islander,Male,Child or stepchild
+342,65,343,8.0,Asian/Pacific Islander,Male,Child or stepchild
+343,65,344,5.0,Asian/Pacific Islander,Female,Child or stepchild
+344,65,345,3.0,Asian/Pacific Islander,Female,Child or stepchild
+345,66,346,31.0,White,Female,Undetermined
+346,66,347,43.0,White,Male,Undetermined
+347,66,348,46.0,White,Male,Undetermined
+348,66,349,33.0,White,Male,Undetermined
+349,67,350,30.0,Black,Male,Sibling
+350,67,351,22.0,Black,Female,Undetermined
+351,67,352,33.0,Black,Male,Undetermined
+352,67,353,27.0,Black,Female,Aunt/Uncle
+353,67,354,4.0,Black,Male,Niece/Nephew
+354,67,355,2.0,Black,Male,Niece/Nephew
+355,68,356,39.0,Asian/Pacific Islander,Female,Spouse
+356,68,357,5.0,Asian/Pacific Islander,Male,Child or stepchild
+357,68,358,9.0,Asian/Pacific Islander,Female,Child or stepchild
+358,68,359,8.0,Asian/Pacific Islander,Female,Child or stepchild
+359,69,360,11.0,White,Male,Sibling
+360,69,361,13.0,White,Male,Sibling
+361,69,362,44.0,White,Female,Parent or stepparent
+362,69,363,45.0,White,Male,Parent or stepparent
+363,70,364,37.0,White,Male,First responder
+364,70,365,50.0,White,Male,First responder
+365,70,366,51.0,White,Female,Random bystander/stranger
+366,70,367,61.0,White,Male,Random bystander/stranger
+367,70,368,63.0,White,Male,Random bystander/stranger
+368,70,369,69.0,White,Male,Random bystander/stranger
+369,71,370,43.0,White,Female,Relative of a known person
+370,71,371,20.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+371,71,372,53.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+372,71,373,55.0,White,Male,Neighbor
+373,72,374,1.0,Black,Male,Random bystander/stranger
+374,72,375,0.0,Black,Female,Random bystander/stranger
+375,72,376,24.0,Black,Female,Undetermined
+376,72,377,24.0,Black,Female,Undetermined
+377,73,378,46.0,Black,Female,Neighbor
+378,73,379,23.0,Black,Female,Neighbor
+379,73,380,8.0,Black,Female,Neighbor
+380,73,381,6.0,Black,Female,Neighbor
+381,73,382,3.0,Black,Female,Neighbor
+382,73,383,2.0,Black,Male,Neighbor
+383,74,384,33.0,White,Female,Spouse
+384,74,385,4.0,White,Male,Child or stepchild
+385,74,386,8.0,White,Female,Child or stepchild
+386,74,387,2.0,White,Male,Child or stepchild
+387,74,388,2.0,White,Female,Child or stepchild
+388,75,389,3.0,White,Male,Niece/Nephew
+389,75,390,5.0,White,Female,Niece/Nephew
+390,75,391,30.0,White,Female,In-law
+391,75,392,32.0,White,Male,Sibling
+392,75,393,60.0,White,Male,Parent or stepparent
+393,75,394,61.0,White,Female,Parent or stepparent
+394,76,395,34.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+395,76,396,45.0,White,Male,Parent or stepparent
+396,76,397,15.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+397,76,398,15.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+398,77,399,7.0,White,Male,Child or stepchild
+399,77,400,10.0,White,Female,Child or stepchild
+400,77,401,13.0,White,Male,Child or stepchild
+401,77,402,43.0,White,Female,Ex-spouse
+402,78,403,34.0,Black,Male,Criminal associate
+403,78,404,28.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+404,78,405,5.0,Black,Male,Random bystander/stranger
+405,78,406,9.0,Black,Female,Random bystander/stranger
+406,79,407,14.0,White,Female,Acquaintence
+407,79,408,18.0,White,Female,Acquaintence
+408,79,409,20.0,White,Male,Friend
+409,79,410,18.0,White,Female,Ex-dating relationship
+410,79,411,18.0,White,Female,Acquaintence
+411,79,412,20.0,White,Male,Friend
+412,80,413,33.0,Black,Male,Criminal associate
+413,80,414,22.0,,Male,Criminal associate
+414,80,415,20.0,,Male,Criminal associate
+415,80,416,25.0,,Female,Random bystander/stranger
+416,81,417,46.0,White,Female,Ex-dating relationship
+417,81,418,15.0,White,Female,Relative of a known person
+418,81,419,48.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+419,81,420,17.0,White,Female,Friend
+420,81,421,81.0,White,Female,Random bystander/stranger
+421,81,422,41.0,White,Male,Random bystander/stranger
+422,82,423,32.0,Black,Female,Acquaintence
+423,82,424,27.0,Black,Male,Criminal associate
+424,82,425,43.0,Black,Male,Acquaintence
+425,82,426,12.0,Black,Male,Acquaintence
+426,82,427,10.0,Black,Female,Acquaintence
+427,83,428,19.0,White,Female,Ex-dating relationship
+428,83,429,19.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+429,83,430,21.0,White,Female,Relative of a known person
+430,83,431,0.0,Hispanic/Latino,Male,Child or stepchild
+431,83,432,0.0,Hispanic/Latino,Male,Child or stepchild
+432,84,433,23.0,Black,Female,Random bystander/stranger
+433,84,434,40.0,Black,Male,Random bystander/stranger
+434,84,435,39.0,Black,Female,Random bystander/stranger
+435,84,436,51.0,Black,Male,Criminal associate
+436,85,437,4.0,Black,Male,Relative of a known person
+437,85,438,4.0,Black,Female,Relative of a known person
+438,85,439,33.0,Black,Female,Ex-dating relationship
+439,85,440,52.0,Black,Female,Relative of a known person
+440,86,441,17.0,White,Female,Sibling
+441,86,442,53.0,White,Male,Parent or stepparent
+442,86,443,47.0,White,Female,Parent or stepparent
+443,86,444,15.0,White,Female,Sibling
+444,86,445,14.0,White,Female,Sibling
+445,87,446,2.0,Black,Male,Child or stepchild
+446,87,447,4.0,Black,Female,Child or stepchild
+447,87,448,7.0,Black,Female,Child or stepchild
+448,87,449,8.0,Black,Female,Child or stepchild
+449,88,450,35.0,White,Male,Neighbor
+450,88,451,47.0,,Male,Neighbor
+451,88,452,45.0,,Male,Neighbor
+452,88,453,70.0,,Male,Neighbor
+453,88,454,35.0,,Male,Neighbor
+454,88,455,78.0,,Male,Neighbor
+455,88,456,51.0,White,Male,Neighbor
+456,88,457,56.0,White,Male,Neighbor
+457,88,458,56.0,,Female,Neighbor
+458,88,459,22.0,,Male,Neighbor
+459,88,460,56.0,,Female,Neighbor
+460,88,461,50.0,,Male,Neighbor
+461,89,462,13.0,Black,Male,Child or stepchild
+462,89,463,16.0,Black,Male,Child or stepchild
+463,89,464,6.0,Black,Female,Child or stepchild
+464,89,465,39.0,Black,Female,Spouse
+465,89,466,8.0,Black,Female,Child or stepchild
+466,90,467,26.0,Hispanic/Latino,Male,Undetermined
+467,90,468,26.0,Hispanic/Latino,Female,Undetermined
+468,90,469,33.0,Hispanic/Latino,Male,Undetermined
+469,90,470,38.0,Hispanic/Latino,Male,Undetermined
+470,91,471,16.0,Black,Male,Undetermined
+471,91,472,16.0,Black,Male,Undetermined
+472,91,473,21.0,Black,Male,Undetermined
+473,91,474,39.0,Black,Male,Undetermined
+474,92,475,16.0,Black,Male,Criminal associate
+475,92,476,19.0,Black,Male,Criminal associate
+476,92,477,17.0,Black,Male,Criminal associate
+477,92,478,19.0,Black,Male,Criminal associate
+478,92,479,19.0,Black,Male,Criminal associate
+479,93,480,15.0,White,Male,Criminal associate
+480,93,481,16.0,White,Female,Criminal associate
+481,93,482,36.0,White,Female,Criminal associate
+482,93,483,40.0,White,Male,Criminal associate
+483,94,484,3.0,Black,Female,Relative of a known person
+484,94,485,5.0,Black,Male,Relative of a known person
+485,94,486,5.0,Black,Male,Relative of a known person
+486,94,487,8.0,Black,Female,Relative of a known person
+487,95,488,35.0,Black,Male,Undetermined
+488,95,489,23.0,Black,Female,Undetermined
+489,95,490,47.0,,Male,Undetermined
+490,95,491,43.0,,Female,Undetermined
+491,96,492,14.0,Asian/Pacific Islander,Female,Random bystander/stranger
+492,96,493,15.0,White,Female,Random bystander/stranger
+493,96,494,21.0,White,Male,Random bystander/stranger
+494,96,495,22.0,American Indian,Male,Random bystander/stranger
+495,96,496,26.0,White,Male,Random bystander/stranger
+496,96,497,32.0,White,Male,Random bystander/stranger
+497,97,498,10.0,White,Male,Relative of a known person
+498,97,499,16.0,White,Female,Relative of a known person
+499,97,500,18.0,White,Male,Co-worker or employer
+500,97,501,30.0,White,Male,Co-worker or employer
+501,97,502,32.0,White,Female,Co-worker or employer
+502,98,503,39.0,White,Female,Random bystander/stranger
+503,98,504,49.0,White,Male,Random bystander/stranger
+504,98,505,4.0,White,Female,Random bystander/stranger
+505,98,506,9.0,White,Female,Random bystander/stranger
+506,98,507,21.0,Black,Male,Criminal associate
+507,98,508,46.0,Black,Male,Relative of a known person
+508,98,509,55.0,Black,Female,Relative of a known person
+509,99,510,48.0,White,Male,Random bystander/stranger
+510,99,511,47.0,White,Female,Random bystander/stranger
+511,99,512,36.0,White,Female,Random bystander/stranger
+512,99,513,53.0,White,Female,Random bystander/stranger
+513,99,514,66.0,White,Female,Random bystander/stranger
+514,99,515,65.0,White,Male,Random bystander/stranger
+515,99,516,56.0,White,Male,Random bystander/stranger
+516,99,517,24.0,White,Female,Random bystander/stranger
+517,100,518,20.0,Hispanic/Latino,Female,Random bystander/stranger
+518,100,519,32.0,White,Female,Random bystander/stranger
+519,100,520,19.0,White,Female,Random bystander/stranger
+520,100,521,20.0,White,Male,Random bystander/stranger
+521,100,522,20.0,White,Female,Random bystander/stranger
+522,101,523,62.0,White,Male,Random bystander/stranger
+523,101,524,52.0,Hispanic/Latino,Male,Random bystander/stranger
+524,101,525,32.0,White,Male,Random bystander/stranger
+525,101,526,56.0,White,Male,Random bystander/stranger
+526,101,527,29.0,White,Male,Random bystander/stranger
+527,101,528,22.0,White,Male,Random bystander/stranger
+528,101,529,29.0,White,Female,Random bystander/stranger
+529,101,530,19.0,White,Male,Random bystander/stranger
+530,101,531,22.0,White,Male,Random bystander/stranger
+531,101,532,51.0,White,Male,Random bystander/stranger
+532,101,533,55.0,,Female,Random bystander/stranger
+533,101,534,23.0,Asian/Pacific Islander,Male,Random bystander/stranger
+534,101,535,21.0,Hispanic/Latino,Female,Random bystander/stranger
+535,102,536,68.0,Black,Male,Parent or stepparent
+536,102,537,58.0,Black,Female,Parent or stepparent
+537,102,538,14.0,Black,Male,Niece/Nephew
+538,102,539,4.0,Black,Female,Niece/Nephew
+539,103,540,24.0,Black,Female,Spouse
+540,103,541,78.0,Black,Male,Other familial relationship
+541,103,542,72.0,Black,Female,Other familial relationship
+542,103,543,47.0,Black,Female,Other familial relationship
+543,103,544,68.0,Black,Female,Other familial relationship
+544,104,545,21.0,Hispanic/Latino,Female,Ex-dating relationship
+545,104,546,19.0,Hispanic/Latino,Male,Individual with some non-blood/marriage relationship to a known person
+546,104,547,21.0,Hispanic/Latino,Male,Individual with some non-blood/marriage relationship to a known person
+547,104,548,18.0,Hispanic/Latino,Male,Individual with some non-blood/marriage relationship to a known person
+548,104,549,18.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+549,105,550,27.0,Black,Female,Ex-dating relationship
+550,105,551,10.0,Black,Female,Relative of a known person
+551,105,552,5.0,Black,Male,Relative of a known person
+552,105,553,3.0,Black,Male,Child or stepchild
+553,106,554,64.0,Black,Female,Grandparent
+554,106,555,45.0,Black,Female,Aunt/Uncle
+555,106,556,5.0,Black,Male,Cousin
+556,106,557,19.0,Black,Male,Cousin
+557,106,558,43.0,Black,Female,Aunt/Uncle
+558,106,559,17.0,Black,Male,Cousin
+559,107,560,8.0,Hispanic/Latino,Female,Child or stepchild
+560,107,561,6.0,Hispanic/Latino,Male,Child or stepchild
+561,107,562,4.0,Hispanic/Latino,Male,Child or stepchild
+562,107,563,2.0,Hispanic/Latino,Female,Child or stepchild
+563,108,564,19.0,White,Female,Dating relationship
+564,108,565,2.0,White,Male,Relative of a known person
+565,108,566,17.0,White,Male,Relative of a known person
+566,108,567,60.0,White,Male,Relative of a known person
+567,109,568,37.0,Asian/Pacific Islander,Female,Co-worker or employer
+568,109,569,28.0,Hispanic/Latino,Female,Co-worker or employer
+569,109,570,42.0,Hispanic/Latino,Female,Co-worker or employer
+570,109,571,52.0,White,Female,Co-worker or employer
+571,109,572,57.0,Black,Male,Co-worker or employer
+572,109,573,44.0,Asian/Pacific Islander,Female,Co-worker or employer
+573,109,574,54.0,White,Female,Neighbor
+574,110,575,12.0,White,Female,Child or stepchild
+575,110,576,10.0,White,Male,Child or stepchild
+576,110,577,5.0,White,Male,Child or stepchild
+577,110,578,5.0,White,Female,Child or stepchild
+578,111,579,46.0,Hispanic/Latino,Female,Random bystander/stranger
+579,111,580,56.0,Hispanic/Latino,Male,Random bystander/stranger
+580,111,581,22.0,Hispanic/Latino,Female,Random bystander/stranger
+581,111,582,29.0,Hispanic/Latino,Male,Random bystander/stranger
+582,111,583,5.0,Hispanic/Latino,Male,Random bystander/stranger
+583,111,584,11.0,Hispanic/Latino,Male,Random bystander/stranger
+584,111,585,8.0,Hispanic/Latino,Male,Random bystander/stranger
+585,112,586,28.0,White,Female,Neighbor
+586,112,587,24.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+587,112,588,5.0,White,Male,Neighbor
+588,112,589,3.0,White,Male,Neighbor
+589,113,590,7.0,White,Female,Random bystander/stranger
+590,113,591,12.0,White,Female,Random bystander/stranger
+591,113,592,13.0,White,Female,Random bystander/stranger
+592,113,593,8.0,White,Female,Random bystander/stranger
+593,113,594,7.0,White,Female,Random bystander/stranger
+594,114,595,25.0,Hispanic/Latino,Female,Criminal associate
+595,114,596,28.0,Hispanic/Latino,Male,Criminal associate
+596,114,597,4.0,Hispanic/Latino,Male,Relative of a known person
+597,114,598,3.0,Hispanic/Latino,Male,Relative of a known person
+598,115,599,32.0,Black,Female,Spouse
+599,115,600,9.0,Black,Male,Child or stepchild
+600,115,601,6.0,Black,Male,Child or stepchild
+601,115,602,5.0,Black,Male,Child or stepchild
+602,115,603,3.0,Black,Female,Child or stepchild
+603,115,604,1.0,Black,Female,Child or stepchild
+604,116,605,36.0,Black,Female,Ex-spouse
+605,116,606,10.0,Black,Male,Child or stepchild
+606,116,607,11.0,Black,Male,Child or stepchild
+607,116,608,13.0,Black,Female,Child or stepchild
+608,116,609,14.0,Black,Male,Child or stepchild
+609,117,610,33.0,White,Female,Sibling
+610,117,611,33.0,White,Female,Sibling
+611,117,612,76.0,White,Female,Aunt/Uncle
+612,117,613,6.0,White,Female,Niece/Nephew
+613,118,614,24.0,Hispanic/Latino,Female,Ex-spouse
+614,118,615,32.0,Hispanic/Latino,Female,Random bystander/stranger
+615,118,616,47.0,Hispanic/Latino,Female,Random bystander/stranger
+616,118,617,56.0,Hispanic/Latino,Female,Random bystander/stranger
+617,119,618,27.0,Black,Female,Ex-dating relationship
+618,119,619,6.0,Black,Female,Relative of a known person
+619,119,620,6.0,Black,Female,Relative of a known person
+620,119,621,3.0,Black,Male,Child or stepchild
+621,120,622,8.0,Black,Male,Relative of a known person
+622,120,623,8.0,Black,Female,Relative of a known person
+623,120,624,27.0,Black,Female,Dating relationship
+624,120,625,52.0,Black,Female,Relative of a known person
+625,121,626,68.0,Black,Female,Relative of a known person
+626,121,627,29.0,Black,Female,Dating relationship
+627,121,628,2.0,Black,Female,Child or stepchild
+628,121,629,4.0,Black,Male,Child or stepchild
+629,122,630,24.0,White,Male,Random bystander/stranger
+630,122,631,18.0,White,Male,Random bystander/stranger
+631,122,632,29.0,White,Male,Random bystander/stranger
+632,122,633,51.0,White,Male,Random bystander/stranger
+633,122,634,24.0,White,Female,Random bystander/stranger
+634,122,635,27.0,White,Male,Random bystander/stranger
+635,122,636,27.0,White,Male,Random bystander/stranger
+636,122,637,23.0,White,Female,Random bystander/stranger
+637,122,638,6.0,White,Female,Random bystander/stranger
+638,122,639,27.0,White,Male,Random bystander/stranger
+639,122,640,24.0,White,Male,Random bystander/stranger
+640,122,641,32.0,White,Female,Random bystander/stranger
+641,123,642,22.0,White,Female,Ex-dating relationship
+642,123,643,45.0,White,Female,Random bystander/stranger
+643,123,644,29.0,White,Male,Random bystander/stranger
+644,123,645,45.0,White,Female,Random bystander/stranger
+645,123,646,63.0,Asian/Pacific Islander,Female,Random bystander/stranger
+646,124,647,16.0,Black,Male,Undetermined
+647,124,648,22.0,Black,Female,Undetermined
+648,124,649,28.0,White,Male,Undetermined
+649,124,650,34.0,Black,Male,Undetermined
+650,125,651,65.0,White,Female,Random bystander/stranger
+651,125,652,46.0,White,Female,Random bystander/stranger
+652,125,653,47.0,White,Female,Random bystander/stranger
+653,125,654,64.0,White,Male,Random bystander/stranger
+654,125,655,47.0,White,Female,Random bystander/stranger
+655,125,656,48.0,White,Female,Ex-spouse
+656,125,657,62.0,White,Male,Random bystander/stranger
+657,125,658,54.0,White,Female,Random bystander/stranger
+658,126,659,30.0,White,Male,Random bystander/stranger
+659,126,660,63.0,White,Male,Random bystander/stranger
+660,126,661,76.0,White,Female,Random bystander/stranger
+661,126,662,76.0,White,Male,Random bystander/stranger
+662,126,663,79.0,White,Female,Random bystander/stranger
+663,126,664,9.0,White,Female,Random bystander/stranger
+664,127,665,14.0,White,Male,Child or stepchild
+665,127,666,19.0,White,Female,Child or stepchild
+666,127,667,22.0,White,Female,Former relative/in-law
+667,127,668,55.0,White,Female,Ex-spouse
+668,127,669,58.0,White,Female,Former relative/in-law
+669,127,670,59.0,White,Male,Former relative/in-law
+670,128,671,6.0,Asian/Pacific Islander,Male,Child or stepchild
+671,128,672,8.0,Asian/Pacific Islander,Female,Child or stepchild
+672,128,673,9.0,Asian/Pacific Islander,Male,Child or stepchild
+673,128,674,9.0,Asian/Pacific Islander,Male,Child or stepchild
+674,128,675,12.0,Asian/Pacific Islander,Male,Child or stepchild
+675,129,676,16.0,Asian/Pacific Islander,Female,Former relative/in-law
+676,129,677,29.0,Asian/Pacific Islander,Female,Ex-spouse
+677,129,678,21.0,Asian/Pacific Islander,Male,Former relative/in-law
+678,129,679,28.0,Asian/Pacific Islander,Female,Former relative/in-law
+679,129,680,29.0,Asian/Pacific Islander,Female,Former relative/in-law
+680,130,681,18.0,White,Male,Relative of a known person
+681,130,682,23.0,White,Female,Relative of a known person
+682,130,683,43.0,White,Male,Neighbor
+683,130,684,47.0,White,Female,Relative of a known person
+684,130,685,50.0,White,Male,Criminal associate
+685,131,686,49.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+686,131,687,50.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+687,131,688,17.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+688,131,689,22.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+689,131,690,30.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+690,132,691,32.0,Black,Female,Spouse
+691,132,692,11.0,Black,Male,Child or stepchild
+692,132,693,15.0,Black,Female,Child or stepchild
+693,132,694,6.0,Black,Male,Child or stepchild
+694,133,695,31.0,White,Female,First responder
+695,133,696,35.0,White,Male,First responder
+696,133,697,38.0,White,Male,First responder
+697,133,698,67.0,White,Female,Random bystander/stranger
+698,134,699,11.0,White,Male,Child or stepchild
+699,134,700,13.0,White,Male,Child or stepchild
+700,134,701,18.0,White,Male,Child or stepchild
+701,134,702,33.0,White,Male,Sibling
+702,135,703,17.0,White,Female,Random bystander/stranger
+703,135,704,71.0,White,Male,Random bystander/stranger
+704,135,705,33.0,White,Female,Random bystander/stranger
+705,135,706,45.0,Black,Male,Random bystander/stranger
+706,136,707,27.0,Hispanic/Latino,Female,Ex-dating relationship
+707,136,708,10.0,Hispanic/Latino,Male,Child or stepchild
+708,136,709,9.0,Hispanic/Latino,Female,Child or stepchild
+709,136,710,20.0,Hispanic/Latino,Female,Roommate
+710,137,711,25.0,Hispanic/Latino,Male,Undetermined
+711,137,712,25.0,Hispanic/Latino,Male,Undetermined
+712,137,713,26.0,Hispanic/Latino,Male,Undetermined
+713,137,714,24.0,Hispanic/Latino,Male,Undetermined
+714,138,715,1.0,White,Male,Child or stepchild
+715,138,716,2.0,White,Male,Child or stepchild
+716,138,717,4.0,White,Female,Child or stepchild
+717,138,718,30.0,White,Female,Spouse
+718,139,719,23.0,White,Male,Child or stepchild
+719,139,720,64.0,White,Female,Parent or stepparent
+720,139,721,20.0,White,Male,Child or stepchild
+721,139,722,52.0,White,Male,Spouse
+722,140,723,2.0,Hispanic/Latino,Female,Child or stepchild
+723,140,724,3.0,Hispanic/Latino,Male,Child or stepchild
+724,140,725,4.0,Hispanic/Latino,Male,Child or stepchild
+725,140,726,5.0,Hispanic/Latino,Male,Child or stepchild
+726,141,727,24.0,White,Female,Random bystander/stranger
+727,141,728,26.0,Asian/Pacific Islander,Female,Random bystander/stranger
+728,141,729,34.0,Asian/Pacific Islander,Male,Random bystander/stranger
+729,141,730,49.0,Asian/Pacific Islander,Male,Random bystander/stranger
+730,142,731,61.0,White,Male,Co-worker or employer
+731,142,732,50.0,White,Male,Random bystander/stranger
+732,142,733,62.0,White,Male,Co-worker or employer
+733,142,734,34.0,White,Male,Co-worker or employer
+734,142,735,58.0,White,Male,Co-worker or employer
+735,142,736,42.0,White,Male,Co-worker or employer
+736,143,737,6.0,White,Female,Random bystander/stranger
+737,143,738,7.0,White,Female,Random bystander/stranger
+738,143,739,6.0,White,Female,Random bystander/stranger
+739,143,740,7.0,White,Female,Random bystander/stranger
+740,143,741,6.0,Black,Female,Random bystander/stranger
+741,143,742,6.0,White,Male,Random bystander/stranger
+742,143,743,6.0,Other,Female,Random bystander/stranger
+743,143,744,6.0,White,Female,Random bystander/stranger
+744,143,745,7.0,White,Male,Random bystander/stranger
+745,143,746,6.0,White,Male,Random bystander/stranger
+746,143,747,6.0,White,Male,Random bystander/stranger
+747,143,748,7.0,White,Female,Random bystander/stranger
+748,143,749,6.0,White,Female,Random bystander/stranger
+749,143,750,6.0,White,Male,Random bystander/stranger
+750,143,751,6.0,White,Male,Random bystander/stranger
+751,143,752,6.0,White,Female,Random bystander/stranger
+752,143,753,6.0,White,Female,Random bystander/stranger
+753,143,754,6.0,White,Female,Random bystander/stranger
+754,143,755,6.0,White,Male,Random bystander/stranger
+755,143,756,6.0,White,Female,Random bystander/stranger
+756,143,757,29.0,White,Female,Random bystander/stranger
+757,143,758,52.0,White,Female,Random bystander/stranger
+758,143,759,30.0,White,Female,Random bystander/stranger
+759,143,760,56.0,White,Female,Random bystander/stranger
+760,143,761,27.0,Hispanic/Latino,Female,Random bystander/stranger
+761,143,762,47.0,White,Female,Random bystander/stranger
+762,143,763,52.0,White,Female,Parent or stepparent
+763,144,764,57.0,Asian/Pacific Islander,Female,Sibling
+764,144,765,55.0,Asian/Pacific Islander,Male,In-law
+765,144,766,61.0,Asian/Pacific Islander,Female,Sibling
+766,144,767,64.0,Asian/Pacific Islander,Male,In-law
+767,145,768,41.0,Asian/Pacific Islander,Male,Random bystander/stranger
+768,145,769,49.0,Asian/Pacific Islander,Male,Random bystander/stranger
+769,145,770,65.0,Asian/Pacific Islander,Male,Random bystander/stranger
+770,145,771,39.0,Asian/Pacific Islander,Male,Random bystander/stranger
+771,145,772,84.0,Asian/Pacific Islander,Male,Random bystander/stranger
+772,145,773,41.0,Asian/Pacific Islander,Female,Random bystander/stranger
+773,146,774,40.0,Black,Female,Random bystander/stranger
+774,146,775,53.0,Black,Female,Random bystander/stranger
+775,146,776,23.0,Asian/Pacific Islander,Female,Random bystander/stranger
+776,146,777,21.0,Asian/Pacific Islander,Female,Random bystander/stranger
+777,146,778,38.0,Asian/Pacific Islander,Male,Random bystander/stranger
+778,146,779,33.0,Asian/Pacific Islander,Female,Random bystander/stranger
+779,146,780,24.0,Asian/Pacific Islander,Female,Random bystander/stranger
+780,147,781,1.0,Hispanic/Latino,Female,Relative of a known person
+781,147,782,23.0,Hispanic/Latino,Female,Relative of a known person
+782,147,783,38.0,Hispanic/Latino,Female,Dating relationship
+783,147,784,24.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+784,148,785,26.0,White,Female,Spouse
+785,148,786,0.0,White,Female,Child or stepchild
+786,148,787,1.0,White,Female,Child or stepchild
+787,148,788,3.0,White,Female,Child or stepchild
+788,148,789,21.0,White,Male,Random bystander/stranger
+789,149,790,65.0,Asian/Pacific Islander,Male,Undetermined
+790,149,791,32.0,Asian/Pacific Islander,Male,Undetermined
+791,149,792,37.0,Asian/Pacific Islander,Female,Undetermined
+792,149,793,62.0,Asian/Pacific Islander,Female,Undetermined
+793,149,794,30.0,Asian/Pacific Islander,Female,Undetermined
+794,150,795,52.0,White,Male,Random bystander/stranger
+795,150,796,45.0,White,Male,Random bystander/stranger
+796,150,797,57.0,White,Male,Random bystander/stranger
+797,150,798,38.0,White,Female,Random bystander/stranger
+798,150,799,52.0,White,Female,Random bystander/stranger
+799,151,800,42.0,Black,Male,Undetermined
+800,151,801,21.0,Black,Male,Undetermined
+801,151,802,23.0,Black,Male,Undetermined
+802,151,803,23.0,Hispanic/Latino,Male,Undetermined
+803,151,804,19.0,Black,Male,Undetermined
+804,152,805,22.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+805,152,806,1.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+806,152,807,21.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+807,152,808,21.0,,Female,Individual with some non-blood/marriage relationship to a known person
+808,152,809,24.0,Black,Male,Criminal associate
+809,153,810,23.0,White,Female,Co-worker or employer
+810,153,811,41.0,White,Male,Random bystander/stranger
+811,153,812,44.0,White,Male,Relative of a known person
+812,153,813,38.0,White,Female,Co-worker or employer
+813,154,814,12.0,Black,Male,Child or stepchild
+814,154,815,13.0,Black,Female,Child or stepchild
+815,154,816,15.0,Black,Male,Child or stepchild
+816,154,817,17.0,Black,Female,Child or stepchild
+817,155,818,52.0,White,Female,Parent or stepparent
+818,155,819,55.0,White,Male,Aunt/Uncle
+819,155,820,34.0,White,Female,Niece/Nephew
+820,155,821,15.0,White,Male,Niece/Nephew
+821,155,822,74.0,White,Female,Grandparent
+822,155,823,31.0,White,Female,Neighbor
+823,155,824,1.0,White,Female,Neighbor
+824,155,825,24.0,,Male,Random bystander/stranger
+825,155,826,43.0,White,Female,Random bystander/stranger
+826,155,827,51.0,White,Male,Random bystander/stranger
+827,156,828,8.0,American Indian,Female,Child or stepchild
+828,156,829,60.0,American Indian,Female,Parent or stepparent
+829,156,830,61.0,American Indian,Male,Aunt/Uncle
+830,156,831,53.0,American Indian,Male,Aunt/Uncle
+831,157,832,64.0,White,Female,Neighbor
+832,157,833,13.0,White,Male,Neighbor
+833,157,834,10.0,White,Female,Neighbor
+834,157,835,6.0,White,Male,Neighbor
+835,158,836,44.0,Hispanic/Latino,Male,Criminal associate
+836,158,837,41.0,White,Male,Random bystander/stranger
+837,158,838,53.0,White,Male,Random bystander/stranger
+838,158,839,24.0,Hispanic/Latino,Female,Random bystander/stranger
+839,158,840,34.0,Asian/Pacific Islander,Female,Random bystander/stranger
+840,159,841,37.0,Black,Female,Dating relationship
+841,159,842,16.0,Black,Male,Relative of a known person
+842,159,843,13.0,Black,Male,Relative of a known person
+843,159,844,19.0,Black,Female,Relative of a known person
+844,160,845,34.0,White,Female,Random bystander/stranger
+845,160,846,42.0,Black,Female,Random bystander/stranger
+846,160,847,22.0,White,Female,Random bystander/stranger
+847,160,848,37.0,Black,Female,Random bystander/stranger
+848,160,849,33.0,White,Female,Random bystander/stranger
+849,161,850,40.0,White,Female,Spouse
+850,161,851,16.0,White,Female,Child or stepchild
+851,161,852,14.0,White,Male,Child or stepchild
+852,161,853,7.0,White,Male,Child or stepchild
+853,162,854,17.0,White,Male,Acquaintence
+854,162,855,18.0,White,Female,Acquaintence
+855,162,856,15.0,White,Male,Acquaintence
+856,162,857,56.0,White,Female,Acquaintence
+857,163,858,49.0,Black,Male,Aunt/Uncle
+858,163,859,51.0,Black,Male,Aunt/Uncle
+859,163,860,52.0,Black,Female,Aunt/Uncle
+860,163,861,47.0,,Male,Individual with some non-blood/marriage relationship to a known person
+861,164,862,43.0,White,Male,First responder
+862,164,863,24.0,Hispanic/Latino,Male,First responder
+863,164,864,27.0,White,Male,First responder
+864,164,865,27.0,White,Male,First responder
+865,164,866,20.0,White,Male,First responder
+866,165,867,61.0,,Female,Ex-spouse
+867,165,868,62.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+868,165,869,76.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+869,165,870,79.0,,Female,Individual with some non-blood/marriage relationship to a known person
+870,165,871,75.0,,Male,Individual with some non-blood/marriage relationship to a known person
+871,166,872,30.0,Black,Female,Spouse
+872,166,873,7.0,Other,Male,Child or stepchild
+873,166,874,6.0,Other,Male,Child or stepchild
+874,166,875,5.0,Other,Male,Child or stepchild
+875,166,876,2.0,Other,Female,Child or stepchild
+876,167,877,17.0,White,Male,Child or stepchild
+877,167,878,8.0,White,Female,Niece/Nephew
+878,167,879,17.0,White,Male,Niece/Nephew
+879,167,880,15.0,White,Female,Other
+880,167,881,14.0,White,Male,Child or stepchild
+881,168,882,34.0,White,Female,Spouse
+882,168,883,12.0,White,Female,Child or stepchild
+883,168,884,11.0,White,Female,Child or stepchild
+884,168,885,8.0,White,Female,Child or stepchild
+885,169,886,23.0,White,Female,Ex-dating relationship
+886,169,887,27.0,White,Female,Relative of a known person
+887,169,888,10.0,White,Female,Relative of a known person
+888,169,889,29.0,White,Female,Spouse
+889,169,890,12.0,Black,Female,Child or stepchild
+890,169,891,51.0,White,Male,In-law
+891,169,892,52.0,White,Female,In-law
+892,170,893,67.0,White,Male,Neighbor
+893,170,894,64.0,White,Female,Neighbor
+894,170,895,44.0,White,Male,Neighbor
+895,170,896,16.0,White,Female,Neighbor
+896,170,897,16.0,White,Female,Random bystander/stranger
+897,170,898,51.0,White,Male,Relative of a known person
+898,170,899,11.0,White,Male,Relative of a known person
+899,171,900,27.0,White,Female,Ex-dating relationship
+900,171,901,31.0,White,Male,Acquaintence
+901,171,902,24.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+902,171,903,26.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+903,172,904,21.0,Hispanic/Latino,Male,Roommate
+904,172,905,31.0,Hispanic/Latino,Male,Roommate
+905,172,906,20.0,Hispanic/Latino,Male,Roommate
+906,172,907,45.0,Hispanic/Latino,Male,Roommate
+907,173,908,18.0,White,Female,Random bystander/stranger
+908,173,909,16.0,White,Female,Random bystander/stranger
+909,173,910,26.0,White,Female,Random bystander/stranger
+910,173,911,24.0,White,Male,Random bystander/stranger
+911,174,912,29.0,White,Male,Dating relationship
+912,174,913,8.0,White,Female,Child or stepchild
+913,174,914,7.0,White,Male,Child or stepchild
+914,174,915,0.0,White,Female,Child or stepchild
+915,175,916,50.0,Hispanic/Latino,Female,Ex-spouse
+916,175,917,19.0,Hispanic/Latino,Female,Relative of a known person
+917,175,918,27.0,Hispanic/Latino,Male,Individual with some non-blood/marriage relationship to a known person
+918,175,919,77.0,Hispanic/Latino,Female,Individual with some non-blood/marriage relationship to a known person
+919,176,920,34.0,White,Female,Former relative/in-law
+920,176,921,11.0,White,Female,Former relative/in-law
+921,176,922,68.0,White,Male,Former relative/in-law
+922,176,923,34.0,White,Female,Former relative/in-law
+923,177,924,54.0,Hispanic/Latino,Male,Parent or stepparent
+924,177,925,25.0,Hispanic/Latino,Male,Sibling
+925,177,926,21.0,Hispanic/Latino,Male,Sibling
+926,177,927,51.0,Black,Male,First responder
+927,178,928,53.0,White,Female,Neighbor
+928,178,929,20.0,White,Male,Neighbor
+929,178,930,17.0,White,Male,Neighbor
+930,178,931,18.0,White,Female,Other
+931,179,932,38.0,White,Female,Dating relationship
+932,179,933,42.0,White,Male,Former relative/in-law
+933,179,934,39.0,White,Female,Former relative/in-law
+934,179,935,15.0,White,Male,Former relative/in-law
+935,180,936,23.0,White,Female,Neighbor
+936,180,937,23.0,White,Female,Neighbor
+937,180,938,33.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+938,180,939,55.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+939,181,940,51.0,Hispanic/Latino,Male,Parent or stepparent
+940,181,941,40.0,Hispanic/Latino,Female,Parent or stepparent
+941,181,942,9.0,Hispanic/Latino,Male,Sibling
+942,181,943,5.0,Hispanic/Latino,Female,Sibling
+943,181,944,2.0,Hispanic/Latino,Female,Sibling
+944,182,945,40.0,White,Female,Ex-spouse
+945,182,946,16.0,White,Female,Child or stepchild
+946,182,947,48.0,White,Female,Former relative/in-law
+947,182,948,11.0,White,Male,Former relative/in-law
+948,183,949,3.0,Asian/Pacific Islander,Male,Child or stepchild
+949,183,950,2.0,Asian/Pacific Islander,Female,Child or stepchild
+950,183,951,1.0,Asian/Pacific Islander,Female,Child or stepchild
+951,183,952,0.0,Asian/Pacific Islander,Male,Child or stepchild
+952,184,953,16.0,Black,Female,Child or stepchild
+953,184,954,11.0,Black,Female,Child or stepchild
+954,184,955,6.0,Black,Female,Child or stepchild
+955,184,956,5.0,Black,Female,Child or stepchild
+956,185,957,27.0,White,Male,Other
+957,185,958,30.0,White,Female,Other
+958,185,959,35.0,White,Male,Other
+959,185,960,27.0,White,Male,Other
+960,186,961,27.0,Hispanic/Latino,Male,Undetermined
+961,186,962,21.0,Hispanic/Latino,Male,Undetermined
+962,186,963,34.0,Hispanic/Latino,Female,Undetermined
+963,186,964,14.0,Hispanic/Latino,Female,Undetermined
+964,186,965,7.0,Hispanic/Latino,Male,Undetermined
+965,187,966,62.0,White,Male,Random bystander/stranger
+966,187,967,51.0,White,Male,Random bystander/stranger
+967,187,968,68.0,White,Male,Random bystander/stranger
+968,187,969,57.0,White,Male,Random bystander/stranger
+969,188,970,20.0,Black,Male,Other
+970,188,971,19.0,Black,Female,Other
+971,188,972,3.0,Black,Male,Other
+972,188,973,0.0,Black,Male,Other
+973,188,974,16.0,Black,Male,Other
+974,188,975,16.0,Black,Female,Other
+975,188,976,19.0,Black,Female,Other
+976,189,977,24.0,Black,Female,Relative of a known person
+977,189,978,22.0,Black,Female,Dating relationship
+978,189,979,2.0,Black,Male,Relative of a known person
+979,189,980,19.0,Black,Male,Friend
+980,190,981,41.0,American Indian,Female,Random bystander/stranger
+981,190,982,45.0,American Indian,Male,Random bystander/stranger
+982,190,983,25.0,American Indian,Male,Random bystander/stranger
+983,190,984,20.0,American Indian,Female,Random bystander/stranger
+984,191,985,24.0,Black,Male,Friend
+985,191,986,23.0,Black,Male,Undetermined
+986,191,987,19.0,Black,Female,Random bystander/stranger
+987,191,988,19.0,Black,Female,Random bystander/stranger
+988,192,989,24.0,White,Female,Dating relationship
+989,192,990,23.0,Hispanic/Latino,Male,Neighbor
+990,192,991,62.0,White,Male,Neighbor
+991,192,992,47.0,White,Male,Neighbor
+992,193,993,19.0,American Indian,Female,Dating relationship
+993,193,994,13.0,American Indian,Male,Relative of a known person
+994,193,995,38.0,American Indian,Female,Relative of a known person
+995,193,996,22.0,American Indian,Male,Individual with some non-blood/marriage relationship to a known person
+996,194,997,67.0,White,Female,Relative of a known person
+997,194,998,23.0,White,Female,Relative of a known person
+998,194,999,29.0,White,Male,Relative of a known person
+999,194,1000,5.0,White,Male,Relative of a known person
+1000,194,1001,1.0,White,Male,Relative of a known person
+1001,195,1002,53.0,White,Female,Friend
+1002,195,1003,39.0,White,Male,Friend
+1003,195,1004,41.0,White,Male,Acquaintence
+1004,195,1005,41.0,White,Male,Acquaintence
+1005,196,1006,12.0,White,Male,Undetermined
+1006,196,1007,9.0,White,Female,Undetermined
+1007,196,1008,5.0,White,Male,Undetermined
+1008,196,1009,5.0,White,Male,Undetermined
+1009,197,1010,46.0,White,Male,Former relative/in-law
+1010,197,1011,39.0,White,Female,Former relative/in-law
+1011,197,1012,16.0,White,Female,Former relative/in-law
+1012,197,1013,14.0,White,Male,Former relative/in-law
+1013,197,1014,11.0,White,Male,Former relative/in-law
+1014,198,1015,33.0,White,Female,Dating relationship
+1015,198,1016,1.0,Black,Female,Child or stepchild
+1016,198,1017,25.0,White,Female,Ex-dating relationship
+1017,198,1018,2.0,Black,Female,Child or stepchild
+1018,199,1019,35.0,,Female,Individual with some non-blood/marriage relationship to a known person
+1019,199,1020,53.0,,Female,Ex-spouse
+1020,199,1021,79.0,White,Female,Co-worker or employer
+1021,199,1022,44.0,White,Female,Co-worker or employer
+1022,200,1023,45.0,Black,Male,Criminal associate
+1023,200,1024,39.0,Black,Female,Undetermined
+1024,200,1025,43.0,Black,Female,Undetermined
+1025,200,1026,42.0,Black,Female,Undetermined
+1026,201,1027,10.0,Black,Male,Other familial relationship
+1027,201,1028,9.0,Black,Female,Other familial relationship
+1028,201,1029,5.0,Black,Male,Other familial relationship
+1029,201,1030,3.0,Black,Male,Other familial relationship
+1030,201,1031,0.0,Black,Male,Other familial relationship
+1031,202,1032,38.0,White,Male,Criminal associate
+1032,202,1033,23.0,White,Female,Relative of a known person
+1033,202,1034,4.0,White,Female,Relative of a known person
+1034,202,1035,6.0,White,Male,Relative of a known person
+1035,203,1036,29.0,White,Male,Acquaintence
+1036,203,1037,25.0,White,Male,Acquaintence
+1037,203,1038,20.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+1038,203,1039,2.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+1039,203,1040,93.0,White,Male,Random bystander/stranger
+1040,203,1041,65.0,White,Male,Random bystander/stranger
+1041,203,1042,54.0,White,Female,Random bystander/stranger
+1042,203,1043,54.0,White,Male,Random bystander/stranger
+1043,204,1044,55.0,White,Male,Parent or stepparent
+1044,204,1045,24.0,White,Male,Sibling
+1045,204,1046,68.0,Hispanic/Latino,Male,Random bystander/stranger
+1046,204,1047,26.0,Hispanic/Latino,Female,Random bystander/stranger
+1047,204,1048,68.0,Hispanic/Latino,Female,Random bystander/stranger
+1048,205,1049,20.0,White,Female,Acquaintence
+1049,205,1050,37.0,White,Female,Relative of a known person
+1050,205,1051,19.0,White,Female,Ex-dating relationship
+1051,205,1052,35.0,,Male,Individual with some non-blood/marriage relationship to a known person
+1052,206,1053,25.0,White,Female,Spouse
+1053,206,1054,25.0,White,Female,In-law
+1054,206,1055,50.0,White,Female,In-law
+1055,206,1056,47.0,White,Female,Ex-dating relationship
+1056,207,1057,29.0,White,Male,Criminal associate
+1057,207,1058,26.0,White,Male,Criminal associate
+1058,207,1059,70.0,White,Male,Random bystander/stranger
+1059,207,1060,47.0,White,Male,Random bystander/stranger
+1060,208,1061,79.0,Hispanic/Latino,Male,Other
+1061,208,1062,69.0,Hispanic/Latino,Female,Other
+1062,208,1063,33.0,Hispanic/Latino,Male,Neighbor
+1063,208,1064,51.0,Hispanic/Latino,Female,Neighbor
+1064,208,1065,64.0,Hispanic/Latino,Male,Neighbor
+1065,208,1066,17.0,Hispanic/Latino,Female,Neighbor
+1066,209,1067,47.0,Black,Female,Ex-spouse
+1067,209,1068,43.0,Black,Female,Ex-dating relationship
+1068,209,1069,17.0,Black,Female,Relative of a known person
+1069,209,1070,28.0,Black,Female,Former relative/in-law
+1070,210,1071,57.0,White,Female,Parent or stepparent
+1071,210,1072,34.0,White,Female,Sibling
+1072,210,1073,16.0,White,Female,Niece/Nephew
+1073,210,1074,0.0,Other,Male,Niece/Nephew
+1074,211,1075,22.0,White,Female,Undetermined
+1075,211,1076,17.0,White,Male,Undetermined
+1076,211,1077,17.0,White,Male,Undetermined
+1077,211,1078,16.0,White,Male,Undetermined
+1078,212,1079,59.0,White,Male,Random bystander/stranger
+1079,212,1080,54.0,White,Male,Random bystander/stranger
+1080,212,1081,51.0,Black,Male,Random bystander/stranger
+1081,212,1082,53.0,Black,Female,Random bystander/stranger
+1082,212,1083,62.0,White,Female,Random bystander/stranger
+1083,212,1084,73.0,White,Male,Random bystander/stranger
+1084,212,1085,51.0,White,Female,Random bystander/stranger
+1085,212,1086,50.0,White,Male,Random bystander/stranger
+1086,212,1087,61.0,Asian/Pacific Islander,Male,Random bystander/stranger
+1087,212,1088,46.0,Black,Male,Random bystander/stranger
+1088,212,1089,58.0,White,Male,Random bystander/stranger
+1089,212,1090,52.0,White,Male,Random bystander/stranger
+1090,213,1091,10.0,Hispanic/Latino,Male,Child or stepchild
+1091,213,1092,8.0,Hispanic/Latino,Male,Child or stepchild
+1092,213,1093,4.0,Hispanic/Latino,Male,Child or stepchild
+1093,213,1094,33.0,Hispanic/Latino,Male,Spouse
+1094,214,1095,18.0,Black,Male,Undetermined
+1095,214,1096,21.0,Black,Male,Undetermined
+1096,214,1097,24.0,Black,Male,Undetermined
+1097,214,1098,32.0,Black,Male,Undetermined
+1098,215,1099,9.0,Asian/Pacific Islander,Female,Other familial relationship
+1099,215,1100,7.0,Asian/Pacific Islander,Female,Other familial relationship
+1100,215,1101,5.0,Asian/Pacific Islander,Male,Other familial relationship
+1101,215,1102,1.0,Asian/Pacific Islander,Male,Other familial relationship
+1102,215,1103,37.0,Asian/Pacific Islander,Female,In-law
+1103,216,1104,17.0,White,Male,Neighbor
+1104,216,1105,66.0,White,Male,Neighbor
+1105,216,1106,36.0,White,Female,Neighbor
+1106,216,1107,42.0,White,Male,Neighbor
+1107,217,1108,33.0,White,Male,Acquaintence
+1108,217,1109,55.0,Black,Female,Aunt/Uncle
+1109,217,1110,61.0,Black,Female,Parent or stepparent
+1110,217,1111,30.0,White,Female,Acquaintence
+1111,217,1112,22.0,Hispanic/Latino,Male,Random bystander/stranger
+1112,218,1113,51.0,White,Male,Relative of a known person
+1113,218,1114,49.0,White,Female,Relative of a known person
+1114,218,1115,26.0,White,Female,Dating relationship
+1115,218,1116,11.0,White,Male,Relative of a known person
+1116,218,1117,9.0,White,Male,Relative of a known person
+1117,219,1118,28.0,Black,Male,Undetermined
+1118,219,1119,21.0,Black,Female,Undetermined
+1119,219,1120,22.0,Black,Female,Undetermined
+1120,219,1121,27.0,Black,Male,Undetermined
+1121,220,1122,40.0,White,Male,Co-worker or employer
+1122,220,1123,43.0,White,Female,Relative of a known person
+1123,220,1124,4.0,White,Male,Relative of a known person
+1124,220,1125,3.0,White,Male,Relative of a known person
+1125,221,1126,34.0,White,Male,Undetermined
+1126,221,1127,35.0,White,Female,Undetermined
+1127,221,1128,54.0,White,Female,Undetermined
+1128,221,1129,46.0,White,Female,Undetermined
+1129,222,1130,29.0,White,Female,Ex-dating relationship
+1130,222,1131,4.0,Black,Female,Relative of a known person
+1131,222,1132,6.0,Black,Male,Relative of a known person
+1132,222,1133,9.0,Black,Female,Relative of a known person
+1133,223,1134,45.0,Black,Female,Undetermined
+1134,223,1135,43.0,Black,Male,Undetermined
+1135,223,1136,56.0,Black,Male,Undetermined
+1136,223,1137,34.0,Black,Female,Undetermined
+1137,224,1138,55.0,White,Female,In-law
+1138,224,1139,32.0,White,Female,Spouse
+1139,224,1140,7.0,White,Male,Child or stepchild
+1140,224,1141,5.0,White,Female,Child or stepchild
+1141,225,1142,50.0,Asian/Pacific Islander,Male,Acquaintence
+1142,225,1143,49.0,Asian/Pacific Islander,Female,Relative of a known person
+1143,225,1144,9.0,Asian/Pacific Islander,Male,Relative of a known person
+1144,225,1145,7.0,Asian/Pacific Islander,Male,Relative of a known person
+1145,226,1146,19.0,American Indian,Female,Niece/Nephew
+1146,226,1147,30.0,American Indian,Male,Niece/Nephew
+1147,226,1148,47.0,American Indian,Female,Co-worker or employer
+1148,226,1149,50.0,American Indian,Male,Sibling
+1149,227,1150,21.0,White,Female,Undetermined
+1150,227,1151,22.0,White,Female,Undetermined
+1151,227,1152,43.0,White,Male,Undetermined
+1152,227,1153,47.0,White,Male,Criminal associate
+1153,228,1154,67.0,Black,Female,Relative of a known person
+1154,228,1155,46.0,Black,Female,Relative of a known person
+1155,228,1156,22.0,Black,Female,Relative of a known person
+1156,228,1157,2.0,Black,Male,Relative of a known person
+1157,229,1158,27.0,White,Female,Ex-spouse
+1158,229,1159,53.0,,Female,Individual with some non-blood/marriage relationship to a known person
+1159,229,1160,2.0,White,Male,Child or stepchild
+1160,229,1161,4.0,White,Female,Child or stepchild
+1161,230,1162,37.0,Black,Male,Undetermined
+1162,230,1163,34.0,Black,Female,Undetermined
+1163,230,1164,13.0,Black,Male,Undetermined
+1164,230,1165,11.0,Black,Male,Undetermined
+1165,231,1166,23.0,Hispanic/Latino,Male,Other
+1166,231,1167,24.0,Hispanic/Latino,Male,Other
+1167,231,1168,23.0,Hispanic/Latino,Male,Other
+1168,231,1169,30.0,Hispanic/Latino,Male,Other
+1169,231,1170,31.0,Hispanic/Latino,Male,Other
+1170,232,1171,36.0,Black,Female,Random bystander/stranger
+1171,232,1172,3.0,Black,Female,Random bystander/stranger
+1172,232,1173,1.0,Black,Male,Random bystander/stranger
+1173,232,1174,24.0,Black,Female,Random bystander/stranger
+1174,233,1175,22.0,Hispanic/Latino,Male,Undetermined
+1175,233,1176,21.0,Hispanic/Latino,Male,Undetermined
+1176,233,1177,27.0,Hispanic/Latino,Male,Undetermined
+1177,233,1178,24.0,Hispanic/Latino,Female,Undetermined
+1178,234,1179,20.0,Black,Male,Random bystander/stranger
+1179,234,1180,30.0,Black,Male,Random bystander/stranger
+1180,234,1181,31.0,Black,Male,Aunt/Uncle
+1181,234,1182,36.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+1182,235,1183,26.0,White,Female,Child or stepchild
+1183,235,1184,35.0,White,Male,In-law
+1184,235,1185,6.0,White,Male,Grandchild
+1185,235,1186,3.0,White,Male,Grandchild
+1186,236,1187,68.0,White,Female,Grandparent
+1187,236,1188,69.0,White,Male,Grandparent
+1188,236,1189,40.0,White,Female,Aunt/Uncle
+1189,236,1190,37.0,,Male,In-law
+1190,237,1191,66.0,White,Female,In-law
+1191,237,1192,36.0,White,Female,Ex-spouse
+1192,237,1193,40.0,,Male,Individual with some non-blood/marriage relationship to a known person
+1193,237,1194,7.0,,Male,Individual with some non-blood/marriage relationship to a known person
+1194,238,1195,54.0,White,Male,Parent or stepparent
+1195,238,1196,20.0,White,Female,Ex-dating relationship
+1196,238,1197,56.0,White,Female,Relative of a known person
+1197,238,1198,62.0,White,Male,Random bystander/stranger
+1198,239,1199,20.0,Asian/Pacific Islander,Male,Roommate
+1199,239,1200,20.0,Asian/Pacific Islander,Male,Roommate
+1200,239,1201,19.0,Asian/Pacific Islander,Male,Roommate
+1201,239,1202,19.0,White,Female,Random bystander/stranger
+1202,239,1203,22.0,White,Female,Random bystander/stranger
+1203,239,1204,20.0,,Male,Random bystander/stranger
+1204,240,1205,29.0,Hispanic/Latino,Female,Dating relationship
+1205,240,1206,10.0,Hispanic/Latino,Female,Child or stepchild
+1206,240,1207,6.0,Hispanic/Latino,Female,Child or stepchild
+1207,240,1208,2.0,Hispanic/Latino,Female,Child or stepchild
+1208,241,1209,4.0,White,Male,Former relative/in-law
+1209,241,1210,14.0,White,Male,Former relative/in-law
+1210,241,1211,7.0,White,Female,Former relative/in-law
+1211,241,1212,9.0,White,Female,Former relative/in-law
+1212,241,1213,39.0,White,Male,Former relative/in-law
+1213,241,1214,33.0,White,Female,Former relative/in-law
+1214,242,1215,12.0,White,Male,Child or stepchild
+1215,242,1216,35.0,White,Female,Spouse
+1216,242,1217,7.0,White,Male,Child or stepchild
+1217,242,1218,4.0,White,Female,Child or stepchild
+1218,243,1219,35.0,Black,Female,Spouse
+1219,243,1220,13.0,Black,Female,Child or stepchild
+1220,243,1221,6.0,Black,Female,Child or stepchild
+1221,243,1222,4.0,Black,Female,Child or stepchild
+1222,244,1223,73.0,White,Male,Parent or stepparent
+1223,244,1224,74.0,White,Female,Parent or stepparent
+1224,244,1225,13.0,White,Male,Child or stepchild
+1225,244,1226,10.0,White,Male,Child or stepchild
+1226,245,1227,52.0,White,Female,Relative of a known person
+1227,245,1228,52.0,White,Male,Relative of a known person
+1228,245,1229,27.0,White,Female,Ex-dating relationship
+1229,245,1230,37.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+1230,246,1231,8.0,White,Female,Child or stepchild
+1231,246,1232,7.0,White,Male,Child or stepchild
+1232,246,1233,6.0,White,Male,Child or stepchild
+1233,246,1234,2.0,White,Male,Child or stepchild
+1234,246,1235,1.0,White,Female,Child or stepchild
+1235,247,1236,80.0,White,Male,Random bystander/stranger
+1236,247,1237,86.0,White,Female,Random bystander/stranger
+1237,247,1238,69.0,White,Female,Random bystander/stranger
+1238,247,1239,88.0,White,Female,Random bystander/stranger
+1239,247,1240,63.0,White,Male,Random bystander/stranger
+1240,248,1241,28.0,White,Female,Child or stepchild
+1241,248,1242,9.0,White,Female,Grandchild
+1242,248,1243,11.0,White,Male,Grandchild
+1243,248,1244,5.0,White,Female,Grandchild
+1244,248,1245,0.0,White,Female,Grandchild
+1245,248,1246,8.0,White,Male,Grandchild
+1246,248,1247,4.0,White,Male,Grandchild
+1247,249,1248,39.0,Asian/Pacific Islander,Female,Undetermined
+1248,249,1249,37.0,Asian/Pacific Islander,Male,Undetermined
+1249,249,1250,7.0,Asian/Pacific Islander,Male,Undetermined
+1250,249,1251,10.0,Asian/Pacific Islander,Male,Undetermined
+1251,250,1252,62.0,White,Male,Parent or stepparent
+1252,250,1253,60.0,White,Female,Parent or stepparent
+1253,250,1254,31.0,White,Female,Sibling
+1254,250,1255,22.0,White,Male,Acquaintence
+1255,251,1256,14.0,White,Female,Friend
+1256,251,1257,14.0,American Indian,Female,Friend
+1257,251,1258,14.0,White,Female,Friend
+1258,251,1259,15.0,American Indian,Male,Cousin
+1259,252,1260,44.0,Black,Male,Acquaintence
+1260,252,1261,43.0,Black,Male,Acquaintence
+1261,252,1262,29.0,White,Female,Acquaintence
+1262,252,1263,24.0,White,Male,Acquaintence
+1263,253,1264,41.0,Black,Female,Relative of a known person
+1264,253,1265,17.0,Black,Female,Undetermined
+1265,253,1266,19.0,Black,Male,Friend
+1266,253,1267,60.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+1267,254,1268,43.0,White,Male,Cousin
+1268,254,1269,28.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+1269,254,1270,45.0,White,Male,Acquaintence
+1270,254,1271,39.0,White,Female,Ex-dating relationship
+1271,255,1272,33.0,White,Female,Ex-spouse
+1272,255,1273,57.0,White,Female,Former relative/in-law
+1273,255,1274,75.0,White,Female,Former relative/in-law
+1274,255,1275,36.0,White,Female,Former relative/in-law
+1275,255,1276,39.0,White,Male,Former relative/in-law
+1276,255,1277,14.0,White,Female,Former relative/in-law
+1277,256,1278,6.0,Black,Male,Relative of a known person
+1278,256,1279,4.0,Black,Male,Relative of a known person
+1279,256,1280,24.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+1280,256,1281,24.0,Black,Female,Ex-dating relationship
+1281,257,1282,22.0,Black,Male,Undetermined
+1282,257,1283,19.0,Black,Male,Undetermined
+1283,257,1284,21.0,Black,Male,Undetermined
+1284,257,1285,20.0,Black,Male,Undetermined
+1285,258,1286,23.0,Hispanic/Latino,Female,Spouse
+1286,258,1287,4.0,Hispanic/Latino,Male,Child or stepchild
+1287,258,1288,1.0,Hispanic/Latino,Female,Child or stepchild
+1288,258,1289,0.0,Hispanic/Latino,Female,Child or stepchild
+1289,259,1290,55.0,White,Male,Relative of a known person
+1290,259,1291,27.0,White,Female,Relative of a known person
+1291,259,1292,7.0,White,Male,Relative of a known person
+1292,259,1293,6.0,White,Female,Relative of a known person
+1293,259,1294,3.0,White,Female,Relative of a known person
+1294,259,1295,2.0,White,Female,Relative of a known person
+1295,260,1296,69.0,White,Male,In-law
+1296,260,1297,68.0,White,Female,In-law
+1297,260,1298,33.0,White,Female,Spouse
+1298,260,1299,16.0,White,Female,Child or stepchild
+1299,260,1300,18.0,White,Female,Friend
+1300,261,1301,33.0,Black,Female,Ex-spouse
+1301,261,1302,33.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+1302,261,1303,7.0,Black,Female,Child or stepchild
+1303,261,1304,9.0,Black,Male,Child or stepchild
+1304,262,1305,52.0,White,Male,Cousin
+1305,262,1306,47.0,White,Female,In-law
+1306,262,1307,50.0,White,Male,Cousin
+1307,262,1308,48.0,White,Female,In-law
+1308,262,1309,44.0,White,Female,Neighbor
+1309,262,1310,68.0,White,Male,Neighbor
+1310,262,1311,46.0,White,Male,Neighbor
+1311,263,1312,32.0,Black,Female,Undetermined
+1312,263,1313,41.0,Black,Female,Undetermined
+1313,263,1314,48.0,Black,Female,Undetermined
+1314,263,1315,18.0,Black,Male,Undetermined
+1315,264,1316,38.0,White,Male,Sibling
+1316,264,1317,76.0,White,Female,Parent or stepparent
+1317,264,1318,56.0,White,Male,Sibling
+1318,264,1319,26.0,White,Female,In-law
+1319,265,1320,58.0,Hispanic/Latino,Male,Parent or stepparent
+1320,265,1321,53.0,White,Female,Parent or stepparent
+1321,265,1322,32.0,Hispanic/Latino,Male,Sibling
+1322,265,1323,17.0,Hispanic/Latino,Female,Niece/Nephew
+1323,266,1324,31.0,White,Male,Criminal associate
+1324,266,1325,65.0,Hispanic/Latino,Male,Criminal associate
+1325,266,1326,46.0,White,Male,Criminal associate
+1326,266,1327,44.0,White,Male,Criminal associate
+1327,266,1328,43.0,White,Male,Criminal associate
+1328,266,1329,39.0,White,Male,Criminal associate
+1329,266,1330,47.0,White,Male,Criminal associate
+1330,266,1331,40.0,White,Male,Criminal associate
+1331,266,1332,27.0,White,Male,Criminal associate
+1332,267,1333,46.0,White,Male,Co-worker or employer
+1333,267,1334,47.0,White,Female,Relative of a known person
+1334,267,1335,10.0,White,Male,Relative of a known person
+1335,267,1336,57.0,Hispanic/Latino,Female,Individual with some non-blood/marriage relationship to a known person
+1336,268,1337,37.0,Black,Female,Spouse
+1337,268,1338,1.0,Other,Female,Child or stepchild
+1338,268,1339,4.0,Other,Male,Child or stepchild
+1339,268,1340,6.0,Other,Male,Child or stepchild
+1340,269,1341,41.0,Black,Male,Undetermined
+1341,269,1342,18.0,Black,Female,Undetermined
+1342,269,1343,36.0,Black,Male,Undetermined
+1343,269,1344,35.0,Black,Female,Undetermined
+1344,270,1345,41.0,Black,Male,Random bystander/stranger
+1345,270,1346,26.0,Black,Male,Random bystander/stranger
+1346,270,1347,74.0,Black,Male,Random bystander/stranger
+1347,270,1348,54.0,Black,Female,Random bystander/stranger
+1348,270,1349,49.0,Black,Female,Random bystander/stranger
+1349,270,1350,87.0,Black,Female,Random bystander/stranger
+1350,270,1351,70.0,Black,Female,Random bystander/stranger
+1351,270,1352,59.0,Black,Female,Random bystander/stranger
+1352,270,1353,45.0,Black,Female,Random bystander/stranger
+1353,271,1354,50.0,Black,Male,Undetermined
+1354,271,1355,28.0,White,Female,Undetermined
+1355,271,1356,14.0,Black,Female,Undetermined
+1356,271,1357,17.0,Black,Female,Undetermined
+1357,272,1358,25.0,White,Male,First responder
+1358,272,1359,35.0,White,Male,First responder
+1359,272,1360,21.0,White,Male,First responder
+1360,272,1361,40.0,White,Male,First responder
+1361,272,1362,26.0,White,Male,First responder
+1362,273,1363,38.0,White,Female,Ex-dating relationship
+1363,273,1364,57.0,Hispanic/Latino,Female,Parent or stepparent
+1364,273,1365,0.0,Other,Female,Child or stepchild
+1365,273,1366,6.0,White,Female,Relative of a known person
+1366,273,1367,5.0,Hispanic/Latino,Female,Niece/Nephew
+1367,274,1368,27.0,Black,Female,Undetermined
+1368,274,1369,11.0,Black,Male,Undetermined
+1369,274,1370,10.0,Black,Male,Undetermined
+1370,274,1371,5.0,Black,Male,Undetermined
+1371,275,1372,52.0,White,Male,Parent or stepparent
+1372,275,1373,44.0,White,Female,Parent or stepparent
+1373,275,1374,5.0,White,Female,Sibling
+1374,275,1375,7.0,White,Male,Sibling
+1375,275,1376,12.0,White,Male,Sibling
+1376,276,1377,35.0,White,Female,Spouse
+1377,276,1378,67.0,White,Female,In-law
+1378,276,1379,8.0,White,Male,Child or stepchild
+1379,276,1380,1.0,White,Male,In-law
+1380,277,1381,40.0,White,Female,Ex-dating relationship
+1381,277,1382,50.0,Black,Male,Relative of a known person
+1382,277,1383,10.0,Other,Male,Relative of a known person
+1383,277,1384,13.0,Other,Male,Child or stepchild
+1384,277,1385,11.0,Other,Female,Relative of a known person
+1385,277,1386,9.0,Other,Male,Relative of a known person
+1386,277,1387,7.0,Other,Female,Relative of a known person
+1387,277,1388,6.0,Other,Male,Relative of a known person
+1388,278,1389,48.0,White,Female,Cousin
+1389,278,1390,43.0,White,Female,Cousin
+1390,278,1391,73.0,White,Female,Aunt/Uncle
+1391,278,1392,48.0,White,Female,Other
+1392,279,1393,48.0,White,Female,Spouse
+1393,279,1394,17.0,White,Male,Child or stepchild
+1394,279,1395,15.0,White,Female,Child or stepchild
+1395,279,1396,14.0,White,Female,Child or stepchild
+1396,280,1397,41.0,White,Female,Spouse
+1397,280,1398,16.0,White,Male,Child or stepchild
+1398,280,1399,14.0,White,Male,Child or stepchild
+1399,280,1400,10.0,White,Female,Child or stepchild
+1400,280,1401,9.0,White,Female,Child or stepchild
+1401,281,1402,19.0,Hispanic/Latino,Female,Random bystander/stranger
+1402,281,1403,20.0,White,Male,Random bystander/stranger
+1403,281,1404,18.0,White,Female,Random bystander/stranger
+1404,281,1405,18.0,White,Male,Random bystander/stranger
+1405,281,1406,59.0,White,Female,Random bystander/stranger
+1406,281,1407,18.0,White,Male,Random bystander/stranger
+1407,281,1408,34.0,White,Male,Random bystander/stranger
+1408,281,1409,67.0,White,Male,Other
+1409,281,1410,44.0,White,Female,Random bystander/stranger
+1410,282,1411,25.0,Black,Female,Ex-spouse
+1411,282,1412,1.0,Black,Female,Child or stepchild
+1412,282,1413,2.0,Black,Male,Child or stepchild
+1413,282,1414,3.0,Black,Male,Child or stepchild
+1414,283,1415,82.0,White,Female,Undetermined
+1415,283,1416,80.0,White,Female,Undetermined
+1416,283,1417,58.0,White,Male,Undetermined
+1417,283,1418,60.0,White,Female,Undetermined
+1418,284,1419,77.0,White,Male,Relative of a known person
+1419,284,1420,40.0,White,Female,Relative of a known person
+1420,284,1421,6.0,White,Male,Relative of a known person
+1421,284,1422,46.0,White,Male,Neighbor
+1422,284,1423,23.0,White,Male,Neighbor
+1423,284,1424,21.0,White,Male,Neighbor
+1424,285,1425,29.0,Hispanic/Latino,Male,Aunt/Uncle
+1425,285,1426,24.0,Hispanic/Latino,Female,Aunt/Uncle
+1426,285,1427,5.0,Hispanic/Latino,Male,Cousin
+1427,285,1428,1.0,Hispanic/Latino,Female,Cousin
+1428,286,1429,37.0,White,Male,Co-worker or employer
+1429,286,1430,52.0,White,Male,Co-worker or employer
+1430,286,1431,42.0,White,Male,Co-worker or employer
+1431,286,1432,58.0,White,Male,Co-worker or employer
+1432,286,1433,40.0,White,Male,Co-worker or employer
+1433,286,1434,60.0,Black,Male,Co-worker or employer
+1434,286,1435,46.0,White,Male,Co-worker or employer
+1435,286,1436,50.0,Hispanic/Latino,Male,Co-worker or employer
+1436,286,1437,45.0,White,Male,Co-worker or employer
+1437,286,1438,27.0,Black,Female,Co-worker or employer
+1438,286,1439,46.0,White,Female,Co-worker or employer
+1439,286,1440,26.0,White,Female,Co-worker or employer
+1440,286,1441,27.0,White,Female,Co-worker or employer
+1441,286,1442,31.0,Asian/Pacific Islander,Female,Co-worker or employer
+1442,287,1443,37.0,White,Female,Ex-spouse
+1443,287,1444,75.0,White,Male,In-law
+1444,287,1445,9.0,White,Male,Parent or stepparent
+1445,287,1446,8.0,White,Male,Parent or stepparent
+1446,288,1447,28.0,Black,Male,Undetermined
+1447,288,1448,45.0,Black,Male,Undetermined
+1448,288,1449,29.0,White,Female,Undetermined
+1449,288,1450,22.0,Black,Female,Undetermined
+1450,289,1451,17.0,White,Female,Sibling
+1451,289,1452,50.0,White,Male,Parent or stepparent
+1452,289,1453,54.0,White,Female,Parent or stepparent
+1453,289,1454,22.0,White,Male,Sibling
+1454,289,1455,74.0,White,Female,Grandparent
+1455,290,1456,62.0,Hispanic/Latino,Male,Other familial relationship
+1456,290,1457,58.0,Hispanic/Latino,Female,Other familial relationship
+1457,290,1458,38.0,Hispanic/Latino,Male,Aunt/Uncle
+1458,290,1459,32.0,Hispanic/Latino,Female,Aunt/Uncle
+1459,290,1460,10.0,Hispanic/Latino,Male,Cousin
+1460,290,1461,13.0,Hispanic/Latino,Male,Cousin
+1461,291,1462,17.0,White,Male,Random bystander/stranger
+1462,291,1463,53.0,White,Male,Random bystander/stranger
+1463,291,1464,62.0,White,Female,Random bystander/stranger
+1464,291,1465,60.0,White,Female,Random bystander/stranger
+1465,291,1466,74.0,White,Female,Random bystander/stranger
+1466,291,1467,68.0,White,Female,Random bystander/stranger
+1467,292,1468,82.0,White,Male,Grandparent
+1468,292,1469,81.0,White,Female,Grandparent
+1469,292,1470,32.0,White,Female,Sibling
+1470,292,1471,0.0,White,Male,Niece/Nephew
+1471,293,1472,50.0,White,Male,Parent or stepparent
+1472,293,1473,49.0,White,Female,Parent or stepparent
+1473,293,1474,18.0,White,Female,Sibling
+1474,293,1475,6.0,White,Female,Sibling
+1475,294,1476,49.0,White,Female,Spouse
+1476,294,1477,16.0,White,Male,Child or stepchild
+1477,294,1478,18.0,White,Male,Child or stepchild
+1478,294,1479,68.0,White,Female,Neighbor
+1479,295,1480,41.0,Hispanic/Latino,Male,Neighbor
+1480,295,1481,29.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+1481,295,1482,27.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+1482,295,1483,36.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+1483,295,1484,49.0,White,Male,Random bystander/stranger
+1484,296,1485,37.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+1485,296,1486,35.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+1486,296,1487,27.0,Black,Female,Relative of a known person
+1487,296,1488,25.0,Black,Female,Relative of a known person
+1488,296,1489,26.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+1489,297,1490,37.0,White,Female,Acquaintence
+1490,297,1491,44.0,White,Male,Acquaintence
+1491,297,1492,40.0,White,Male,Acquaintence
+1492,297,1493,16.0,White,Male,Acquaintence
+1493,297,1494,20.0,White,Male,Undetermined
+1494,297,1495,20.0,White,Female,Acquaintence
+1495,297,1496,19.0,White,Female,Acquaintence
+1496,297,1497,38.0,White,Male,Acquaintence
+1497,298,1498,75.0,Black,Male,In-law
+1498,298,1499,85.0,Black,Female,In-law
+1499,298,1500,31.0,Black,Female,In-law
+1500,298,1501,59.0,Black,Female,In-law
+1501,298,1502,62.0,Black,Female,In-law
+1502,299,1503,22.0,White,Male,Friend
+1503,299,1504,21.0,White,Male,Friend
+1504,299,1505,21.0,White,Male,Friend
+1505,299,1506,21.0,White,Male,Friend
+1506,299,1507,20.0,White,Female,Friend
+1507,300,1508,34.0,Hispanic/Latino,Male,Random bystander/stranger
+1508,300,1509,23.0,Hispanic/Latino,Male,Random bystander/stranger
+1509,300,1510,20.0,Hispanic/Latino,Male,Random bystander/stranger
+1510,300,1511,22.0,Hispanic/Latino,Male,Random bystander/stranger
+1511,300,1512,36.0,Hispanic/Latino,Male,Random bystander/stranger
+1512,300,1513,22.0,Hispanic/Latino,Male,Random bystander/stranger
+1513,300,1514,22.0,Hispanic/Latino,Male,Random bystander/stranger
+1514,300,1515,37.0,White,Female,Random bystander/stranger
+1515,300,1516,30.0,Black,Male,Random bystander/stranger
+1516,300,1517,29.0,Black,Male,Random bystander/stranger
+1517,300,1518,32.0,Black,Female,Random bystander/stranger
+1518,300,1519,21.0,Hispanic/Latino,Male,Random bystander/stranger
+1519,300,1520,25.0,Hispanic/Latino,Male,Random bystander/stranger
+1520,300,1521,35.0,Hispanic/Latino,Male,Random bystander/stranger
+1521,300,1522,33.0,Hispanic/Latino,Male,Random bystander/stranger
+1522,300,1523,25.0,Hispanic/Latino,Female,Random bystander/stranger
+1523,300,1524,33.0,Hispanic/Latino,Male,Random bystander/stranger
+1524,300,1525,37.0,Hispanic/Latino,Male,Random bystander/stranger
+1525,300,1526,26.0,Hispanic/Latino,Female,Random bystander/stranger
+1526,300,1527,35.0,Hispanic/Latino,Male,Random bystander/stranger
+1527,300,1528,25.0,Hispanic/Latino,Male,Random bystander/stranger
+1528,300,1529,31.0,Hispanic/Latino,Male,Random bystander/stranger
+1529,300,1530,26.0,Hispanic/Latino,Male,Random bystander/stranger
+1530,300,1531,25.0,Hispanic/Latino,Male,Random bystander/stranger
+1531,300,1532,30.0,Hispanic/Latino,Male,Random bystander/stranger
+1532,300,1533,40.0,Hispanic/Latino,Male,Random bystander/stranger
+1533,300,1534,32.0,Hispanic/Latino,Male,Random bystander/stranger
+1534,300,1535,19.0,Black,Male,Random bystander/stranger
+1535,300,1536,21.0,White,Male,Random bystander/stranger
+1536,300,1537,37.0,Hispanic/Latino,Male,Random bystander/stranger
+1537,300,1538,29.0,Hispanic/Latino,Male,Random bystander/stranger
+1538,300,1539,33.0,Black,Male,Random bystander/stranger
+1539,300,1540,25.0,Hispanic/Latino,Male,Random bystander/stranger
+1540,300,1541,31.0,White,Male,Random bystander/stranger
+1541,300,1542,25.0,Hispanic/Latino,Male,Random bystander/stranger
+1542,300,1543,25.0,Black,Male,Random bystander/stranger
+1543,300,1544,24.0,Hispanic/Latino,Male,Random bystander/stranger
+1544,300,1545,27.0,Hispanic/Latino,Male,Random bystander/stranger
+1545,300,1546,33.0,Hispanic/Latino,Male,Random bystander/stranger
+1546,300,1547,49.0,White,Female,Random bystander/stranger
+1547,300,1548,24.0,Hispanic/Latino,Female,Random bystander/stranger
+1548,300,1549,32.0,White,Male,Random bystander/stranger
+1549,300,1550,28.0,Hispanic/Latino,Male,Random bystander/stranger
+1550,300,1551,27.0,Hispanic/Latino,Male,Random bystander/stranger
+1551,300,1552,41.0,Black,Male,Random bystander/stranger
+1552,300,1553,29.0,Black,Male,Random bystander/stranger
+1553,300,1554,24.0,Hispanic/Latino,Male,Random bystander/stranger
+1554,300,1555,18.0,Black,Female,Random bystander/stranger
+1555,300,1556,25.0,Hispanic/Latino,Male,Random bystander/stranger
+1556,301,1557,34.0,Hispanic/Latino,Female,Spouse
+1557,301,1558,14.0,Hispanic/Latino,Female,Child or stepchild
+1558,301,1559,11.0,Hispanic/Latino,Female,Child or stepchild
+1559,301,1560,7.0,Hispanic/Latino,Female,Child or stepchild
+1560,301,1561,3.0,Hispanic/Latino,Female,Child or stepchild
+1561,302,1562,59.0,White,Male,Acquaintence
+1562,302,1563,44.0,Hispanic/Latino,Female,Acquaintence
+1563,302,1564,18.0,White,Female,Acquaintence
+1564,302,1565,24.0,White,Male,Acquaintence
+1565,302,1566,34.0,Black,Male,Acquaintence
+1566,303,1567,48.0,White,Male,First responder
+1567,303,1568,40.0,White,Male,First responder
+1568,303,1569,55.0,White,Male,First responder
+1569,303,1570,43.0,White,Male,First responder
+1570,303,1571,32.0,Hispanic/Latino,Male,First responder
+1571,304,1572,35.0,Asian/Pacific Islander,Female,Spouse
+1572,304,1573,14.0,Asian/Pacific Islander,Male,Child or stepchild
+1573,304,1574,9.0,Asian/Pacific Islander,Male,Child or stepchild
+1574,304,1575,15.0,Asian/Pacific Islander,Female,Child or stepchild
+1575,305,1576,22.0,White,Female,Ex-spouse
+1576,305,1577,19.0,White,Female,Former relative/in-law
+1577,305,1578,3.0,White,Male,Child or stepchild
+1578,305,1579,1.0,White,Male,Child or stepchild
+1579,306,1580,0.0,Black,Female,Child or stepchild
+1580,306,1581,3.0,Black,Female,Child or stepchild
+1581,306,1582,2.0,Black,Female,Child or stepchild
+1582,306,1583,4.0,Black,Male,Child or stepchild
+1583,307,1584,32.0,Black,Female,Dating relationship
+1584,307,1585,6.0,Black,Female,Child or stepchild
+1585,307,1586,7.0,Black,Female,Child or stepchild
+1586,307,1587,11.0,Black,Female,Relative of a known person
+1587,308,1588,22.0,White,Female,Undetermined
+1588,308,1589,23.0,White,Male,Undetermined
+1589,308,1590,35.0,White,Female,Undetermined
+1590,308,1591,26.0,White,Male,Undetermined
+1591,308,1592,26.0,White,Male,Undetermined
+1592,309,1593,52.0,White,Female,Random bystander/stranger
+1593,309,1594,64.0,White,Female,Random bystander/stranger
+1594,309,1595,95.0,White,Female,Random bystander/stranger
+1595,309,1596,16.0,White,Female,Random bystander/stranger
+1596,309,1597,61.0,White,Male,Random bystander/stranger
+1597,310,1598,7.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+1598,310,1599,0.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+1599,310,1600,4.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+1600,310,1601,56.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+1601,311,1602,4.0,Black,Female,Child or stepchild
+1602,311,1603,5.0,Black,Female,Child or stepchild
+1603,311,1604,17.0,Black,Female,Child or stepchild
+1604,311,1605,19.0,Black,Male,Child or stepchild
+1605,312,1606,18.0,White,Male,Acquaintence
+1606,312,1607,29.0,White,Male,Acquaintence
+1607,312,1608,20.0,White,Female,Acquaintence
+1608,312,1609,20.0,White,Female,Acquaintence
+1609,313,1610,,Black,Male,Undetermined
+1610,313,1611,,Black,Male,Undetermined
+1611,313,1612,,Black,Female,Undetermined
+1612,313,1613,19.0,Black,Female,Undetermined
+1613,314,1614,19.0,Black,Female,Acquaintence
+1614,314,1615,41.0,Black,Female,Undetermined
+1615,314,1616,36.0,Black,Male,Undetermined
+1616,314,1617,45.0,Black,Male,Undetermined
+1617,315,1618,54.0,White,Female,Undetermined
+1618,315,1619,47.0,White,Male,Undetermined
+1619,315,1620,28.0,White,Male,Undetermined
+1620,315,1621,23.0,White,Female,Undetermined
+1621,316,1622,54.0,Black,Male,Other
+1622,316,1623,29.0,Black,Male,Other
+1623,316,1624,51.0,Black,Male,Other
+1624,316,1625,54.0,Black,Male,Other
+1625,317,1626,33.0,White,Female,Spouse
+1626,317,1627,8.0,White,Female,Child or stepchild
+1627,317,1628,5.0,White,Male,Child or stepchild
+1628,317,1629,2.0,White,Female,Child or stepchild
+1629,318,1630,39.0,White,Female,Spouse
+1630,318,1631,10.0,White,Male,Child or stepchild
+1631,318,1632,10.0,White,Male,Child or stepchild
+1632,318,1633,7.0,White,Female,Child or stepchild
+1633,319,1634,37.0,White,Female,Undetermined
+1634,319,1635,16.0,White,Male,Undetermined
+1635,319,1636,16.0,White,Male,Undetermined
+1636,319,1637,43.0,White,Male,Undetermined
+1637,320,1638,36.0,Black,Male,Random bystander/stranger
+1638,320,1639,30.0,Black,Male,Random bystander/stranger
+1639,320,1640,32.0,Black,Male,Random bystander/stranger
+1640,320,1641,35.0,Black,Male,Random bystander/stranger
+1641,321,1642,65.0,Black,Female,Relative of a known person
+1642,321,1643,27.0,Black,Female,Relative of a known person
+1643,321,1644,42.0,Black,Female,Dating relationship
+1644,321,1645,5.0,Black,Male,Relative of a known person
+1645,322,1646,60.0,Black,Male,Neighbor
+1646,322,1647,63.0,Black,Male,Neighbor
+1647,322,1648,,Black,Male,Neighbor
+1648,322,1649,,Black,Male,Neighbor
+1649,322,1650,,Black,Male,Neighbor
+1650,323,1651,61.0,Black,Female,Friend
+1651,323,1652,56.0,,Male,Friend
+1652,323,1653,40.0,Black,Male,Criminal associate
+1653,323,1654,56.0,,Male,Criminal associate
+1654,324,1655,67.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+1655,324,1656,62.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+1656,324,1657,43.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+1657,324,1658,40.0,White,Male,First responder
+1658,325,1659,45.0,Black,Female,Spouse
+1659,325,1660,14.0,Hispanic/Latino,Female,Child or stepchild
+1660,325,1661,11.0,Hispanic/Latino,Male,Child or stepchild
+1661,325,1662,21.0,Black,Female,Niece/Nephew
+1662,326,1663,28.0,Black,Male,Other
+1663,326,1664,20.0,Black,Male,Other
+1664,326,1665,19.0,Black,Male,Other
+1665,326,1666,32.0,Black,Male,Other
+1666,327,1667,52.0,White,Male,Other
+1667,327,1668,35.0,White,Male,Other
+1668,327,1669,56.0,Black,Male,Other
+1669,327,1670,44.0,White,Male,Other
+1670,328,1671,70.0,White,Female,Random bystander/stranger
+1671,328,1672,62.0,White,Male,Random bystander/stranger
+1672,328,1673,57.0,White,Male,Random bystander/stranger
+1673,328,1674,84.0,White,Female,Random bystander/stranger
+1674,328,1675,69.0,White,Female,Random bystander/stranger
+1675,329,1676,48.0,Black,Female,Sibling
+1676,329,1677,64.0,Black,Female,Parent or stepparent
+1677,329,1678,65.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+1678,329,1679,42.0,Black,Male,Dating relationship
+1679,330,1680,16.0,Hispanic/Latino,Male,Other
+1680,330,1681,18.0,Hispanic/Latino,Male,Other
+1681,330,1682,18.0,Hispanic/Latino,Male,Other
+1682,330,1683,20.0,Hispanic/Latino,Male,Other
+1683,331,1684,2.0,White,Female,Relative of a known person
+1684,331,1685,9.0,White,Male,Relative of a known person
+1685,331,1686,43.0,White,Female,Dating relationship
+1686,331,1687,66.0,White,Male,Relative of a known person
+1687,332,1688,35.0,Black,Male,Neighbor
+1688,332,1689,38.0,White,Female,Neighbor
+1689,332,1690,14.0,Other,Male,Neighbor
+1690,332,1691,6.0,Other,Female,Neighbor
+1691,332,1692,5.0,Other,Male,Neighbor
+1692,332,1693,3.0,Other,Female,Neighbor
+1693,332,1694,1.0,Other,Male,Neighbor
+1694,333,1695,36.0,White,Male,First responder
+1695,333,1696,18.0,Black,Male,Relative of a known person
+1696,333,1697,11.0,Black,Male,Relative of a known person
+1697,333,1698,55.0,Black,Female,In-law
+1698,333,1699,53.0,Black,Female,In-law
+1699,333,1700,35.0,Black,Female,In-law
+1700,333,1701,45.0,Black,Male,Relative of a known person
+1701,333,1702,46.0,Black,Female,Relative of a known person
+1702,334,1703,57.0,White,Male,Co-worker or employer
+1703,334,1704,69.0,White,Male,Co-worker or employer
+1704,334,1705,44.0,Hispanic/Latino,Female,Co-worker or employer
+1705,334,1706,53.0,White,Male,Co-worker or employer
+1706,334,1707,46.0,White,Male,Co-worker or employer
+1707,335,1708,49.0,Hispanic/Latino,Female,Parent or stepparent
+1708,335,1709,55.0,Hispanic/Latino,Male,Parent or stepparent
+1709,335,1710,20.0,Hispanic/Latino,Male,Sibling
+1710,335,1711,61.0,White,Male,Random bystander/stranger
+1711,335,1712,59.0,Hispanic/Latino,Male,Random bystander/stranger
+1712,336,1713,10.0,Hispanic/Latino,Female,Child or stepchild
+1713,336,1714,7.0,Hispanic/Latino,Female,Child or stepchild
+1714,336,1715,4.0,Hispanic/Latino,Male,Child or stepchild
+1715,336,1716,2.0,Hispanic/Latino,Male,Child or stepchild
+1716,336,1717,33.0,Hispanic/Latino,Male,Spouse
+1717,337,1718,72.0,White,Female,Random bystander/stranger
+1718,337,1719,88.0,White,Male,Random bystander/stranger
+1719,337,1720,76.0,White,Male,Random bystander/stranger
+1720,337,1721,67.0,White,Female,Random bystander/stranger
+1721,338,1722,18.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+1722,338,1723,56.0,Black,Female,Acquaintence
+1723,338,1724,20.0,Black,Male,Acquaintence
+1724,338,1725,10.0,Black,Male,Acquaintence
+1725,339,1726,60.0,White,Female,Parent or stepparent
+1726,339,1727,89.0,White,Male,Grandparent
+1727,339,1728,85.0,White,Female,Grandparent
+1728,339,1729,68.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+1729,340,1730,27.0,White,Female,Ex-spouse
+1730,340,1731,31.0,Black,Male,Friend
+1731,340,1732,33.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+1732,340,1733,24.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+1733,340,1734,29.0,White,Male,Friend
+1734,340,1735,22.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+1735,340,1736,28.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+1736,340,1737,25.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+1737,341,1738,21.0,Hispanic/Latino,Male,Criminal associate
+1738,341,1739,28.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+1739,341,1740,24.0,Hispanic/Latino,Male,Criminal associate
+1740,341,1741,27.0,Hispanic/Latino,Male,Criminal associate
+1741,342,1743,54.0,White,Male,Random bystander/stranger
+1742,342,1744,28.0,White,Male,Random bystander/stranger
+1743,342,1745,46.0,White,Female,Random bystander/stranger
+1744,342,1746,35.0,White,Male,Random bystander/stranger
+1745,342,1747,34.0,White,Female,Random bystander/stranger
+1746,342,1748,29.0,White,Male,Random bystander/stranger
+1747,342,1749,44.0,White,Male,Random bystander/stranger
+1748,342,1750,50.0,White,Female,Random bystander/stranger
+1749,342,1751,22.0,Hispanic/Latino,Female,Random bystander/stranger
+1750,342,1752,48.0,Hispanic/Latino,Female,Random bystander/stranger
+1751,342,1753,35.0,Hispanic/Latino,Female,Random bystander/stranger
+1752,342,1754,58.0,White,Female,Random bystander/stranger
+1753,342,1755,55.0,White,Male,Random bystander/stranger
+1754,342,1756,30.0,White,Male,Random bystander/stranger
+1755,342,1757,56.0,,Male,Random bystander/stranger
+1756,342,1758,28.0,White,Female,Random bystander/stranger
+1757,342,1759,42.0,White,Female,Random bystander/stranger
+1758,342,1760,42.0,White,Male,Random bystander/stranger
+1759,342,1761,33.0,White,Female,Random bystander/stranger
+1760,342,1762,50.0,Asian/Pacific Islander,Female,Random bystander/stranger
+1761,342,1763,34.0,White,Female,Random bystander/stranger
+1762,342,1764,21.0,Hispanic/Latino,Female,Random bystander/stranger
+1763,342,1765,55.0,White,Male,Random bystander/stranger
+1764,342,1766,40.0,White,Female,Random bystander/stranger
+1765,342,1767,23.0,White,Male,Random bystander/stranger
+1766,342,1768,31.0,White,Female,Random bystander/stranger
+1767,342,1769,49.0,White,Female,Random bystander/stranger
+1768,342,1770,46.0,,Female,Random bystander/stranger
+1769,342,1771,26.0,Hispanic/Latino,Female,Random bystander/stranger
+1770,342,1772,39.0,White,Male,Random bystander/stranger
+1771,342,1773,34.0,White,Female,Random bystander/stranger
+1772,342,1774,20.0,White,Female,Random bystander/stranger
+1773,342,1775,67.0,Hispanic/Latino,Female,Random bystander/stranger
+1774,342,1776,36.0,Hispanic/Latino,Female,Random bystander/stranger
+1775,342,1777,20.0,Hispanic/Latino,Female,Random bystander/stranger
+1776,342,1778,50.0,White,Female,Random bystander/stranger
+1777,342,1779,28.0,White,Male,Random bystander/stranger
+1778,342,1780,29.0,White,Male,Random bystander/stranger
+1779,342,1781,20.0,White,Male,Random bystander/stranger
+1780,342,1782,34.0,Black,Male,Random bystander/stranger
+1781,342,1783,21.0,Hispanic/Latino,Male,Random bystander/stranger
+1782,342,1784,38.0,Asian/Pacific Islander,Female,Random bystander/stranger
+1783,342,1785,53.0,White,Female,Random bystander/stranger
+1784,342,1786,52.0,White,Female,Random bystander/stranger
+1785,342,1787,54.0,White,Male,Random bystander/stranger
+1786,342,1788,56.0,White,Male,Random bystander/stranger
+1787,342,1789,33.0,White,Female,Random bystander/stranger
+1788,342,1790,34.0,White,Female,Random bystander/stranger
+1789,342,1791,34.0,White,Female,Random bystander/stranger
+1790,342,1792,28.0,Hispanic/Latino,Female,Random bystander/stranger
+1791,342,1793,31.0,White,Female,Random bystander/stranger
+1792,342,1794,32.0,Asian/Pacific Islander,Female,Random bystander/stranger
+1793,342,1795,40.0,Hispanic/Latino,Female,Random bystander/stranger
+1794,342,1796,44.0,White,Male,Random bystander/stranger
+1795,342,1797,61.0,White,Male,Random bystander/stranger
+1796,342,1798,42.0,Hispanic/Latino,Female,Random bystander/stranger
+1797,342,1799,24.0,White,Male,Random bystander/stranger
+1798,342,1800,28.0,White,Female,Random bystander/stranger
+1799,343,1801,36.0,Black,Female,Relative of a known person
+1800,343,1802,22.0,Black,Female,Friend
+1801,343,1803,5.0,Black,Female,Relative of a known person
+1802,343,1804,11.0,Black,Male,Relative of a known person
+1803,344,1805,44.0,White,Male,Parent or stepparent
+1804,344,1806,42.0,White,Female,Parent or stepparent
+1805,344,1807,18.0,White,Female,Sibling
+1806,344,1808,70.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+1807,345,1809,31.0,Hispanic/Latino,Female,Undetermined
+1808,345,1810,27.0,Hispanic/Latino,Male,Undetermined
+1809,345,1811,32.0,White,Male,Undetermined
+1810,345,1812,29.0,White,Female,Ex-spouse
+1811,346,1813,8.0,White,Male,Other familial relationship
+1812,346,1814,50.0,White,Male,Other familial relationship
+1813,346,1815,43.0,White,Female,Other familial relationship
+1814,346,1816,28.0,White,Female,Other familial relationship
+1815,347,1817,36.0,White,Female,Random bystander/stranger
+1816,347,1818,68.0,White,Female,Random bystander/stranger
+1817,347,1819,77.0,White,Male,Random bystander/stranger
+1818,347,1820,71.0,White,Female,In-law
+1819,347,1821,14.0,Black,Female,Random bystander/stranger
+1820,347,1822,16.0,White,Female,Random bystander/stranger
+1821,347,1823,33.0,White,Female,Random bystander/stranger
+1822,347,1824,2.0,White,Male,Random bystander/stranger
+1823,347,1825,60.0,White,Male,Random bystander/stranger
+1824,347,1826,58.0,White,Female,Random bystander/stranger
+1825,347,1827,36.0,White,Male,Random bystander/stranger
+1826,347,1828,11.0,White,Female,Random bystander/stranger
+1827,347,1829,9.0,White,Female,Random bystander/stranger
+1828,347,1830,13.0,White,Male,Random bystander/stranger
+1829,347,1831,64.0,Hispanic/Latino,Male,Random bystander/stranger
+1830,347,1832,66.0,White,Female,Random bystander/stranger
+1831,347,1833,51.0,White,Male,Random bystander/stranger
+1832,347,1834,51.0,White,Female,Random bystander/stranger
+1833,347,1835,30.0,White,Female,Random bystander/stranger
+1834,347,1836,5.0,White,Female,Random bystander/stranger
+1835,347,1837,7.0,Hispanic/Latino,Female,Random bystander/stranger
+1836,347,1838,56.0,White,Female,Random bystander/stranger
+1837,347,1839,56.0,White,Male,Random bystander/stranger
+1838,347,1840,56.0,White,Female,Random bystander/stranger
+1839,347,1841,62.0,White,Male,Random bystander/stranger
+1840,348,1842,32.0,White,Male,Random bystander/stranger
+1841,348,1843,23.0,White,Male,Random bystander/stranger
+1842,348,1844,31.0,White,Female,Random bystander/stranger
+1843,348,1845,48.0,Hispanic/Latino,Male,Random bystander/stranger
+1844,348,1846,48.0,Hispanic/Latino,Male,Random bystander/stranger
+1845,348,1847,49.0,Hispanic/Latino,Male,Random bystander/stranger
+1846,348,1848,48.0,Hispanic/Latino,Male,Random bystander/stranger
+1847,348,1849,48.0,Hispanic/Latino,Male,Random bystander/stranger
+1848,349,1850,38.0,White,Female,Spouse
+1849,349,1851,38.0,White,Male,Neighbor
+1850,349,1852,68.0,White,Female,Neighbor
+1851,349,1853,56.0,White,Male,Random bystander/stranger
+1852,349,1854,55.0,White,Female,Random bystander/stranger
+1853,350,1855,20.0,Hispanic/Latino,Male,Undetermined
+1854,350,1856,23.0,Hispanic/Latino,Male,Undetermined
+1855,350,1857,23.0,Hispanic/Latino,Male,Undetermined
+1856,350,1858,20.0,Hispanic/Latino,Male,Undetermined
+1857,351,1859,25.0,White,Female,Ex-spouse
+1858,351,1860,27.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+1859,351,1861,23.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+1860,351,1862,21.0,White,Male,Relative of a known person
+1861,352,1863,70.0,White,Female,Parent or stepparent
+1862,352,1864,75.0,White,Male,Parent or stepparent
+1863,352,1865,41.0,White,Female,Dating relationship
+1864,352,1866,57.0,White,Female,Relative of a known person
+1865,353,1867,14.0,White,Female,Classmate
+1866,353,1868,35.0,White,Male,Other
+1867,353,1869,14.0,Hispanic/Latino,Male,Classmate
+1868,353,1870,17.0,White,Male,Classmate
+1869,353,1871,37.0,White,Male,Other
+1870,353,1872,14.0,White,Female,Classmate
+1871,353,1873,49.0,White,Male,Other
+1872,353,1874,15.0,White,Male,Classmate
+1873,353,1875,14.0,White,Female,Classmate
+1874,353,1876,14.0,Hispanic/Latino,Female,Classmate
+1875,353,1877,17.0,Hispanic/Latino,Male,Classmate
+1876,353,1878,14.0,White,Female,Classmate
+1877,353,1879,18.0,White,Female,Classmate
+1878,353,1880,17.0,Other,Female,Classmate
+1879,353,1881,14.0,White,Male,Classmate
+1880,353,1882,16.0,Hispanic/Latino,Female,Classmate
+1881,353,1883,15.0,Asian/Pacific Islander,Male,Classmate
+1882,354,1884,60.0,Black,Male,Relative of a known person
+1883,354,1885,21.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+1884,354,1886,24.0,Black,Female,Ex-dating relationship
+1885,354,1887,22.0,Black,Male,Cousin
+1886,355,1888,29.0,Black,Male,Random bystander/stranger
+1887,355,1889,20.0,Hispanic/Latino,Male,Random bystander/stranger
+1888,355,1890,21.0,Black,Female,Random bystander/stranger
+1889,355,1891,23.0,Black,Male,Random bystander/stranger
+1890,356,1892,4.0,White,Male,Child or stepchild
+1891,356,1893,6.0,White,Female,Child or stepchild
+1892,356,1894,8.0,White,Male,Child or stepchild
+1893,356,1895,29.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+1894,357,1896,17.0,White,Male,Classmate
+1895,357,1897,16.0,White,Female,Classmate
+1896,357,1898,15.0,White,Male,Classmate
+1897,357,1899,15.0,White,Male,Classmate
+1898,357,1900,64.0,White,Female,Other
+1899,357,1901,15.0,Hispanic/Latino,Female,Classmate
+1900,357,1902,17.0,Other,Female,Classmate
+1901,357,1903,17.0,Hispanic/Latino,Male,Classmate
+1902,357,1904,63.0,White,Female,Other
+1903,357,1905,14.0,White,Female,Classmate
+1904,358,1906,59.0,White,Male,Other
+1905,358,1907,48.0,Black,Female,Random bystander/stranger
+1906,358,1908,49.0,White,Female,Random bystander/stranger
+1907,358,1909,72.0,White,Male,Individual with some non-blood/marriage relationship to a known person
+1908,358,1910,70.0,Black,Female,Acquaintence
+1909,358,1911,72.0,,Male,Acquaintence
+1910,359,1912,1.0,Hispanic/Latino,Female,Child or stepchild
+1911,359,1913,6.0,Hispanic/Latino,Male,Child or stepchild
+1912,359,1914,10.0,Hispanic/Latino,Female,Relative of a known person
+1913,359,1915,11.0,Hispanic/Latino,Male,Relative of a known person
+1914,360,1916,61.0,White,Male,Random bystander/stranger
+1915,360,1917,59.0,White,Male,Random bystander/stranger
+1916,360,1918,56.0,White,Male,Random bystander/stranger
+1917,360,1919,34.0,White,Female,Random bystander/stranger
+1918,360,1920,65.0,White,Female,Random bystander/stranger
+1919,361,1921,41.0,White,Female,Spouse
+1920,361,1922,6.0,White,Male,Child or stepchild
+1921,361,1923,4.0,White,Female,Child or stepchild
+1922,361,1924,3.0,White,Male,Child or stepchild
+1923,362,1925,85.0,White,Male,Parent or stepparent
+1924,362,1926,60.0,Hispanic/Latino,Female,Parent or stepparent
+1925,362,1927,13.0,Hispanic/Latino,Male,Niece/Nephew
+1926,362,1928,41.0,Hispanic/Latino,Male,Sibling
+1927,363,1929,45.0,Hispanic/Latino,Female,Ex-spouse
+1928,363,1930,50.0,Hispanic/Latino,Male,Co-worker or employer
+1929,363,1931,50.0,Hispanic/Latino,Male,Co-worker or employer
+1930,363,1932,31.0,Hispanic/Latino,Female,Relative of a known person
+1931,363,1933,57.0,Hispanic/Latino,Male,Acquaintence
+1932,364,1934,62.0,Hispanic/Latino,Male,Other
+1933,364,1935,20.0,Hispanic/Latino,Male,Relative of a known person
+1934,364,1936,22.0,Hispanic/Latino,Male,Relative of a known person
+1935,364,1937,25.0,Hispanic/Latino,Male,Relative of a known person
+1936,365,1938,14.0,Asian/Pacific Islander,Male,Child or stepchild
+1937,365,1939,14.0,Asian/Pacific Islander,Female,Child or stepchild
+1938,365,1940,15.0,Asian/Pacific Islander,Female,Child or stepchild
+1939,365,1941,17.0,Asian/Pacific Islander,Female,Child or stepchild
+1940,366,1942,75.0,White,Female,Random bystander/stranger
+1941,366,1943,65.0,White,Male,Random bystander/stranger
+1942,366,1944,97.0,White,Female,Random bystander/stranger
+1943,366,1945,66.0,White,Male,Random bystander/stranger
+1944,366,1946,59.0,White,Male,Random bystander/stranger
+1945,366,1947,54.0,White,Male,Random bystander/stranger
+1946,366,1948,84.0,White,Female,Random bystander/stranger
+1947,366,1949,86.0,White,Male,Random bystander/stranger
+1948,366,1950,71.0,White,Male,Random bystander/stranger
+1949,366,1951,88.0,White,Male,Random bystander/stranger
+1950,366,1952,69.0,White,Male,Random bystander/stranger
+1951,367,1953,27.0,White,Male,Random bystander/stranger
+1952,367,1954,54.0,White,Male,First responder
+1953,367,1955,33.0,White,Male,Random bystander/stranger
+1954,367,1956,21.0,White,Male,Random bystander/stranger
+1955,367,1957,48.0,White,Male,Random bystander/stranger
+1956,367,1958,22.0,White,Male,Random bystander/stranger
+1957,367,1959,18.0,White,Female,Random bystander/stranger
+1958,367,1960,23.0,White,Male,Random bystander/stranger
+1959,367,1961,21.0,White,Female,Random bystander/stranger
+1960,367,1962,20.0,White,Female,Random bystander/stranger
+1961,367,1963,21.0,White,Male,Random bystander/stranger
+1962,367,1964,20.0,Hispanic/Latino,Male,Random bystander/stranger
+1963,368,1965,31.0,Black,Male,Criminal associate
+1964,368,1966,28.0,Black,Male,Relative of a known person
+1965,368,1967,20.0,Black,Female,Relative of a known person
+1966,368,1968,17.0,Black,Female,Relative of a known person
+1967,369,1969,8.0,White,Female,Relative of a known person
+1968,369,1970,10.0,White,Male,Relative of a known person
+1969,369,1971,61.0,White,Female,Relative of a known person
+1970,369,1972,39.0,White,Female,Dating relationship
+1971,370,1973,50.0,Hispanic/Latino,Male,Sibling
+1972,370,1974,45.0,White,Female,In-law
+1973,370,1975,11.0,Other,Male,Niece/Nephew
+1974,370,1976,8.0,Other,Female,Niece/Nephew
+1975,371,1977,38.0,Hispanic/Latino,Female,Cousin
+1976,371,1978,8.0,Hispanic/Latino,Female,Other familial relationship
+1977,371,1979,6.0,Hispanic/Latino,Male,Other familial relationship
+1978,371,1980,2.0,Hispanic/Latino,Male,Other familial relationship
+1979,372,1981,15.0,Black,Female,Cousin
+1980,372,1982,42.0,Black,Female,Aunt/Uncle
+1981,372,1983,69.0,Black,Female,Grandparent
+1982,372,1984,72.0,Black,Male,Grandparent
+1983,373,1985,15.0,Black,Male,Child or stepchild
+1984,373,1986,16.0,Black,Female,Child or stepchild
+1985,373,1987,12.0,Black,Female,Child or stepchild
+1986,373,1988,19.0,Black,Male,Child or stepchild
+1987,373,1989,14.0,Black,Male,Child or stepchild
+1988,373,1990,14.0,Black,Female,Child or stepchild
+1989,374,1991,1.0,White,Male,Niece/Nephew
+1990,374,1992,16.0,White,Male,Sibling
+1991,374,1993,45.0,White,Female,Parent or stepparent
+1992,374,1994,18.0,White,Female,Sibling
+1993,375,1995,28.0,Asian/Pacific Islander,Female,In-law
+1994,375,1996,28.0,Asian/Pacific Islander,Male,Other familial relationship
+1995,375,1997,30.0,Asian/Pacific Islander,Female,Spouse
+1996,375,1998,65.0,Asian/Pacific Islander,Female,Friend
+1997,376,1999,32.0,White,Male,Co-worker or employer
+1998,376,2000,21.0,White,Male,Random bystander/stranger
+1999,376,2001,46.0,White,Male,Co-worker or employer
+2000,376,2002,54.0,Hispanic/Latino,Male,Co-worker or employer
+2001,376,2003,37.0,White,Male,Co-worker or employer
+2002,377,2004,1.0,White,Female,Child or stepchild
+2003,377,2005,27.0,White,Female,Spouse
+2004,377,2006,72.0,White,Female,In-law
+2005,377,2007,72.0,White,Male,In-law
+2006,378,2008,50.0,White,Female,Parent or stepparent
+2007,378,2009,50.0,White,Male,Parent or stepparent
+2008,378,2010,43.0,White,Male,Relative of a known person
+2009,378,2011,17.0,White,Male,Relative of a known person
+2010,378,2012,20.0,White,Female,Dating relationship
+2011,379,2013,65.0,White,Female,Random bystander/stranger
+2012,379,2014,55.0,Hispanic/Latino,Female,Random bystander/stranger
+2013,379,2015,38.0,Hispanic/Latino,Female,Random bystander/stranger
+2014,379,2016,31.0,White,Female,Random bystander/stranger
+2015,379,2017,54.0,,Female,Random bystander/stranger
+2016,380,2018,17.0,Hispanic/Latino,Female,Undetermined
+2017,380,2019,18.0,Hispanic/Latino,Male,Undetermined
+2018,380,2020,19.0,White,Male,Undetermined
+2019,380,2021,25.0,Hispanic/Latino,Male,Undetermined
+2020,381,2022,49.0,Black,Female,Aunt/Uncle
+2021,381,2023,19.0,Black,Male,Cousin
+2022,381,2024,24.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+2023,381,2025,26.0,Black,Male,Friend
+2024,382,2026,41.0,White,Female,Spouse
+2025,382,2027,7.0,White,Male,Child or stepchild
+2026,382,2028,7.0,White,Female,Child or stepchild
+2027,382,2029,3.0,White,Male,Child or stepchild
+2028,383,2030,62.0,Asian/Pacific Islander,Female,In-law
+2029,383,2031,39.0,Asian/Pacific Islander,Female,Spouse
+2030,383,2032,58.0,Asian/Pacific Islander,Female,In-law
+2031,383,2033,59.0,Asian/Pacific Islander,Male,In-law
+2032,384,2034,51.0,White,Male,Parent or stepparent
+2033,384,2035,44.0,White,Female,Parent or stepparent
+2034,384,2036,45.0,White,Male,Aunt/Uncle
+2035,384,2037,43.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+2036,384,2038,12.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+2037,384,2039,64.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+2038,384,2040,69.0,White,Female,Random bystander/stranger
+2039,385,2041,42.0,Black,Male,Undetermined
+2040,385,2042,30.0,Black,Male,Undetermined
+2041,385,2043,28.0,Black,Male,Undetermined
+2042,385,2044,27.0,Black,Male,Undetermined
+2043,386,2045,39.0,Black,Female,Co-worker or employer
+2044,386,2046,50.0,Black,Male,Co-worker or employer
+2045,386,2047,39.0,White,Female,Co-worker or employer
+2046,386,2048,65.0,White,Female,Co-worker or employer
+2047,386,2049,35.0,White,Male,Co-worker or employer
+2048,386,2050,52.0,Black,Male,Co-worker or employer
+2049,386,2051,60.0,White,Female,Co-worker or employer
+2050,386,2052,42.0,White,Female,Co-worker or employer
+2051,386,2053,65.0,White,Male,Co-worker or employer
+2052,386,2054,54.0,White,Male,Co-worker or employer
+2053,386,2055,57.0,White,Male,Random bystander/stranger
+2054,386,2056,72.0,White,Male,Co-worker or employer
+2055,388,2057,70.0,White,Male,Neighbor
+2056,388,2058,78.0,White,Male,Neighbor
+2057,388,2059,65.0,White,Female,Spouse
+2058,388,2060,33.0,White,Male,Child or stepchild
+2059,389,2061,55.0,Asian/Pacific Islander,Female,In-law
+2060,389,2062,23.0,Asian/Pacific Islander,Female,In-law
+2061,389,2063,48.0,Asian/Pacific Islander,Male,In-law
+2062,389,2064,42.0,Asian/Pacific Islander,Female,In-law
+2063,390,2065,61.0,,Male,Undetermined
+2064,390,2066,51.0,,Female,Undetermined
+2065,390,2067,36.0,,Male,Undetermined
+2066,390,2068,49.0,,Female,Undetermined
+2067,390,2069,59.0,,Male,Undetermined
+2068,391,2070,65.0,Black,Male,Undetermined
+2069,391,2071,37.0,Black,Male,Undetermined
+2070,391,2072,54.0,Black,Male,Undetermined
+2071,391,2073,54.0,Black,Male,Undetermined
+2072,391,2074,40.0,Black,Male,Undetermined
+2073,392,2075,34.0,White,Female,Spouse
+2074,392,2076,9.0,White,Female,Child or stepchild
+2075,392,2077,6.0,White,Female,Child or stepchild
+2076,392,2078,5.0,White,Male,Child or stepchild
+2077,393,2079,56.0,Hispanic/Latino,Male,Parent or stepparent
+2078,393,2080,33.0,Hispanic/Latino,Male,Sibling
+2079,393,2081,45.0,Hispanic/Latino,Female,Acquaintence
+2080,393,2082,55.0,Black,Male,Random bystander/stranger
+2081,394,2083,32.0,White,Male,Sibling
+2082,394,2084,8.0,White,Male,Niece/Nephew
+2083,394,2085,66.0,White,Female,Parent or stepparent
+2084,394,2086,24.0,Asian/Pacific Islander,Female,Acquaintence
+2085,395,2087,64.0,White,Female,Parent or stepparent
+2086,395,2088,66.0,White,Male,Parent or stepparent
+2087,395,2089,31.0,White,Female,Dating relationship
+2088,395,2090,1.0,White,Female,Child or stepchild
+2089,396,2091,63.0,White,Female,Random bystander/stranger
+2090,396,2092,58.0,Hispanic/Latino,Female,Random bystander/stranger
+2091,396,2093,90.0,Hispanic/Latino,Male,Random bystander/stranger
+2092,396,2094,15.0,Hispanic/Latino,Male,Random bystander/stranger
+2093,396,2095,66.0,White,Male,Random bystander/stranger
+2094,396,2096,83.0,Hispanic/Latino,Male,Random bystander/stranger
+2095,396,2098,77.0,Hispanic/Latino,Female,Random bystander/stranger
+2096,396,2099,82.0,Hispanic/Latino,Female,Random bystander/stranger
+2097,396,2100,68.0,Hispanic/Latino,Male,Random bystander/stranger
+2098,396,2101,78.0,Hispanic/Latino,Male,Random bystander/stranger
+2099,396,2102,46.0,Hispanic/Latino,Male,Random bystander/stranger
+2100,396,2103,57.0,Hispanic/Latino,Female,Random bystander/stranger
+2101,396,2104,61.0,Hispanic/Latino,Male,Random bystander/stranger
+2102,396,2105,86.0,,Female,Random bystander/stranger
+2103,396,2106,63.0,White,Male,Random bystander/stranger
+2104,396,2107,56.0,Hispanic/Latino,Female,Random bystander/stranger
+2105,396,2108,23.0,Hispanic/Latino,Male,Random bystander/stranger
+2106,396,2109,61.0,Hispanic/Latino,Female,Random bystander/stranger
+2107,396,2110,67.0,Hispanic/Latino,Male,Random bystander/stranger
+2108,396,2111,25.0,Hispanic/Latino,Female,Random bystander/stranger
+2109,397,2112,27.0,Black,Female,Random bystander/stranger
+2110,397,2113,25.0,Black,Male,Random bystander/stranger
+2111,397,2114,57.0,Black,Male,Random bystander/stranger
+2112,397,2115,30.0,White,Male,Random bystander/stranger
+2113,397,2116,25.0,White,Male,Random bystander/stranger
+2114,397,2117,36.0,Black,Female,Random bystander/stranger
+2115,397,2118,39.0,Black,Female,Random bystander/stranger
+2116,397,2119,38.0,Black,Male,Random bystander/stranger
+2117,397,2120,22.0,White,Female,Sibling
+2118,396,2125,66.0,Hispanic/Latino,Female,Random bystander/stranger
+2119,396,2126,41.0,Hispanic/Latino,Male,Random bystander/stranger
+2120,399,2127,52.0,White,Male,Undetermined
+2121,399,2128,42.0,White,Male,Undetermined
+2122,399,2129,45.0,White,Female,Undetermined
+2123,399,2130,50.0,White,Male,Undetermined
+2124,400,2131,63.0,Hispanic/Latino,Male,Neighbor
+2125,400,2132,58.0,White,Male,Random bystander/stranger
+2126,400,2133,39.0,Hispanic/Latino,Male,Random bystander/stranger
+2127,400,2134,62.0,White,Male,Neighbor
+2128,401,2135,40.0,White,Male,Random bystander/stranger
+2129,401,2136,15.0,Hispanic/Latino,Female,Random bystander/stranger
+2130,401,2137,29.0,Hispanic/Latino,Female,Random bystander/stranger
+2131,401,2138,30.0,Black,Male,Random bystander/stranger
+2132,401,2139,57.0,White,Male,Random bystander/stranger
+2133,401,2140,35.0,Hispanic/Latino,Male,Random bystander/stranger
+2134,401,2141,25.0,White,Male,Random bystander/stranger
+2135,402,2142,38.0,White,Male,Parent or stepparent
+2136,402,2143,35.0,White,Female,Parent or stepparent
+2137,402,2144,1.0,White,Male,Sibling
+2138,402,2145,4.0,White,Female,Sibling
+2139,402,2146,6.0,White,Male,Sibling
+2140,403,2147,32.0,White,Female,Spouse
+2141,403,2148,10.0,White,Male,Child or stepchild
+2142,403,2149,5.0,White,Male,Child or stepchild
+2143,403,2150,2.0,White,Female,Child or stepchild
+2144,403,2151,1.0,White,Female,Child or stepchild
+2145,404,2152,39.0,Black,Male,Roommate
+2146,404,2153,23.0,Black,Male,Roommate
+2147,404,2154,32.0,Black,Male,Roommate
+2148,404,2155,33.0,Black,Male,Roommate
+2149,405,2156,17.0,Hispanic/Latino,Male,Undetermined
+2150,405,2157,36.0,Hispanic/Latino,Female,Undetermined
+2151,405,2158,77.0,Hispanic/Latino,Female,Undetermined
+2152,405,2159,16.0,Hispanic/Latino,Female,Undetermined
+2153,406,2160,19.0,Black,Female,Undetermined
+2154,406,2161,18.0,Black,Female,Undetermined
+2155,406,2162,20.0,Black,Male,Undetermined
+2156,406,2163,23.0,Black,Male,Undetermined
+2157,407,2164,49.0,Black,Male,Random bystander/stranger
+2158,407,2165,83.0,Asian/Pacific Islander,Male,Undetermined
+2159,407,2166,39.0,White,Male,Undetermined
+2160,407,2167,55.0,Hispanic/Latino,Male,Random bystander/stranger
+2161,408,2168,34.0,Hispanic/Latino,Male,Random bystander/stranger
+2162,408,2169,58.0,Hispanic/Latino,Male,Random bystander/stranger
+2163,408,2170,29.0,Hispanic/Latino,Male,Random bystander/stranger
+2164,408,2171,29.0,Hispanic/Latino,Male,Random bystander/stranger
+2165,409,2172,40.0,White,Female,Spouse
+2166,409,2173,11.0,White,Female,Child or stepchild
+2167,409,2174,9.0,White,Male,Child or stepchild
+2168,409,2175,9.0,White,Female,Child or stepchild
+2169,411,2177,59.0,White,Male,Co-worker or employer
+2170,411,2178,43.0,White,Male,Co-worker or employer
+2171,411,2179,32.0,Hispanic/Latino,Male,Co-worker or employer
+2172,411,2180,35.0,White,Male,Co-worker or employer
+2173,413,2185,2.0,White,Male,Sibling
+2174,413,2186,34.0,White,Male,Acquaintence
+2175,413,2187,2.0,White,Female,Cousin
+2176,413,2188,69.0,White,Female,Grandparent
+2177,413,2189,1.0,White,Female,Sibling
+2178,314,2195,18.0,Black,Female,Random bystander/stranger
+2179,415,2196,43.0,White,Female,Neighbor
+2180,415,2197,43.0,White,Male,Neighbor
+2181,415,2198,65.0,White,Female,Neighbor
+2182,415,2199,61.0,White,Male,Neighbor
+2183,415,2200,53.0,White,Female,Neighbor
+2184,418,2201,24.0,Black,Male,Undetermined
+2185,418,2202,23.0,Black,Male,Undetermined
+2186,418,2203,22.0,Black,Male,Undetermined
+2187,418,2204,29.0,Black,Male,Undetermined
+2188,419,2205,31.0,Hispanic/Latino,Male,Other
+2189,419,2206,26.0,,Male,Other
+2190,419,2207,37.0,,Male,Other
+2191,419,2208,37.0,,Male,Other
+2192,420,2209,53.0,White,Male,Undetermined
+2193,420,2210,26.0,White,Male,Undetermined
+2194,420,2211,25.0,White,Male,Undetermined
+2195,420,2212,41.0,White,Male,Undetermined
+2196,418,2213,19.0,Black,Female,Undetermined
+2197,421,2214,31.0,Asian/Pacific Islander,Male,Random bystander/stranger
+2198,421,2215,38.0,Asian/Pacific Islander,Male,Random bystander/stranger
+2199,422,2218,29.0,Hispanic/Latino,Female,Spouse
+2200,422,2219,11.0,Hispanic/Latino,Male,Child or stepchild
+2201,422,2220,3.0,Hispanic/Latino,Male,Child or stepchild
+2202,422,2221,5.0,Hispanic/Latino,Male,Child or stepchild
+2203,421,2222,40.0,Asian/Pacific Islander,Male,Random bystander/stranger
+2204,421,2223,23.0,Asian/Pacific Islander,Male,Random bystander/stranger
+2205,423,2224,56.0,Black,Male,Parent or stepparent
+2206,423,2225,51.0,Black,Female,Parent or stepparent
+2207,423,2226,17.0,Black,Male,Sibling
+2208,423,2227,6.0,Black,Male,Sibling
+2209,424,2228,39.0,White,Male,First responder
+2210,424,2229,49.0,Hispanic/Latino,Male,Random bystander/stranger
+2211,424,2230,32.0,White,Female,Random bystander/stranger
+2212,424,2231,24.0,White,Male,Random bystander/stranger
+2213,425,2232,25.0,Black,Female,Child or stepchild
+2214,425,2233,13.0,Black,Male,Child or stepchild
+2215,425,2234,42.0,Black,Female,Sibling
+2216,425,2235,9.0,Black,Female,Niece/Nephew
+2217,425,2236,9.0,Black,Female,Niece/Nephew
+2218,426,2237,29.0,,Female,Dating relationship
+2219,426,2238,3.0,,Male,Child or stepchild
+2220,426,2239,1.0,,Male,Child or stepchild
+2221,426,2240,1.0,,Male,Child or stepchild
+2222,427,2241,42.0,White,Female,Spouse
+2223,427,2242,13.0,White,Male,Child or stepchild
+2224,427,2243,11.0,White,Male,Child or stepchild
+2225,427,2244,4.0,White,Female,Child or stepchild
+2226,428,2245,52.0,Hispanic/Latino,Female,Parent or stepparent
+2227,428,2246,14.0,White,Male,Sibling
+2228,428,2247,12.0,White,Male,Sibling
+2229,428,2248,15.0,White,Female,Sibling
+2230,429,2249,26.0,,Female,Spouse
+2231,429,2250,4.0,,Male,Child or stepchild
+2232,429,2251,3.0,,Male,Child or stepchild
+2233,429,2252,8.0,,Female,Child or stepchild
+2234,430,2253,19.0,Black,Male,Undetermined
+2235,430,2254,21.0,Black,Female,Undetermined
+2236,430,2255,21.0,Black,Male,Undetermined
+2237,430,2256,20.0,Black,Male,Undetermined
+2238,431,2257,33.0,Hispanic/Latino,Male,Co-worker or employer
+2239,431,2258,61.0,White,Male,Co-worker or employer
+2240,431,2259,60.0,White,Male,Co-worker or employer
+2241,431,2260,57.0,White,Male,Co-worker or employer
+2242,431,2263,33.0,White,Male,Co-worker or employer
+2243,145,2264,64.0,Asian/Pacific Islander,Male,Random bystander/stranger
+2244,432,2265,32.0,White,Male,First responder
+2245,432,2266,57.0,White,Male,Random bystander/stranger
+2246,432,2267,22.0,White,Male,Random bystander/stranger
+2247,432,2268,46.0,White,Female,Random bystander/stranger
+2248,433,2269,67.0,White,Female,Spouse
+2249,433,2270,93.0,White,Female,In-law
+2250,433,2271,73.0,White,Male,In-law
+2251,433,2272,54.0,White,Female,In-law
+2252,433,2273,41.0,White,Male,In-law
+2253,433,2274,39.0,White,Female,In-law
+2254,396,2275,36.0,,Male,Random bystander/stranger
+2255,434,2276,17.0,Black,Female,Niece/Nephew
+2256,434,2277,19.0,Black,Male,Niece/Nephew
+2257,434,2278,14.0,Black,Male,Child or stepchild
+2258,434,2279,16.0,Black,Female,Child or stepchild
+2259,434,2280,41.0,Black,Female,Relative of a known person
+2260,436,2285,45.0,White,Female,Undetermined
+2261,436,2286,19.0,Black,Male,Acquaintence
+2262,436,2287,18.0,White,Male,Acquaintence
+2263,436,2288,31.0,White,Male,Acquaintence
+2264,436,2289,22.0,,Male,Acquaintence
+2265,436,2290,17.0,,Female,Acquaintence
+2266,436,2291,21.0,White,Female,Acquaintence
+2267,437,2292,36.0,Hispanic/Latino,Female,Spouse
+2268,437,2293,4.0,Hispanic/Latino,Male,Child or stepchild
+2269,437,2294,3.0,Hispanic/Latino,Female,Child or stepchild
+2270,437,2295,1.0,Hispanic/Latino,Female,Child or stepchild
+2271,437,2296,1.0,Hispanic/Latino,Male,Child or stepchild
+2272,438,2297,29.0,Black,Female,Random bystander/stranger
+2273,438,2299,28.0,Black,Male,Random bystander/stranger
+2274,438,2300,39.0,Black,Male,Random bystander/stranger
+2275,438,2301,31.0,Black,Male,Random bystander/stranger
+2276,439,2302,14.0,Black,Male,Random bystander/stranger
+2277,439,2303,30.0,Black,Male,Random bystander/stranger
+2278,439,2304,26.0,Black,Male,Random bystander/stranger
+2279,439,2305,53.0,Black,Male,Random bystander/stranger
+2280,440,2306,37.0,Black,Male,Undetermined
+2281,440,2307,37.0,Black,Male,Undetermined
+2282,440,2308,22.0,Black,Male,Undetermined
+2283,440,2309,25.0,Black,Male,Undetermined
+2284,441,2310,34.0,,Male,Undetermined
+2285,441,2311,24.0,,Male,Undetermined
+2286,441,2312,20.0,,Male,Undetermined
+2287,441,2313,28.0,,Male,Undetermined
+2288,442,2314,35.0,White,Female,Spouse
+2289,442,2315,12.0,White,Male,Child or stepchild
+2290,442,2316,10.0,White,Female,Child or stepchild
+2291,442,2317,6.0,White,Male,Child or stepchild
+2292,444,2323,28.0,White,Male,Acquaintence
+2293,444,2324,30.0,White,Male,Acquaintence
+2294,444,2325,38.0,White,Female,Acquaintence
+2295,444,2326,35.0,White,Female,Ex-dating relationship
+2296,445,2327,25.0,,Female,Ex-dating relationship
+2297,445,2328,6.0,,Male,Child or stepchild
+2298,445,2329,2.0,,Female,Relative of a known person
+2299,445,2330,35.0,,Male,Undetermined
+2300,342,2331,55.0,,Female,Random bystander/stranger
+2301,446,2332,53.0,Asian/Pacific Islander,Male,Undetermined
+2302,446,2333,44.0,Asian/Pacific Islander,Female,Undetermined
+2303,446,2334,48.0,Asian/Pacific Islander,Female,Undetermined
+2304,446,2335,64.0,Asian/Pacific Islander,Male,Undetermined
+2305,446,2336,47.0,Asian/Pacific Islander,Female,Undetermined
+2306,446,2337,54.0,Asian/Pacific Islander,Female,Undetermined
+2307,446,2338,59.0,Asian/Pacific Islander,Female,Undetermined
+2308,342,2339,49.0,,Female,Random bystander/stranger
+2309,447,2340,18.0,American Indian,Male,Cousin
+2310,447,2341,43.0,American Indian,Female,Aunt/Uncle
+2311,447,2342,10.0,American Indian,Female,Cousin
+2312,447,2343,7.0,American Indian,Male,Cousin
+2313,448,2344,37.0,White,Male,Parent or stepparent
+2314,448,2347,3.0,White,Male,Sibling
+2315,449,2348,64.0,,Female,In-law
+2316,449,2349,39.0,,Female,Spouse
+2317,449,2350,14.0,,Male,Child or stepchild
+2318,449,2351,90.0,,Female,Grandparent
+2319,450,2352,7.0,,Female,Child or stepchild
+2320,450,2353,10.0,,Female,Child or stepchild
+2321,450,2354,61.0,,Female,Parent or stepparent
+2322,450,2355,12.0,,Female,Child or stepchild
+2323,453,2356,30.0,Asian/Pacific Islander,Male,Random bystander/stranger
+2324,453,2357,20.0,Black,Male,Random bystander/stranger
+2325,453,2358,46.0,Black,Female,Random bystander/stranger
+2326,453,2359,61.0,,Female,Random bystander/stranger
+2327,455,2360,42.0,Black,Female,Parent or stepparent
+2328,455,2361,42.0,Black,Male,Parent or stepparent
+2329,455,2363,18.0,Black,Male,Sibling
+2330,455,2364,13.0,Black,Female,Sibling
+2331,455,2365,19.0,Black,Female,Sibling
+2332,457,2373,24.0,Black,Male,Sibling
+2333,457,2374,1.0,Black,Female,Niece/nephew
+2334,457,2375,3.0,Black,Male,Niece/nephew
+2335,457,2376,5.0,Black,Female,Niece/nephew
+2336,457,2377,6.0,Black,Female,Niece/nephew
+2337,457,2378,9.0,Black,Female,Niece/nephew
+2338,453,2379,15.0,,Female,Random bystander/stranger
+2339,451,2380,20.0,Black,Female,Neighbor
+2340,451,2381,12.0,Black,Male,Child or stepchild
+2341,451,2382,8.0,Black,Female,Child or stepchild
+2342,451,2383,5.0,Black,Female,Child or stepchild
+2343,451,2384,1.0,Black,Female,Child or stepchild
+2344,459,2389,35.0,Black,Male,Relative of a known person
+2345,459,2390,23.0,Black,Male,Relative of a known person
+2346,459,2391,7.0,Black,Female,Relative of a known person
+2347,459,2392,44.0,Black,Female,Relative of a known person
+2348,448,2393,12.0,White,Male,Undetermined
+2349,448,2394,39.0,White,Female,Undetermined
+2350,460,2395,33.0,White,Female,Random bystander/stranger
+2351,460,2396,63.0,Asian/Pacific Islander,Female,Random bystander/stranger
+2352,460,2397,54.0,White,Male,Random bystander/stranger
+2353,460,2398,51.0,Asian/Pacific Islander,Female,Random bystander/stranger
+2354,460,2399,69.0,Asian/Pacific Islander,Female,Random bystander/stranger
+2355,460,2401,49.0,Asian/Pacific Islander,Female,Random bystander/stranger
+2356,460,2402,74.0,Asian/Pacific Islander,Female,Random bystander/stranger
+2357,460,2403,,Asian/Pacific Islander,Female,Random bystander/stranger
+2358,461,2404,7.0,White,Male,Child or stepchild
+2359,461,2405,6.0,White,Male,Child or stepchild
+2360,461,2406,3.0,White,Male,Child or stepchild
+2361,461,2407,1.0,White,Male,Child or stepchild
+2362,461,2408,4.0,White,Male,Child or stepchild
+2363,462,2409,51.0,White,Male,First responder
+2364,462,2411,20.0,White,Male,Random bystander/stranger
+2365,462,2412,23.0,White,Male,Random bystander/stranger
+2366,462,2414,25.0,White,Female,Random bystander/stranger
+2367,462,2415,49.0,White,Female,Random bystander/stranger
+2368,462,2419,59.0,White,Female,Random bystander/stranger
+2369,462,2423,61.0,White,Male,Random bystander/stranger
+2370,462,2424,51.0,White,Female,Random bystander/stranger
+2371,462,2425,62.0,White,Female,Random bystander/stranger
+2372,462,2426,65.0,White,Female,Random bystander/stranger
+2373,463,2427,58.0,,Male,Parent or stepparent
+2374,463,2428,62.0,,Female,Parent or stepparent
+2375,463,2429,62.0,,Female,Random bystander/stranger
+2376,463,2430,43.0,,Male,Random bystander/stranger
+2377,464,2431,50.0,,Male,Acquaintence
+2378,464,2432,28.0,,Female,Acquaintence
+2379,464,2433,9.0,,Male,Relative of a known person
+2380,464,2434,58.0,,Female,Acquaintence
+2381,465,2435,21.0,Asian/Pacific Islander,Female,Sibling
+2382,465,2436,77.0,Asian/Pacific Islander,Female,Grandparent
+2383,465,2437,56.0,Asian/Pacific Islander,Male,Parent or stepparent
+2384,465,2438,54.0,Asian/Pacific Islander,Female,Parent or stepparent
+2385,466,2439,70.0,White,Male,Other
+2386,466,2440,69.0,White,Female,Relative of a known person
+2387,466,2441,5.0,White,Male,Relative of a known person
+2388,466,2442,3.0,White,Female,Relative of a known person
+2389,466,2443,38.0,White,Male,Random bystander/stranger
+2390,466,2444,38.0,White,Male,Random bystander/stranger
+2391,467,2445,19.0,Asian/Pacific Islander,Female,Co-worker or employer
+2392,467,2446,48.0,Asian/Pacific Islander,Female,Co-worker or employer
+2393,467,2447,74.0,White,Male,Co-worker or employer
+2394,467,2448,19.0,Black,Female,Co-worker or employer
+2395,467,2449,68.0,Asian/Pacific Islander,Female,Co-worker or employer
+2396,467,2450,50.0,Asian/Pacific Islander,Female,Co-worker or employer
+2397,467,2451,66.0,Asian/Pacific Islander,Female,Co-worker or employer
+2398,467,2452,32.0,White,Male,Co-worker or employer
+2399,468,2453,25.0,White,Male,First responder
+2400,468,2454,36.0,White,Male,First responder
+2401,468,2455,61.0,White,Female,Parent or stepparent
+2402,468,2456,58.0,White,Male,Parent or stepparent
+2403,469,2457,28.0,Hispanic/Latino,Female,Dating relationship
+2404,469,2458,26.0,Hispanic/Latino,Male,Relative of a known person
+2405,469,2459,33.0,Hispanic/Latino,Female,Relative of a known person
+2406,469,2460,30.0,Hispanic/Latino,Male,Relative of a known person
+2407,469,2461,21.0,Hispanic/Latino,Male,Relative of a known person
+2408,469,2462,52.0,Hispanic/Latino,Male,Relative of a known person
+2409,470,2463,33.0,Hispanic/Latino,Female,Relative of a known person
+2410,470,2464,18.0,Hispanic/Latino,Female,Ex-dating relationship
+2411,470,2465,12.0,Hispanic/Latino,Male,Relative of a known person
+2412,470,2466,2.0,Hispanic/Latino,Male,Relative of a known person
+2413,471,2467,45.0,,Male,
+2414,471,2468,45.0,,Male,
+2415,471,2469,30.0,,Female,
+2416,471,2470,38.0,,Male,
+2417,472,2471,42.0,Asian/Pacific Islander,Male,
+2418,472,2472,36.0,Asian/Pacific Islander,Male,
+2419,472,2473,35.0,Hispanic/Latino,Male,
+2420,472,2474,49.0,White,Male,
+2421,472,2475,40.0,White,Male,
+2422,472,2476,63.0,Asian/Pacific Islander,Male,
+2423,472,2477,63.0,White,Male,
+2424,472,2478,29.0,Hispanic/Latino,Male,
+2425,472,2479,49.0,White,Male,
+2426,473,2480,48.0,,Female,
+2427,473,2481,7.0,,Female,
+2428,473,2482,4.0,,Female,
+2429,473,2483,4.0,,Female,
+2430,474,2484,26.0,White,Female,Ex-dating relationship
+2431,474,2485,5.0,White,Male,Other
+2432,474,2488,3.0,White,Male,Other
+2433,474,2490,2.0,White,Female,Other
+2434,475,2491,27.0,Black,Male,Acquaintence
+2435,475,2492,24.0,,Male,Acquaintence
+2436,475,2493,23.0,Black,Male,Acquaintence
+2437,475,2495,31.0,Black,Male,Acquaintence
+2438,476,2496,19.0,,Female,
+2439,476,2497,28.0,,Female,
+2440,476,2498,32.0,,Female,
+2441,476,2499,35.0,,Male,
+2442,476,2500,25.0,,Female,
+2443,477,2501,83.0,White,Male,Parent or stepparent
+2444,477,2502,47.0,,Female,Random bystander/stranger
+2445,477,2503,74.0,,Male,Random bystander/stranger
+2446,477,2504,73.0,,Female,Random bystander/stranger
+2447,478,2505,18.0,White,Male,Ex-dating relationship
+2448,478,2506,47.0,White,Male,Dating relationship
+2449,478,2507,39.0,White,Female,Acquaintence
+2450,478,2508,39.0,White,Female,Individual with some non-blood/marriage relationship to a known person
+2451,479,2509,35.0,,Male,First responder
+2452,479,2510,42.0,Hispanic/Latino,Female,Spouse
+2453,479,2512,17.0,Hispanic/Latino,Male,Child or stepchild
+2454,479,2513,24.0,Hispanic/Latino,Male,Child or stepchild
+2455,480,2514,34.0,,Female,Random bystander/stranger
+2456,480,2515,15.0,,Female,Random bystander/stranger
+2457,480,2516,10.0,,Male,Random bystander/stranger
+2458,480,2517,7.0,,Male,Random bystander/stranger
+2459,481,2518,,Black,Male,Random bystander/stranger
+2460,481,2520,2.0,Black,Female,Random bystander/stranger
+2461,481,2521,,Black,Female,Random bystander/stranger
+2462,481,2522,1.0,Black,Female,Random bystander/stranger
+2463,481,2523,,Black,Female,Random bystander/stranger
+2464,482,2524,40.0,,Male,Random bystander/stranger
+2465,482,2525,64.0,,Female,Random bystander/stranger
+2466,482,2526,33.0,,Female,Random bystander/stranger
+2467,482,2527,1.0,,Male,Random bystander/stranger
+2468,483,2528,37.0,Hispanic/Latino,Male,Parent or stepparent
+2469,483,2529,44.0,Hispanic/Latino,Female,Parent or stepparent
+2470,483,2530,13.0,Hispanic/Latino,Female,Sibling
+2471,483,2531,10.0,Hispanic/Latino,Male,Sibling
+2472,484,2532,30.0,Black,Female,Individual with some non-blood/marriage relationship to a known person
+2473,484,2533,26.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+2474,484,2534,30.0,Black,Female,Dating relationship
+2475,484,2535,35.0,Black,Male,Individual with some non-blood/marriage relationship to a known person
+2476,485,2536,26.0,,Male,Acquaintence
+2477,485,2537,24.0,,Female,Acquaintence
+2478,485,2539,39.0,,Female,Acquaintence
+2479,485,2540,40.0,,Female,Acquaintence
+2480,486,2541,1.0,,Female,Child or stepchild
+2481,486,2542,42.0,,Female,Other familial relationship
+2482,486,2543,50.0,,Male,Other familial relationship
+2483,486,2544,18.0,,Male,Other familial relationship
+2484,487,2545,39.0,White,Male,Other
+2485,487,2546,36.0,White,Male,Other
+2486,487,2547,85.0,White,Male,Parent or stepparent
+2487,487,2548,61.0,White,Female,Sibling
+2488,488,2549,42.0,,Female,Random bystander/stranger
+2489,488,2550,19.0,,Male,Random bystander/stranger
+2490,488,2551,22.0,,Male,Random bystander/stranger
+2491,488,2552,22.0,,Female,Random bystander/stranger
+2492,491,2558,24.0,Hispanic/Latino,Male,Acquaintence
+2493,491,2559,18.0,Hispanic/Latino,Male,Acquaintence
+2494,491,2560,22.0,Hispanic/Latino,Male,Acquaintence
+2495,491,2561,19.0,Hispanic/Latino,Male,Acquaintence
+2496,492,2562,81.0,,Male,Random bystander/stranger
+2497,492,2563,79.0,,Female,Random bystander/stranger
+2498,492,2564,71.0,,Female,Random bystander/stranger
+2499,492,2565,52.0,,Female,Random bystander/stranger
+2500,492,2566,52.0,,Female,Random bystander/stranger
+2501,492,2567,8.0,,Male,Random bystander/stranger
+2502,493,2568,51.0,,Female,In-law
+2503,493,2569,11.0,Black,Male,Child or stepchild
+2504,493,2570,7.0,Black,Male,Child or stepchild
+2505,493,2571,2.0,Black,Male,Child or stepchild
+2506,493,2572,1.0,Black,Male,Child or stepchild
+2507,494,2573,16.0,,Male,Classmate
+2508,494,2574,14.0,,Female,Classmate
+2509,494,2575,17.0,,Female,Classmate
+2510,494,2576,17.0,,Male,Classmate
+2511,495,2577,68.0,White,Male,Parent or stepparent
+2512,495,2578,70.0,White,Female,Parent or stepparent
+2513,495,2579,53.0,White,Female,Sibling
+2514,495,2580,19.0,White,Male,
+2515,496,2581,44.0,American Indian,Female,Acquaintence
+2516,496,2582,35.0,American Indian,Female,Acquaintence
+2517,496,2583,38.0,American Indian,Male,Acquaintence
+2518,496,2584,67.0,American Indian,Male,Acquaintence
+2519,496,2585,28.0,American Indian,Male,Random bystander/stranger
+2520,497,2586,23.0,Black,Male,
+2521,497,2587,28.0,Black,Male,
+2522,497,2588,22.0,Black,Female,
+2523,497,2589,52.0,Black,Male,
+2524,498,2590,21.0,,Male,
+2525,498,2591,21.0,,Male,
+2526,498,2592,20.0,Black,Female,
+2527,498,2594,25.0,Black,Female,
+2528,499,2595,49.0,Black,Female,
+2529,499,2596,44.0,Black,Male,
+2530,499,2597,42.0,Black,Male,
+2531,499,2598,23.0,Black,Male,
+2532,499,2599,31.0,Black,Male,
+2533,499,2600,43.0,Black,Male,
+2534,500,2601,68.0,,Male,Parent or stepparent
+2535,500,2602,61.0,,Female,Parent or stepparent
+2536,500,2603,21.0,,Male,Child or stepchild
+2537,500,2604,4.0,,Male,Relative of a known person
+2538,500,2605,20.0,,Male,Child or stepchild
+2539,501,2606,13.0,Hispanic/Latino,Female,Child or stepchild
+2540,501,2607,10.0,Hispanic/Latino,Female,Child or stepchild
+2541,501,2608,9.0,Hispanic/Latino,Female,Child or stepchild
+2542,501,2609,59.0,Asian/Pacific Islander,Male,Other
+2543,502,2610,38.0,Black,Male,Other
+2544,502,2611,28.0,Black,Male,Other
+2545,502,2612,32.0,Black,Male,Other
+2546,502,2613,21.0,Black,Female,Random bystander/stranger
+2547,502,2614,57.0,White,Female,Random bystander/stranger
+2548,502,2615,21.0,Hispanic/Latino,Female,Random bystander/stranger
+2549,503,2616,44.0,,Female,Aunt/Uncle
+2550,503,2617,47.0,,Male,Aunt/Uncle
+2551,503,2618,12.0,,Female,Cousin
+2552,503,2619,9.0,,Female,Cousin
+2553,504,2620,77.0,,Female,
+2554,504,2621,55.0,,Male,
+2555,504,2622,75.0,,Male,
+2556,504,2623,72.0,,Female,
+2557,505,2624,32.0,Black,Female,Dating relationship
+2558,505,2626,9.0,Black,Female,Relative of a known person
+2559,505,2627,14.0,Black,Female,Relative of a known person
+2560,506,2628,51.0,,Male,Random bystander/stranger
+2561,506,2629,61.0,White,Female,Random bystander/stranger
+2562,506,2630,55.0,White,Male,Random bystander/stranger
+2563,506,2631,52.0,White,Male,Random bystander/stranger
+2564,507,2632,86.0,Black,Female,Random bystander/stranger
+2565,507,2633,55.0,Black,Male,First responder
+2566,507,2634,53.0,Black,Male,Random bystander/stranger
+2567,507,2635,77.0,Black,Female,Random bystander/stranger
+2568,507,2636,65.0,Black,Female,Random bystander/stranger
+2569,507,2638,72.0,Black,Female,Random bystander/stranger
+2570,507,2639,52.0,Black,Male,Random bystander/stranger
+2571,507,2640,32.0,Black,Female,Random bystander/stranger
+2572,507,2641,67.0,Black,Male,Random bystander/stranger
+2573,507,2642,62.0,Black,Female,Random bystander/stranger
+2574,505,2643,10.0,Black,Male,Relative of a known person
+2575,508,2645,48.0,Hispanic/Latino,Female,Random bystander/stranger
+2576,508,2646,44.0,Hispanic/Latino,Female,Random bystander/stranger
+2577,508,2647,10.0,Hispanic/Latino,Female,Random bystander/stranger
+2578,508,2648,8.0,Hispanic/Latino,Male,Random bystander/stranger
+2579,508,2649,10.0,Hispanic/Latino,Male,Random bystander/stranger
+2580,508,2650,10.0,Hispanic/Latino,Female,Random bystander/stranger
+2581,508,2651,10.0,Hispanic/Latino,Female,Random bystander/stranger
+2582,508,2652,10.0,White,Female,Random bystander/stranger
+2583,508,2653,10.0,Hispanic/Latino,Female,Random bystander/stranger
+2584,508,2654,9.0,Hispanic/Latino,Female,Random bystander/stranger
+2585,508,2655,11.0,White,Female,Random bystander/stranger
+2586,508,2656,10.0,Hispanic/Latino,Female,Random bystander/stranger
+2587,508,2657,10.0,Hispanic/Latino,Female,Random bystander/stranger
+2588,508,2658,10.0,Hispanic/Latino,Female,Random bystander/stranger
+2589,508,2659,10.0,Hispanic/Latino,Male,Random bystander/stranger
+2590,508,2660,10.0,Hispanic/Latino,Female,Random bystander/stranger
+2591,508,2661,10.0,Hispanic/Latino,Female,Random bystander/stranger
+2592,508,2662,11.0,Hispanic/Latino,Female,Random bystander/stranger
+2593,508,2663,10.0,Hispanic/Latino,Male,Random bystander/stranger
+2594,508,2664,10.0,Hispanic/Latino,Female,Random bystander/stranger
+2595,508,2665,10.0,Hispanic/Latino,Male,Random bystander/stranger
+2596,509,2666,40.0,,Female,Spouse
+2597,509,2667,6.0,,Female,Child or stepchild
+2598,509,2668,4.0,,Male,Child or stepchild
+2599,509,2669,3.0,,Male,Child or stepchild
+2600,510,2670,59.0,,Male,Other
+2601,510,2671,48.0,,Female,Random bystander/stranger
+2602,510,2672,40.0,,Female,Random bystander/stranger
+2603,510,2673,73.0,,Male,Random bystander/stranger
+2604,511,2674,66.0,White,Male,Random bystander/stranger
+2605,511,2675,16.0,White,Male,Random bystander/stranger
+2606,511,2676,11.0,White,Male,Random bystander/stranger
+2607,511,2677,18.0,White,Male,Random bystander/stranger
+2608,511,2678,11.0,White,Male,Random bystander/stranger
+2609,512,2679,27.0,Black,Female,Neighbor
+2610,512,2680,9.0,Black,Male,Neighbor
+2611,512,2681,6.0,Black,Male,Neighbor
+2612,512,2682,1.0,Black,Female,Neighbor
+2613,513,2683,66.0,,Male,
+2614,513,2684,30.0,,Male,
+2615,513,2685,37.0,,Female,
+2616,513,2686,34.0,,Female,
+2617,514,2687,63.0,White,Female,Random bystander/stranger
+2618,514,2689,76.0,Hispanic/Latino,Male,Random bystander/stranger
+2619,514,2690,88.0,White,Male,Random bystander/stranger
+2620,514,2691,64.0,White,Female,Random bystander/stranger
+2621,514,2692,35.0,White,Female,Random bystander/stranger
+2622,514,2693,37.0,White,Male,Random bystander/stranger
+2623,514,2694,69.0,Hispanic/Latino,Male,Random bystander/stranger
+2624,515,2695,16.0,Hispanic/Latino,Male,
+2625,515,2697,19.0,Hispanic/Latino,Male,
+2626,515,2698,25.0,Hispanic/Latino,Male,
+2627,515,2699,16.0,Hispanic/Latino,Male,
+2628,516,2700,41.0,Hispanic/Latino,Male,Acquaintence
+2629,516,2701,32.0,Hispanic/Latino,Male,Relative of a known person
+2630,516,2702,43.0,Hispanic/Latino,Male,Individual with some non-blood/marriage relationship to a known person
+2631,516,2703,25.0,Hispanic/Latino,Male,Relative of a known person
+2632,517,2704,39.0,,Female,Spouse
+2633,517,2706,11.0,,Female,Child or stepchild
+2634,517,2707,22.0,,Female,Child or stepchild
+2635,517,2708,7.0,,Female,Child or stepchild
+2636,518,2709,53.0,,Female,Neighbor
+2637,518,2710,86.0,,Male,Neighbor
+2638,518,2711,85.0,,Female,Neighbor
+2639,518,2712,55.0,,Female,Neighbor
+2640,519,2713,15.0,White,Female,Neighbor
+2641,519,2714,41.0,White,Female,Neighbor
+2642,519,2715,82.0,White,Male,Neighbor
+2643,519,2716,78.0,White,Female,Neighbor
+2644,520,2717,47.0,American Indian,Male,Parent or stepparent
+2645,520,2718,50.0,,Female,Parent or stepparent
+2646,520,2719,16.0,American Indian,Female,Sibling
+2647,520,2720,5.0,,Female,Niece/nephew
+2648,522,2725,37.0,White,Female,Spouse
+2649,522,2726,14.0,White,Female,Child or stepchild
+2650,522,2727,8.0,White,Male,Child or stepchild
+2651,522,2728,11.0,White,Female,Child or stepchild
+2652,524,2729,41.0,,Male,Undetermined
+2653,524,2730,29.0,,Male,Undetermined
+2654,524,2731,53.0,,Male,Undetermined
+2655,524,2732,47.0,,Male,Undetermined
+2656,525,2733,38.0,Hispanic/Latino,Female,Spouse
+2657,525,2734,15.0,Hispanic/Latino,Male,Child or stepchild
+2658,525,2735,14.0,Hispanic/Latino,Female,Relative of a known person
+2659,525,2736,47.0,Hispanic/Latino,Female,Neighbor
+2660,525,2737,20.0,Hispanic/Latino,Female,Neighbor
+2661,526,2738,1.0,Asian/Pacific Islander,Female,Relative of a known person
+2662,526,2739,27.0,Asian/Pacific Islander,Female,Co-worker or employer
+2663,526,2740,36.0,Asian/Pacific Islander,Male,Co-worker or employer
+2664,526,2741,39.0,Asian/Pacific Islander,Male,Co-worker or employer
+2665,527,2742,17.0,,Male,
+2666,527,2743,19.0,,Male,
+2667,527,2744,17.0,,Male,
+2668,527,2745,17.0,,Male,
+2669,528,2746,37.0,,Male,Acquaintence
+2670,528,2747,32.0,,Male,Acquaintence
+2671,528,2748,59.0,,Male,Acquaintence
+2672,528,2749,49.0,,Male,Acquaintence
+2673,528,2750,19.0,,Male,Acquaintence
+2674,529,2751,29.0,Hispanic/Latino,Male,First responder
+2675,529,2752,16.0,White,Male,Sibling
+2676,529,2754,52.0,Black,Female,Random bystander/stranger
+2677,529,2755,34.0,White,Female,Random bystander/stranger
+2678,529,2756,49.0,White,Female,Random bystander/stranger
+2679,530,2757,35.0,,Male,Other
+2680,530,2758,50.0,,Female,Other
+2681,530,2759,,,Female,Other
+2682,530,2760,,,Male,Other
+2683,531,2761,44.0,Hispanic/Latino,Male,
+2684,531,2762,42.0,Hispanic/Latino,Female,
+2685,531,2763,19.0,Hispanic/Latino,Female,
+2686,531,2764,36.0,Hispanic/Latino,Male,Acquaintence
+2687,532,2765,30.0,,Male,Undetermined
+2688,532,2766,32.0,,Male,Undetermined
+2689,532,2767,32.0,,Male,Undetermined
+2690,532,2768,29.0,,Male,Undetermined
+2691,533,2769,33.0,,Female,Spouse
+2692,533,2770,14.0,,Female,Child or stepchild
+2693,533,2771,12.0,,Female,
+2694,533,2772,3.0,,Male,Child or stepchild
+2695,533,2773,3.0,,Male,Child or stepchild
+2696,534,2774,1.0,,Female,Child or stepchild
+2697,534,2775,9.0,,Female,Child or stepchild
+2698,534,2776,7.0,,Male,Child or stepchild
+2699,534,2777,5.0,,Male,Child or stepchild
+2700,534,2778,2.0,,Male,Child or stepchild
+2701,534,2779,13.0,,Male,Child or stepchild
+2702,535,2780,51.0,,Male,Relative of a known person
+2703,535,2781,49.0,,Male,Individual with some non-blood/marriage relationship to a known person
+2704,535,2782,,,Male,Individual with some non-blood/marriage relationship to a known person
+2705,535,2783,22.0,,Female,Relative of a known person
+2706,536,2784,18.0,,Male,Relative of a known person
+2707,536,2785,23.0,,Male,Individual with some non-blood/marriage relationship to a known person
+2708,536,2786,21.0,,Female,Ex-dating relationship
+2709,536,2787,48.0,,Female,Relative of a known person
+2710,537,2788,49.0,,Female,Relative of a known person
+2711,537,2789,29.0,,Female,Dating relationship
+2712,537,2790,28.0,,Female,
+2713,537,2791,4.0,,Female,Relative of a known person
+2714,534,2792,32.0,,Female,Spouse
+2715,538,2793,20.0,,Male,
+2716,538,2794,21.0,,Female,
+2717,538,2795,20.0,,Female,
+2718,538,2796,21.0,,Female,
+2719,539,2797,40.0,,Female,Spouse
+2720,539,2798,3.0,,Male,Child or stepchild
+2721,539,2799,1.0,,Female,Child or stepchild
+2722,539,2800,1.0,,Female,Child or stepchild
+2723,540,2801,39.0,,Female,Ex-dating relationship
+2724,540,2802,4.0,,Male,Relative of a known person
+2725,540,2803,4.0,,Female,Relative of a known person
+2726,541,2805,28.0,,Male,Random bystander/stranger
+2727,541,2806,38.0,,Male,Random bystander/stranger
+2728,541,2807,35.0,,Female,Random bystander/stranger
+2729,541,2808,22.0,,Male,Random bystander/stranger
+2730,541,2809,40.0,,Female,Random bystander/stranger
+2731,542,2810,,Asian/Pacific Islander,Female,
+2732,542,2811,,Asian/Pacific Islander,Male,
+2733,542,2812,,Asian/Pacific Islander,Male,
+2734,542,2813,,Asian/Pacific Islander,Male,
+2735,543,2814,22.0,,Female,
+2736,543,2815,43.0,,Male,Co-worker or employer
+2737,543,2816,70.0,,Male,Co-worker or employer
+2738,543,2817,38.0,,Male,Co-worker or employer
+2739,543,2818,16.0,,Male,
+2740,543,2819,52.0,,Female,
+2741,540,2820,13.0,,Female,Relative of a known person
