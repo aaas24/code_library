@@ -6,3 +6,10 @@ wikipedia/enwiki-latest-pages-articles.xml.bz2.backup
 wikipedia/enwiki-latest-pages-articles.txt
 wikipedia/enwiki-latest-pages-articles_metadata.csv
 wikipedia/wikiextractor/
+AB_tests/kittengram/resources/activity_all.csv
+AB_tests/kittengram/resources/activity_pretest.csv
+AB_tests/kittengram/resources/ctr_all.csv
+AB_tests/kittengram/resources/ctr_pretest.csv
+AB_tests/kittengram/resources/assignments.csv
+AB_tests/kittengram/resources/.DS_Store
+*.csv
