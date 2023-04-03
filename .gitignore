@@ -13,3 +13,8 @@ AB_tests/kittengram/resources/ctr_pretest.csv
 AB_tests/kittengram/resources/assignments.csv
 AB_tests/kittengram/resources/.DS_Store
 *.csv
+ab_tests/kittengram/resources/.ipynb_checkpoints/example1-checkpoint.ipynb
+ab_tests/kittengram/resources/data/generate_data.sql
+ab_tests/kittengram/resources/example1.ipynb
+ab_tests/kittengram/resources/example3.ipynb
+ab_tests/kittengram/resources/lab1/amazon-ec2-spot-cicd-workshop.yaml
