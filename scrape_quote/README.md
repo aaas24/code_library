@@ -141,7 +141,7 @@ The resulting dictionary can be converted into a data frame with the panda libra
 
 ### CONCLUSIONS
 
-Although this is a simple project, it was a great introduction to the BeautifulSoup library and helped poised questions like. 
+Although this is a simple project, it was a great introduction to the BeautifulSoup library and helped poised questions. 
 
 In more robust scenarios, it would be interesting to build something that can handle server errors and allow users to test the tags with simple inputs. this would also require error handling on the data provided by the users, but it shows the wonderful possibilities that this proyect has for future questions. 
 
