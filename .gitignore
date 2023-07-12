@@ -18,3 +18,4 @@ ab_tests/kittengram/resources/data/generate_data.sql
 ab_tests/kittengram/resources/example1.ipynb
 ab_tests/kittengram/resources/example3.ipynb
 ab_tests/kittengram/resources/lab1/amazon-ec2-spot-cicd-workshop.yaml
+us_gun_violence/.DS_Store
