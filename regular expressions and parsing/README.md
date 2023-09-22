@@ -34,7 +34,8 @@ I found it hard to locate synthetic data that emulates a web visit to a site.
 ####  Defining main program logic to cover all objectives
  
 The main program is meant to have a CASE like property, which will be called "***Switcher***". It will be using a dictionary to map to different modules. This will set up the main function of the program as follows:
- 
+
+ ``` python
    def main():
    all_URLs= readFile()
    for URL in all_URLs:
@@ -45,6 +46,7 @@ The main program is meant to have a CASE like property, which will be called "**
                }
        switcher.get(i,'Invalid')
        save_in_doc()
+```
  
 The regular expressions will be used in the parsing done under each case.
  
@@ -57,16 +59,18 @@ This function is fairly straightforward as we is the open function os the cvs li
 We now proceed to "clean" the url from any parameters to avoid the chance of having dirty values that could confuse the regular expression.
  
 Once the parameters are stripted, we use regex library (re) to identify the type of URL we have: with protocols or without protocols. For example:
- 
+
+ ``` python 
    regex=re.compile(r"(?P<protocol>(:\/\/))")
    if regex.match(URL) != "":
        i = 0
        dic_URL.update({'Comments':i})
        return i, URL
+```
  
 If we look specifically at the line:
  
-   r"(?P<protocol>(:\/\/))"
+  ` r"(?P<protocol>(:\/\/))"`
  
 When we analyze the re in an online website such as [Regex101.com](https://regex101.com) we get:
  
@@ -86,7 +90,7 @@ Through this expression, and the subsequent regular expression in the code, we a
  
 Now that we have a value "i" found in the section above, we can see that the "switcher" points to two values:key pairs. 0:case0() and 1:case1(). If we retrieve the definition of each of the "case" functions, we will have examples of the type of URLs each module is set to parse. For example:
  
-   print(case0.__doc__)
+   `print(case0.__doc__)`
  
 outputs:
  
@@ -100,19 +104,21 @@ outputs:
  
 Parsing the URL is done with a simple *split* function:
  
-   URL=URL.split('://')
+  ` URL=URL.split('://')`
  
 The resulting list can then be assigned to different variables, like the example below:
  
+ ``` python 
    domain= URL[0]
    lastPage= URL[-1]
    firstPage= URL[1]
- 
+ ```
+
 This is where list notation in python saves us a lot of time compared to my previous excel sheets where I had to apply multiple layers of "If" to understand which cell contained the last value.
  
 Finally, with all values extracted, we update the dictionary that holds the information of the URL being analyzed:
  
-   dic_URL.update({'Protocol':protocol,'Domain':domain,'Last Page':lastPage, "First Page": firstPage})
+   `dic_URL.update({'Protocol':protocol,'Domain':domain,'Last Page':lastPage, "First Page": firstPage})`
  
 ###  Write
  
