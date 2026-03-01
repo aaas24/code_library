@@ -17,6 +17,8 @@ RUN mkdir -p data
 RUN useradd -m appuser && chown -R appuser:appuser /app
 USER appuser
 
+ENV PYTHONPATH=/app
+
 EXPOSE 5000
 
 CMD ["python", "web/app.py"]
