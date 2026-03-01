@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — Manga Tracker{% endblock %}
+{% block content %}
+<h1>Manga Tracker</h1>
+<div class="card">
+  <h2>Updates available</h2>
+  <p style="font-size:2rem; font-weight:700; color:#7eb8f7;">{{ update_count }}</p>
+  {% if update_count > 0 %}
+  <a href="/updates" class="btn btn-small" style="margin-top:0.5rem;">View Updates</a>
+  {% endif %}
+</div>
+<div class="card">
+  <h2>New recommendations</h2>
+  <p style="font-size:2rem; font-weight:700; color:#8fd4a8;">{{ rec_count }}</p>
+  {% if rec_count > 0 %}
+  <a href="/recommendations" class="btn btn-small" style="margin-top:0.5rem;">View Recommendations</a>
+  {% endif %}
+</div>
+<div style="margin-top:1rem;">
+  <a href="/active" class="btn btn-small">All Active Manga</a>
+  <a href="/settings" class="btn btn-small" style="margin-left:0.5rem;">Settings</a>
+</div>
+{% endblock %}

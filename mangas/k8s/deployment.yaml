@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: manga-tracker
+  labels:
+    app: manga-tracker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: manga-tracker
+  template:
+    metadata:
+      labels:
+        app: manga-tracker
+    spec:
+      containers:
+        - name: manga-tracker
+          image: ghcr.io/GITHUB_USERNAME/manga-tracker:latest
+          ports:
+            - containerPort: 5000
+          env:
+            - name: OP_SERVICE_ACCOUNT_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: manga-tracker-secrets
+                  key: op-service-account-token
+          volumeMounts:
+            - name: data-volume
+              mountPath: /app/data
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 5000
+            initialDelaySeconds: 10
+            periodSeconds: 30
+      volumes:
+        - name: data-volume
+          persistentVolumeClaim:
+            claimName: manga-tracker-data

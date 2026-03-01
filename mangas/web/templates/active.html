@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}All Active — Manga Tracker{% endblock %}
+{% block content %}
+<h1>All Active Manga <span class="badge">{{ manga_list | length }}</span></h1>
+{% if manga_list %}
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Read</th>
+      <th>Published</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for m in manga_list %}
+  <tr>
+    <td>
+      <a href="{{ m.url }}" target="_blank">{{ m.title or m.url | truncate(50) }}</a>
+      {% if m.has_update %}<span class="badge badge-green" style="margin-left:0.3rem;">NEW</span>{% endif %}
+      <div class="meta">{{ m.site }}</div>
+    </td>
+    <td>{{ m.last_episode_read or '—' }}</td>
+    <td>{{ m.last_episode_published or '—' }}</td>
+    <td>
+      {% if m.last_episode_published %}
+      <a href="/read/{{ m.id }}/{{ m.last_episode_published }}" class="btn btn-small">Read</a>
+      {% endif %}
+    </td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p class="empty">No active manga found. Import your reading list first.</p>
+{% endif %}
+{% endblock %}

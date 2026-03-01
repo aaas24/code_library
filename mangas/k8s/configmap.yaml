@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: manga-tracker-config
+data:
+  # Non-secret config — mirrors config.yaml structure
+  # Secrets are never stored here; they come from the external secret store
+  WEB_HOST: "0.0.0.0"
+  WEB_PORT: "5000"
