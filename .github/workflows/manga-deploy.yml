@@ -26,14 +26,25 @@ jobs:
           echo "PI_HOST=$PI_HOST" >> $GITHUB_ENV
           echo "PI_USER=$PI_USER" >> $GITHUB_ENV
 
-      - name: Set up SSH key from 1Password
+      - name: Debug - check PI_HOST is set
+        run: |
+          echo "PI_HOST is: '$PI_HOST'"
+          echo "PI_USER is: '$PI_USER'"
+
+      - name: Fetch SSH key from 1Password
         env:
           OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
         run: |
           mkdir -p ~/.ssh
           op read "op://Homelab/Manga - Homelab Server/github_deploy_key" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -H $PI_HOST >> ~/.ssh/known_hosts
+          echo "SSH key written, size: $(wc -c < ~/.ssh/deploy_key) bytes"
+
+      - name: Add Pi to known hosts
+        run: |
+          echo "Scanning $PI_HOST..."
+          ssh-keyscan -H "$PI_HOST" >> ~/.ssh/known_hosts
+          echo "known_hosts has $(wc -l < ~/.ssh/known_hosts) entries"
 
       - name: Set up QEMU (for ARM64 build)
         uses: docker/setup-qemu-action@v3
