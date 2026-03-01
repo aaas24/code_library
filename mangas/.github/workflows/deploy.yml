@@ -21,8 +21,8 @@ jobs:
         env:
           OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
         run: |
-          PI_HOST=$(op read "op://Private/Manga - Homelab Server/pi_host")
-          PI_USER=$(op read "op://Private/Manga - Homelab Server/pi_user")
+          PI_HOST=$(op read "op://Homelab/Manga - Homelab Server/pi_host")
+          PI_USER=$(op read "op://Homelab/Manga - Homelab Server/pi_user")
           echo "PI_HOST=$PI_HOST" >> $GITHUB_ENV
           echo "PI_USER=$PI_USER" >> $GITHUB_ENV
 
@@ -31,7 +31,7 @@ jobs:
           OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
         run: |
           mkdir -p ~/.ssh
-          op item get "SSH Key - Homelab" --fields "private key" --vault Private > ~/.ssh/deploy_key
+          op item get "SSH Key - Homelab" --fields "private key" --vault Homelab > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -H $PI_HOST >> ~/.ssh/known_hosts
 

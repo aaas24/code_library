@@ -9,7 +9,7 @@ def test_get_secret_calls_op_cli(mocker, tmp_path):
     """get_secret() calls `op read` with the correct vault path."""
     secrets_yaml = """\
 onepassword:
-  vault: Private
+  vault: Homelab
   item: "Manga - Homelab Server"
   fields:
     pi_host:
@@ -37,14 +37,14 @@ onepassword:
     call_args = mock_run.call_args[0][0]
     assert call_args[0] == "op"
     assert call_args[1] == "read"
-    assert "op://Private/Manga - Homelab Server/pi_host" in call_args[2]
+    assert "op://Homelab/Manga - Homelab Server/pi_host" in call_args[2]
 
 
 def test_get_secret_missing_key(mocker, tmp_path):
     """Missing key raises KeyError with a helpful message."""
     secrets_yaml = """\
 onepassword:
-  vault: Private
+  vault: Homelab
   item: "Manga - Homelab Server"
   fields: {}
   ssh:
@@ -67,7 +67,7 @@ def test_get_secret_op_cli_failure(mocker, tmp_path):
     """CalledProcessError from op CLI raises RuntimeError."""
     secrets_yaml = """\
 onepassword:
-  vault: Private
+  vault: Homelab
   item: "Manga - Homelab Server"
   fields:
     flask_secret_key:
@@ -98,7 +98,7 @@ def test_get_secret_op_not_installed(mocker, tmp_path):
     """FileNotFoundError (op not installed) raises RuntimeError."""
     secrets_yaml = """\
 onepassword:
-  vault: Private
+  vault: Homelab
   item: "Manga - Homelab Server"
   fields:
     pi_host:
