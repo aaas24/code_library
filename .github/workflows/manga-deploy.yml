@@ -31,7 +31,7 @@ jobs:
           OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
         run: |
           mkdir -p ~/.ssh
-          op item get "SSH Key - Homelab" --fields "private key" --vault Homelab > ~/.ssh/deploy_key
+          op read "op://Homelab/Manga - Homelab Server/github_deploy_key" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -H $PI_HOST >> ~/.ssh/known_hosts
 
