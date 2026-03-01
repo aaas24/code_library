@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Recommendations — Manga Tracker{% endblock %}
+{% block content %}
+<h1>Recommendations <span class="badge">{{ recs | length }}</span></h1>
+{% if recs %}
+{% for r in recs %}
+<div class="card">
+  <strong><a href="{{ r.url }}" target="_blank">{{ r.title or r.url }}</a></strong>
+  <div class="meta">
+    {{ r.site }}
+    &nbsp;·&nbsp;
+    {{ r.chapter_count }} chapters
+    &nbsp;·&nbsp;
+    Score: {{ r.score }}
+  </div>
+  <div style="margin-top:0.4rem;">
+    {% for theme in r._themes_list %}
+    <span class="tag">{{ theme }}</span>
+    {% endfor %}
+  </div>
+  <form action="/recommendations/{{ r.id }}/dismiss" method="post" style="display:inline; margin-top:0.5rem;">
+    <button type="submit" class="btn btn-small btn-danger">Dismiss</button>
+  </form>
+</div>
+{% endfor %}
+{% else %}
+<p class="empty">No new recommendations. Run the crawler to discover new manga.</p>
+{% endif %}
+{% endblock %}

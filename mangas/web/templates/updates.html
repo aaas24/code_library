@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Updates — Manga Tracker{% endblock %}
+{% block content %}
+<h1>Updates <span class="badge">{{ manga_list | length }}</span></h1>
+{% if manga_list %}
+{% for m in manga_list %}
+<div class="card">
+  <strong>{{ m.title or m.url }}</strong>
+  <div class="meta">
+    Last read: {{ m.last_episode_read or '—' }}
+    &nbsp;·&nbsp;
+    Published: <span class="badge badge-green">{{ m.last_episode_published }}</span>
+    &nbsp;·&nbsp;
+    <a href="{{ m.site }}" class="meta">{{ m.site }}</a>
+  </div>
+  {% if m.last_episode_published %}
+  <a href="/read/{{ m.id }}/{{ m.last_episode_published }}" class="btn btn-small" style="margin-top:0.5rem;">
+    Read Chapter {{ m.last_episode_published }}
+  </a>
+  {% endif %}
+  <a href="{{ m.url }}" target="_blank" class="btn btn-small" style="margin-top:0.5rem; margin-left:0.3rem;">
+    Open Site
+  </a>
+</div>
+{% endfor %}
+{% else %}
+<p class="empty">No updates right now. Check back later!</p>
+{% endif %}
+{% endblock %}

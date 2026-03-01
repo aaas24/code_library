@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Settings — Manga Tracker{% endblock %}
+{% block content %}
+<h1>Settings</h1>
+
+<div class="card">
+  <h2>Schedules</h2>
+  <table>
+    <tr>
+      <th>Job</th><th>Cron</th>
+    </tr>
+    <tr>
+      <td>Chapter check</td>
+      <td><code>{{ config.schedules.chapter_check }}</code></td>
+    </tr>
+    <tr>
+      <td>Recommendations</td>
+      <td><code>{{ config.schedules.recommendations }}</code></td>
+    </tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>Run Now</h2>
+  <form action="/settings/run-now" method="post" style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+    <button type="submit" name="job" value="chapter_check" class="btn">
+      Check Chapters Now
+    </button>
+    <button type="submit" name="job" value="recommendations" class="btn">
+      Crawl Recommendations Now
+    </button>
+  </form>
+</div>
+
+<div class="card">
+  <h2>Sites</h2>
+  <table>
+    <tr><th>Site</th><th>Scraper</th><th>Crawler</th></tr>
+    {% for site, cfg in config.sites.items() %}
+    <tr>
+      <td>{{ site }}</td>
+      <td>{% if cfg.scraper %}<span class="badge badge-green">on</span>{% else %}<span class="badge">off</span>{% endif %}</td>
+      <td>{% if cfg.crawler %}<span class="badge badge-green">on</span>{% else %}<span class="badge">off</span>{% endif %}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <p class="meta" style="margin-top:0.5rem;">Edit <code>config.yaml</code> to toggle sites.</p>
+</div>
+
+<div class="card">
+  <h2>Crawler guardrail</h2>
+  <p>Max pages per crawl session: <strong>{{ config.recommendations.max_pages }}</strong></p>
+  <p class="meta">Set <code>recommendations.max_pages</code> in config.yaml to adjust.</p>
+</div>
+
+<div class="card">
+  <h2>Themes</h2>
+  <div>
+    {% for theme in config.themes %}
+    <span class="tag">{{ theme }}</span>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

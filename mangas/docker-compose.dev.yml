@@ -1,0 +1,15 @@
+version: "3.9"
+# Local Mac development overrides
+# Usage: docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+services:
+  manga-tracker:
+    build: .
+    image: manga-tracker:dev
+    volumes:
+      - .:/app          # hot-reload source code
+      - ./data:/app/data
+    environment:
+      - OP_SERVICE_ACCOUNT_TOKEN=${OP_SERVICE_ACCOUNT_TOKEN}
+      - FLASK_SECRET_KEY=dev-local-secret
+    ports:
+      - "5000:5000"

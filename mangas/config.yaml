@@ -1,0 +1,48 @@
+schedules:
+  chapter_check: "0 2 * * *"        # daily at 2am
+  recommendations: "0 3 * * 1"      # weekly Monday at 3am
+
+sites:
+  coffeemanga:
+    scraper: true
+    crawler: true
+    domains:
+      - coffeemanga.io
+      - coffeemanga.ink
+      - coffeemanga.moe
+  shibamanga:
+    scraper: true
+    crawler: true
+    domains:
+      - shibamanga.com
+  kaliscan:
+    scraper: true
+    crawler: true
+    domains:
+      - kaliscan.io
+  manhuascan:
+    scraper: true
+    crawler: true
+    domains:
+      - manhuascan.com
+
+themes:
+  - villainess
+  - reincarnation
+  - historical romance
+  - royalty
+  - emperor
+  - empress
+  - noble
+  - medical
+  - healer
+  - doctor
+  - strong female lead
+
+recommendations:
+  min_chapters: 100
+  max_pages: 5        # guardrail: max pages to crawl per site per session
+
+web:
+  port: 5000
+  host: "0.0.0.0"
