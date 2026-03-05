@@ -97,7 +97,17 @@ GitHub Actions (`.github/workflows/manga-deploy.yml`) runs on every push to `mai
 1. **Test** — runs the full pytest suite via the reusable `manga-test.yml` workflow
 2. **Build & push** — builds an ARM64 Docker image and pushes it to `ghcr.io/aaas24/manga-tracker:latest`
 
-Deployment is **manual**: after a push, run `kubectl rollout restart deployment/manga-tracker -n mangas` on the cluster to pull the new image.
+To trigger a build manually (e.g. without a code push), run from the repo root:
+
+```bash
+GITHUB_TOKEN=$(op item get 'GPAT - GitHub Personal Access Token' --fields token --reveal) ./trigger-deploy.sh
+```
+
+Once the image is built (~5 min), deploy it to the cluster:
+
+```bash
+kubectl rollout restart deployment/manga-tracker -n mangas
+```
 
 ---
 
