@@ -2,8 +2,14 @@
 import pytest
 
 
-def test_dashboard_200(client):
+def test_root_redirects_to_active(client):
     resp = client.get("/")
+    assert resp.status_code == 302
+    assert "/active" in resp.headers["Location"]
+
+
+def test_home_200(client):
+    resp = client.get("/home")
     assert resp.status_code == 200
     assert b"Manga Tracker" in resp.data
 
