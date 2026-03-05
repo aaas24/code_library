@@ -1,9 +1,30 @@
 {% extends "base.html" %}
 {% block title %}All Active — Manga Tracker{% endblock %}
+{% block extra_style %}
+.search-bar { margin-bottom: 1rem; }
+.search-bar input {
+  width: 100%; padding: 0.5rem 0.75rem; border-radius: 6px;
+  border: 1px solid #2a2a4a; background: #1a1a2e; color: #e0e0e0;
+  font-size: 0.95rem;
+}
+.search-bar input:focus { outline: none; border-color: #2a5298; }
+.read-form { display: flex; gap: 0.3rem; align-items: center; }
+.read-form input[type=number] {
+  width: 4.5rem; padding: 0.2rem 0.4rem; border-radius: 4px;
+  border: 1px solid #2a2a4a; background: #0f0f0f; color: #e0e0e0;
+  font-size: 0.85rem; text-align: center;
+}
+.read-form input[type=number]:focus { outline: none; border-color: #2a5298; }
+{% endblock %}
 {% block content %}
 <h1>All Active Manga <span class="badge">{{ manga_list | length }}</span></h1>
+
+<div class="search-bar">
+  <input type="text" id="search" placeholder="Search by title or site…" oninput="filterRows(this.value)">
+</div>
+
 {% if manga_list %}
-<table>
+<table id="manga-table">
   <thead>
     <tr>
       <th>Title</th>
@@ -14,13 +35,20 @@
   </thead>
   <tbody>
   {% for m in manga_list %}
-  <tr>
+  <tr data-search="{{ (m.title or m.url) | lower }} {{ m.site | lower }}">
     <td>
       <a href="{{ m.url }}" target="_blank">{{ m.title or m.url | truncate(50) }}</a>
       {% if m.has_update %}<span class="badge badge-green" style="margin-left:0.3rem;">NEW</span>{% endif %}
       <div class="meta">{{ m.site }}</div>
     </td>
-    <td>{{ m.last_episode_read or '—' }}</td>
+    <td>
+      <form class="read-form" action="/active/update-read" method="post">
+        <input type="hidden" name="manga_id" value="{{ m.id }}">
+        <input type="number" name="chapter" value="{{ m.last_episode_read or '' }}"
+               placeholder="—" min="0" title="Last chapter read">
+        <button type="submit" class="btn btn-small" title="Save">✓</button>
+      </form>
+    </td>
     <td>{{ m.last_episode_published or '—' }}</td>
     <td>
       {% if m.last_episode_published %}
@@ -31,7 +59,21 @@
   {% endfor %}
   </tbody>
 </table>
+<p id="no-results" class="empty" style="display:none;">No manga match your search.</p>
 {% else %}
 <p class="empty">No active manga found. Import your reading list first.</p>
 {% endif %}
+
+<script>
+function filterRows(query) {
+  const q = query.toLowerCase();
+  let visible = 0;
+  document.querySelectorAll('#manga-table tbody tr').forEach(row => {
+    const match = row.dataset.search.includes(q);
+    row.style.display = match ? '' : 'none';
+    if (match) visible++;
+  });
+  document.getElementById('no-results').style.display = visible === 0 ? '' : 'none';
+}
+</script>
 {% endblock %}
