@@ -1,23 +1,48 @@
 {% extends "base.html" %}
-{% block title %}Dashboard — Manga Tracker{% endblock %}
+{% block title %}Home — Manga Tracker{% endblock %}
+{% block extra_style %}
+.stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1rem; }
+.stat-num { font-size: 2rem; font-weight: 700; margin: 0.25rem 0 0.5rem; }
+.feature-list { list-style: none; padding: 0; margin: 0; }
+.feature-list li { padding: 0.35rem 0; border-bottom: 1px solid #2a2a4a; font-size: 0.9rem; color: #c8d8f0; }
+.feature-list li:last-child { border-bottom: none; }
+.feature-list li span { color: #888; margin-left: 0.4rem; font-size: 0.82rem; }
+{% endblock %}
 {% block content %}
 <h1>Manga Tracker</h1>
-<div class="card">
-  <h2>Updates available</h2>
-  <p style="font-size:2rem; font-weight:700; color:#7eb8f7;">{{ update_count }}</p>
-  {% if update_count > 0 %}
-  <a href="/updates" class="btn btn-small" style="margin-top:0.5rem;">View Updates</a>
-  {% endif %}
+
+<div class="stat-grid">
+  <div class="card">
+    <h2>Updates available</h2>
+    <p class="stat-num" style="color:#7eb8f7;">{{ update_count }}</p>
+    {% if update_count > 0 %}
+    <a href="/updates" class="btn btn-small">View Updates</a>
+    {% endif %}
+  </div>
+  <div class="card">
+    <h2>New recommendations</h2>
+    <p class="stat-num" style="color:#8fd4a8;">{{ rec_count }}</p>
+    {% if rec_count > 0 %}
+    <a href="/recommendations" class="btn btn-small">View Recommendations</a>
+    {% endif %}
+  </div>
 </div>
+
 <div class="card">
-  <h2>New recommendations</h2>
-  <p style="font-size:2rem; font-weight:700; color:#8fd4a8;">{{ rec_count }}</p>
-  {% if rec_count > 0 %}
-  <a href="/recommendations" class="btn btn-small" style="margin-top:0.5rem;">View Recommendations</a>
-  {% endif %}
+  <h2>What you can do</h2>
+  <ul class="feature-list">
+    <li><strong>All Active</strong> — browse your full reading list <span>search by title or site, filter by favorites / new chapters / not started</span></li>
+    <li><strong>Updates</strong> — see manga with new chapters since your last read</li>
+    <li><strong>Recommendations</strong> — discover new titles based on themes you already read; add or ignore them</li>
+    <li><strong>Favorites</strong> — star any manga to pin it to the top of your list</li>
+    <li><strong>Track progress</strong> — update the last chapter you read; the Read button always resumes from there</li>
+    <li><strong>Auto-check</strong> — the crawler runs daily at 2 am and checks for new chapters across all active manga</li>
+    <li><strong>Settings</strong> — trigger a manual chapter check or recommendation run at any time</li>
+  </ul>
 </div>
-<div style="margin-top:1rem;">
+
+<div style="margin-top:0.5rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
   <a href="/active" class="btn btn-small">All Active Manga</a>
-  <a href="/settings" class="btn btn-small" style="margin-left:0.5rem;">Settings</a>
+  <a href="/settings" class="btn btn-small">Settings</a>
 </div>
 {% endblock %}

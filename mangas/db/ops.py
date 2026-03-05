@@ -86,6 +86,24 @@ def upsert_manga(
         session.close()
 
 
+def retire_manga(manga_id: int, status: str) -> Optional[Manga]:
+    """Set a manga's status to 'finished' or 'skip', removing it from the active list."""
+    if status not in ("finished", "skip"):
+        raise ValueError(f"Invalid retire status: {status!r}")
+    session = _get_session()
+    try:
+        manga = session.query(Manga).filter_by(id=manga_id).first()
+        if manga is None:
+            return None
+        manga.status = status
+        session.commit()
+        session.refresh(manga)
+        export_to_json(session)
+        return manga
+    finally:
+        session.close()
+
+
 def toggle_favorite(manga_id: int) -> Optional[Manga]:
     """Flip the is_favorite flag."""
     session = _get_session()

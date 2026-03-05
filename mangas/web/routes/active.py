@@ -1,4 +1,5 @@
 import logging
+from urllib.parse import urlparse
 
 from flask import Blueprint, redirect, render_template, request, url_for
 
@@ -6,6 +7,16 @@ import db.ops as ops
 
 logger = logging.getLogger(__name__)
 bp = Blueprint("active", __name__)
+
+
+def _title_from_url(url: str) -> str:
+    """Extract a readable title from a manga URL slug."""
+    try:
+        path = urlparse(url).path.rstrip("/")
+        slug = path.split("/")[-1]
+        return slug.replace("-", " ").replace("_", " ").title()
+    except Exception:
+        return url
 
 
 def _sort_key(m):
@@ -22,6 +33,8 @@ def _sort_key(m):
 def active():
     manga_list = ops.get_all_active()
     manga_list.sort(key=_sort_key)
+    for m in manga_list:
+        m.display_title = m.title or _title_from_url(m.url)
     return render_template("active.html", manga_list=manga_list)
 
 
@@ -41,4 +54,14 @@ def toggle_favorite():
     if manga_id is not None:
         ops.toggle_favorite(manga_id)
         logger.info(f"Toggled favorite: manga_id={manga_id}")
+    return redirect(url_for("active.active"))
+
+
+@bp.route("/active/retire", methods=["POST"])
+def retire():
+    manga_id = request.form.get("manga_id", type=int)
+    status = request.form.get("status")
+    if manga_id is not None and status in ("finished", "skip"):
+        ops.retire_manga(manga_id, status)
+        logger.info(f"Retired manga: manga_id={manga_id} status={status!r}")
     return redirect(url_for("active.active"))

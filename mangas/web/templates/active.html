@@ -1,13 +1,20 @@
 {% extends "base.html" %}
 {% block title %}All Active — Manga Tracker{% endblock %}
 {% block extra_style %}
-.search-bar { margin-bottom: 1rem; }
+.search-bar { margin-bottom: 0.6rem; }
 .search-bar input {
   width: 100%; padding: 0.5rem 0.75rem; border-radius: 6px;
   border: 1px solid #2a2a4a; background: #1a1a2e; color: #e0e0e0;
   font-size: 0.95rem;
 }
 .search-bar input:focus { outline: none; border-color: #2a5298; }
+.filter-bar { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.filter-btn {
+  padding: 0.25rem 0.75rem; border-radius: 20px; border: 1px solid #2a2a4a;
+  background: #1a1a2e; color: #aaa; cursor: pointer; font-size: 0.85rem;
+}
+.filter-btn:hover { border-color: #2a5298; color: #e0e0e0; }
+.filter-btn.active { background: #2a5298; border-color: #2a5298; color: #fff; }
 .read-form { display: flex; gap: 0.3rem; align-items: center; }
 .read-form input[type=number] {
   width: 4.5rem; padding: 0.2rem 0.4rem; border-radius: 4px;
@@ -22,12 +29,24 @@
 .fav-btn.on { color: #f5c518; }
 .fav-btn:hover { color: #f5c518; }
 td.fav-col { width: 2rem; text-align: center; padding-right: 0; }
+.retire-select {
+  padding: 0.2rem 0.3rem; border-radius: 4px; border: 1px solid #2a2a4a;
+  background: #1a1a2e; color: #888; font-size: 0.78rem; cursor: pointer;
+  margin-top: 0.3rem;
+}
+.retire-select:focus { outline: none; border-color: #7a1a1a; }
+.retire-select:hover { border-color: #7a1a1a; color: #e0e0e0; }
 {% endblock %}
 {% block content %}
 <h1>All Active Manga <span class="badge">{{ manga_list | length }}</span></h1>
 
 <div class="search-bar">
-  <input type="text" id="search" placeholder="Search by title or site…" oninput="filterRows(this.value)">
+  <input type="text" id="search" placeholder="Search by title or site…" oninput="applyFilters()">
+</div>
+<div class="filter-bar">
+  <button class="filter-btn" data-filter="favorites" onclick="toggleFilter(this)">★ Favorites</button>
+  <button class="filter-btn" data-filter="updates" onclick="toggleFilter(this)">New chapters</button>
+  <button class="filter-btn" data-filter="unread" onclick="toggleFilter(this)">Not started</button>
 </div>
 
 {% if manga_list %}
@@ -45,7 +64,10 @@ td.fav-col { width: 2rem; text-align: center; padding-right: 0; }
   <tbody>
   {% for m in manga_list %}
   {% set pending = (m.last_episode_published or 0) - (m.last_episode_read or 0) %}
-  <tr data-search="{{ (m.title or m.url) | lower }} {{ m.site | lower }}">
+  <tr data-search="{{ m.display_title | lower }} {{ m.site | lower }}"
+      data-favorite="{{ 'true' if m.is_favorite else 'false' }}"
+      data-has-update="{{ 'true' if m.has_update else 'false' }}"
+      data-unread="{{ 'true' if not m.last_episode_read else 'false' }}">
     <td class="fav-col">
       <form action="/active/toggle-favorite" method="post" style="display:inline">
         <input type="hidden" name="manga_id" value="{{ m.id }}">
@@ -53,7 +75,7 @@ td.fav-col { width: 2rem; text-align: center; padding-right: 0; }
       </form>
     </td>
     <td>
-      <a href="{{ m.url }}" target="_blank">{{ m.title or m.url | truncate(50) }}</a>
+      <a href="{{ m.url }}" target="_blank">{{ m.display_title | truncate(50) }}</a>
       {% if m.has_update %}<span class="badge badge-green" style="margin-left:0.3rem;">NEW</span>{% endif %}
       <div class="meta">{{ m.site }}</div>
     </td>
@@ -70,6 +92,14 @@ td.fav-col { width: 2rem; text-align: center; padding-right: 0; }
     <td>
       {% set resume = m.last_episode_read or m.last_episode_published %}
       {% if resume %}<a href="/read/{{ m.id }}/{{ resume }}" class="btn btn-small">Read</a>{% endif %}
+      <form action="/active/retire" method="post" style="display:block;">
+        <input type="hidden" name="manga_id" value="{{ m.id }}">
+        <select name="status" class="retire-select" onchange="this.form.submit()" title="Retire this manga">
+          <option value="">Archive…</option>
+          <option value="finished">Finished</option>
+          <option value="skip">Skip</option>
+        </select>
+      </form>
     </td>
   </tr>
   {% endfor %}
@@ -81,13 +111,32 @@ td.fav-col { width: 2rem; text-align: center; padding-right: 0; }
 {% endif %}
 
 <script>
-function filterRows(query) {
-  const q = query.toLowerCase();
+const activeFilters = new Set();
+
+function toggleFilter(btn) {
+  const f = btn.dataset.filter;
+  if (activeFilters.has(f)) {
+    activeFilters.delete(f);
+    btn.classList.remove('active');
+  } else {
+    activeFilters.add(f);
+    btn.classList.add('active');
+  }
+  applyFilters();
+}
+
+function applyFilters() {
+  const q = document.getElementById('search').value.toLowerCase();
   let visible = 0;
   document.querySelectorAll('#manga-table tbody tr').forEach(row => {
-    const match = row.dataset.search.includes(q);
-    row.style.display = match ? '' : 'none';
-    if (match) visible++;
+    const d = row.dataset;
+    const matchSearch = !q || d.search.includes(q);
+    const matchFav    = !activeFilters.has('favorites') || d.favorite === 'true';
+    const matchUpdate = !activeFilters.has('updates')   || d.hasUpdate === 'true';
+    const matchUnread = !activeFilters.has('unread')    || d.unread === 'true';
+    const show = matchSearch && matchFav && matchUpdate && matchUnread;
+    row.style.display = show ? '' : 'none';
+    if (show) visible++;
   });
   document.getElementById('no-results').style.display = visible === 0 ? '' : 'none';
 }
