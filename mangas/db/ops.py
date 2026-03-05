@@ -86,6 +86,22 @@ def upsert_manga(
         session.close()
 
 
+def toggle_favorite(manga_id: int) -> Optional[Manga]:
+    """Flip the is_favorite flag."""
+    session = _get_session()
+    try:
+        manga = session.query(Manga).filter_by(id=manga_id).first()
+        if manga is None:
+            return None
+        manga.is_favorite = not manga.is_favorite
+        session.commit()
+        session.refresh(manga)
+        export_to_json(session)
+        return manga
+    finally:
+        session.close()
+
+
 def update_published_chapter(manga_id: int, chapter: int) -> Optional[Manga]:
     """Update last_episode_published from a scraper result."""
     session = _get_session()
@@ -112,6 +128,7 @@ def mark_chapter_read(manga_id: int, chapter: int) -> Optional[Manga]:
         if manga is None:
             return None
         manga.last_episode_read = chapter
+        manga.last_read_at = datetime.now(timezone.utc)
         _refresh_has_update(manga)
         session.commit()
         session.refresh(manga)

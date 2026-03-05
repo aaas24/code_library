@@ -15,6 +15,13 @@
   font-size: 0.85rem; text-align: center;
 }
 .read-form input[type=number]:focus { outline: none; border-color: #2a5298; }
+.fav-btn {
+  background: none; border: none; cursor: pointer; font-size: 1.1rem;
+  padding: 0; line-height: 1; color: #555;
+}
+.fav-btn.on { color: #f5c518; }
+.fav-btn:hover { color: #f5c518; }
+td.fav-col { width: 2rem; text-align: center; padding-right: 0; }
 {% endblock %}
 {% block content %}
 <h1>All Active Manga <span class="badge">{{ manga_list | length }}</span></h1>
@@ -27,15 +34,24 @@
 <table id="manga-table">
   <thead>
     <tr>
+      <th class="fav-col">★</th>
       <th>Title</th>
       <th>Read</th>
       <th>Published</th>
+      <th>Pending</th>
       <th></th>
     </tr>
   </thead>
   <tbody>
   {% for m in manga_list %}
+  {% set pending = (m.last_episode_published or 0) - (m.last_episode_read or 0) %}
   <tr data-search="{{ (m.title or m.url) | lower }} {{ m.site | lower }}">
+    <td class="fav-col">
+      <form action="/active/toggle-favorite" method="post" style="display:inline">
+        <input type="hidden" name="manga_id" value="{{ m.id }}">
+        <button type="submit" class="fav-btn {% if m.is_favorite %}on{% endif %}" title="{% if m.is_favorite %}Unfavorite{% else %}Favorite{% endif %}">★</button>
+      </form>
+    </td>
     <td>
       <a href="{{ m.url }}" target="_blank">{{ m.title or m.url | truncate(50) }}</a>
       {% if m.has_update %}<span class="badge badge-green" style="margin-left:0.3rem;">NEW</span>{% endif %}
@@ -50,6 +66,7 @@
       </form>
     </td>
     <td>{{ m.last_episode_published or '—' }}</td>
+    <td>{% if pending > 0 %}<span class="badge badge-orange">+{{ pending }}</span>{% else %}—{% endif %}</td>
     <td>
       {% if m.last_episode_published %}
       <a href="/read/{{ m.id }}/{{ m.last_episode_published }}" class="btn btn-small">Read</a>

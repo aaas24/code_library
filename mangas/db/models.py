@@ -1,7 +1,7 @@
 """SQLAlchemy models for the manga tracker."""
 from datetime import datetime
 
-from sqlalchemy import Boolean, Column, DateTime, Integer, String, Text, create_engine
+from sqlalchemy import Boolean, Column, DateTime, Integer, Text, create_engine, text
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
 
@@ -21,7 +21,9 @@ class Manga(Base):
     # status: active | didnt_love | finished | pass
     status = Column(Text, default="active")
     has_update = Column(Boolean, default=False)
+    is_favorite = Column(Boolean, default=False)
     last_checked = Column(DateTime)
+    last_read_at = Column(DateTime)
     raw_note = Column(Text)
 
     def __repr__(self) -> str:
@@ -57,4 +59,15 @@ def get_session(engine):
 def init_db(db_path: str = "data/mangas.db"):
     engine = get_engine(db_path)
     Base.metadata.create_all(engine)
+    # Migrate existing DBs: add columns introduced after initial schema
+    with engine.connect() as conn:
+        for stmt in (
+            "ALTER TABLE manga ADD COLUMN is_favorite BOOLEAN DEFAULT 0",
+            "ALTER TABLE manga ADD COLUMN last_read_at DATETIME",
+        ):
+            try:
+                conn.execute(text(stmt))
+                conn.commit()
+            except Exception:
+                pass  # column already exists
     return engine
