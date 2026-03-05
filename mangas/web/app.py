@@ -32,6 +32,7 @@ def create_app(db_path: str | None = None, testing: bool = False) -> Flask:
     from web.routes.updates import bp as updates_bp
     from web.routes.active import bp as active_bp
     from web.routes.recommendations import bp as recommendations_bp
+    from web.routes.bugs import bp as bugs_bp
     from web.routes.read import bp as read_bp
     from web.routes.settings import bp as settings_bp
 
@@ -39,6 +40,7 @@ def create_app(db_path: str | None = None, testing: bool = False) -> Flask:
     app.register_blueprint(updates_bp)
     app.register_blueprint(active_bp)
     app.register_blueprint(recommendations_bp)
+    app.register_blueprint(bugs_bp)
     app.register_blueprint(read_bp)
     app.register_blueprint(settings_bp)
 

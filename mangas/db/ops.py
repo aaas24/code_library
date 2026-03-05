@@ -86,6 +86,57 @@ def upsert_manga(
         session.close()
 
 
+_BUG_TYPES = {"url_broken", "chapter_not_updated", "wrong_title", "other"}
+
+
+def set_bug(manga_id: int, bug_type: str) -> Optional[Manga]:
+    """Flag a manga with a bug type."""
+    if bug_type not in _BUG_TYPES:
+        raise ValueError(f"Invalid bug_type: {bug_type!r}")
+    session = _get_session()
+    try:
+        manga = session.query(Manga).filter_by(id=manga_id).first()
+        if manga is None:
+            return None
+        manga.bug_type = bug_type
+        session.commit()
+        session.refresh(manga)
+        export_to_json(session)
+        return manga
+    finally:
+        session.close()
+
+
+def clear_bug(manga_id: int) -> Optional[Manga]:
+    """Remove a bug flag from a manga."""
+    session = _get_session()
+    try:
+        manga = session.query(Manga).filter_by(id=manga_id).first()
+        if manga is None:
+            return None
+        manga.bug_type = None
+        session.commit()
+        session.refresh(manga)
+        export_to_json(session)
+        return manga
+    finally:
+        session.close()
+
+
+def get_manga_with_bugs() -> list[Manga]:
+    """Return all active manga that have a bug flag set."""
+    session = _get_session()
+    try:
+        return (
+            session.query(Manga)
+            .filter(Manga.status == "active", Manga.bug_type.isnot(None))
+            .order_by(Manga.bug_type)
+            .all()
+        )
+    finally:
+        session.close()
+
+
 def retire_manga(manga_id: int, status: str) -> Optional[Manga]:
     """Set a manga's status to 'finished' or 'skip', removing it from the active list."""
     if status not in ("finished", "skip"):

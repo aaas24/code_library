@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Bugs — Manga Tracker{% endblock %}
+{% block extra_style %}
+.bug-badge {
+  display: inline-block; background: #7a3a1a; color: #f5c090;
+  border-radius: 10px; padding: 0.1rem 0.5rem; font-size: 0.75rem;
+  font-weight: 600; white-space: nowrap;
+}
+.bug-select {
+  padding: 0.2rem 0.3rem; border-radius: 4px; border: 1px solid #2a2a4a;
+  background: #1a1a2e; color: #888; font-size: 0.78rem; cursor: pointer;
+}
+.bug-select:focus { outline: none; border-color: #7a3a1a; }
+{% endblock %}
+{% block content %}
+<h1>Bugs <span class="badge">{{ manga_list | length }}</span></h1>
+
+{% if manga_list %}
+<table id="bugs-table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Site</th>
+      <th>Bug Type</th>
+      <th>Change</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for m in manga_list %}
+  <tr>
+    <td>
+      <a href="{{ m.url }}" target="_blank">{{ m.display_title | truncate(50) }}</a>
+    </td>
+    <td><span class="meta">{{ m.site }}</span></td>
+    <td><span class="bug-badge">{{ m.bug_label }}</span></td>
+    <td>
+      <form action="/bugs/set" method="post" style="display:inline;">
+        <input type="hidden" name="manga_id" value="{{ m.id }}">
+        <select name="bug_type" class="bug-select" onchange="this.form.submit()" title="Change bug type">
+          <option value="">Change…</option>
+          {% for value, label in bug_types.items() %}
+          <option value="{{ value }}" {% if value == m.bug_type %}selected{% endif %}>{{ label }}</option>
+          {% endfor %}
+        </select>
+      </form>
+    </td>
+    <td>
+      <form action="/bugs/clear" method="post" style="display:inline;">
+        <input type="hidden" name="manga_id" value="{{ m.id }}">
+        <button type="submit" class="btn btn-small btn-danger" title="Clear bug flag">✕ Clear</button>
+      </form>
+    </td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p class="empty">No bugs reported. Flag issues from the All Active page.</p>
+{% endif %}
+{% endblock %}

@@ -117,6 +117,36 @@ def test_settings_200(client):
     assert b"Schedules" in resp.data
 
 
+def test_bugs_page_200(client):
+    resp = client.get("/bugs")
+    assert resp.status_code == 200
+
+
+def test_set_bug_from_bugs_route(client, tmp_db):
+    import db.ops as ops
+    m = ops.upsert_manga(url="https://coffeemanga.io/manga/bug-web/", title="Bug Web", status="active")
+    resp = client.post("/bugs/set", data={"manga_id": m.id, "bug_type": "wrong_title"}, follow_redirects=True)
+    assert resp.status_code == 200
+    assert ops.get_manga_by_id(m.id).bug_type == "wrong_title"
+
+
+def test_clear_bug_from_bugs_route(client, tmp_db):
+    import db.ops as ops
+    m = ops.upsert_manga(url="https://coffeemanga.io/manga/clear-web/", title="Clear Web", status="active")
+    ops.set_bug(m.id, "url_broken")
+    resp = client.post("/bugs/clear", data={"manga_id": m.id}, follow_redirects=True)
+    assert resp.status_code == 200
+    assert ops.get_manga_by_id(m.id).bug_type is None
+
+
+def test_set_bug_from_active_route(client, tmp_db):
+    import db.ops as ops
+    m = ops.upsert_manga(url="https://coffeemanga.io/manga/active-bug/", title="Active Bug", status="active")
+    resp = client.post("/active/set-bug", data={"manga_id": m.id, "bug_type": "chapter_not_updated"}, follow_redirects=True)
+    assert resp.status_code == 200
+    assert ops.get_manga_by_id(m.id).bug_type == "chapter_not_updated"
+
+
 def test_run_now_triggers_crawl(client, mocker):
     # trigger_now is imported inside the route function, so patch at the source
     mock_trigger = mocker.patch("scheduler.runner.trigger_now")

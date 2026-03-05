@@ -131,3 +131,30 @@ def test_get_manga_with_updates(tmp_db):
     urls = [m.url for m in updated]
     assert "https://coffeemanga.io/manga/has-update/" in urls
     assert "https://coffeemanga.io/manga/no-update/" not in urls
+
+
+def test_set_bug(tmp_db):
+    import db.ops as ops
+    m = ops.upsert_manga(url="https://coffeemanga.io/manga/bug-test/", status="active")
+    assert m.bug_type is None
+    flagged = ops.set_bug(m.id, "wrong_title")
+    assert flagged.bug_type == "wrong_title"
+    bugs = ops.get_manga_with_bugs()
+    assert any(b.id == m.id for b in bugs)
+
+
+def test_clear_bug(tmp_db):
+    import db.ops as ops
+    m = ops.upsert_manga(url="https://coffeemanga.io/manga/clear-bug/", status="active")
+    ops.set_bug(m.id, "url_broken")
+    cleared = ops.clear_bug(m.id)
+    assert cleared.bug_type is None
+    bugs = ops.get_manga_with_bugs()
+    assert all(b.id != m.id for b in bugs)
+
+
+def test_set_bug_invalid_type(tmp_db):
+    import db.ops as ops
+    m = ops.upsert_manga(url="https://coffeemanga.io/manga/invalid-bug/", status="active")
+    with pytest.raises(ValueError):
+        ops.set_bug(m.id, "not_a_valid_type")

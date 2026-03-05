@@ -18,6 +18,14 @@ A self-hosted web app to track your manga reading list, detect new chapters, and
 - **Read button** — always resumes from your last read chapter, not the latest published
 - **Favorites** — star any manga to pin it to the top of the list
 - **Pending badge** — shows how many unread chapters are waiting
+- **Archive** — retire a manga as Finished or Skip so it no longer appears in the active list
+
+### Bug reporting
+- Flag any manga with a data problem directly from **All Active** using the "Report bug…" dropdown
+- Bug types: **URL broken**, **Latest chapter not displayed**, **Wrong title**, **Other**
+- A `⚠` badge appears next to the title of flagged manga
+- The **Bugs** tab lists all flagged manga — change the bug type or clear the flag per row
+- Cleared manga disappear from the Bugs tab immediately
 
 ### Updates
 - Dedicated view for manga that have new chapters since your last read

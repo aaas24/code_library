@@ -4,6 +4,7 @@ from urllib.parse import urlparse
 from flask import Blueprint, redirect, render_template, request, url_for
 
 import db.ops as ops
+from web.routes.bugs import BUG_TYPES
 
 logger = logging.getLogger(__name__)
 bp = Blueprint("active", __name__)
@@ -35,7 +36,8 @@ def active():
     manga_list.sort(key=_sort_key)
     for m in manga_list:
         m.display_title = m.title or _title_from_url(m.url)
-    return render_template("active.html", manga_list=manga_list)
+        m.bug_label = BUG_TYPES.get(m.bug_type) if m.bug_type else None
+    return render_template("active.html", manga_list=manga_list, bug_types=BUG_TYPES)
 
 
 @bp.route("/active/update-read", methods=["POST"])
@@ -64,4 +66,23 @@ def retire():
     if manga_id is not None and status in ("finished", "skip"):
         ops.retire_manga(manga_id, status)
         logger.info(f"Retired manga: manga_id={manga_id} status={status!r}")
+    return redirect(url_for("active.active"))
+
+
+@bp.route("/active/set-bug", methods=["POST"])
+def set_bug():
+    manga_id = request.form.get("manga_id", type=int)
+    bug_type = request.form.get("bug_type")
+    if manga_id is not None and bug_type in BUG_TYPES:
+        ops.set_bug(manga_id, bug_type)
+        logger.info(f"Bug flagged from active: manga_id={manga_id} bug_type={bug_type!r}")
+    return redirect(url_for("active.active"))
+
+
+@bp.route("/active/clear-bug", methods=["POST"])
+def clear_bug():
+    manga_id = request.form.get("manga_id", type=int)
+    if manga_id is not None:
+        ops.clear_bug(manga_id)
+        logger.info(f"Bug cleared from active: manga_id={manga_id}")
     return redirect(url_for("active.active"))

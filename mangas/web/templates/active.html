@@ -36,6 +36,18 @@ td.fav-col { width: 2rem; text-align: center; padding-right: 0; }
 }
 .retire-select:focus { outline: none; border-color: #7a1a1a; }
 .retire-select:hover { border-color: #7a1a1a; color: #e0e0e0; }
+.bug-select {
+  padding: 0.2rem 0.3rem; border-radius: 4px; border: 1px solid #2a2a4a;
+  background: #1a1a2e; color: #888; font-size: 0.78rem; cursor: pointer;
+  margin-top: 0.3rem;
+}
+.bug-select:focus { outline: none; border-color: #7a3a1a; }
+.bug-select:hover { border-color: #7a3a1a; color: #e0e0e0; }
+.bug-badge {
+  display: inline-block; background: #7a3a1a; color: #f5c090;
+  border-radius: 10px; padding: 0.1rem 0.45rem; font-size: 0.72rem;
+  font-weight: 600; margin-left: 0.3rem; vertical-align: middle;
+}
 {% endblock %}
 {% block content %}
 <h1>All Active Manga <span class="badge">{{ manga_list | length }}</span></h1>
@@ -67,7 +79,8 @@ td.fav-col { width: 2rem; text-align: center; padding-right: 0; }
   <tr data-search="{{ m.display_title | lower }} {{ m.site | lower }}"
       data-favorite="{{ 'true' if m.is_favorite else 'false' }}"
       data-has-update="{{ 'true' if m.has_update else 'false' }}"
-      data-unread="{{ 'true' if not m.last_episode_read else 'false' }}">
+      data-unread="{{ 'true' if not m.last_episode_read else 'false' }}"
+      data-bug="{{ 'true' if m.bug_type else 'false' }}">
     <td class="fav-col">
       <form action="/active/toggle-favorite" method="post" style="display:inline">
         <input type="hidden" name="manga_id" value="{{ m.id }}">
@@ -77,6 +90,7 @@ td.fav-col { width: 2rem; text-align: center; padding-right: 0; }
     <td>
       <a href="{{ m.url }}" target="_blank">{{ m.display_title | truncate(50) }}</a>
       {% if m.has_update %}<span class="badge badge-green" style="margin-left:0.3rem;">NEW</span>{% endif %}
+      {% if m.bug_type %}<span class="bug-badge" title="{{ m.bug_label }}">⚠</span>{% endif %}
       <div class="meta">{{ m.site }}</div>
     </td>
     <td>
@@ -100,6 +114,22 @@ td.fav-col { width: 2rem; text-align: center; padding-right: 0; }
           <option value="skip">Skip</option>
         </select>
       </form>
+      {% if m.bug_type %}
+      <form action="/active/clear-bug" method="post" style="display:block; margin-top:0.3rem;">
+        <input type="hidden" name="manga_id" value="{{ m.id }}">
+        <button type="submit" class="bug-select" title="Clear bug flag">⚠ Clear bug</button>
+      </form>
+      {% else %}
+      <form action="/active/set-bug" method="post" style="display:block;">
+        <input type="hidden" name="manga_id" value="{{ m.id }}">
+        <select name="bug_type" class="bug-select" onchange="this.form.submit()" title="Report a bug">
+          <option value="">Report bug…</option>
+          {% for value, label in bug_types.items() %}
+          <option value="{{ value }}">{{ label }}</option>
+          {% endfor %}
+        </select>
+      </form>
+      {% endif %}
     </td>
   </tr>
   {% endfor %}
