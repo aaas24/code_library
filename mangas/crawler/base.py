@@ -88,9 +88,11 @@ class BaseCrawler(ABC):
                 if chapter_count < min_chapters:
                     continue
 
-                # Theme matching
+                # Theme matching — check title and URL slug
                 title_lower = item_title.lower()
-                matched = [t for t in theme_lower if t in title_lower]
+                slug = item_url.rstrip("/").split("/")[-1].replace("-", " ").replace("_", " ")
+                searchable = f"{title_lower} {slug.lower()}"
+                matched = [t for t in theme_lower if t in searchable]
                 if not matched:
                     continue
 

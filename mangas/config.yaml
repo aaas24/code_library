@@ -27,17 +27,35 @@ sites:
       - manhuascan.com
 
 themes:
+  # villainess / isekai tropes
   - villainess
+  - villainous
   - reincarnation
-  - historical romance
-  - royalty
+  - reincarnated
+  - isekai
+  - transmigrat
+  # historical / nobility
   - emperor
   - empress
+  - duke
+  - duchess
+  - marquis
+  - countess
   - noble
-  - medical
+  - royalty
+  - kingdom
+  - palace
+  - aristocrat
+  # female lead archetypes
+  - lady
+  - princess
+  - saintess
+  # healing / medical
   - healer
+  - healing
   - doctor
-  - strong female lead
+  - physician
+  - apothecary
 
 recommendations:
   min_chapters: 100
