@@ -105,6 +105,7 @@ def run_recommendations() -> dict:
         logger.warning("No crawlers match enabled domains — check config.yaml sites[].crawler and domain names")
 
     added = 0
+    seen_titles: set[str] = set()  # deduplicate same title across sites
 
     for crawler in crawlers:
         logger.info(f"Crawling {crawler.domain} (up to {max_pages} pages)...")
@@ -118,6 +119,11 @@ def run_recommendations() -> dict:
             )
             logger.info(f"{crawler.domain}: found {len(candidates)} candidates")
             for c in candidates:
+                title_key = c["title"].lower().strip()
+                if title_key in seen_titles:
+                    logger.debug(f"Skipping duplicate title across sites: {c['title']!r}")
+                    continue
+                seen_titles.add(title_key)
                 ops.upsert_recommendation(
                     url=c["url"],
                     title=c["title"],

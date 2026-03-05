@@ -10,22 +10,20 @@ class ShibaMangaCrawler(BaseCrawler):
     domain = "shibamanga.com"
 
     _BASE = "https://shibamanga.com"
-    _CHAPTER_RE = re.compile(r"(\d+(?:\.\d+)?)")
+    _CHAPTER_RE = re.compile(r"[Cc]hapter\s+(\d+)")
 
     def listing_url(self, page: int) -> str:
         return f"{self._BASE}/manga/?page={page}&order=views"
 
     def parse_listing(self, soup: BeautifulSoup) -> list[dict]:
         results = []
-        for card in soup.select(".manga-item, .page-item-detail, .c-image-hover, .item"):
-            link_el = card.select_one("a[href]")
-            title_el = card.select_one(".manga-name, .post-title, h3 a, h4 a")
-
+        for card in soup.select(".page-item-detail"):
+            link_el = card.select_one(".post-title a[href], h3 a[href], h4 a[href]")
             if not link_el:
                 continue
 
             url = link_el.get("href", "").strip()
-            title = (title_el or link_el).get_text(strip=True)
+            title = link_el.get("title") or link_el.get_text(strip=True)
             chapter_count = self._extract_chapter_count(card)
 
             if url:
@@ -33,6 +31,5 @@ class ShibaMangaCrawler(BaseCrawler):
         return results
 
     def _extract_chapter_count(self, card) -> int:
-        text = card.get_text(separator=" ", strip=True)
-        m = self._CHAPTER_RE.search(text)
-        return int(float(m.group(1))) if m else 0
+        nums = [int(m.group(1)) for m in self._CHAPTER_RE.finditer(card.get_text(separator=" "))]
+        return max(nums) if nums else 0

@@ -22,7 +22,7 @@ sites:
       - kaliscan.io
   manhuascan:
     scraper: true
-    crawler: true
+    crawler: false   # JS-rendered listing page, cannot crawl with requests
     domains:
       - manhuascan.com
 
