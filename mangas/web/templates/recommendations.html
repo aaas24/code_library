@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 {% block title %}Recommendations — Manga Tracker{% endblock %}
+{% block extra_style %}
+.rec-actions { display: flex; gap: 0.5rem; margin-top: 0.6rem; flex-wrap: wrap; }
+.btn-success { background: #1a7a3a; }
+.btn-success:hover { background: #2a8a4a; }
+{% endblock %}
 {% block content %}
 <h1>Recommendations <span class="badge">{{ recs | length }}</span></h1>
 {% if recs %}
@@ -13,14 +18,21 @@
     &nbsp;·&nbsp;
     Score: {{ r.score }}
   </div>
+  {% if r._themes_list %}
   <div style="margin-top:0.4rem;">
     {% for theme in r._themes_list %}
     <span class="tag">{{ theme }}</span>
     {% endfor %}
   </div>
-  <form action="/recommendations/{{ r.id }}/dismiss" method="post" style="display:inline; margin-top:0.5rem;">
-    <button type="submit" class="btn btn-small btn-danger">Dismiss</button>
-  </form>
+  {% endif %}
+  <div class="rec-actions">
+    <form action="/recommendations/{{ r.id }}/add" method="post" style="display:inline">
+      <button type="submit" class="btn btn-small btn-success">＋ Add to reading list</button>
+    </form>
+    <form action="/recommendations/{{ r.id }}/ignore" method="post" style="display:inline">
+      <button type="submit" class="btn btn-small btn-danger">✕ Ignore</button>
+    </form>
+  </div>
 </div>
 {% endfor %}
 {% else %}

@@ -251,6 +251,14 @@ def dismiss_recommendation(rec_id: int) -> Optional[Recommendation]:
 # ---------------------------------------------------------------------------
 
 
+def get_recommendation_by_id(rec_id: int) -> Optional[Recommendation]:
+    session = _get_session()
+    try:
+        return session.query(Recommendation).filter_by(id=rec_id).first()
+    finally:
+        session.close()
+
+
 def get_unseen_recommendations() -> list[Recommendation]:
     session = _get_session()
     try:

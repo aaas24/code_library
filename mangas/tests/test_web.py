@@ -77,7 +77,7 @@ def test_dismiss_recommendation(client, tmp_db):
         matched_themes=["noble"],
         score=1,
     )
-    resp = client.post(f"/recommendations/{rec.id}/dismiss", follow_redirects=True)
+    resp = client.post(f"/recommendations/{rec.id}/ignore", follow_redirects=True)
     assert resp.status_code == 200
     updated = ops.dismiss_recommendation.__wrapped__ if hasattr(ops.dismiss_recommendation, "__wrapped__") else None
     # Verify directly
