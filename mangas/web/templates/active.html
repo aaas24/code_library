@@ -68,9 +68,8 @@ td.fav-col { width: 2rem; text-align: center; padding-right: 0; }
     <td>{{ m.last_episode_published or '—' }}</td>
     <td>{% if pending > 0 %}<span class="badge badge-orange">+{{ pending }}</span>{% else %}—{% endif %}</td>
     <td>
-      {% if m.last_episode_published %}
-      <a href="/read/{{ m.id }}/{{ m.last_episode_published }}" class="btn btn-small">Read</a>
-      {% endif %}
+      {% set resume = m.last_episode_read or m.last_episode_published %}
+      {% if resume %}<a href="/read/{{ m.id }}/{{ resume }}" class="btn btn-small">Read</a>{% endif %}
     </td>
   </tr>
   {% endfor %}
