@@ -6,6 +6,16 @@ from flask import Blueprint, redirect, render_template, request, session, url_fo
 import db.ops as ops
 from crawler.registry import all_crawlers
 
+
+def _title_from_url(url: str) -> str:
+    from urllib.parse import urlparse
+    try:
+        path = urlparse(url).path.rstrip("/")
+        slug = path.split("/")[-1]
+        return slug.replace("-", " ").replace("_", " ").title()
+    except Exception:
+        return url
+
 logger = logging.getLogger(__name__)
 bp = Blueprint("bugs", __name__)
 
@@ -23,12 +33,12 @@ BUG_TYPES = {
 def bugs():
     manga_list = ops.get_manga_with_bugs()
     for m in manga_list:
-        m.display_title = m.title or m.url
+        m.display_title = m.title or _title_from_url(m.url)
         m.bug_label = BUG_TYPES.get(m.bug_type, m.bug_type)
     candidates = session.pop("url_candidates", {})
     all_active = ops.get_all_active()
     for m in all_active:
-        m.display_title = m.title or m.url
+        m.display_title = m.title or _title_from_url(m.url)
     return render_template(
         "bugs.html",
         manga_list=manga_list,
