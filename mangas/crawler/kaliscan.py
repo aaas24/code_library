@@ -12,6 +12,7 @@ class KaliScanCrawler(BaseCrawler):
 
     _BASE = "https://kaliscan.io"
     _CHAPTER_RE = re.compile(r"[Cc]hapter\s+(\d+)")
+    _TITLE_ID_RE = re.compile(r"^\d+\s+")
 
     def listing_url(self, page: int) -> str:
         return f"{self._BASE}/popular?page={page}"
@@ -27,7 +28,8 @@ class KaliScanCrawler(BaseCrawler):
                 continue
 
             url = self._BASE + link_el.get("href", "").strip()
-            title = link_el.get("title") or link_el.get_text(strip=True)
+            raw_title = link_el.get("title") or link_el.get_text(strip=True)
+            title = self._TITLE_ID_RE.sub("", raw_title).strip()
             chapter_count = self._extract_chapter_count(card)
 
             if url:
