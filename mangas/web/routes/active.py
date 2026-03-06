@@ -32,7 +32,7 @@ def _sort_key(m):
 
 @bp.route("/active")
 def active():
-    manga_list = ops.get_all_active()
+    manga_list = [m for m in ops.get_all_active() if m.bug_type != "url_broken"]
     manga_list.sort(key=_sort_key)
     for m in manga_list:
         m.display_title = m.title or _title_from_url(m.url)

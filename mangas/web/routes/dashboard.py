@@ -7,7 +7,7 @@ bp = Blueprint("dashboard", __name__)
 
 @bp.route("/")
 def index():
-    return redirect(url_for("active.active"))
+    return redirect(url_for("updates.updates"))
 
 
 @bp.route("/home")

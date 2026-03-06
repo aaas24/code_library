@@ -1,29 +1,101 @@
 {% extends "base.html" %}
 {% block title %}Updates — Manga Tracker{% endblock %}
+{% block extra_style %}
+.search-bar { margin-bottom: 0.6rem; }
+.search-bar input {
+  width: 100%; padding: 0.5rem 0.75rem; border-radius: 6px;
+  border: 1px solid #2a2a4a; background: #1a1a2e; color: #e0e0e0;
+  font-size: 0.95rem;
+}
+.search-bar input:focus { outline: none; border-color: #2a5298; }
+.filter-bar { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.filter-btn {
+  padding: 0.25rem 0.75rem; border-radius: 20px; border: 1px solid #2a2a4a;
+  background: #1a1a2e; color: #aaa; cursor: pointer; font-size: 0.85rem;
+}
+.filter-btn:hover { border-color: #2a5298; color: #e0e0e0; }
+.filter-btn.active { background: #2a5298; border-color: #2a5298; color: #fff; }
+.card-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+.card-actions { display: flex; gap: 0.4rem; flex-shrink: 0; }
+.pending-badge {
+  display: inline-block; background: #1a4a2a; color: #90f0b0;
+  border-radius: 10px; padding: 0.1rem 0.55rem; font-size: 0.8rem;
+  font-weight: 700; white-space: nowrap;
+}
+{% endblock %}
 {% block content %}
 <h1>Updates <span class="badge">{{ manga_list | length }}</span></h1>
+
+<div class="search-bar">
+  <input type="text" id="search" placeholder="Search by title or site…" oninput="applyFilters()">
+</div>
+<div class="filter-bar">
+  <button class="filter-btn" data-filter="favorites" onclick="toggleFilter(this)">★ Favorites</button>
+</div>
+
 {% if manga_list %}
+<div id="cards">
 {% for m in manga_list %}
-<div class="card">
-  <strong>{{ m.title or m.url }}</strong>
-  <div class="meta">
-    Last read: {{ m.last_episode_read or '—' }}
-    &nbsp;·&nbsp;
-    Published: <span class="badge badge-green">{{ m.last_episode_published }}</span>
-    &nbsp;·&nbsp;
-    <a href="{{ m.site }}" class="meta">{{ m.site }}</a>
+<div class="card"
+     data-search="{{ m.display_title | lower }} {{ m.site | lower }}"
+     data-favorite="{{ 'true' if m.is_favorite else 'false' }}">
+  <div class="card-row">
+    <div>
+      <strong>
+        {% if m.is_favorite %}<span style="color:#f5c518;">★</span> {% endif %}
+        <a href="{{ m.url }}" target="_blank">{{ m.display_title | truncate(60) }}</a>
+      </strong>
+      <span class="pending-badge" style="margin-left:0.4rem;">+{{ m.pending }} ch</span>
+      <div class="meta" style="margin-top:0.2rem;">
+        Read: {{ m.last_episode_read or '—' }}
+        &nbsp;·&nbsp; Latest: {{ m.last_episode_published }}
+        &nbsp;·&nbsp; {{ m.site }}
+      </div>
+    </div>
+    <div class="card-actions">
+      {% if m.last_episode_published %}
+      <a href="/read/{{ m.id }}/{{ m.last_episode_published }}" class="btn btn-small">
+        Read ch.{{ m.last_episode_published }}
+      </a>
+      {% endif %}
+      <a href="{{ m.url }}" target="_blank" class="btn btn-small btn-muted">Open</a>
+    </div>
   </div>
-  {% if m.last_episode_published %}
-  <a href="/read/{{ m.id }}/{{ m.last_episode_published }}" class="btn btn-small" style="margin-top:0.5rem;">
-    Read Chapter {{ m.last_episode_published }}
-  </a>
-  {% endif %}
-  <a href="{{ m.url }}" target="_blank" class="btn btn-small" style="margin-top:0.5rem; margin-left:0.3rem;">
-    Open Site
-  </a>
 </div>
 {% endfor %}
+</div>
+<p id="no-results" class="empty" style="display:none;">No manga match your search.</p>
 {% else %}
-<p class="empty">No updates right now. Check back later!</p>
+<p class="empty">No updates with more than 5 unread chapters.</p>
 {% endif %}
+
+<script>
+const activeFilters = new Set();
+
+function toggleFilter(btn) {
+  const f = btn.dataset.filter;
+  if (activeFilters.has(f)) {
+    activeFilters.delete(f);
+    btn.classList.remove('active');
+  } else {
+    activeFilters.add(f);
+    btn.classList.add('active');
+  }
+  applyFilters();
+}
+
+function applyFilters() {
+  const q = document.getElementById('search').value.toLowerCase();
+  let visible = 0;
+  document.querySelectorAll('#cards .card').forEach(card => {
+    const d = card.dataset;
+    const matchSearch = !q || d.search.includes(q);
+    const matchFav    = !activeFilters.has('favorites') || d.favorite === 'true';
+    const show = matchSearch && matchFav;
+    card.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+  document.getElementById('no-results').style.display = visible === 0 ? '' : 'none';
+}
+</script>
 {% endblock %}
