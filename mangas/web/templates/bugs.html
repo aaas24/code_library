@@ -66,9 +66,16 @@
   {% if m.bug_type == "url_broken" %}
   <tr>
     <td colspan="5" style="padding-top:0; padding-bottom:0.75rem;">
-      <form action="/bugs/{{ m.id }}/find-url" method="post" style="display:inline;">
-        <button type="submit" class="btn btn-small">Search for URL</button>
-      </form>
+      <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap; margin-bottom:0.5rem;">
+        <form action="/bugs/{{ m.id }}/find-url" method="post" style="display:inline;">
+          <button type="submit" class="btn btn-small">Search for URL</button>
+        </form>
+        <form action="/bugs/{{ m.id }}/update-url" method="post" style="display:flex; gap:0.3rem; align-items:center;">
+          <input type="url" name="new_url" class="title-input" placeholder="Paste new URL…" required
+                 style="width:20rem;">
+          <button type="submit" class="btn btn-small btn-success">Use this URL</button>
+        </form>
+      </div>
       {% if candidates.get(m.id | string) %}
       <div class="candidates">
         {% for c in candidates[m.id | string] %}
