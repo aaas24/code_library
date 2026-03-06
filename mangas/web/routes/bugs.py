@@ -14,6 +14,7 @@ BUG_TYPES = {
     "chapter_not_updated": "Latest chapter not displayed",
     "wrong_title": "Wrong title",
     "no_scraper": "No scraper",
+    "duplicate": "Duplicate entry",
     "other": "Other",
 }
 
@@ -25,7 +26,16 @@ def bugs():
         m.display_title = m.title or m.url
         m.bug_label = BUG_TYPES.get(m.bug_type, m.bug_type)
     candidates = session.pop("url_candidates", {})
-    return render_template("bugs.html", manga_list=manga_list, bug_types=BUG_TYPES, candidates=candidates)
+    all_active = ops.get_all_active()
+    for m in all_active:
+        m.display_title = m.title or m.url
+    return render_template(
+        "bugs.html",
+        manga_list=manga_list,
+        bug_types=BUG_TYPES,
+        candidates=candidates,
+        all_active=all_active,
+    )
 
 
 @bp.route("/bugs/set", methods=["POST"])
@@ -122,4 +132,13 @@ def fix_title(manga_id: int):
                         )
     except Exception as exc:
         logger.debug(f"Title diagnosis failed for manga_id={manga_id}: {exc}")
+    return redirect(url_for("bugs.bugs"))
+
+
+@bp.route("/bugs/<int:manga_id>/merge-into", methods=["POST"])
+def merge_into(manga_id: int):
+    keep_id = request.form.get("keep_id", type=int)
+    if keep_id is not None and keep_id != manga_id:
+        ops.merge_manga(keep_id, manga_id)
+        logger.info(f"Merged duplicate: retire_id={manga_id} keep_id={keep_id}")
     return redirect(url_for("bugs.bugs"))

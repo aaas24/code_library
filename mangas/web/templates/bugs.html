@@ -108,6 +108,24 @@
     </td>
   </tr>
   {% endif %}
+  {% if m.bug_type == "duplicate" %}
+  <tr>
+    <td colspan="5" style="padding-top:0; padding-bottom:0.75rem;">
+      <form action="/bugs/{{ m.id }}/merge-into" method="post" style="display:flex; gap:0.4rem; align-items:center; flex-wrap:wrap;">
+        <span class="meta">Keep:</span>
+        <select name="keep_id" class="bug-select" style="color:#e0e0e0; min-width:14rem;" required>
+          <option value="">Select record to keep…</option>
+          {% for a in all_active %}
+          {% if a.id != m.id %}
+          <option value="{{ a.id }}">{{ a.display_title | truncate(50) }} — {{ a.site }}</option>
+          {% endif %}
+          {% endfor %}
+        </select>
+        <button type="submit" class="btn btn-small btn-success">Merge</button>
+      </form>
+    </td>
+  </tr>
+  {% endif %}
   {% endfor %}
   </tbody>
 </table>

@@ -86,7 +86,7 @@ def upsert_manga(
         session.close()
 
 
-_BUG_TYPES = {"url_broken", "chapter_not_updated", "wrong_title", "no_scraper", "other"}
+_BUG_TYPES = {"url_broken", "chapter_not_updated", "wrong_title", "no_scraper", "duplicate", "other"}
 
 
 def set_bug(manga_id: int, bug_type: str) -> Optional[Manga]:
@@ -139,6 +139,52 @@ def update_manga_title(manga_id: int, new_title: str) -> Optional[Manga]:
         session.refresh(manga)
         export_to_json(session)
         return manga
+    finally:
+        session.close()
+
+
+def merge_manga(keep_id: int, retire_id: int) -> Optional[Manga]:
+    """Merge retire_id into keep_id: transfer best progress/favorites, then retire the duplicate."""
+    if keep_id == retire_id:
+        return None
+    session = _get_session()
+    try:
+        keeper = session.query(Manga).filter_by(id=keep_id).first()
+        retire = session.query(Manga).filter_by(id=retire_id).first()
+        if keeper is None or retire is None:
+            return None
+
+        # Transfer best reading progress
+        if retire.last_episode_read is not None:
+            if keeper.last_episode_read is None or retire.last_episode_read > keeper.last_episode_read:
+                keeper.last_episode_read = retire.last_episode_read
+        if retire.last_read_at is not None:
+            if keeper.last_read_at is None or retire.last_read_at > keeper.last_read_at:
+                keeper.last_read_at = retire.last_read_at
+        if retire.last_episode_published is not None:
+            if keeper.last_episode_published is None or retire.last_episode_published > keeper.last_episode_published:
+                keeper.last_episode_published = retire.last_episode_published
+
+        # Transfer favorite flag
+        if retire.is_favorite:
+            keeper.is_favorite = True
+
+        # Append notes if both have them
+        if retire.raw_note and keeper.raw_note:
+            keeper.raw_note = f"{keeper.raw_note}\n{retire.raw_note}"
+        elif retire.raw_note:
+            keeper.raw_note = retire.raw_note
+
+        _refresh_has_update(keeper)
+
+        # Retire the duplicate
+        retire.status = "skip"
+        retire.bug_type = None
+
+        session.commit()
+        session.refresh(keeper)
+        export_to_json(session)
+        return keeper
     finally:
         session.close()
 
