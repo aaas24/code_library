@@ -22,6 +22,8 @@
   font-size: 0.85rem; text-align: center;
 }
 .read-form input[type=number]:focus { outline: none; border-color: #2a5298; }
+.btn-muted { background: #2a2a4a; color: #aaa; }
+.btn-muted:hover { background: #3a3a5a; color: #e0e0e0; }
 .fav-btn {
   background: none; border: none; cursor: pointer; font-size: 1.1rem;
   padding: 0; line-height: 1; color: #555;
@@ -100,6 +102,13 @@ td.fav-col { width: 2rem; text-align: center; padding-right: 0; }
                placeholder="—" min="0" title="Last chapter read">
         <button type="submit" class="btn btn-small" title="Save">✓</button>
       </form>
+      {% if m.has_update and m.last_episode_published %}
+      <form action="/active/update-read" method="post" style="margin-top:0.2rem;">
+        <input type="hidden" name="manga_id" value="{{ m.id }}">
+        <input type="hidden" name="chapter" value="{{ m.last_episode_published }}">
+        <button type="submit" class="btn btn-small btn-muted" title="Mark all {{ m.last_episode_published }} chapters as read">All read</button>
+      </form>
+      {% endif %}
     </td>
     <td>{{ m.last_episode_published or '—' }}</td>
     <td>{% if pending > 0 %}<span class="badge badge-orange">+{{ pending }}</span>{% else %}—{% endif %}</td>

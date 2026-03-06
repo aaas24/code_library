@@ -25,9 +25,15 @@ def add_to_active(rec_id: int):
     """Add a recommendation to the active reading list and dismiss it."""
     rec = ops.get_recommendation_by_id(rec_id)
     if rec:
-        ops.upsert_manga(url=rec.url, title=rec.title, status="active")
+        chapter_read = request.form.get("chapter_read", type=int)
+        status = request.form.get("status", "active")
+        if status not in ("active", "finished"):
+            status = "active"
+        manga = ops.upsert_manga(url=rec.url, title=rec.title, status=status)
+        if chapter_read is not None and manga:
+            ops.mark_chapter_read(manga.id, chapter_read)
         ops.dismiss_recommendation(rec_id)
-        logger.info(f"Added recommendation to active list: rec_id={rec_id} title={rec.title!r}")
+        logger.info(f"Added recommendation: rec_id={rec_id} title={rec.title!r} status={status} chapter_read={chapter_read}")
     return redirect(url_for("recommendations.recommendations"))
 
 

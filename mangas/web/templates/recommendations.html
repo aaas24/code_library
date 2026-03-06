@@ -1,9 +1,17 @@
 {% extends "base.html" %}
 {% block title %}Recommendations — Manga Tracker{% endblock %}
 {% block extra_style %}
-.rec-actions { display: flex; gap: 0.5rem; margin-top: 0.6rem; flex-wrap: wrap; }
+.rec-actions { display: flex; gap: 0.5rem; margin-top: 0.6rem; flex-wrap: wrap; align-items: center; }
 .btn-success { background: #1a7a3a; }
 .btn-success:hover { background: #2a8a4a; }
+.btn-muted { background: #2a2a4a; color: #aaa; }
+.btn-muted:hover { background: #3a3a5a; color: #e0e0e0; }
+.chapter-input {
+  width: 4.5rem; padding: 0.2rem 0.4rem; border-radius: 4px;
+  border: 1px solid #2a2a4a; background: #0f0f0f; color: #e0e0e0;
+  font-size: 0.85rem; text-align: center;
+}
+.chapter-input:focus { outline: none; border-color: #2a5298; }
 {% endblock %}
 {% block content %}
 <h1>Recommendations <span class="badge">{{ recs | length }}</span></h1>
@@ -26,8 +34,14 @@
   </div>
   {% endif %}
   <div class="rec-actions">
+    <form action="/recommendations/{{ r.id }}/add" method="post" style="display:flex; gap:0.3rem; align-items:center;">
+      <input type="number" name="chapter_read" class="chapter-input" placeholder="ch#" min="0" title="Last chapter you've read (leave blank if starting fresh)">
+      <button type="submit" class="btn btn-small btn-success">＋ Add</button>
+    </form>
     <form action="/recommendations/{{ r.id }}/add" method="post" style="display:inline">
-      <button type="submit" class="btn btn-small btn-success">＋ Add to reading list</button>
+      <input type="hidden" name="chapter_read" value="{{ r.chapter_count }}">
+      <input type="hidden" name="status" value="finished">
+      <button type="submit" class="btn btn-small btn-muted" title="Mark as finished — already read all {{ r.chapter_count }} chapters">Already read</button>
     </form>
     <form action="/recommendations/{{ r.id }}/ignore" method="post" style="display:inline">
       <button type="submit" class="btn btn-small btn-danger">✕ Ignore</button>

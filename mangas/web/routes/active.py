@@ -59,6 +59,7 @@ def toggle_favorite():
     return redirect(url_for("active.active"))
 
 
+
 @bp.route("/active/retire", methods=["POST"])
 def retire():
     manga_id = request.form.get("manga_id", type=int)
