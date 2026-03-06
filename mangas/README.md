@@ -18,6 +18,7 @@ A self-hosted web app to track your manga reading list, detect new chapters, and
 - **Read button** — always resumes from your last read chapter, not the latest published
 - **Favorites** — star any manga to pin it to the top of the list
 - **Pending badge** — shows how many unread chapters are waiting
+- **All read** — one-click button (shown when updates are pending) to mark the latest chapter as read and stay active
 - **Archive** — retire a manga as Finished or Skip so it no longer appears in the active list
 
 ### Bug reporting
@@ -33,7 +34,12 @@ A self-hosted web app to track your manga reading list, detect new chapters, and
 ### Recommendations
 - Crawler discovers new titles based on themes in your reading list
 - Each recommendation shows title, site, chapter count, score, and matched themes
-- Actions: **Add to reading list** or **Ignore**
+- Actions per recommendation:
+  - **＋ Add** (with optional chapter number) — adds to active reading list at that chapter
+  - **Already read** — adds directly as Finished and marks all chapters read
+  - **✕ Ignore** — dismisses permanently, never shown again
+- Same manga appearing on multiple sites is deduplicated by title
+- Manga already in your list (any status) are excluded from recommendations
 
 ### Automation (APScheduler)
 - **Daily at 2 am** — chapter check across all active manga (scrapers per site)
