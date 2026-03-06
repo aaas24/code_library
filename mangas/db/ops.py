@@ -107,6 +107,42 @@ def set_bug(manga_id: int, bug_type: str) -> Optional[Manga]:
         session.close()
 
 
+def update_manga_url(manga_id: int, new_url: str) -> Optional[Manga]:
+    """Replace a manga's URL (and derive new site from it). Clears bug flag."""
+    session = _get_session()
+    try:
+        manga = session.query(Manga).filter_by(id=manga_id).first()
+        if manga is None:
+            return None
+        manga.url = new_url
+        manga.site = _domain_from_url(new_url)
+        manga.bug_type = None
+        session.commit()
+        session.refresh(manga)
+        export_to_json(session)
+        return manga
+    finally:
+        session.close()
+
+
+def update_manga_title(manga_id: int, new_title: str) -> Optional[Manga]:
+    """Save a corrected title, storing the old title in corrected_from. Clears bug flag."""
+    session = _get_session()
+    try:
+        manga = session.query(Manga).filter_by(id=manga_id).first()
+        if manga is None:
+            return None
+        manga.corrected_from = manga.title
+        manga.title = new_title
+        manga.bug_type = None
+        session.commit()
+        session.refresh(manga)
+        export_to_json(session)
+        return manga
+    finally:
+        session.close()
+
+
 def clear_bug(manga_id: int) -> Optional[Manga]:
     """Remove a bug flag from a manga."""
     session = _get_session()

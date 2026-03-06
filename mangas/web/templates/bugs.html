@@ -11,6 +11,17 @@
   background: #1a1a2e; color: #888; font-size: 0.78rem; cursor: pointer;
 }
 .bug-select:focus { outline: none; border-color: #7a3a1a; }
+.title-input {
+  padding: 0.2rem 0.4rem; border-radius: 4px; border: 1px solid #2a2a4a;
+  background: #0f0f0f; color: #e0e0e0; font-size: 0.85rem; width: 16rem;
+}
+.title-input:focus { outline: none; border-color: #2a5298; }
+.candidates { margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.4rem; }
+.candidate-card {
+  background: #12122a; border: 1px solid #2a2a4a; border-radius: 6px;
+  padding: 0.5rem 0.75rem; display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;
+}
+.candidate-card .meta { font-size: 0.8rem; color: #888; }
 {% endblock %}
 {% block content %}
 <h1>Bugs <span class="badge">{{ manga_list | length }}</span></h1>
@@ -52,6 +63,44 @@
       </form>
     </td>
   </tr>
+  {% if m.bug_type == "url_broken" %}
+  <tr>
+    <td colspan="5" style="padding-top:0; padding-bottom:0.75rem;">
+      <form action="/bugs/{{ m.id }}/find-url" method="post" style="display:inline;">
+        <button type="submit" class="btn btn-small">Search for URL</button>
+      </form>
+      {% if candidates.get(m.id | string) %}
+      <div class="candidates">
+        {% for c in candidates[m.id | string] %}
+        <div class="candidate-card">
+          <div style="flex:1; min-width:0;">
+            <a href="{{ c.url }}" target="_blank">{{ c.title or c.url }}</a>
+            <span class="meta">&nbsp;· {{ c.site }} · {{ c.chapter_count }} ch</span>
+          </div>
+          <form action="/bugs/{{ m.id }}/update-url" method="post" style="display:inline;">
+            <input type="hidden" name="new_url" value="{{ c.url }}">
+            <button type="submit" class="btn btn-small btn-success">Use this URL</button>
+          </form>
+        </div>
+        {% endfor %}
+      </div>
+      {% elif candidates is defined and candidates.get(m.id | string) is not none and candidates.get(m.id | string) is not undefined %}
+      <span class="meta" style="margin-left:0.5rem;">No matches found.</span>
+      {% endif %}
+    </td>
+  </tr>
+  {% endif %}
+  {% if m.bug_type == "wrong_title" %}
+  <tr>
+    <td colspan="5" style="padding-top:0; padding-bottom:0.75rem;">
+      <form action="/bugs/{{ m.id }}/fix-title" method="post" style="display:inline; display:flex; gap:0.4rem; align-items:center;">
+        <input type="text" name="new_title" class="title-input"
+               value="{{ m.title or '' }}" placeholder="Enter correct title" required>
+        <button type="submit" class="btn btn-small btn-success">Save title</button>
+      </form>
+    </td>
+  </tr>
+  {% endif %}
   {% endfor %}
   </tbody>
 </table>

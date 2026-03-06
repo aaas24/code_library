@@ -1,5 +1,6 @@
 """Recommendation crawler for shibamanga.com."""
 import re
+import urllib.parse
 
 from bs4 import BeautifulSoup
 
@@ -14,6 +15,9 @@ class ShibaMangaCrawler(BaseCrawler):
 
     def listing_url(self, page: int) -> str:
         return f"{self._BASE}/manga/?page={page}&order=views"
+
+    def search_url(self, title: str) -> str:
+        return f"{self._BASE}/?s={urllib.parse.quote_plus(title)}"
 
     def parse_listing(self, soup: BeautifulSoup) -> list[dict]:
         results = []

@@ -6,6 +6,7 @@ chapter count, and returns candidate recommendations.
 Guardrail: max_pages limits the number of listing pages crawled per session
 to avoid overwhelming the target site during development.
 """
+import urllib.parse
 from abc import ABC, abstractmethod
 from typing import Optional
 
@@ -47,6 +48,18 @@ class BaseCrawler(ABC):
         Returns a list of dicts with keys:
             url (str), title (str), chapter_count (int or None)
         """
+
+    def search_url(self, title: str) -> str:
+        """Return the search URL for the given title. Override per site."""
+        raise NotImplementedError(f"{self.__class__.__name__} does not support search_url")
+
+    def search_by_title(self, title: str) -> list[dict]:
+        """Search the site for manga matching title. Returns up to 5 results."""
+        url = self.search_url(title)
+        soup = self.fetch(url)
+        if soup is None:
+            return []
+        return self.parse_listing(soup)[:5]
 
     def crawl(
         self,

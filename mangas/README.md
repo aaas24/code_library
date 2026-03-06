@@ -28,6 +28,10 @@ A self-hosted web app to track your manga reading list, detect new chapters, and
 - The **Bugs** tab lists all flagged manga — change the bug type or clear the flag per row
 - Cleared manga disappear from the Bugs tab immediately
 
+#### Bug resolution
+- **URL broken** — click **Search for URL** to search all enabled sites for the manga's title; candidate results appear inline showing site, title, chapter count, and a preview link; click **Use this URL** to update the URL and clear the flag
+- **Wrong title** — an inline text input pre-filled with the current title lets you type the correct title and click **Save title**; the old title is stored in `corrected_from` for post-hoc analysis, and the app logs which HTML element on the manga's page contains the correct title to help a developer identify the right CSS selector to fix
+
 ### Updates
 - Dedicated view for manga that have new chapters since your last read
 

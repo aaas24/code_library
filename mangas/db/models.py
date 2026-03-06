@@ -26,6 +26,7 @@ class Manga(Base):
     last_read_at = Column(DateTime)
     raw_note = Column(Text)
     bug_type = Column(Text, nullable=True)
+    corrected_from = Column(Text, nullable=True)
 
     def __repr__(self) -> str:
         return f"<Manga id={self.id} title={self.title!r} status={self.status}>"
@@ -66,6 +67,7 @@ def init_db(db_path: str = "data/mangas.db"):
             "ALTER TABLE manga ADD COLUMN is_favorite BOOLEAN DEFAULT 0",
             "ALTER TABLE manga ADD COLUMN last_read_at DATETIME",
             "ALTER TABLE manga ADD COLUMN bug_type TEXT",
+            "ALTER TABLE manga ADD COLUMN corrected_from TEXT",
         ):
             try:
                 conn.execute(text(stmt))
