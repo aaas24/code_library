@@ -1,7 +1,7 @@
 import logging
 from urllib.parse import urlparse
 
-from flask import Blueprint, redirect, render_template, request, url_for
+from flask import Blueprint, flash, redirect, render_template, request, url_for
 
 import db.ops as ops
 from web.routes.bugs import BUG_TYPES
@@ -86,4 +86,94 @@ def clear_bug():
     if manga_id is not None:
         ops.clear_bug(manga_id)
         logger.info(f"Bug cleared from active: manga_id={manga_id}")
+    return redirect(url_for("active.active"))
+
+
+def _extract_title(soup, url: str) -> str:
+    """Best-effort title extraction: og:title → h1 → URL slug."""
+    og = soup.find("meta", property="og:title")
+    if og and og.get("content", "").strip():
+        return og["content"].strip()
+    h1 = soup.find("h1")
+    if h1:
+        text = h1.get_text(strip=True)
+        if text:
+            return text
+    return _title_from_url(url)
+
+
+@bp.route("/active/add", methods=["POST"])
+def add_manga():
+    url = request.form.get("url", "").strip()
+    if not url:
+        flash("Please enter a URL.", "error")
+        return redirect(url_for("active.active"))
+
+    domain = urlparse(url).netloc.lstrip("www.")
+
+    from scrapers.registry import get_scraper
+    from utils.onboard_site import auto_detect_selector, CANDIDATE_SELECTORS, _extract_number_from_text
+
+    scraper = get_scraper(domain)
+
+    if scraper:
+        # Known site — use existing scraper
+        soup = scraper.fetch(url)
+        title = _extract_title(soup, url) if soup else _title_from_url(url)
+        chapter = scraper.get_latest_chapter(soup) if soup else None
+        manga = ops.upsert_manga(url=url, title=title, last_episode_published=chapter)
+        msg = f"Added \"{title}\""
+        if chapter:
+            msg += f" — latest chapter: {chapter}"
+        logger.info(f"Added manga via URL: manga_id={manga.id} domain={domain} chapter={chapter}")
+        flash(msg, "success")
+    else:
+        # Unknown site — best-effort using generic selector detection
+        import requests as _req
+        from bs4 import BeautifulSoup
+        _HEADERS = {
+            "User-Agent": (
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            )
+        }
+        soup = None
+        try:
+            resp = _req.get(url, headers=_HEADERS, timeout=15)
+            resp.raise_for_status()
+            soup = BeautifulSoup(resp.text, "lxml")
+        except Exception as exc:
+            logger.warning(f"Failed to fetch {url}: {exc}")
+
+        title = _extract_title(soup, url) if soup else _title_from_url(url)
+        chapter = None
+        selector = None
+        if soup:
+            selector, chapter_str = auto_detect_selector(soup)
+            if chapter_str:
+                try:
+                    chapter = int(float(chapter_str))
+                except ValueError:
+                    pass
+
+        manga = ops.upsert_manga(url=url, title=title, last_episode_published=chapter)
+        logger.info(
+            f"Added manga from unknown site: manga_id={manga.id} domain={domain} "
+            f"chapter={chapter} detected_selector={selector!r}"
+        )
+
+        if selector:
+            flash(
+                f"Added \"{title}\" — no scraper for {domain}. "
+                f"Detected selector: {selector!r} (chapter {chapter}). "
+                f"Add a scraper in scrapers/{domain.split('.')[0]}.py to track updates.",
+                "warning",
+            )
+        else:
+            flash(
+                f"Added \"{title}\" — no scraper for {domain} and no chapter selector detected. "
+                f"Add a scraper in scrapers/{domain.split('.')[0]}.py to track updates.",
+                "warning",
+            )
+
     return redirect(url_for("active.active"))

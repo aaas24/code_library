@@ -54,6 +54,20 @@
     <a href="/settings">Settings</a>
   </nav>
   <div class="container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <div style="margin-bottom:0.75rem;">
+      {% for category, message in messages %}
+      <div style="padding:0.5rem 0.75rem; border-radius:6px; font-size:0.87rem; margin-bottom:0.3rem;
+                  background:{% if category == 'error' %}#3a1a1a{% elif category == 'warning' %}#3a2a0a{% else %}#0a2a1a{% endif %};
+                  border:1px solid {% if category == 'error' %}#7a1a1a{% elif category == 'warning' %}#7a4a0a{% else %}#1a7a3a{% endif %};
+                  color:{% if category == 'error' %}#f09090{% elif category == 'warning' %}#f0c070{% else %}#90f0b0{% endif %};">
+        {{ message }}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
     {% block content %}{% endblock %}
   </div>
 </body>

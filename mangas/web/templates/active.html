@@ -54,6 +54,13 @@ td.fav-col { width: 2rem; text-align: center; padding-right: 0; }
 {% block content %}
 <h1>All Active Manga <span class="badge">{{ manga_list | length }}</span></h1>
 
+<form action="/active/add" method="post" style="display:flex; gap:0.4rem; margin-bottom:0.75rem;">
+  <input type="url" name="url" placeholder="Paste manga URL to add…" required
+         style="flex:1; padding:0.45rem 0.75rem; border-radius:6px; border:1px solid #2a2a4a;
+                background:#1a1a2e; color:#e0e0e0; font-size:0.9rem;">
+  <button type="submit" class="btn">＋ Add</button>
+</form>
+
 <div class="search-bar">
   <input type="text" id="search" placeholder="Search by title or site…" oninput="applyFilters()">
 </div>
