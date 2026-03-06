@@ -21,7 +21,7 @@ def updates():
     manga_list = []
     for m in ops.get_manga_with_updates():
         pending = (m.last_episode_published or 0) - (m.last_episode_read or 0)
-        if pending > 5:
+        if pending >= 5:
             m.pending = pending
             m.display_title = m.title or _title_from_url(m.url)
             manga_list.append(m)

@@ -2,10 +2,10 @@
 import pytest
 
 
-def test_root_redirects_to_active(client):
+def test_root_redirects_to_updates(client):
     resp = client.get("/")
     assert resp.status_code == 302
-    assert "/active" in resp.headers["Location"]
+    assert "/updates" in resp.headers["Location"]
 
 
 def test_home_200(client):
@@ -25,7 +25,7 @@ def test_updates_shows_only_updated(client, tmp_db):
     ops.upsert_manga(
         url="https://coffeemanga.io/manga/has-update/",
         title="Has Update",
-        last_episode_published=10,
+        last_episode_published=15,
         last_episode_read=5,
     )
     ops.upsert_manga(
