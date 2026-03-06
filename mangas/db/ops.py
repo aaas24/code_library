@@ -86,7 +86,7 @@ def upsert_manga(
         session.close()
 
 
-_BUG_TYPES = {"url_broken", "chapter_not_updated", "wrong_title", "other"}
+_BUG_TYPES = {"url_broken", "chapter_not_updated", "wrong_title", "no_scraper", "other"}
 
 
 def set_bug(manga_id: int, bug_type: str) -> Optional[Manga]:

@@ -13,6 +13,7 @@ BUG_TYPES = {
     "url_broken": "URL broken",
     "chapter_not_updated": "Latest chapter not displayed",
     "wrong_title": "Wrong title",
+    "no_scraper": "No scraper",
     "other": "Other",
 }
 

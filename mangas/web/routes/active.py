@@ -157,6 +157,7 @@ def add_manga():
                     pass
 
         manga = ops.upsert_manga(url=url, title=title, last_episode_published=chapter)
+        ops.set_bug(manga.id, "no_scraper")
         logger.info(
             f"Added manga from unknown site: manga_id={manga.id} domain={domain} "
             f"chapter={chapter} detected_selector={selector!r}"
