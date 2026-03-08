@@ -21,8 +21,8 @@ sites:
     domains:
       - kaliscan.io
   manhuascan:
-    scraper: true
-    crawler: false   # JS-rendered listing page, cannot crawl with requests
+    scraper: false   # disabled: site has unsafe trackers
+    crawler: false
     domains:
       - manhuascan.com
 
