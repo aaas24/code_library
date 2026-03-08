@@ -74,4 +74,33 @@ def init_db(db_path: str = "data/mangas.db"):
                 conn.commit()
             except Exception:
                 pass  # column already exists
+    # Data fixes applied on every startup (idempotent)
+    import re
+    from utils.manga_url import canonical_manga_url, clean_page_title
+    _KALI_ID_RE = re.compile(r"^\d+\s+")
+    _CHAPTER_PATH_RE = re.compile(r"/chapter", re.IGNORECASE)
+    with engine.connect() as conn:
+        # Fix 1: strip leading numeric IDs from kaliscan.io titles
+        rows = conn.execute(text("SELECT id, title FROM manga WHERE site = 'kaliscan.io'")).fetchall()
+        for row in rows:
+            if row[1] and _KALI_ID_RE.match(row[1]):
+                clean = _KALI_ID_RE.sub("", row[1]).strip()
+                conn.execute(text("UPDATE manga SET title = :t WHERE id = :id"), {"t": clean, "id": row[0]})
+
+        # Fix 2: canonicalize chapter URLs → manga root URL
+        rows = conn.execute(text("SELECT id, url FROM manga WHERE url LIKE '%/chapter%'")).fetchall()
+        for row in rows:
+            canon = canonical_manga_url(row[1])
+            if canon != row[1]:
+                conn.execute(text("UPDATE manga SET url = :u WHERE id = :id"), {"u": canon, "id": row[0]})
+
+        # Fix 3: strip " - Chapter N..." from titles
+        rows = conn.execute(text("SELECT id, title FROM manga WHERE title LIKE '% - Chapter %' OR title LIKE '% - chapter %'")).fetchall()
+        for row in rows:
+            if row[1]:
+                clean = clean_page_title(row[1])
+                if clean != row[1]:
+                    conn.execute(text("UPDATE manga SET title = :t WHERE id = :id"), {"t": clean, "id": row[0]})
+
+        conn.commit()
     return engine

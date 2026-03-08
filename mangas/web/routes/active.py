@@ -4,6 +4,7 @@ from urllib.parse import urlparse
 from flask import Blueprint, flash, redirect, render_template, request, url_for
 
 import db.ops as ops
+from utils.manga_url import clean_page_title
 from web.routes.bugs import BUG_TYPES
 
 logger = logging.getLogger(__name__)
@@ -90,15 +91,15 @@ def clear_bug():
 
 
 def _extract_title(soup, url: str) -> str:
-    """Best-effort title extraction: og:title → h1 → URL slug."""
+    """Best-effort title extraction: og:title → h1 → URL slug. Strips chapter suffixes."""
     og = soup.find("meta", property="og:title")
     if og and og.get("content", "").strip():
-        return og["content"].strip()
+        return clean_page_title(og["content"].strip())
     h1 = soup.find("h1")
     if h1:
         text = h1.get_text(strip=True)
         if text:
-            return text
+            return clean_page_title(text)
     return _title_from_url(url)
 
 
@@ -119,7 +120,7 @@ def add_manga():
     if scraper:
         # Known site — use existing scraper
         soup = scraper.fetch(url)
-        title = _extract_title(soup, url) if soup else _title_from_url(url)
+        title = scraper.clean_title(_extract_title(soup, url)) if soup else _title_from_url(url)
         chapter = scraper.get_latest_chapter(soup) if soup else None
         manga = ops.upsert_manga(url=url, title=title, last_episode_published=chapter)
         msg = f"Added \"{title}\""
