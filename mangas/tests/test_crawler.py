@@ -127,6 +127,70 @@ def test_max_pages_guardrail():
     assert call_count[0] <= 3
 
 
+def _shibamanga_listing_soup() -> BeautifulSoup:
+    html = (FIXTURE_DIR / "shibamanga_listing.html").read_text(encoding="utf-8")
+    return BeautifulSoup(html, "lxml")
+
+
+def _make_shibamanga_crawler(soup):
+    from crawler.shibamanga import ShibaMangaCrawler
+    crawler = ShibaMangaCrawler()
+    crawler.fetch = lambda url: soup
+    return crawler
+
+
+def test_shibamanga_parse_listing_titles():
+    """parse_listing extracts titles and URLs correctly."""
+    from crawler.shibamanga import ShibaMangaCrawler
+    crawler = ShibaMangaCrawler()
+    soup = _shibamanga_listing_soup()
+    results = crawler.parse_listing(soup)
+    titles = [r["title"] for r in results]
+    assert "The Villainess Queen" in titles
+    assert "Empress Reborn Again" in titles
+
+
+def test_shibamanga_parse_listing_chapter_counts():
+    """parse_listing extracts chapter counts from latest-chap links."""
+    from crawler.shibamanga import ShibaMangaCrawler
+    crawler = ShibaMangaCrawler()
+    soup = _shibamanga_listing_soup()
+    results = crawler.parse_listing(soup)
+    by_title = {r["title"]: r for r in results}
+    assert by_title["The Villainess Queen"]["chapter_count"] == 120
+    assert by_title["Empress Reborn Again"]["chapter_count"] == 200
+
+
+def test_shibamanga_filters_by_min_chapters():
+    """Items with fewer than min_chapters are excluded."""
+    soup = _shibamanga_listing_soup()
+    crawler = _make_shibamanga_crawler(soup)
+    results = crawler.crawl(
+        themes=["dragon"],
+        known_urls=set(),
+        excluded_titles=set(),
+        min_chapters=100,
+        max_pages=1,
+    )
+    titles = [r["title"] for r in results]
+    assert not any("Dragon King" in t for t in titles)
+
+
+def test_shibamanga_filters_by_theme():
+    """Only titles matching a theme pass through."""
+    soup = _shibamanga_listing_soup()
+    crawler = _make_shibamanga_crawler(soup)
+    results = crawler.crawl(
+        themes=["villainess"],
+        known_urls=set(),
+        excluded_titles=set(),
+        min_chapters=100,
+        max_pages=1,
+    )
+    assert len(results) == 1
+    assert "Villainess" in results[0]["title"]
+
+
 def test_registry_autodiscovers_crawlers():
     from crawler import registry
     registry._discovered = False
