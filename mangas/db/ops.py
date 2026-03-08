@@ -8,6 +8,7 @@ from sqlalchemy.orm import Session
 
 from db.export import export_to_json
 from db.models import Manga, Recommendation, get_engine, get_session, init_db
+from utils.manga_url import canonical_manga_url
 
 # Module-level engine — callers may override via init()
 _engine = None
@@ -46,6 +47,7 @@ def upsert_manga(
     raw_note: Optional[str] = None,
 ) -> Manga:
     """Insert or update a manga record. Triggers JSON export on every call."""
+    url = canonical_manga_url(url)
     session = _get_session()
     try:
         manga = session.query(Manga).filter_by(url=url).first()
@@ -419,6 +421,26 @@ def get_unseen_recommendations() -> list[Recommendation]:
             .order_by(Recommendation.score.desc())
             .all()
         )
+    finally:
+        session.close()
+
+
+def fix_kaliscan_titles() -> int:
+    """Strip leading numeric IDs from kaliscan.io manga titles. Returns count of rows updated."""
+    import re
+    _TITLE_ID_RE = re.compile(r"^\d+\s+")
+    session = _get_session()
+    try:
+        rows = session.query(Manga).filter(Manga.site == "kaliscan.io").all()
+        updated = 0
+        for manga in rows:
+            if manga.title and _TITLE_ID_RE.match(manga.title):
+                manga.title = _TITLE_ID_RE.sub("", manga.title).strip()
+                updated += 1
+        if updated:
+            session.commit()
+            export_to_json(session)
+        return updated
     finally:
         session.close()
 

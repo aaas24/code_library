@@ -21,6 +21,10 @@ class KaliScanScraper(BaseScraper):
 
     _CHAPTER_RE = re.compile(r"(?:chapter|ch\.?)\s*(\d+(?:\.\d+)?)", re.IGNORECASE)
     _NUMBER_RE = re.compile(r"(\d+(?:\.\d+)?)")
+    _TITLE_ID_RE = re.compile(r"^\d+\s+")
+
+    def clean_title(self, title: str) -> str:
+        return self._TITLE_ID_RE.sub("", title).strip()
 
     def get_latest_chapter(self, soup: BeautifulSoup) -> Optional[int]:
         for selector in self._SELECTORS:

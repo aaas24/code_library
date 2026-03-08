@@ -45,6 +45,10 @@ class BaseScraper(ABC):
             return None
         return self.get_latest_chapter(soup)
 
+    def clean_title(self, title: str) -> str:
+        """Override in subclasses to normalize site-specific title quirks."""
+        return title
+
     @classmethod
     def handles(cls, domain: str) -> bool:
         all_domains = [cls.domain] + list(cls.extra_domains)
