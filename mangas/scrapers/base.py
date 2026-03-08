@@ -1,9 +1,14 @@
 """Abstract base class for chapter scrapers."""
+import logging
 from abc import ABC, abstractmethod
 from typing import Optional
 
 import requests
 from bs4 import BeautifulSoup
+
+from utils.manga_url import canonical_manga_url
+
+logger = logging.getLogger(__name__)
 
 
 class BaseScraper(ABC):
@@ -28,7 +33,8 @@ class BaseScraper(ABC):
             resp = requests.get(url, headers=self._HEADERS, timeout=15)
             resp.raise_for_status()
             return BeautifulSoup(resp.text, "lxml")
-        except Exception:
+        except Exception as e:
+            logger.warning(f"[{self.domain}] fetch failed for {url!r}: {e}")
             return None
 
     @abstractmethod
@@ -40,10 +46,17 @@ class BaseScraper(ABC):
 
     def check(self, url: str) -> Optional[int]:
         """Fetch the URL and return the latest chapter number."""
-        soup = self.fetch(url)
+        canonical = canonical_manga_url(url)
+        if canonical != url:
+            logger.info(f"[{self.domain}] canonicalized URL {url!r} -> {canonical!r}")
+        soup = self.fetch(canonical)
         if soup is None:
+            logger.warning(f"[{self.domain}] fetch returned None for {canonical!r}")
             return None
-        return self.get_latest_chapter(soup)
+        chapter = self.get_latest_chapter(soup)
+        if chapter is None:
+            logger.warning(f"[{self.domain}] no chapter found in page {canonical!r} — selector may not match")
+        return chapter
 
     def clean_title(self, title: str) -> str:
         """Override in subclasses to normalize site-specific title quirks."""
