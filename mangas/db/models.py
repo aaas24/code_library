@@ -80,12 +80,20 @@ def init_db(db_path: str = "data/mangas.db"):
     _KALI_ID_RE = re.compile(r"^\d+\s+")
     _CHAPTER_PATH_RE = re.compile(r"/chapter", re.IGNORECASE)
     with engine.connect() as conn:
-        # Fix 1: strip leading numeric IDs from kaliscan.io titles
-        rows = conn.execute(text("SELECT id, title FROM manga WHERE site = 'kaliscan.io'")).fetchall()
+        # Fix 1a: strip leading numeric IDs from stored kaliscan.io titles
+        rows = conn.execute(text("SELECT id, title FROM manga WHERE site = 'kaliscan.io' AND title IS NOT NULL")).fetchall()
         for row in rows:
-            if row[1] and _KALI_ID_RE.match(row[1]):
+            if _KALI_ID_RE.match(row[1]):
                 clean = _KALI_ID_RE.sub("", row[1]).strip()
                 conn.execute(text("UPDATE manga SET title = :t WHERE id = :id"), {"t": clean, "id": row[0]})
+
+        # Fix 1b: derive title from URL slug for kaliscan records with no title
+        rows = conn.execute(text("SELECT id, url FROM manga WHERE site = 'kaliscan.io' AND title IS NULL")).fetchall()
+        for row in rows:
+            slug = row[1].rstrip("/").split("/")[-1]
+            title = _KALI_ID_RE.sub("", slug.replace("-", " ").replace("_", " ")).strip().title()
+            if title:
+                conn.execute(text("UPDATE manga SET title = :t WHERE id = :id"), {"t": title, "id": row[0]})
 
         # Fix 2: canonicalize chapter URLs → manga root URL
         rows = conn.execute(text("SELECT id, url FROM manga WHERE url LIKE '%/chapter%'")).fetchall()
